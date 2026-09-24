@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>每日科技日报 | Tech Daily WAP</title>
+  <meta name="theme-color" content="#1e293b">
+  <meta name="description" content="每日精选重大国际新闻、重大科技新闻、AI前沿动态与全球大模型评分排行">
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-secondary: #f1f5f9;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --brand: #2563eb;
+      --brand-hover: #1d4ed8;
+      --tag-international: #8b5cf6;
+      --tag-tech: #0284c7;
+      --tag-ai: #d97706;
+      --tag-open: #059669;
+      --tag-closed: #dc2626;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+      --radius: 14px;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0b0f19;
+      --bg-card: #151d2f;
+      --bg-secondary: #1e293b;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #26334d;
+      --brand: #3b82f6;
+      --brand-hover: #60a5fa;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 10px 20px -3px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.25s, color 0.25s;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.2s;
+    }
+
+    .btn-icon:hover {
+      background: var(--border-color);
+    }
+
+    .btn-share {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-share:hover {
+      background: var(--brand-hover);
+    }
+
+    .main-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px;
+      width: 100%;
+      flex: 1;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, #1e3a8a, #4338ca);
+      color: #ffffff;
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 8px 20px -4px rgba(30, 58, 138, 0.35);
+    }
+
+    .banner-text h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .banner-text p {
+      font-size: 13px;
+      opacity: 0.85;
+    }
+
+    .banner-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-today {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(4px);
+    }
+
+    .filter-section {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .search-box {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-size: 14px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .tabs-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tabs-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-item {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tab-item.active {
+      background: var(--brand);
+      color: #ffffff;
+      border-color: var(--brand);
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 16px;
+    }
+
+    .news-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--brand);
+    }
+
+    .card-top {
+      margin-bottom: 12px;
+    }
+
+    .card-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .badge-international { background: #ede9fe; color: var(--tag-international); }
+    .badge-tech { background: #e0f2fe; color: var(--tag-tech); }
+    .badge-ai { background: #fef3c7; color: var(--tag-ai); }
+    .badge-models { background: #fce7f3; color: #db2777; }
+
+    .badge-open {
+      background: #d1fae5;
+      color: var(--tag-open);
+      border: 1px solid #a7f3d0;
+    }
+
+    .badge-closed {
+      background: #fee2e2;
+      color: var(--tag-closed);
+      border: 1px solid #fecaca;
+    }
+
+    .card-time {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.45;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .card-summary {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .card-footer {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    .source-name {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .card-link {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .btn-fav {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: var(--text-muted);
+      transition: transform 0.15s;
+    }
+    .btn-fav:hover {
+      transform: scale(1.15);
+    }
+    .btn-fav.active {
+      color: #f59e0b;
+    }
+
+    .leaderboard-view {
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .leaderboard-header-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .leaderboard-title-group h3 {
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .leaderboard-title-group p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .leaderboard-filter-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-subfilter {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-subfilter.active {
+      background: var(--brand);
+      color: #ffffff;
+      border-color: var(--brand);
+    }
+
+    .leaderboard-table-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .leaderboard-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .leaderboard-row {
+      display: grid;
+      grid-template-columns: 70px 1.8fr 1fr 100px 1.4fr;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-color);
+      transition: background 0.15s;
+    }
+    .leaderboard-row:last-child {
+      border-bottom: none;
+    }
+    .leaderboard-row:hover {
+      background: var(--bg-secondary);
+    }
+
+    .rank-cell {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .rank-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      background: var(--bg-secondary);
+      color: var(--text-main);
+    }
+    .rank-1 .rank-num { background: #fef08a; color: #854d0e; }
+    .rank-2 .rank-num { background: #e2e8f0; color: #475569; }
+    .rank-3 .rank-num { background: #fed7aa; color: #9a3412; }
+
+    .trend-badge {
+      font-size: 11px;
+      font-weight: bold;
+    }
+    .trend-up { color: #16a34a; }
+    .trend-down { color: #dc2626; }
+    .trend-same { color: var(--text-muted); }
+
+    .model-info-cell h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .model-info-cell p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .score-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .score-val {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--brand);
+    }
+    .score-label {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .bench-bars {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+    }
+    .bench-pill {
+      background: var(--bg-secondary);
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      display: flex;
+      gap: 4px;
+    }
+    .bench-pill span:first-child { color: var(--text-muted); }
+    .bench-pill span:last-child { font-weight: 700; }
+
+    .mobile-bottom-nav {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      z-index: 60;
+      padding: 0 10px;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .bottom-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-muted);
+      cursor: pointer;
+      gap: 4px;
+    }
+    .bottom-nav-item.active {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      backdrop-filter: blur(5px);
+    }
+
+    .modal-content {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 620px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-color);
+    }
+
+    .modal-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-body {
+      padding: 20px;
+      overflow-y: auto;
+      font-size: 14px;
+      line-height: 1.6;
+      background: var(--bg-secondary);
+      user-select: text;
+    }
+
+    .modal-footer {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .copy-preview-text {
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 13px;
+      background: var(--bg-card);
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 768px) {
+      .main-wrapper {
+        padding: 12px;
+        padding-bottom: 74px;
+      }
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      .banner {
+        padding: 16px;
+      }
+      .banner-text h2 {
+        font-size: 18px;
+      }
+      .mobile-bottom-nav {
+        display: flex;
+      }
+      .leaderboard-row {
+        grid-template-columns: 46px 1fr 75px;
+        gap: 8px;
+        padding: 12px 14px;
+      }
+      .org-cell, .bench-bars {
+        display: none;
+      }
+      .model-info-cell h4 {
+        font-size: 14px;
+      }
+      .score-val {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="brand-group" onclick="setCategory('all')">
+        <div class="brand-logo">⚡</div>
+        <div>
+          <div class="brand-title">每日科技日报</div>
+          <div class="brand-sub">Daily Tech WAP · 手机/电脑通用</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn-share" id="btnOpenDigest" title="生成并复制今日早报文本">
+          <span>📋 生成早报</span>
+        </button>
+        <button class="btn-icon" id="btnThemeToggle" title="切换深色/浅色模式">🌓</button>
+        <button class="btn-icon" id="btnRefresh" title="刷新数据">🔄</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="banner">
+      <div class="banner-text">
+        <h2 id="bannerDate">科技早班车 · 全景速览</h2>
+        <p>汇聚重大国际、科技要闻、AI前沿与全球大模型评分排行</p>
+      </div>
+      <div class="banner-meta">
+        <span class="badge-today" id="updateTimeBadge">更新中...</span>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="搜索资讯关键词、模型名称 (如: DeepSeek, OpenAI, 芯片, 星舰...)">
+      </div>
+      <div class="tabs-scroll">
+        <button class="tab-item active" data-cat="all">🌟 全部要闻</button>
+        <button class="tab-item" data-cat="leaderboard">🏆 模型评分天梯榜</button>
+        <button class="tab-item" data-cat="international">🌍 重大国际</button>
+        <button class="tab-item" data-cat="tech">⚡ 重大科技</button>
+        <button class="tab-item" data-cat="ai">🧠 AI前沿</button>
+        <button class="tab-item" data-cat="models">🤖 新AI模型</button>
+        <button class="tab-item" data-cat="open_source">🟢 仅看开源</button>
+        <button class="tab-item" data-cat="closed_source">🔵 仅看闭源</button>
+        <button class="tab-item" data-cat="favorites">⭐ 我的收藏</button>
+      </div>
+    </section>
+
+    <section class="news-grid" id="newsContainer">
+    </section>
+
+    <section class="leaderboard-view" id="leaderboardSection">
+      <div class="leaderboard-header-card">
+        <div class="leaderboard-title-group">
+          <h3>🏆 全球大模型每日评分排行 (Chatbot Arena & Benchmarks)</h3>
+          <p id="leaderboardSubDesc">每日自动同步，结合盲测对抗 Elo 分、代码编写与复杂数理推理</p>
+        </div>
+        <div class="leaderboard-filter-group">
+          <button class="btn-subfilter active" onclick="filterLeaderboard('all')">全部</button>
+          <button class="btn-subfilter" onclick="filterLeaderboard('开源')">🟢 开源榜</button>
+          <button class="btn-subfilter" onclick="filterLeaderboard('闭源')">🔵 闭源榜</button>
+        </div>
+      </div>
+
+      <div class="leaderboard-table-container">
+        <div class="leaderboard-list" id="leaderboardList">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="mobile-bottom-nav">
+    <div class="bottom-nav-item active" onclick="setCategory('all')">
+      <span>📰</span>
+      <span>资讯</span>
+    </div>
+    <div class="bottom-nav-item" onclick="setCategory('leaderboard')">
+      <span>🏆</span>
+      <span>天梯榜</span>
+    </div>
+    <div class="bottom-nav-item" onclick="setCategory('models')">
+      <span>🤖</span>
+      <span>新模型</span>
+    </div>
+    <div class="bottom-nav-item" onclick="openDigestModal()">
+      <span>📋</span>
+      <span>早报</span>
+    </div>
+    <div class="bottom-nav-item" onclick="setCategory('favorites')">
+      <span>⭐</span>
+      <span>收藏</span>
+    </div>
+  </nav>
+
+  <div class="modal-overlay" id="digestModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="font-size: 16px; font-weight: 700;">今日科技日报 · 晨报精选</h3>
+        <button class="btn-icon" onclick="closeDigestModal()" style="border:none; background:none; font-size: 18px;">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 8px; font-size: 12px; color: var(--text-muted);">已结合当日重大要闻与大模型评分天梯榜 Top 3，可一键复制直接发送到微信群：</p>
+        <div class="copy-preview-text" id="digestTextContent">正在排版生成中...</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-icon" onclick="closeDigestModal()" style="width:auto; padding: 0 14px; font-size: 13px;">关闭</button>
+        <button class="btn-share" id="btnCopyDigest">
+          <span>📋 复制全文到剪贴板</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allNews = [];
+    let leaderboardData = null;
+    let currentCategory = 'all';
+    let currentSearch = '';
+    let leaderboardFilter = 'all';
+    let favorites = JSON.parse(localStorage.getItem('tech_daily_favs') || '[]');
+
+    const savedTheme = localStorage.getItem('tech_daily_theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    document.getElementById('btnThemeToggle').addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('tech_daily_theme', next);
+    });
+
+    async function loadNewsData() {
+      const container = document.getElementById('newsContainer');
+      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">正在加载最新科技资讯与天梯榜...</div>';
+      
+      try {
+        const response = await fetch('./news_data.json?t=' + Date.now());
+        if (!response.ok) throw new Error("加载失败");
+        const data = await response.json();
+        allNews = data.news || [];
+        leaderboardData = data.leaderboard || null;
+        document.getElementById('bannerDate').innerText = `科技早报 · ${data.date || '今日'}`;
+        document.getElementById('updateTimeBadge').innerText = `已同步 · ${data.update_time || '今日'}`;
+      } catch (err) {
+        console.warn("读取本地 news_data.json 失败，使用内置兜底数据:", err);
+        allNews = getFallbackData();
+        leaderboardData = getFallbackLeaderboard();
+        document.getElementById('bannerDate').innerText = `科技早报 · 离线示范`;
+        document.getElementById('updateTimeBadge').innerText = `离线模式`;
+      }
+      renderView();
+    }
+
+    function renderView() {
+      const newsContainer = document.getElementById('newsContainer');
+      const lbSection = document.getElementById('leaderboardSection');
+
+      if (currentCategory === 'leaderboard') {
+        newsContainer.style.display = 'none';
+        lbSection.style.display = 'flex';
+        renderLeaderboard();
+      } else {
+        newsContainer.style.display = 'grid';
+        lbSection.style.display = 'none';
+        renderNews();
+      }
+    }
+
+    function renderNews() {
+      const container = document.getElementById('newsContainer');
+      const filtered = allNews.filter(item => {
+        if (currentCategory === 'favorites') {
+          if (!favorites.includes(item.id)) return false;
+        } else if (currentCategory === 'open_source') {
+          if (!item.model_tag || !item.model_tag.includes('开源')) return false;
+        } else if (currentCategory === 'closed_source') {
+          if (!item.model_tag || !item.model_tag.includes('闭源')) return false;
+        } else if (currentCategory !== 'all') {
+          if (item.category !== currentCategory) return false;
+        }
+
+        if (currentSearch.trim()) {
+          const kw = currentSearch.toLowerCase();
+          const matchTitle = (item.title || '').toLowerCase().includes(kw);
+          const matchSummary = (item.summary || '').toLowerCase().includes(kw);
+          const matchSource = (item.source || '').toLowerCase().includes(kw);
+          if (!matchTitle && !matchSummary && !matchSource) return false;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+            <div style="font-size: 32px; margin-bottom: 10px;">🔍</div>
+            <p>未找到符合条件的资讯或暂无收藏</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => {
+        const isFav = favorites.includes(item.id);
+        const catBadgeClass = `badge-${item.category || 'tech'}`;
+        
+        let modelBadgeHtml = '';
+        if (item.model_tag) {
+          const isOpen = item.model_tag.includes('开源');
+          modelBadgeHtml = `<span class="badge ${isOpen ? 'badge-open' : 'badge-closed'}">${item.model_tag}</span>`;
+        }
+
+        return `
+          <article class="news-card">
+            <div class="card-top">
+              <div class="card-badges">
+                <span class="badge ${catBadgeClass}">${item.category_name || '综合科技'}</span>
+                ${modelBadgeHtml}
+                <span class="card-time">${item.pub_time || ''}</span>
+              </div>
+              <h3 class="card-title">${item.title}</h3>
+              <p class="card-summary">${item.summary}</p>
+            </div>
+            <div class="card-footer">
+              <span class="source-name">📌 ${item.source}</span>
+              <div class="card-actions">
+                <button class="btn-fav ${isFav ? 'active' : ''}" onclick="toggleFavorite(${item.id})" title="${isFav ? '取消收藏' : '收藏'}">
+                  ${isFav ? '★' : '☆'}
+                </button>
+                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="card-link">
+                  阅读原文 ↗
+                </a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderLeaderboard() {
+      const container = document.getElementById('leaderboardList');
+      if (!leaderboardData || !leaderboardData.models) {
+        container.innerHTML = '<div style="padding: 30px; text-align: center; color: var(--text-muted);">暂无天梯榜数据</div>';
+        return;
+      }
+
+      document.getElementById('leaderboardSubDesc').innerText = 
+        `同步时间：${leaderboardData.sync_time} · 数据来源：${leaderboardData.benchmark_source}`;
+
+      const models = leaderboardData.models.filter(m => {
+        if (leaderboardFilter === 'all') return true;
+        return m.type === leaderboardFilter;
+      });
+
+      container.innerHTML = models.map(m => {
+        const isOpen = m.type.includes('开源');
+        const badgeTypeClass = isOpen ? 'badge-open' : 'badge-closed';
+        const rankClass = `rank-${m.rank}`;
+        
+        let trendIcon = '—';
+        let trendClass = 'trend-same';
+        if (m.trend === 'up') {
+          trendIcon = `▲ ${m.trend_value}`;
+          trendClass = 'trend-up';
+        } else if (m.trend === 'down') {
+          trendIcon = `▼ ${m.trend_value}`;
+          trendClass = 'trend-down';
+        }
+
+        const b = m.benchmarks || {};
+
+        return `
+          <div class="leaderboard-row ${rankClass}">
+            <div class="rank-cell">
+              <div class="rank-num">${m.rank}</div>
+              <span class="trend-badge ${trendClass}">${trendIcon}</span>
+            </div>
+            <div class="model-info-cell">
+              <h4>${m.name}</h4>
+              <p>${m.highlight || ''}</p>
+            </div>
+            <div class="org-cell">
+              <span style="font-size: 13px; font-weight: 600;">${m.org}</span>
+              <div style="margin-top: 4px;">
+                <span class="badge ${badgeTypeClass}">${m.type}</span>
+              </div>
+            </div>
+            <div class="score-cell">
+              <span class="score-val">${m.elo_score}</span>
+              <span class="score-label">Arena Elo分</span>
+            </div>
+            <div class="bench-bars">
+              <div class="bench-pill" title="代码工程实测分">
+                <span>代码</span>
+                <span>${b.coding || '-'}</span>
+              </div>
+              <div class="bench-pill" title="高阶数学与逻辑实测分">
+                <span>数学</span>
+                <span>${b.math || '-'}</span>
+              </div>
+              <div class="bench-pill" title="综合推理实测分">
+                <span>推理</span>
+                <span>${b.reasoning || '-'}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterLeaderboard(type) {
+      leaderboardFilter = type;
+      document.querySelectorAll('.btn-subfilter').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.includes(type) || (type === 'all' && btn.innerText === '全部'));
+      });
+      renderLeaderboard();
+    }
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.tab-item').forEach(tab => {
+        tab.classList.toggle('active', tab.getAttribute('data-cat') === cat);
+      });
+      document.querySelectorAll('.bottom-nav-item').forEach(item => {
+        const text = item.innerText;
+        if ((cat === 'all' && text.includes('资讯')) || 
+            (cat === 'leaderboard' && text.includes('天梯榜')) ||
+            (cat === 'models' && text.includes('新模型')) ||
+            (cat === 'favorites' && text.includes('收藏'))) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+      renderView();
+    }
+
+    function toggleFavorite(id) {
+      if (favorites.includes(id)) {
+        favorites = favorites.filter(favId => favId !== id);
+      } else {
+        favorites.push(id);
+      }
+      localStorage.setItem('tech_daily_favs', JSON.stringify(favorites));
+      renderNews();
+    }
+
+    document.querySelectorAll('.tab-item').forEach(tab => {
+      tab.addEventListener('click', () => {
+        setCategory(tab.getAttribute('data-cat'));
+      });
+    });
+
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      currentSearch = e.target.value;
+      if (currentCategory === 'leaderboard') {
+        currentCategory = 'all';
+        setCategory('all');
+      } else {
+        renderNews();
+      }
+    });
+
+    document.getElementById('btnRefresh').addEventListener('click', loadNewsData);
+
+    function generateDigestPlainText() {
+      const today = document.getElementById('bannerDate').innerText.replace('科技早报 · ', '');
+      let lines = [
+        `🔥【每日科技早报 & 模型天梯榜】${today}`,
+        `━━━━━━━━━━━━━━━━━━`,
+        `💡 智能精选 · 重大国际/科技/AI模型速览\n`
+      ];
+
+      if (leaderboardData && leaderboardData.models && leaderboardData.models.length >= 3) {
+        lines.push(`【🏆 今日全球大模型竞技场 Top 3】`);
+        leaderboardData.models.slice(0, 3).forEach(m => {
+          lines.push(`No.${m.rank} ${m.name} (${m.type}) - Elo: ${m.elo_score}`);
+          lines.push(`   亮点: ${m.highlight}`);
+        });
+        lines.push('');
+      }
+
+      const categories = [
+        { key: 'international', title: '【重大国际】' },
+        { key: 'tech', title: '【科技重磅】' },
+        { key: 'ai', title: '【AI前沿】' },
+        { key: 'models', title: '【最新AI模型 (开源/闭源)】' }
+      ];
+
+      categories.forEach(cat => {
+        const catItems = allNews.filter(n => n.category === cat.key);
+        if (catItems.length > 0) {
+          lines.push(cat.title);
+          catItems.forEach((item, idx) => {
+            const tag = item.model_tag ? ` [${item.model_tag}]` : '';
+            lines.push(`${idx + 1}. ${item.title}${tag}`);
+            lines.push(`   摘要: ${item.summary}`);
+          });
+          lines.push('');
+        }
+      });
+
+      lines.push(`━━━━━━━━━━━━━━━━━━`);
+      lines.push(`📱 手机&电脑在线版：直接打开每日科技日报 WAP 畅读`);
+      return lines.join('\n');
+    }
+
+    function openDigestModal() {
+      const text = generateDigestPlainText();
+      document.getElementById('digestTextContent').innerText = text;
+      document.getElementById('digestModal').style.display = 'flex';
+    }
+
+    function closeDigestModal() {
+      document.getElementById('digestModal').style.display = 'none';
+    }
+
+    document.getElementById('btnOpenDigest').addEventListener('click', openDigestModal);
+    document.getElementById('btnCopyDigest').addEventListener('click', () => {
+      const text = document.getElementById('digestTextContent').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("早报文本已复制到剪贴板！可直接粘贴发送到微信/社群。");
+      }).catch(() => {
+        alert("复制失败，请长按文本手动复制。");
+      });
+    });
+
+    function getFallbackData() {
+      return [
+        { id: 1, category: "international", category_name: "重大国际", title: "联合国通过首个全球AI治理标准框架决议", summary: "确立兼顾技术创新与数据安全的跨国协同体系。", source: "联合国要闻", pub_time: "08:30", link: "#" },
+        { id: 2, category: "tech", category_name: "重大科技", title: "下一代High-NA EUV光刻系统实现量产工艺新突破", summary: "2nm以下制程能耗与良率表现大幅提升。", source: "半导体前线", pub_time: "09:00", link: "#" },
+        { id: 3, category: "ai", category_name: "AI前沿", title: "AI Agent自主代码重构效率提升400%", summary: "软件工程智能体实现Issue排查与测试自动化闭环。", source: "MIT科技评论", pub_time: "08:50", link: "#" },
+        { id: 4, category: "models", category_name: "新AI模型", model_tag: "开源 (Open Source)", title: "DeepSeek-V3 / Qwen-2.5-Max 全新权重与架构开放", summary: "多头潜在注意力架构，支持双路服务器本地微调与推理，商业友好许可。", source: "Hugging Face", pub_time: "09:20", link: "#" },
+        { id: 5, category: "models", category_name: "新AI模型", model_tag: "闭源 (Closed Source)", title: "OpenAI o3-mini 高速推理模型正式开放开发者接口", summary: "主打复杂代码与数理推理，成本较上一代下降70%。", source: "OpenAI官方", pub_time: "09:30", link: "#" }
+      ];
+    }
+
+    function getFallbackLeaderboard() {
+      return {
+        benchmark_source: "LMSYS Chatbot Arena",
+        sync_time: "2026-09-24",
+        models: [
+          { rank: 1, name: "o3-mini (High)", org: "OpenAI", type: "闭源", elo_score: 1365, benchmarks: {coding: 93.6, math: 97.4, reasoning: 98.2}, trend: "up", trend_value: "+1", highlight: "数学与极限推理突破" },
+          { rank: 2, name: "Claude 3.7 Sonnet", org: "Anthropic", type: "闭源", elo_score: 1360, benchmarks: {coding: 94.2, math: 95.8, reasoning: 97.5}, trend: "same", trend_value: "0", highlight: "软件工程与混合思考王者" },
+          { rank: 3, name: "DeepSeek-R1 / V3", org: "深度求索", type: "开源", elo_score: 1354, benchmarks: {coding: 92.0, math: 97.0, reasoning: 96.8}, trend: "up", trend_value: "+2", highlight: "开源MoE旗舰，高性价比" }
+        ]
+      };
+    }
+
+    window.addEventListener('DOMContentLoaded', loadNewsData);
+  </script>
+</body>
+</html>
