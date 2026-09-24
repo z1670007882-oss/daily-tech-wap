@@ -1,0 +1,49 @@
+name: Daily Tech News Fetch & Deploy
+
+on:
+  schedule:
+    # 每天 UTC 时间 22:00 (北京时间早上 06:00) 自动触发抓取
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码仓库
+        uses: actions/checkout@v4
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 运行自动抓取与清洗脚本
+        run: |
+          python fetch_news.py
+
+      - name: 提交更新后的 news_data.json
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add news_data.json
+          git commit -m "Auto Update: 每日科技日报已更新 $(date +'%Y-%m-%d')" || exit 0
+          git push
+
+      - name: 自动部署到 GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy:
+    needs: update-news
+    runs-on: ubuntu-latest
+    steps:
+      - name: 发布至 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
