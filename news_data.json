@@ -1,6 +1,6 @@
 {
   "date": "2026年09月26日",
-  "update_time": "2026-09-26 07:19",
+  "update_time": "2026-09-26 07:29",
   "ai_concept": {
     "term": "RAG (Retrieval-Augmented Generation)",
     "chinese_name": "检索增强生成",
@@ -12,7 +12,7 @@
   },
   "leaderboard": {
     "benchmark_source": "LMSYS Chatbot Arena & 权威多维基准",
-    "sync_time": "2026-09-26 07:19",
+    "sync_time": "2026-09-26 07:29",
     "metrics_description": "综合盲测竞技分 (Arena Elo)、代码编写 (Coding) 与高阶数理推理 (MATH) 全中文天梯评测",
     "models": [
       {

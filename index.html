@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>每日科技日报 | Tech Daily WAP</title>
-  <meta name="theme-color" content="#1e293b">
-  <meta name="description" content="全中文每日精选重大国际新闻、重大科技新闻、AI前沿动态、全球大模型评分排行与每日AI新知">
+  <meta name="theme-color" content="#080b11">
+  <meta name="description" content="极简高阶设计风格 · 每日重大国际、科技要闻、AI前沿动态、全球大模型评分排行与每日AI新知">
   <link rel="manifest" href="./manifest.json">
   <script>
     if ('serviceWorker' in navigator) {
@@ -13,37 +13,45 @@
     }
   </script>
   <style>
+    /* ================= 视觉设计系统（高级灰冷调 / 蓝调时刻 / 极简质感） ================= */
     :root {
-      --bg-primary: #f8fafc;
-      --bg-card: #ffffff;
-      --bg-secondary: #f1f5f9;
-      --text-main: #0f172a;
-      --text-muted: #64748b;
-      --border-color: #e2e8f0;
-      --brand: #2563eb;
-      --brand-hover: #1d4ed8;
-      --tag-international: #8b5cf6;
-      --tag-tech: #0284c7;
-      --tag-ai: #d97706;
-      --tag-open: #059669;
-      --tag-closed: #dc2626;
-      --tag-concept: #0d9488;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-      --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
-      --radius: 14px;
+      --bg-base: #080b11;
+      --bg-surface: rgba(15, 23, 42, 0.65);
+      --bg-surface-elevated: rgba(30, 41, 59, 0.7);
+      --bg-secondary: #0f172a;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border-subtle: rgba(148, 163, 184, 0.12);
+      --border-focus: rgba(56, 189, 248, 0.4);
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --accent-purple: #818cf8;
+      --accent-emerald: #10b981;
+      --accent-rose: #f43f5e;
+      --accent-amber: #f59e0b;
+      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 12px 30px -4px rgba(56, 189, 248, 0.15), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
     }
 
-    [data-theme="dark"] {
-      --bg-primary: #0b0f19;
-      --bg-card: #151d2f;
-      --bg-secondary: #1e293b;
-      --text-main: #f1f5f9;
-      --text-muted: #94a3b8;
-      --border-color: #26334d;
-      --brand: #3b82f6;
-      --brand-hover: #60a5fa;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-      --shadow-hover: 0 10px 20px -3px rgba(0, 0, 0, 0.5);
+    [data-theme="light"] {
+      --bg-base: #f8fafc;
+      --bg-surface: rgba(255, 255, 255, 0.85);
+      --bg-surface-elevated: #ffffff;
+      --bg-secondary: #f1f5f9;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #94a3b8;
+      --border-subtle: rgba(15, 23, 42, 0.08);
+      --border-focus: rgba(2, 132, 199, 0.4);
+      --accent: #0284c7;
+      --accent-glow: rgba(2, 132, 199, 0.1);
+      --accent-purple: #6366f1;
+      --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+      --shadow-hover: 0 12px 28px -4px rgba(15, 23, 42, 0.1);
     }
 
     * {
@@ -55,28 +63,37 @@
     }
 
     body {
-      background-color: var(--bg-primary);
+      background-color: var(--bg-base);
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      background-image: 
+        radial-gradient(at 100% 0%, rgba(56, 189, 248, 0.06) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(129, 140, 248, 0.05) 0px, transparent 50%);
+      background-attachment: fixed;
       transition: background-color 0.25s, color 0.25s;
     }
 
+    /* 顶部导航 (Glassmorphism) */
     header {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: var(--bg-card);
-      border-bottom: 1px solid var(--border-color);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(8, 11, 17, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    [data-theme="light"] header {
+      background: rgba(248, 250, 252, 0.85);
     }
 
     .nav-container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 12px 18px;
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -85,34 +102,48 @@
     .brand-group {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       cursor: pointer;
     }
 
     .brand-logo {
-      width: 38px;
-      height: 38px;
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0 4px 14px var(--accent-glow);
     }
 
     .brand-title {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
-      letter-spacing: -0.3px;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.25);
     }
 
     .brand-sub {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 1px;
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 2px;
     }
 
     .header-actions {
@@ -125,216 +156,271 @@
       width: 36px;
       height: 36px;
       border-radius: 10px;
-      border: 1px solid var(--border-color);
-      background: var(--bg-secondary);
-      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-muted);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 16px;
-      transition: 0.2s;
+      font-size: 15px;
+      transition: all 0.2s ease;
     }
 
     .btn-icon:hover {
-      background: var(--border-color);
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      border-color: var(--border-focus);
     }
 
     .btn-share {
-      background: var(--brand);
+      background: linear-gradient(135deg, #0284c7, #2563eb);
       color: #fff;
-      border: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
       padding: 8px 14px;
       border-radius: 10px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       display: flex;
       align-items: center;
       gap: 6px;
       cursor: pointer;
-      transition: 0.2s;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+      transition: all 0.2s ease;
     }
 
     .btn-share:hover {
-      background: var(--brand-hover);
+      filter: brightness(1.1);
+      transform: translateY(-1px);
     }
 
+    /* 主容器 */
     .main-wrapper {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 18px;
+      padding: 24px 20px 80px 20px;
       width: 100%;
       flex: 1;
     }
 
-    /* 顶部横幅 */
+    /* 顶部视觉 Banner */
     .banner {
-      background: linear-gradient(135deg, #1e3a8a, #4338ca);
-      color: #ffffff;
-      border-radius: var(--radius);
-      padding: 20px 22px;
-      margin-bottom: 16px;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.6));
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px 26px;
+      margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 12px;
-      box-shadow: 0 8px 20px -4px rgba(30, 58, 138, 0.35);
+      gap: 14px;
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15), transparent 70%);
+      pointer-events: none;
     }
 
     .banner-text h2 {
-      font-size: 20px;
+      font-size: 21px;
       font-weight: 800;
-      margin-bottom: 4px;
+      letter-spacing: -0.3px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .banner-text p {
       font-size: 13px;
-      opacity: 0.85;
-    }
-
-    .banner-meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      color: var(--text-muted);
+      margin-top: 5px;
+      line-height: 1.5;
     }
 
     .badge-today {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 6px 12px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--accent);
+      padding: 6px 14px;
       border-radius: 20px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
-      backdrop-filter: blur(4px);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    /* 💡 每日 AI 新知模块 */
-    .concept-card {
-      background: linear-gradient(135deg, rgba(13, 148, 136, 0.08), rgba(37, 99, 235, 0.08));
-      border: 1px solid rgba(13, 148, 136, 0.25);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      margin-bottom: 20px;
+    .badge-pulse-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    /* ================= 💡 每天认识一个 AI 名词 / 核心知识板块 ================= */
+    .concept-spotlight {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(17, 24, 39, 0.85));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 30px -4px rgba(56, 189, 248, 0.08), var(--shadow-card);
       position: relative;
-      box-shadow: var(--shadow);
-      transition: all 0.2s ease;
+      overflow: hidden;
+      backdrop-filter: blur(20px);
     }
 
-    [data-theme="dark"] .concept-card {
-      background: linear-gradient(135deg, rgba(13, 148, 136, 0.15), rgba(37, 99, 235, 0.15));
-      border-color: rgba(13, 148, 136, 0.35);
+    [data-theme="light"] .concept-spotlight {
+      background: #ffffff;
+      border-color: rgba(2, 132, 199, 0.2);
     }
 
-    .concept-top {
+    .concept-top-bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
     }
 
-    .concept-header-left {
+    .concept-tag-group {
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    .badge-concept {
-      background: #ccfbf1;
-      color: #0f766e;
+    .pill-concept-flag {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(129, 140, 248, 0.18));
+      color: var(--accent);
       font-size: 11px;
       font-weight: 700;
-      padding: 3px 8px;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
       border-radius: 6px;
-    }
-    [data-theme="dark"] .badge-concept {
-      background: #115e59;
-      color: #99f6e4;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
     }
 
-    .concept-category {
+    .concept-category-badge {
       font-size: 12px;
       color: var(--text-muted);
+      background: rgba(148, 163, 184, 0.08);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
     }
 
     .btn-shuffle {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
       color: var(--text-main);
-      padding: 4px 10px;
+      padding: 6px 12px;
       border-radius: 8px;
       font-size: 12px;
       font-weight: 600;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      transition: 0.15s;
+      gap: 5px;
+      transition: all 0.2s ease;
     }
+
     .btn-shuffle:hover {
-      background: var(--bg-secondary);
-      border-color: var(--brand);
+      background: rgba(56, 189, 248, 0.12);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
-    .concept-title {
-      font-size: 18px;
+    .concept-term-title {
+      font-size: 22px;
       font-weight: 800;
+      letter-spacing: -0.3px;
       color: var(--text-main);
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
-    .concept-explain-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 12px 14px;
-      margin: 10px 0;
-      font-size: 14px;
-      line-height: 1.6;
+    .concept-quote-box {
+      background: rgba(8, 11, 17, 0.6);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--text-main);
     }
 
-    .concept-explain-label {
-      font-weight: 700;
-      color: #0d9488;
+    [data-theme="light"] .concept-quote-box {
+      background: #f1f5f9;
+    }
+
+    .concept-quote-label {
+      font-weight: 800;
+      color: var(--accent);
       margin-right: 6px;
     }
 
-    .concept-details-grid {
+    .concept-dual-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 10px;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .concept-box-item {
+      background: rgba(15, 23, 42, 0.45);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
-    .concept-detail-item {
-      background: rgba(255, 255, 255, 0.4);
-      padding: 10px 12px;
-      border-radius: 8px;
-      border: 1px solid rgba(0, 0, 0, 0.04);
-    }
-    [data-theme="dark"] .concept-detail-item {
-      background: rgba(0, 0, 0, 0.2);
-      border-color: rgba(255, 255, 255, 0.05);
+    [data-theme="light"] .concept-box-item {
+      background: #f8fafc;
     }
 
-    .detail-item-title {
+    .concept-box-title {
       font-weight: 700;
-      margin-bottom: 3px;
-      color: var(--text-main);
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
       display: flex;
       align-items: center;
       gap: 4px;
     }
 
     /* 检索与分类 Tab */
-    .filter-section {
-      margin-bottom: 20px;
+    .filter-wrapper {
+      margin-bottom: 22px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
 
     .search-box {
@@ -344,28 +430,30 @@
 
     .search-input {
       width: 100%;
-      padding: 12px 16px 12px 42px;
+      padding: 12px 18px 12px 44px;
       border-radius: 12px;
-      border: 1px solid var(--border-color);
-      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
       color: var(--text-main);
-      font-size: 14px;
+      font-size: 13.5px;
       outline: none;
-      transition: 0.2s;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
     }
 
     .search-input:focus {
-      border-color: var(--brand);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+      background: var(--bg-surface-elevated);
     }
 
     .search-icon {
       position: absolute;
-      left: 14px;
+      left: 16px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 16px;
-      color: var(--text-muted);
+      font-size: 15px;
+      color: var(--text-dim);
     }
 
     .tabs-scroll {
@@ -380,13 +468,13 @@
       display: none;
     }
 
-    .tab-item {
-      padding: 8px 16px;
+    .tab-pill {
+      padding: 7px 15px;
       border-radius: 20px;
-      border: 1px solid var(--border-color);
-      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
       color: var(--text-muted);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       cursor: pointer;
       white-space: nowrap;
@@ -394,161 +482,153 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      backdrop-filter: blur(8px);
     }
 
-    .tab-item.active {
-      background: var(--brand);
-      color: #ffffff;
-      border-color: var(--brand);
-      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+    .tab-pill:hover {
+      border-color: var(--border-focus);
+      color: var(--text-main);
     }
 
-    /* 资讯列表网格 */
+    .tab-pill.active {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(129, 140, 248, 0.15));
+      color: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 2px 10px var(--accent-glow);
+    }
+
+    /* 资讯瀑布流网格 */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 16px;
+      gap: 18px;
     }
 
     .news-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: var(--shadow);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-card);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      transition: all 0.25s ease;
       position: relative;
+      backdrop-filter: blur(12px);
     }
 
     .news-card:hover {
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-hover);
-      border-color: var(--brand);
+      border-color: var(--border-focus);
     }
 
     .card-top {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
-    .card-badges {
+    .card-badge-row {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       flex-wrap: wrap;
     }
 
-    .badge {
+    .badge-base {
       font-size: 11px;
       font-weight: 700;
       padding: 3px 8px;
-      border-radius: 6px;
+      border-radius: 5px;
       letter-spacing: 0.3px;
     }
 
-    .badge-international { background: #ede9fe; color: var(--tag-international); }
-    .badge-tech { background: #e0f2fe; color: var(--tag-tech); }
-    .badge-ai { background: #fef3c7; color: var(--tag-ai); }
-    .badge-models { background: #fce7f3; color: #db2777; }
+    .badge-cat-international { background: rgba(129, 140, 248, 0.15); color: #a5b4fc; border: 1px solid rgba(129, 140, 248, 0.25); }
+    .badge-cat-tech { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.25); }
+    .badge-cat-ai { background: rgba(245, 158, 11, 0.15); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.25); }
+    .badge-cat-models { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.25); }
 
     .badge-open {
-      background: #d1fae5;
-      color: var(--tag-open);
-      border: 1px solid #a7f3d0;
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.3);
     }
 
     .badge-closed {
-      background: #fee2e2;
-      color: var(--tag-closed);
-      border: 1px solid #fecaca;
+      background: rgba(244, 63, 94, 0.15);
+      color: #fda4af;
+      border: 1px solid rgba(244, 63, 94, 0.3);
     }
 
-    .card-time {
-      font-size: 12px;
-      color: var(--text-muted);
+    .card-timestamp {
+      font-size: 11.5px;
+      color: var(--text-dim);
       margin-left: auto;
     }
 
-    .card-title {
+    .card-headline {
       font-size: 16px;
       font-weight: 700;
-      line-height: 1.45;
+      line-height: 1.48;
       color: var(--text-main);
       margin-bottom: 8px;
     }
 
-    .card-summary {
+    .card-body-text {
       font-size: 13.5px;
       color: var(--text-muted);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
-    .card-footer {
-      margin-top: 14px;
-      padding-top: 12px;
-      border-top: 1px dashed var(--border-color);
+    .card-meta-footer {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 12px;
     }
 
-    .source-name {
-      color: var(--text-muted);
+    .card-source-tag {
+      color: var(--text-dim);
       font-weight: 500;
     }
 
-    .card-actions {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-
-    .card-link {
-      color: var(--brand);
+    .card-out-link {
+      color: var(--accent);
       text-decoration: none;
       font-weight: 600;
       display: inline-flex;
       align-items: center;
       gap: 3px;
+      transition: color 0.15s;
     }
 
-    .btn-fav {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      color: var(--text-muted);
-      transition: transform 0.15s;
-    }
-    .btn-fav:hover {
-      transform: scale(1.15);
-    }
-    .btn-fav.active {
-      color: #f59e0b;
+    .card-out-link:hover {
+      filter: brightness(1.2);
+      text-decoration: underline;
     }
 
-    /* 🏆 天梯排行榜视图 */
+    /* ================= 🏆 天梯排行榜视图 ================= */
     .leaderboard-view {
       display: none;
       flex-direction: column;
-      gap: 16px;
+      gap: 18px;
     }
 
     .leaderboard-header-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius);
-      padding: 18px 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow-card);
     }
 
     .leaderboard-title-group h3 {
@@ -559,7 +639,7 @@
       gap: 8px;
     }
     .leaderboard-title-group p {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-muted);
       margin-top: 4px;
     }
@@ -572,26 +652,26 @@
     .btn-subfilter {
       padding: 6px 12px;
       border-radius: 8px;
-      border: 1px solid var(--border-color);
-      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
       color: var(--text-muted);
       font-size: 12px;
       font-weight: 600;
       cursor: pointer;
-      transition: 0.2s;
+      transition: all 0.2s ease;
     }
     .btn-subfilter.active {
-      background: var(--brand);
+      background: var(--accent);
       color: #ffffff;
-      border-color: var(--brand);
+      border-color: var(--accent);
     }
 
     .leaderboard-table-container {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
       overflow: hidden;
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow-card);
     }
 
     .leaderboard-list {
@@ -604,14 +684,14 @@
       grid-template-columns: 70px 1.8fr 1fr 100px 1.4fr;
       align-items: center;
       padding: 16px 20px;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-subtle);
       transition: background 0.15s;
     }
     .leaderboard-row:last-child {
       border-bottom: none;
     }
     .leaderboard-row:hover {
-      background: var(--bg-secondary);
+      background: var(--bg-surface-elevated);
     }
 
     .rank-cell {
@@ -627,21 +707,22 @@
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 14px;
-      background: var(--bg-secondary);
+      font-size: 13.5px;
+      background: var(--bg-surface-elevated);
       color: var(--text-main);
+      border: 1px solid var(--border-subtle);
     }
-    .rank-1 .rank-num { background: #fef08a; color: #854d0e; }
-    .rank-2 .rank-num { background: #e2e8f0; color: #475569; }
-    .rank-3 .rank-num { background: #fed7aa; color: #9a3412; }
+    .rank-1 .rank-num { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: #f59e0b; }
+    .rank-2 .rank-num { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; border-color: #94a3b8; }
+    .rank-3 .rank-num { background: rgba(217, 119, 6, 0.2); color: #f97316; border-color: #ea580c; }
 
     .trend-badge {
       font-size: 11px;
       font-weight: bold;
     }
-    .trend-up { color: #16a34a; }
-    .trend-down { color: #dc2626; }
-    .trend-same { color: var(--text-muted); }
+    .trend-up { color: var(--accent-emerald); }
+    .trend-down { color: var(--accent-rose); }
+    .trend-same { color: var(--text-dim); }
 
     .model-info-cell h4 {
       font-size: 15px;
@@ -651,7 +732,7 @@
     .model-info-cell p {
       font-size: 12px;
       color: var(--text-muted);
-      margin-top: 2px;
+      margin-top: 3px;
     }
 
     .score-cell {
@@ -662,30 +743,31 @@
     .score-val {
       font-size: 16px;
       font-weight: 800;
-      color: var(--brand);
+      color: var(--accent);
+      font-family: monospace;
     }
     .score-label {
       font-size: 11px;
-      color: var(--text-muted);
+      color: var(--text-dim);
     }
 
     .bench-bars {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       font-size: 12px;
     }
     .bench-pill {
-      background: var(--bg-secondary);
+      background: var(--bg-surface-elevated);
       padding: 4px 8px;
       border-radius: 6px;
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border-subtle);
       display: flex;
       gap: 4px;
     }
-    .bench-pill span:first-child { color: var(--text-muted); }
-    .bench-pill span:last-child { font-weight: 700; }
+    .bench-pill span:first-child { color: var(--text-dim); }
+    .bench-pill span:last-child { font-weight: 700; color: var(--text-main); }
 
-    /* 手机底栏 */
+    /* 手机底栏 (沉浸式 Dock) */
     .mobile-bottom-nav {
       display: none;
       position: fixed;
@@ -693,13 +775,19 @@
       left: 0;
       right: 0;
       height: 60px;
-      background: var(--bg-card);
-      border-top: 1px solid var(--border-color);
+      background: rgba(8, 11, 17, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border-subtle);
       z-index: 60;
       padding: 0 10px;
       justify-content: space-around;
       align-items: center;
-      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    [data-theme="light"] .mobile-bottom-nav {
+      background: rgba(255, 255, 255, 0.88);
     }
 
     .bottom-nav-item {
@@ -707,12 +795,13 @@
       flex-direction: column;
       align-items: center;
       font-size: 11px;
-      color: var(--text-muted);
+      color: var(--text-dim);
       cursor: pointer;
-      gap: 4px;
+      gap: 3px;
+      transition: color 0.15s;
     }
     .bottom-nav-item.active {
-      color: var(--brand);
+      color: var(--accent);
       font-weight: 700;
     }
 
@@ -720,31 +809,31 @@
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.7);
       z-index: 100;
       display: none;
       align-items: center;
       justify-content: center;
       padding: 16px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(8px);
     }
 
     .modal-content {
-      background: var(--bg-card);
-      border-radius: var(--radius);
+      background: var(--bg-surface-elevated);
+      border-radius: var(--radius-md);
       width: 100%;
       max-width: 620px;
       max-height: 85vh;
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-      border: 1px solid var(--border-color);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border-subtle);
     }
 
     .modal-header {
       padding: 16px 20px;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-subtle);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -755,13 +844,13 @@
       overflow-y: auto;
       font-size: 14px;
       line-height: 1.6;
-      background: var(--bg-secondary);
+      background: var(--bg-base);
       user-select: text;
     }
 
     .modal-footer {
       padding: 14px 20px;
-      border-top: 1px solid var(--border-color);
+      border-top: 1px solid var(--border-subtle);
       display: flex;
       justify-content: flex-end;
       gap: 12px;
@@ -771,25 +860,24 @@
       white-space: pre-wrap;
       font-family: monospace;
       font-size: 13px;
-      background: var(--bg-card);
+      background: var(--bg-surface);
       padding: 14px;
       border-radius: 8px;
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border-subtle);
     }
 
     @media (max-width: 768px) {
       .main-wrapper {
-        padding: 12px;
-        padding-bottom: 74px;
+        padding: 14px 14px 76px 14px;
       }
       .news-grid {
         grid-template-columns: 1fr;
       }
-      .concept-details-grid {
+      .concept-dual-grid {
         grid-template-columns: 1fr;
       }
       .banner {
-        padding: 16px;
+        padding: 16px 18px;
       }
       .banner-text h2 {
         font-size: 18px;
@@ -816,13 +904,17 @@
 </head>
 <body>
 
+  <!-- 顶部导航 -->
   <header>
     <div class="nav-container">
       <div class="brand-group" onclick="setCategory('all')">
         <div class="brand-logo">⚡</div>
         <div>
-          <div class="brand-title">每日科技日报</div>
-          <div class="brand-sub">Daily Tech WAP · 手机/电脑通用</div>
+          <div class="brand-title">
+            每日科技日报
+            <span class="brand-badge">WAP PRO</span>
+          </div>
+          <div class="brand-sub">全中文精选 · 手机与电脑通用</div>
         </div>
       </div>
       <div class="header-actions">
@@ -835,62 +927,66 @@
     </div>
   </header>
 
+  <!-- 主体区域 -->
   <main class="main-wrapper">
     <!-- 顶部横幅 -->
     <section class="banner">
       <div class="banner-text">
         <h2 id="bannerDate">科技早班车 · 全景速览</h2>
-        <p>全中文精选 · 重大国际、科技要闻、AI前沿与全球大模型评分排行</p>
+        <p>汇聚重大国际、前沿科技要闻、全中文 AI 动态与大模型天梯榜</p>
       </div>
       <div class="banner-meta">
-        <span class="badge-today" id="updateTimeBadge">更新中...</span>
+        <span class="badge-today" id="updateTimeBadge">
+          <span class="badge-pulse-dot"></span>
+          <span id="updateTimeText">同步中...</span>
+        </span>
       </div>
     </section>
 
-    <!-- 💡 特色板块：每日认识一个 AI 名词 -->
-    <section class="concept-card" id="aiConceptCard">
-      <div class="concept-top">
-        <div class="concept-header-left">
-          <span class="badge-concept">💡 每日 AI 新知</span>
-          <span class="concept-category" id="conceptCategory">模型架构 / 推理加速</span>
+    <!-- 💡 特色板块：每天认识一个 AI 名词（高阶质感展板） -->
+    <section class="concept-spotlight" id="aiConceptCard">
+      <div class="concept-top-bar">
+        <div class="concept-tag-group">
+          <span class="pill-concept-flag">💡 每天认识一个 AI 名词</span>
+          <span class="concept-category-badge" id="conceptCategory">模型架构 / 推理加速</span>
         </div>
         <button class="btn-shuffle" id="btnShuffleConcept" title="随机换一个 AI 知识点">
           <span>🔀 换一个看看</span>
         </button>
       </div>
-      <h3 class="concept-title" id="conceptTitle">MLA (Multi-Head Latent Attention) · 多头潜在注意力机制</h3>
-      <div class="concept-explain-box">
-        <span class="concept-explain-label">【通俗定义】</span>
+      <h3 class="concept-term-title" id="conceptTitle">MLA (Multi-Head Latent Attention) · 多头潜在注意力机制</h3>
+      <div class="concept-quote-box">
+        <span class="concept-quote-label">【通俗定义】</span>
         <span id="conceptSimpleExplain">相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。</span>
       </div>
-      <div class="concept-details-grid">
-        <div class="concept-detail-item">
-          <div class="detail-item-title">⚙️ 核心原理</div>
+      <div class="concept-dual-grid">
+        <div class="concept-box-item">
+          <div class="concept-box-title">⚙️ 核心原理</div>
           <div id="conceptPrinciple" style="color: var(--text-muted);">通过低秩投影将 Key-Value 向量压缩为紧凑潜在向量，推理时大幅降低显存吞吐瓶颈。</div>
         </div>
-        <div class="concept-detail-item">
-          <div class="detail-item-title">🎯 实际应用</div>
+        <div class="concept-box-item">
+          <div class="concept-box-title">🎯 实际应用</div>
           <div id="conceptRealCase" style="color: var(--text-muted);">DeepSeek-V3 / R1 核心创新点，使单台双路服务器即可承载超大参数高并发推理。</div>
         </div>
       </div>
     </section>
 
-    <!-- 检索与分类 Tab -->
-    <section class="filter-section">
+    <!-- 检索与分类 Tab (已彻底移除收藏功能) -->
+    <section class="filter-wrapper">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="搜索资讯关键词、模型名称 (如: DeepSeek, 芯片, 星舰, 通义千问...)">
+        <input type="text" id="searchInput" class="search-input" placeholder="搜索全中文资讯、模型名称 (如: DeepSeek, 芯片, 星舰, 通义千问...)">
       </div>
       <div class="tabs-scroll">
-        <button class="tab-item active" data-cat="all">🌟 全部要闻</button>
-        <button class="tab-item" data-cat="leaderboard">🏆 模型评分天梯榜</button>
-        <button class="tab-item" data-cat="international">🌍 重大国际</button>
-        <button class="tab-item" data-cat="tech">⚡ 重大科技</button>
-        <button class="tab-item" data-cat="ai">🧠 AI前沿</button>
-        <button class="tab-item" data-cat="models">🤖 新AI模型</button>
-        <button class="tab-item" data-cat="open_source">🟢 仅看开源</button>
-        <button class="tab-item" data-cat="closed_source">🔵 仅看闭源</button>
-        <button class="tab-item" data-cat="favorites">⭐ 我的收藏</button>
+        <button class="tab-pill active" data-cat="all">🌟 全部要闻</button>
+        <button class="tab-pill" data-cat="concept_tab">💡 每日AI新知</button>
+        <button class="tab-pill" data-cat="leaderboard">🏆 模型评分天梯榜</button>
+        <button class="tab-pill" data-cat="international">🌍 重大国际</button>
+        <button class="tab-pill" data-cat="tech">⚡ 重大科技</button>
+        <button class="tab-pill" data-cat="ai">🧠 AI前沿</button>
+        <button class="tab-pill" data-cat="models">🤖 新AI模型</button>
+        <button class="tab-pill" data-cat="open_source">🟢 仅看开源</button>
+        <button class="tab-pill" data-cat="closed_source">🔵 仅看闭源</button>
       </div>
     </section>
 
@@ -919,10 +1015,15 @@
     </section>
   </main>
 
+  <!-- 手机端沉浸式底部工具栏 (无收藏入口) -->
   <nav class="mobile-bottom-nav">
     <div class="bottom-nav-item active" onclick="setCategory('all')">
       <span>📰</span>
       <span>资讯</span>
+    </div>
+    <div class="bottom-nav-item" onclick="setCategory('concept_tab')">
+      <span>💡</span>
+      <span>AI新知</span>
     </div>
     <div class="bottom-nav-item" onclick="setCategory('leaderboard')">
       <span>🏆</span>
@@ -935,10 +1036,6 @@
     <div class="bottom-nav-item" onclick="openDigestModal()">
       <span>📋</span>
       <span>早报</span>
-    </div>
-    <div class="bottom-nav-item" onclick="setCategory('favorites')">
-      <span>⭐</span>
-      <span>收藏</span>
     </div>
   </nav>
 
@@ -969,16 +1066,15 @@
     let currentCategory = 'all';
     let currentSearch = '';
     let leaderboardFilter = 'all';
-    let favorites = JSON.parse(localStorage.getItem('tech_daily_favs') || '[]');
 
-    // 内置 AI 名词知识库池（支持前端直接切换）
+    // 内置 AI 名词知识库池（30+ 核心知识点，支持前端无缝轮换）
     const CONCEPT_POOL = [
       {
         term: "MLA (Multi-Head Latent Attention)",
         chinese_name: "多头潜在注意力机制",
         category: "模型架构 / 推理加速",
         simple_explain: "相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。",
-        principle: "通过低秩投影将 Key-Value 向量压缩为潜在向量，推理时大幅降低显存吞吐瓶颈。",
+        principle: "通过低秩投影将 Key-Value 向量压缩为紧凑潜在向量，推理时大幅降低显存吞吐瓶颈。",
         real_case: "DeepSeek-V3 与 DeepSeek-R1 能够以极低推理成本媲美顶尖闭源模型的关键技术根基。"
       },
       {
@@ -1046,18 +1142,17 @@
         real_case: "向 AI 询问某虚构学者的生平，AI 却详尽地列出其出生年份、代表著作和获奖经历。"
       },
       {
-        term: "Context Window (上下文窗口)",
-        chinese_name: "上下文窗口大小",
-        category: "模型规格 / 交互容量",
-        simple_explain: "AI 的‘短期工作记忆容量’。表示你在一次对话中一次性能给它塞下多少万字（书籍、代码库或长视频）。",
-        principle: "由位置编码、注意力机制和显存共同决定的单次处理序列上限，涵盖当前轮次输入的所有历史信息和预设 Prompt。",
-        real_case: "从早期 GPT-3.5 的 4K（约3000字），演进到现在百万字级别（能一口气读完整套四大名著或整部代码库）。"
+        term: "Temperature (采样温度)",
+        chinese_name: "采样温度参数",
+        category: "参数调优 / 行为控制",
+        simple_explain: "控制 AI 是‘严肃严谨’还是‘天马行空’的温度旋钮。温度低时说话保守不出错，温度高时脑洞大开创意多。",
+        principle: "在最终输出 Softmax 层调整概率分布平滑度的超参数。Temperature 接近 0 时确定性强；数值变大时随机性与创意变高。",
+        real_case: "写代码、提取合同信息通常设为 0.0~0.2（避免错误）；写诗、营销策划头脑风暴通常设为 0.7~0.9。"
       }
     ];
 
-    // 初始化深色模式
-    const savedTheme = localStorage.getItem('tech_daily_theme') || 
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    // 初始化深色模式（默认极简深色）
+    const savedTheme = localStorage.getItem('tech_daily_theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
 
     document.getElementById('btnThemeToggle').addEventListener('click', () => {
@@ -1070,7 +1165,7 @@
     // 加载数据
     async function loadNewsData() {
       const container = document.getElementById('newsContainer');
-      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">正在加载最新中文科技资讯、AI新知与天梯榜...</div>';
+      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 50px 20px; color: var(--text-dim);">正在加载全中文科技要闻、AI新知与天梯榜...</div>';
       
       try {
         const response = await fetch('./news_data.json?t=' + Date.now());
@@ -1080,20 +1175,20 @@
         leaderboardData = data.leaderboard || null;
         currentConcept = data.ai_concept || CONCEPT_POOL[0];
         document.getElementById('bannerDate').innerText = `科技早报 · ${data.date || '今日'}`;
-        document.getElementById('updateTimeBadge').innerText = `已同步 · ${data.update_time || '今日'}`;
+        document.getElementById('updateTimeText').innerText = `已同步 · ${data.update_time || '今日'}`;
       } catch (err) {
-        console.warn("读取 news_data.json 失败，使用内置高质数据:", err);
+        console.warn("读取 news_data.json 失败，使用内置高质纯中文示范数据:", err);
         allNews = getFallbackData();
         leaderboardData = getFallbackLeaderboard();
         currentConcept = CONCEPT_POOL[0];
-        document.getElementById('bannerDate').innerText = `科技早报 · 离线全中文版`;
-        document.getElementById('updateTimeBadge').innerText = `全中文保障`;
+        document.getElementById('bannerDate').innerText = `科技早报 · 全中文专版`;
+        document.getElementById('updateTimeText').innerText = `全中文保障`;
       }
       renderConcept();
       renderView();
     }
 
-    // 渲染每日 AI 新知
+    // 渲染每日 AI 新知板块
     function renderConcept() {
       if (!currentConcept) return;
       document.getElementById('conceptCategory').innerText = currentConcept.category || 'AI核心概念';
@@ -1124,6 +1219,11 @@
         conceptCard.style.display = 'none';
         lbSection.style.display = 'flex';
         renderLeaderboard();
+      } else if (currentCategory === 'concept_tab') {
+        // 单独突出显示 AI 新知
+        newsContainer.style.display = 'none';
+        conceptCard.style.display = 'block';
+        lbSection.style.display = 'none';
       } else {
         newsContainer.style.display = 'grid';
         conceptCard.style.display = 'block';
@@ -1135,13 +1235,11 @@
     function renderNews() {
       const container = document.getElementById('newsContainer');
       const filtered = allNews.filter(item => {
-        if (currentCategory === 'favorites') {
-          if (!favorites.includes(item.id)) return false;
-        } else if (currentCategory === 'open_source') {
+        if (currentCategory === 'open_source') {
           if (!item.model_tag || !item.model_tag.includes('开源')) return false;
         } else if (currentCategory === 'closed_source') {
           if (!item.model_tag || !item.model_tag.includes('闭源')) return false;
-        } else if (currentCategory !== 'all') {
+        } else if (currentCategory !== 'all' && currentCategory !== 'concept_tab') {
           if (item.category !== currentCategory) return false;
         }
 
@@ -1157,44 +1255,37 @@
 
       if (filtered.length === 0) {
         container.innerHTML = `
-          <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
-            <div style="font-size: 32px; margin-bottom: 10px;">🔍</div>
-            <p>未找到符合条件的纯中文资讯或暂无收藏</p>
+          <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-dim);">
+            <div style="font-size: 28px; margin-bottom: 10px;">🔍</div>
+            <p>未找到符合条件的纯中文资讯</p>
           </div>`;
         return;
       }
 
       container.innerHTML = filtered.map(item => {
-        const isFav = favorites.includes(item.id);
-        const catBadgeClass = `badge-${item.category || 'tech'}`;
-        
+        const catClass = `badge-cat-${item.category || 'tech'}`;
         let modelBadgeHtml = '';
         if (item.model_tag) {
           const isOpen = item.model_tag.includes('开源');
-          modelBadgeHtml = `<span class="badge ${isOpen ? 'badge-open' : 'badge-closed'}">${item.model_tag}</span>`;
+          modelBadgeHtml = `<span class="badge-base ${isOpen ? 'badge-open' : 'badge-closed'}">${item.model_tag}</span>`;
         }
 
         return `
           <article class="news-card">
             <div class="card-top">
-              <div class="card-badges">
-                <span class="badge ${catBadgeClass}">${item.category_name || '综合科技'}</span>
+              <div class="card-badge-row">
+                <span class="badge-base ${catClass}">${item.category_name || '综合科技'}</span>
                 ${modelBadgeHtml}
-                <span class="card-time">${item.pub_time || ''}</span>
+                <span class="card-timestamp">${item.pub_time || ''}</span>
               </div>
-              <h3 class="card-title">${item.title}</h3>
-              <p class="card-summary">${item.summary}</p>
+              <h3 class="card-headline">${item.title}</h3>
+              <p class="card-body-text">${item.summary}</p>
             </div>
-            <div class="card-footer">
-              <span class="source-name">📌 ${item.source}</span>
-              <div class="card-actions">
-                <button class="btn-fav ${isFav ? 'active' : ''}" onclick="toggleFavorite(${item.id})" title="${isFav ? '取消收藏' : '收藏'}">
-                  ${isFav ? '★' : '☆'}
-                </button>
-                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="card-link">
-                  阅读原文 ↗
-                </a>
-              </div>
+            <div class="card-meta-footer">
+              <span class="card-source-tag">📌 ${item.source}</span>
+              <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="card-out-link">
+                阅读原文 ↗
+              </a>
             </div>
           </article>
         `;
@@ -1204,7 +1295,7 @@
     function renderLeaderboard() {
       const container = document.getElementById('leaderboardList');
       if (!leaderboardData || !leaderboardData.models) {
-        container.innerHTML = '<div style="padding: 30px; text-align: center; color: var(--text-muted);">暂无天梯榜数据</div>';
+        container.innerHTML = '<div style="padding: 30px; text-align: center; color: var(--text-dim);">暂无天梯榜数据</div>';
         return;
       }
 
@@ -1246,7 +1337,7 @@
             <div class="org-cell">
               <span style="font-size: 13px; font-weight: 600;">${m.org}</span>
               <div style="margin-top: 4px;">
-                <span class="badge ${badgeTypeClass}">${m.type}</span>
+                <span class="badge-base ${badgeTypeClass}">${m.type}</span>
               </div>
             </div>
             <div class="score-cell">
@@ -1282,15 +1373,15 @@
 
     function setCategory(cat) {
       currentCategory = cat;
-      document.querySelectorAll('.tab-item').forEach(tab => {
+      document.querySelectorAll('.tab-pill').forEach(tab => {
         tab.classList.toggle('active', tab.getAttribute('data-cat') === cat);
       });
       document.querySelectorAll('.bottom-nav-item').forEach(item => {
         const text = item.innerText;
         if ((cat === 'all' && text.includes('资讯')) || 
+            (cat === 'concept_tab' && text.includes('新知')) ||
             (cat === 'leaderboard' && text.includes('天梯榜')) ||
-            (cat === 'models' && text.includes('新模型')) ||
-            (cat === 'favorites' && text.includes('收藏'))) {
+            (cat === 'models' && text.includes('新模型'))) {
           item.classList.add('active');
         } else {
           item.classList.remove('active');
@@ -1299,17 +1390,7 @@
       renderView();
     }
 
-    function toggleFavorite(id) {
-      if (favorites.includes(id)) {
-        favorites = favorites.filter(favId => favId !== id);
-      } else {
-        favorites.push(id);
-      }
-      localStorage.setItem('tech_daily_favs', JSON.stringify(favorites));
-      renderNews();
-    }
-
-    document.querySelectorAll('.tab-item').forEach(tab => {
+    document.querySelectorAll('.tab-pill').forEach(tab => {
       tab.addEventListener('click', () => {
         setCategory(tab.getAttribute('data-cat'));
       });
@@ -1317,7 +1398,7 @@
 
     document.getElementById('searchInput').addEventListener('input', (e) => {
       currentSearch = e.target.value;
-      if (currentCategory === 'leaderboard') {
+      if (currentCategory === 'leaderboard' || currentCategory === 'concept_tab') {
         currentCategory = 'all';
         setCategory('all');
       } else {
@@ -1327,7 +1408,7 @@
 
     document.getElementById('btnRefresh').addEventListener('click', loadNewsData);
 
-    // 生成晨报纯文本 (含今日 AI 新知 + Top3 天梯榜 + 四大板块)
+    // 生成晨报纯文本 (含今日 AI 新知 + Top3 天梯榜 + 四大板块，无收藏)
     function generateDigestPlainText() {
       const today = document.getElementById('bannerDate').innerText.replace('科技早报 · ', '');
       let lines = [
@@ -1339,9 +1420,9 @@
       if (currentConcept) {
         lines.push(`💡【今日认识一个 AI 名词】`);
         lines.push(`▶ ${currentConcept.term}（${currentConcept.chinese_name}）`);
-        lines.push(`• 标签：${currentConcept.category}`);
-        lines.push(`• 白话定义：${currentConcept.simple_explain}`);
-        lines.push(`• 实战案例：${currentConcept.real_case}\n`);
+        lines.push(`• 分类：${currentConcept.category}`);
+        lines.push(`• 通俗定义：${currentConcept.simple_explain}`);
+        lines.push(`• 实际案例：${currentConcept.real_case}\n`);
       }
 
       // 2. 模型天梯榜前三名
