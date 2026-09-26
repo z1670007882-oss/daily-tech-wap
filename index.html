@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>每日科技日报 | Tech Daily WAP</title>
-  <meta name="theme-color" content="#080b11">
-  <meta name="description" content="极简高阶设计风格 · 每日重大国际、科技要闻、AI前沿动态、全球大模型评分排行与每日AI新知">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="全中文每日精选重大国际新闻、科技重磅、AI前沿动态与全球大模型评分排行">
   <link rel="manifest" href="./manifest.json">
   <script>
     if ('serviceWorker' in navigator) {
@@ -13,45 +13,72 @@
     }
   </script>
   <style>
-    /* ================= 视觉设计系统（高级灰冷调 / 蓝调时刻 / 极简质感） ================= */
+    /* ================= 视觉设计系统（VI点缀色：rgb(198, 255, 74) / 默认白底高阶画廊质感） ================= */
     :root {
-      --bg-base: #080b11;
-      --bg-surface: rgba(15, 23, 42, 0.65);
-      --bg-surface-elevated: rgba(30, 41, 59, 0.7);
-      --bg-secondary: #0f172a;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
-      --border-subtle: rgba(148, 163, 184, 0.12);
-      --border-focus: rgba(56, 189, 248, 0.4);
-      --accent: #38bdf8;
-      --accent-glow: rgba(56, 189, 248, 0.15);
-      --accent-purple: #818cf8;
-      --accent-emerald: #10b981;
-      --accent-rose: #f43f5e;
-      --accent-amber: #f59e0b;
-      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
-      --shadow-hover: 0 12px 30px -4px rgba(56, 189, 248, 0.15), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+      /* VI 标志性点缀色：荧光酸性青柠绿（严控面积，精准点缀） */
+      --vi-lime: rgb(198, 255, 74);
+      --vi-lime-dim: rgba(198, 255, 74, 0.15);
+      --vi-lime-border: rgba(198, 255, 74, 0.45);
+      --vi-glow: 0 0 16px rgba(198, 255, 74, 0.22);
+
+      /* 默认浅色/白底模式（Clean Architectural Gallery White） */
+      --bg-base: #fbfbfd;
+      --bg-card: #ffffff;
+      --bg-secondary: #f4f4f7;
+      --bg-elevated: #ffffff;
+      --text-main: #09090b;
+      --text-muted: #52525b;
+      --text-dim: #71717a;
+      --border-subtle: #e4e4e7;
+      --border-elevated: #d4d4d8;
+      --header-bg: rgba(251, 251, 253, 0.88);
+
+      --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03);
+
+      /* 分类标签克制色彩 */
+      --tag-intl-bg: #f4f0ff;
+      --tag-intl-text: #6b21a8;
+      --tag-tech-bg: #eff6ff;
+      --tag-tech-text: #1d4ed8;
+      --tag-ai-bg: #fffbeb;
+      --tag-ai-text: #b45309;
+      --tag-open-bg: #09090b;
+      --tag-open-text: rgb(198, 255, 74);
+      --tag-closed-bg: #fef2f2;
+      --tag-closed-text: #b91c1c;
+
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
     }
 
-    [data-theme="light"] {
-      --bg-base: #f8fafc;
-      --bg-surface: rgba(255, 255, 255, 0.85);
-      --bg-surface-elevated: #ffffff;
-      --bg-secondary: #f1f5f9;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --text-dim: #94a3b8;
-      --border-subtle: rgba(15, 23, 42, 0.08);
-      --border-focus: rgba(2, 132, 199, 0.4);
-      --accent: #0284c7;
-      --accent-glow: rgba(2, 132, 199, 0.1);
-      --accent-purple: #6366f1;
-      --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
-      --shadow-hover: 0 12px 28px -4px rgba(15, 23, 42, 0.1);
+    [data-theme="dark"] {
+      /* 极简深色模式（Obsidian Black / 暗黑点缀） */
+      --bg-base: #09090b;
+      --bg-card: #121215;
+      --bg-secondary: #18181c;
+      --bg-elevated: #1e1e24;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-dim: #71717a;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-elevated: rgba(255, 255, 255, 0.16);
+      --header-bg: rgba(9, 9, 11, 0.88);
+
+      --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      --card-shadow-hover: 0 14px 34px rgba(0, 0, 0, 0.7), 0 0 15px rgba(198, 255, 74, 0.1);
+
+      --tag-intl-bg: rgba(168, 85, 247, 0.12);
+      --tag-intl-text: #c084fc;
+      --tag-tech-bg: rgba(59, 130, 246, 0.12);
+      --tag-tech-text: #93c5fd;
+      --tag-ai-bg: rgba(245, 158, 11, 0.12);
+      --tag-ai-text: #fcd34d;
+      --tag-open-bg: rgba(198, 255, 74, 0.12);
+      --tag-open-text: rgb(198, 255, 74);
+      --tag-closed-bg: rgba(239, 68, 68, 0.12);
+      --tag-closed-text: #fca5a5;
     }
 
     * {
@@ -68,26 +95,18 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background-image: 
-        radial-gradient(at 100% 0%, rgba(56, 189, 248, 0.06) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, rgba(129, 140, 248, 0.05) 0px, transparent 50%);
-      background-attachment: fixed;
       transition: background-color 0.25s, color 0.25s;
     }
 
-    /* 顶部导航 (Glassmorphism) */
+    /* 顶部导航 (Frosted Glass / Minimal Header) */
     header {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(8, 11, 17, 0.82);
+      background: var(--header-bg);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border-subtle);
-    }
-
-    [data-theme="light"] header {
-      background: rgba(248, 250, 252, 0.85);
     }
 
     .nav-container {
@@ -109,41 +128,47 @@
     .brand-logo {
       width: 36px;
       height: 36px;
-      background: linear-gradient(135deg, #0284c7, #38bdf8);
-      border-radius: 10px;
+      background: #09090b;
+      border-radius: 9px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 700;
-      box-shadow: 0 4px 14px var(--accent-glow);
+      color: var(--vi-lime);
+      font-size: 16px;
+      font-weight: 900;
+      border: 1px solid rgba(198, 255, 74, 0.4);
+      box-shadow: var(--vi-glow);
+    }
+
+    [data-theme="dark"] .brand-logo {
+      background: #18181c;
+      border-color: var(--vi-lime);
     }
 
     .brand-title {
-      font-size: 17px;
-      font-weight: 700;
+      font-size: 16.5px;
+      font-weight: 800;
       letter-spacing: -0.2px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    .brand-badge {
+    .brand-tag {
       font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      font-weight: 800;
       padding: 2px 6px;
       border-radius: 4px;
-      background: rgba(56, 189, 248, 0.12);
-      color: var(--accent);
-      border: 1px solid rgba(56, 189, 248, 0.25);
+      background: #09090b;
+      color: var(--vi-lime);
+      border: 1px solid var(--vi-lime-border);
+      letter-spacing: 0.5px;
     }
 
     .brand-sub {
       font-size: 11px;
       color: var(--text-dim);
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
     .header-actions {
@@ -155,9 +180,9 @@
     .btn-icon {
       width: 36px;
       height: 36px;
-      border-radius: 10px;
+      border-radius: 9px;
       border: 1px solid var(--border-subtle);
-      background: var(--bg-surface);
+      background: var(--bg-card);
       color: var(--text-muted);
       display: flex;
       align-items: center;
@@ -168,29 +193,43 @@
     }
 
     .btn-icon:hover {
-      background: var(--bg-surface-elevated);
+      background: var(--bg-secondary);
       color: var(--text-main);
-      border-color: var(--border-focus);
+      border-color: var(--border-elevated);
     }
 
-    .btn-share {
-      background: linear-gradient(135deg, #0284c7, #2563eb);
-      color: #fff;
+    .btn-digest-action {
+      background: #09090b;
+      color: var(--text-main);
       border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 8px 14px;
-      border-radius: 10px;
+      padding: 8px 15px;
+      border-radius: 9px;
       font-size: 12.5px;
-      font-weight: 600;
+      font-weight: 700;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
       cursor: pointer;
-      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
       transition: all 0.2s ease;
+      position: relative;
     }
 
-    .btn-share:hover {
-      filter: brightness(1.1);
+    .btn-digest-action::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vi-lime);
+      box-shadow: 0 0 8px var(--vi-lime);
+    }
+
+    .btn-digest-action span {
+      color: #ffffff;
+    }
+
+    .btn-digest-action:hover {
+      border-color: var(--vi-lime);
+      box-shadow: var(--vi-glow);
       transform: translateY(-1px);
     }
 
@@ -203,9 +242,9 @@
       flex: 1;
     }
 
-    /* 顶部视觉 Banner */
+    /* 顶部横幅 */
     .banner {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.6));
+      background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg);
       padding: 22px 26px;
@@ -215,25 +254,12 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 14px;
-      backdrop-filter: blur(12px);
-      box-shadow: var(--shadow-card);
+      box-shadow: var(--card-shadow);
       position: relative;
-      overflow: hidden;
-    }
-
-    .banner::after {
-      content: "";
-      position: absolute;
-      top: -30px;
-      right: -30px;
-      width: 140px;
-      height: 140px;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.15), transparent 70%);
-      pointer-events: none;
     }
 
     .banner-text h2 {
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 800;
       letter-spacing: -0.3px;
       color: var(--text-main);
@@ -250,108 +276,106 @@
     }
 
     .badge-today {
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      color: var(--accent);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
       padding: 6px 14px;
       border-radius: 20px;
       font-size: 12px;
       font-weight: 600;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
     }
 
-    .badge-pulse-dot {
+    .vi-pulse-dot {
       width: 7px;
       height: 7px;
-      background: var(--accent);
+      background: var(--vi-lime);
       border-radius: 50%;
-      box-shadow: 0 0 8px var(--accent);
-      animation: pulse 2s infinite;
+      box-shadow: 0 0 10px var(--vi-lime);
+      animation: viPulse 2.2s infinite;
     }
 
-    @keyframes pulse {
-      0% { opacity: 0.4; }
-      50% { opacity: 1; }
-      100% { opacity: 0.4; }
+    @keyframes viPulse {
+      0% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.15); }
+      100% { opacity: 0.4; transform: scale(0.9); }
     }
 
-    /* ================= 💡 每天认识一个 AI 名词 / 核心知识板块 ================= */
+    /* ================= 💡 每天认识一个 AI 名词（深度精读版焦点展板） ================= */
     .concept-spotlight {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(17, 24, 39, 0.85));
-      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-top: 3px solid #09090b;
       border-radius: var(--radius-lg);
-      padding: 24px 26px;
-      margin-bottom: 24px;
-      box-shadow: 0 8px 30px -4px rgba(56, 189, 248, 0.08), var(--shadow-card);
+      padding: 26px 28px;
+      margin-bottom: 22px;
+      box-shadow: var(--card-shadow);
       position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(20px);
+      transition: all 0.25s ease;
     }
 
-    [data-theme="light"] .concept-spotlight {
-      background: #ffffff;
-      border-color: rgba(2, 132, 199, 0.2);
+    [data-theme="dark"] .concept-spotlight {
+      border-top: 3px solid var(--vi-lime);
+      background: var(--bg-card);
     }
 
     .concept-top-bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       flex-wrap: wrap;
       gap: 10px;
     }
 
-    .concept-tag-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .pill-concept-flag {
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(129, 140, 248, 0.18));
-      color: var(--accent);
+    .concept-flag-pill {
+      background: #09090b;
+      color: var(--vi-lime);
       font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      font-weight: 800;
       padding: 4px 10px;
       border-radius: 6px;
-      border: 1px solid rgba(56, 189, 248, 0.35);
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
+      letter-spacing: 0.4px;
     }
 
     .concept-category-badge {
       font-size: 12px;
-      color: var(--text-muted);
-      background: rgba(148, 163, 184, 0.08);
+      color: var(--text-dim);
+      background: var(--bg-secondary);
       padding: 3px 8px;
       border-radius: 6px;
       border: 1px solid var(--border-subtle);
+      margin-left: 8px;
     }
 
     .btn-shuffle {
-      background: var(--bg-surface-elevated);
+      background: var(--bg-secondary);
       border: 1px solid var(--border-subtle);
       color: var(--text-main);
-      padding: 6px 12px;
+      padding: 5px 12px;
       border-radius: 8px;
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
     }
 
     .btn-shuffle:hover {
-      background: rgba(56, 189, 248, 0.12);
-      border-color: var(--accent);
-      color: var(--accent);
+      border-color: #09090b;
+      background: var(--bg-card);
+    }
+
+    [data-theme="dark"] .btn-shuffle:hover {
+      border-color: var(--vi-lime);
+      color: var(--vi-lime);
     }
 
     .concept-term-title {
@@ -362,65 +386,96 @@
       margin-bottom: 10px;
     }
 
-    .concept-quote-box {
-      background: rgba(8, 11, 17, 0.6);
-      border-left: 3px solid var(--accent);
+    /* 生活化比喻模块 */
+    .concept-analogy-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid #09090b;
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      padding: 14px 18px;
-      margin: 14px 0;
+      padding: 16px 20px;
+      margin: 14px 0 18px 0;
       font-size: 14.5px;
-      line-height: 1.65;
+      line-height: 1.7;
       color: var(--text-main);
     }
 
-    [data-theme="light"] .concept-quote-box {
-      background: #f1f5f9;
+    [data-theme="dark"] .concept-analogy-box {
+      border-left-color: var(--vi-lime);
     }
 
-    .concept-quote-label {
+    .concept-analogy-label {
       font-weight: 800;
-      color: var(--accent);
+      color: #09090b;
       margin-right: 6px;
     }
+    [data-theme="dark"] .concept-analogy-label {
+      color: var(--vi-lime);
+    }
 
-    .concept-dual-grid {
+    /* 痛点与原理解析 */
+    .concept-deep-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px;
-      margin-top: 14px;
+      margin-bottom: 16px;
     }
 
-    .concept-box-item {
-      background: rgba(15, 23, 42, 0.45);
+    .concept-info-card {
+      background: var(--bg-base);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-sm);
-      padding: 12px 14px;
-      font-size: 13px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+
+    .concept-section-title {
+      font-weight: 800;
+      font-size: 12.5px;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* 真实落地案例（代入感场景容器） */
+    .concept-cases-container {
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+
+    .cases-list {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .case-item {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      padding-left: 4px;
+    }
+
+    .concept-insight-footer {
+      font-size: 12.5px;
+      color: var(--text-dim);
+      border-top: 1px dashed var(--border-subtle);
+      padding-top: 12px;
+      margin-top: 12px;
       line-height: 1.55;
     }
 
-    [data-theme="light"] .concept-box-item {
-      background: #f8fafc;
-    }
-
-    .concept-box-title {
-      font-weight: 700;
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    /* 检索与分类 Tab */
+    /* 检索与分类 Tab（极简黑白灰，无收藏） */
     .filter-wrapper {
       margin-bottom: 22px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     .search-box {
@@ -430,29 +485,32 @@
 
     .search-input {
       width: 100%;
-      padding: 12px 18px 12px 44px;
+      padding: 12px 18px 12px 42px;
       border-radius: 12px;
       border: 1px solid var(--border-subtle);
-      background: var(--bg-surface);
+      background: var(--bg-card);
       color: var(--text-main);
       font-size: 13.5px;
       outline: none;
       transition: all 0.2s ease;
-      backdrop-filter: blur(10px);
     }
 
     .search-input:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-glow);
-      background: var(--bg-surface-elevated);
+      border-color: #09090b;
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+    }
+
+    [data-theme="dark"] .search-input:focus {
+      border-color: var(--vi-lime);
+      box-shadow: var(--vi-glow);
     }
 
     .search-icon {
       position: absolute;
-      left: 16px;
+      left: 15px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text-dim);
     }
 
@@ -472,7 +530,7 @@
       padding: 7px 15px;
       border-radius: 20px;
       border: 1px solid var(--border-subtle);
-      background: var(--bg-surface);
+      background: var(--bg-card);
       color: var(--text-muted);
       font-size: 12.5px;
       font-weight: 600;
@@ -482,46 +540,49 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      backdrop-filter: blur(8px);
     }
 
     .tab-pill:hover {
-      border-color: var(--border-focus);
+      border-color: #09090b;
       color: var(--text-main);
     }
 
     .tab-pill.active {
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(129, 140, 248, 0.15));
-      color: var(--accent);
-      border-color: var(--accent);
-      box-shadow: 0 2px 10px var(--accent-glow);
+      background: #09090b;
+      color: #ffffff;
+      border-color: #09090b;
     }
 
-    /* 资讯瀑布流网格 */
+    [data-theme="dark"] .tab-pill.active {
+      background: #18181c;
+      color: var(--vi-lime);
+      border-color: var(--vi-lime);
+    }
+
+    /* 资讯列表网格 */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 18px;
+      gap: 16px;
     }
 
     .news-card {
-      background: var(--bg-surface);
+      background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
       padding: 20px;
-      box-shadow: var(--shadow-card);
+      box-shadow: var(--card-shadow);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all 0.25s ease;
+      transition: all 0.2s ease;
       position: relative;
-      backdrop-filter: blur(12px);
     }
 
     .news-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-      border-color: var(--border-focus);
+      transform: translateY(-2px);
+      box-shadow: var(--card-shadow-hover);
+      border-color: var(--border-elevated);
     }
 
     .card-top {
@@ -544,21 +605,21 @@
       letter-spacing: 0.3px;
     }
 
-    .badge-cat-international { background: rgba(129, 140, 248, 0.15); color: #a5b4fc; border: 1px solid rgba(129, 140, 248, 0.25); }
-    .badge-cat-tech { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.25); }
-    .badge-cat-ai { background: rgba(245, 158, 11, 0.15); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.25); }
-    .badge-cat-models { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.25); }
+    .badge-cat-international { background: var(--tag-intl-bg); color: var(--tag-intl-text); }
+    .badge-cat-tech { background: var(--tag-tech-bg); color: var(--tag-tech-text); }
+    .badge-cat-ai { background: var(--tag-ai-bg); color: var(--tag-ai-text); }
+    .badge-cat-models { background: #fdf2f8; color: #be185d; }
 
     .badge-open {
-      background: rgba(16, 185, 129, 0.15);
-      color: #6ee7b7;
-      border: 1px solid rgba(16, 185, 129, 0.3);
+      background: #09090b;
+      color: var(--vi-lime);
+      border: 1px solid var(--vi-lime-border);
     }
 
     .badge-closed {
-      background: rgba(244, 63, 94, 0.15);
-      color: #fda4af;
-      border: 1px solid rgba(244, 63, 94, 0.3);
+      background: var(--tag-closed-bg);
+      color: var(--tag-closed-text);
+      border: 1px solid rgba(239, 68, 68, 0.2);
     }
 
     .card-timestamp {
@@ -584,7 +645,7 @@
     .card-meta-footer {
       margin-top: 16px;
       padding-top: 14px;
-      border-top: 1px solid var(--border-subtle);
+      border-top: 1px dashed var(--border-subtle);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -597,9 +658,9 @@
     }
 
     .card-out-link {
-      color: var(--accent);
+      color: #09090b;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
       display: inline-flex;
       align-items: center;
       gap: 3px;
@@ -607,19 +668,23 @@
     }
 
     .card-out-link:hover {
-      filter: brightness(1.2);
+      color: #2563eb;
       text-decoration: underline;
+    }
+
+    [data-theme="dark"] .card-out-link {
+      color: var(--vi-lime);
     }
 
     /* ================= 🏆 天梯排行榜视图 ================= */
     .leaderboard-view {
       display: none;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
 
     .leaderboard-header-card {
-      background: var(--bg-surface);
+      background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
       padding: 18px 22px;
@@ -628,7 +693,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      box-shadow: var(--shadow-card);
+      box-shadow: var(--card-shadow);
     }
 
     .leaderboard-title-group h3 {
@@ -653,7 +718,7 @@
       padding: 6px 12px;
       border-radius: 8px;
       border: 1px solid var(--border-subtle);
-      background: var(--bg-surface-elevated);
+      background: var(--bg-secondary);
       color: var(--text-muted);
       font-size: 12px;
       font-weight: 600;
@@ -661,17 +726,23 @@
       transition: all 0.2s ease;
     }
     .btn-subfilter.active {
-      background: var(--accent);
+      background: #09090b;
       color: #ffffff;
-      border-color: var(--accent);
+      border-color: #09090b;
+    }
+
+    [data-theme="dark"] .btn-subfilter.active {
+      background: #18181c;
+      color: var(--vi-lime);
+      border-color: var(--vi-lime);
     }
 
     .leaderboard-table-container {
-      background: var(--bg-surface);
+      background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
       overflow: hidden;
-      box-shadow: var(--shadow-card);
+      box-shadow: var(--card-shadow);
     }
 
     .leaderboard-list {
@@ -691,7 +762,7 @@
       border-bottom: none;
     }
     .leaderboard-row:hover {
-      background: var(--bg-surface-elevated);
+      background: var(--bg-secondary);
     }
 
     .rank-cell {
@@ -708,20 +779,19 @@
       justify-content: center;
       font-weight: 800;
       font-size: 13.5px;
-      background: var(--bg-surface-elevated);
+      background: var(--bg-secondary);
       color: var(--text-main);
-      border: 1px solid var(--border-subtle);
     }
-    .rank-1 .rank-num { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: #f59e0b; }
-    .rank-2 .rank-num { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; border-color: #94a3b8; }
-    .rank-3 .rank-num { background: rgba(217, 119, 6, 0.2); color: #f97316; border-color: #ea580c; }
+    .rank-1 .rank-num { background: #09090b; color: var(--vi-lime); border: 1px solid var(--vi-lime); }
+    .rank-2 .rank-num { background: #e4e4e7; color: #18181b; }
+    .rank-3 .rank-num { background: #f4f4f5; color: #52525b; }
 
     .trend-badge {
       font-size: 11px;
       font-weight: bold;
     }
-    .trend-up { color: var(--accent-emerald); }
-    .trend-down { color: var(--accent-rose); }
+    .trend-up { color: #15803d; }
+    .trend-down { color: #b91c1c; }
     .trend-same { color: var(--text-dim); }
 
     .model-info-cell h4 {
@@ -743,9 +813,13 @@
     .score-val {
       font-size: 16px;
       font-weight: 800;
-      color: var(--accent);
+      color: #09090b;
       font-family: monospace;
     }
+    [data-theme="dark"] .score-val {
+      color: var(--vi-lime);
+    }
+
     .score-label {
       font-size: 11px;
       color: var(--text-dim);
@@ -757,7 +831,7 @@
       font-size: 12px;
     }
     .bench-pill {
-      background: var(--bg-surface-elevated);
+      background: var(--bg-secondary);
       padding: 4px 8px;
       border-radius: 6px;
       border: 1px solid var(--border-subtle);
@@ -767,7 +841,7 @@
     .bench-pill span:first-child { color: var(--text-dim); }
     .bench-pill span:last-child { font-weight: 700; color: var(--text-main); }
 
-    /* 手机底栏 (沉浸式 Dock) */
+    /* 手机底栏 (无收藏入口) */
     .mobile-bottom-nav {
       display: none;
       position: fixed;
@@ -775,7 +849,7 @@
       left: 0;
       right: 0;
       height: 60px;
-      background: rgba(8, 11, 17, 0.88);
+      background: var(--header-bg);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-top: 1px solid var(--border-subtle);
@@ -783,11 +857,7 @@
       padding: 0 10px;
       justify-content: space-around;
       align-items: center;
-      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
-    }
-
-    [data-theme="light"] .mobile-bottom-nav {
-      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
     }
 
     .bottom-nav-item {
@@ -801,25 +871,28 @@
       transition: color 0.15s;
     }
     .bottom-nav-item.active {
-      color: var(--accent);
-      font-weight: 700;
+      color: #09090b;
+      font-weight: 800;
+    }
+    [data-theme="dark"] .bottom-nav-item.active {
+      color: var(--vi-lime);
     }
 
     /* 弹窗：今日早报排版与一键复制 */
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.6);
       z-index: 100;
       display: none;
       align-items: center;
       justify-content: center;
       padding: 16px;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(6px);
     }
 
     .modal-content {
-      background: var(--bg-surface-elevated);
+      background: var(--bg-card);
       border-radius: var(--radius-md);
       width: 100%;
       max-width: 620px;
@@ -827,7 +900,7 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
       border: 1px solid var(--border-subtle);
     }
 
@@ -844,7 +917,7 @@
       overflow-y: auto;
       font-size: 14px;
       line-height: 1.6;
-      background: var(--bg-base);
+      background: var(--bg-secondary);
       user-select: text;
     }
 
@@ -860,7 +933,7 @@
       white-space: pre-wrap;
       font-family: monospace;
       font-size: 13px;
-      background: var(--bg-surface);
+      background: var(--bg-card);
       padding: 14px;
       border-radius: 8px;
       border: 1px solid var(--border-subtle);
@@ -873,7 +946,7 @@
       .news-grid {
         grid-template-columns: 1fr;
       }
-      .concept-dual-grid {
+      .concept-deep-grid {
         grid-template-columns: 1fr;
       }
       .banner {
@@ -912,14 +985,14 @@
         <div>
           <div class="brand-title">
             每日科技日报
-            <span class="brand-badge">WAP PRO</span>
+            <span class="brand-tag">TECH DAILY</span>
           </div>
           <div class="brand-sub">全中文精选 · 手机与电脑通用</div>
         </div>
       </div>
       <div class="header-actions">
-        <button class="btn-share" id="btnOpenDigest" title="生成并复制今日早报文本">
-          <span>📋 生成早报</span>
+        <button class="btn-digest-action" id="btnOpenDigest" title="生成并复制今日早报文本">
+          <span>生成早报</span>
         </button>
         <button class="btn-icon" id="btnThemeToggle" title="切换深色/浅色模式">🌓</button>
         <button class="btn-icon" id="btnRefresh" title="刷新数据">🔄</button>
@@ -937,37 +1010,55 @@
       </div>
       <div class="banner-meta">
         <span class="badge-today" id="updateTimeBadge">
-          <span class="badge-pulse-dot"></span>
+          <span class="vi-pulse-dot"></span>
           <span id="updateTimeText">同步中...</span>
         </span>
       </div>
     </section>
 
-    <!-- 💡 特色板块：每天认识一个 AI 名词（高阶质感展板） -->
+    <!-- 💡 特色板块：每天认识一个 AI 名词（深入浅出·高代入感精读展板） -->
     <section class="concept-spotlight" id="aiConceptCard">
       <div class="concept-top-bar">
-        <div class="concept-tag-group">
-          <span class="pill-concept-flag">💡 每天认识一个 AI 名词</span>
-          <span class="concept-category-badge" id="conceptCategory">模型架构 / 推理加速</span>
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
+          <span class="concept-flag-pill">💡 每天认识一个 AI 名词</span>
+          <span class="concept-category-badge" id="conceptCategory">核心架构 // 显存吞吐革命</span>
         </div>
         <button class="btn-shuffle" id="btnShuffleConcept" title="随机换一个 AI 知识点">
           <span>🔀 换一个看看</span>
         </button>
       </div>
+
       <h3 class="concept-term-title" id="conceptTitle">MLA (Multi-Head Latent Attention) · 多头潜在注意力机制</h3>
-      <div class="concept-quote-box">
-        <span class="concept-quote-label">【通俗定义】</span>
-        <span id="conceptSimpleExplain">相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。</span>
+
+      <!-- 生活化比喻 -->
+      <div class="concept-analogy-box">
+        <span class="concept-analogy-label">【生活化比喻 · 秒懂本质】</span>
+        <span id="conceptAnalogy">加载中...</span>
       </div>
-      <div class="concept-dual-grid">
-        <div class="concept-box-item">
-          <div class="concept-box-title">⚙️ 核心原理</div>
-          <div id="conceptPrinciple" style="color: var(--text-muted);">通过低秩投影将 Key-Value 向量压缩为紧凑潜在向量，推理时大幅降低显存吞吐瓶颈。</div>
+
+      <!-- 痛点拆解与底层原理 -->
+      <div class="concept-deep-grid">
+        <div class="concept-info-card">
+          <div class="concept-section-title">⚠️ 痛点拆解 · 为什么需要它？</div>
+          <div id="conceptPain" style="color: var(--text-muted);">正在加载行业痛点分析...</div>
         </div>
-        <div class="concept-box-item">
-          <div class="concept-box-title">🎯 实际应用</div>
-          <div id="conceptRealCase" style="color: var(--text-muted);">DeepSeek-V3 / R1 核心创新点，使单台双路服务器即可承载超大参数高并发推理。</div>
+        <div class="concept-info-card">
+          <div class="concept-section-title">⚙️ 底层原理 · 它是怎么做到的？</div>
+          <div id="conceptWorks" style="color: var(--text-muted);">正在加载技术原理解析...</div>
         </div>
+      </div>
+
+      <!-- 真实工业界落地案例 (超强代入感) -->
+      <div class="concept-cases-container">
+        <div class="concept-section-title">🎯 真实工业界实战场景 (落地代入感)</div>
+        <div class="cases-list" id="conceptCasesList">
+          <!-- 动态渲染案例 -->
+        </div>
+      </div>
+
+      <!-- 行业洞察 -->
+      <div class="concept-insight-footer" id="conceptInsight">
+        📌 行业洞察加载中...
       </div>
     </section>
 
@@ -1043,17 +1134,17 @@
   <div class="modal-overlay" id="digestModal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 style="font-size: 16px; font-weight: 700;">今日科技日报 · 晨报精选 (含每日AI新知)</h3>
+        <h3 style="font-size: 16px; font-weight: 700;">今日科技日报 · 晨报精选 (含每日AI深度新知)</h3>
         <button class="btn-icon" onclick="closeDigestModal()" style="border:none; background:none; font-size: 18px;">✕</button>
       </div>
       <div class="modal-body">
-        <p style="margin-bottom: 8px; font-size: 12px; color: var(--text-muted);">已结合当日重大要闻、今日 AI 新知与大模型评分天梯榜 Top 3，可一键复制直接发送到微信群：</p>
+        <p style="margin-bottom: 8px; font-size: 12px; color: var(--text-muted);">已结合当日重大要闻、今日 AI 深度新知与大模型评分天梯榜 Top 3，可一键复制直接发送到微信群：</p>
         <div class="copy-preview-text" id="digestTextContent">正在排版生成中...</div>
       </div>
       <div class="modal-footer">
         <button class="btn-icon" onclick="closeDigestModal()" style="width:auto; padding: 0 14px; font-size: 13px;">关闭</button>
-        <button class="btn-share" id="btnCopyDigest">
-          <span>📋 复制全文到剪贴板</span>
+        <button class="btn-digest-action" id="btnCopyDigest">
+          <span>复制全文到剪贴板</span>
         </button>
       </div>
     </div>
@@ -1063,96 +1154,95 @@
     let allNews = [];
     let leaderboardData = null;
     let currentConcept = null;
+    let conceptPool = [];
     let currentCategory = 'all';
     let currentSearch = '';
     let leaderboardFilter = 'all';
 
-    // 内置 AI 名词知识库池（30+ 核心知识点，支持前端无缝轮换）
-    const CONCEPT_POOL = [
+    // 默认内置高质深度 AI 名词智库（防止离线或首次请求为空）
+    const DEFAULT_CONCEPTS = [
       {
         term: "MLA (Multi-Head Latent Attention)",
         chinese_name: "多头潜在注意力机制",
-        category: "模型架构 / 推理加速",
-        simple_explain: "相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。",
-        principle: "通过低秩投影将 Key-Value 向量压缩为紧凑潜在向量，推理时大幅降低显存吞吐瓶颈。",
-        real_case: "DeepSeek-V3 与 DeepSeek-R1 能够以极低推理成本媲美顶尖闭源模型的关键技术根基。"
+        category: "核心架构 // 显存吞吐革命",
+        analogy: "想象你去自习室看书：传统模式（MHA）要求你把整套百科全书每一卷都搬到桌面上摊开，桌子瞬间被堆满（显存直接爆仓）；而 MLA 相当于把书无损翻拍成了一张超高精度的‘微缩胶卷卡片’，桌面上只放胶卷，真正读到那一页时秒级投影还原，桌面占用面积骤降 90% 以上。",
+        core_pain: "【解决的行业致命痛点】：大模型对话越长、并发用户越多，保存在显存里的‘键值缓存（KV Cache）’就会像滚雪球一样失控膨胀。以前跑 128K 超长文本，存放模型权重的显卡只要几张，但存对话记忆的显存需要几十张顶级显卡，导致推理成本高得难以商业化普及。",
+        how_it_works: "【底层硬核原理】：MLA 创造性地引入了‘低秩压缩投影（Low-Rank Compression）’。在自回归推理时，不再直接保留冗长的 Key 和 Value 向量，而是将其联合压缩进极小维度的‘潜在向量（Latent Vector）’中常驻显存。计算自注意力时，再通过微型矩阵变换即时还原，用微不足道的矩阵计算量彻底击穿了显存带宽墙。",
+        real_cases: [
+          "🎯【DeepSeek-V3 / R1 的底牌】：DeepSeek 之所以能把 API 价格打到行业平均的十分之一，且其 671B 超大模型能在普通双路服务器上承载高并发超长文本，核心法宝正是 MLA 彻底甩掉了沉重的显存包袱。",
+          "🎯【未来轻薄本跑大模型】：以往端侧电脑跑 32K 文本就会爆显存卡死，未来借助 MLA 压缩技术，本地轻薄本和手机也能轻松不喘气读完数十万字的长篇小说或项目代码库。"
+        ],
+        insight: "这是中国开源团队在底层数学注意力结构上对经典 Transformer 做出的最关键原创改良之一，证明了大模型比拼不仅是烧钱堆卡，更是极高维度的算法工程艺术。"
       },
       {
         term: "MoE (Mixture of Experts)",
         chinese_name: "混合专家模型架构",
-        category: "模型架构 / 算力优化",
-        simple_explain: "大模型不再是一个‘通才’单打独斗，而是成立了一个‘专家门诊部’；回答具体问题时，只唤醒对口专业的那 2~3 位专家。",
-        principle: "模型总参数量极大（如数百亿甚至上千亿），但对每一个输入的 Token，只动态激活极少比例的前馈网络专家，以较小计算量获得超强泛化力。",
-        real_case: "DeepSeek-V3（总参数 671B，每个 Token 仅激活 37B）、GPT-4、Mixtral 8x7B 均采用该架构。"
+        category: "模型架构 // 算力效能飞跃",
+        analogy: "以前的传统大模型像一个‘一个人包揽全科的独行通才’，无论问感冒还是问火箭发动机，整个大脑所有神经元都得全负荷开动；而 MoE 相当于开了一家‘三甲综合医院’，内设心脏科、儿科、机械工程科等几十个专科诊室。你挂号进来，分诊台护士（门控路由器）只把你分配给最专业的 2~3 位专家会诊，其他几百位医生继续休息。",
+        core_pain: "【解决的行业致命痛点】：传统稠密模型（Dense）要想变得更聪明，就必须扩大总参数量，但参数每翻一倍，每生成一个字所消耗的电费和算力就翻一倍，计算成本呈指数级失控。",
+        how_it_works: "【底层硬核原理】：MoE 将前馈神经网络（FFN）拆分成几十个独立的‘专家网络（Experts）’，并在输入层设置一个高效的门控路由器（Gating Router）。路由器实时计算当前 Token 与各个专家的匹配权重，只有得分最高的前 Top-K 个专家被激活参与前向计算，其余专家权重保持休眠，实现‘参数量极大化’与‘实际计算量极小化’的完美共存。",
+        real_cases: [
+          "🎯【DeepSeek-V3 的极致算力效率】：总参数量高达 6710 亿（671B），但针对每一个生成的 Token，仅动态唤醒其中的 370 亿参数（37B），用中型模型的推理开销换取了千亿超旗舰级的智慧上限。",
+          "🎯【GPT-4 与行业标配】：从 GPT-4（据披露为 16 个专家组成的 MoE）到开源社区 Mixtral 8x7B，MoE 已经成为当今世界突破万亿参数大关的唯一工程可行解。"
+        ],
+        insight: "MoE 彻底终结了‘模型越聪明就必定越卡越慢’的物理矛盾，让超大规模智能在商业可承受成本内成为现实。"
       },
       {
         term: "CoT (Chain of Thought)",
-        chinese_name: "思维链 / 链式思考",
-        category: "推理机制 / 提示工程",
-        simple_explain: "让 AI 在报出最终答案之前，先在草稿纸上‘把中间推导过程一步步写出来’，这样再难的数学和逻辑题都不容易出错。",
-        principle: "引导模型将复杂任务分解为一系列连续的子推导步骤，每一个步骤都是下一个步骤的条件上下文。",
-        real_case: "OpenAI o1 / o3-mini 以及 DeepSeek-R1 的深度思考过程（Thinking Process）正是思维链的工程化高阶展现。"
-      },
-      {
-        term: "RLHF (Reinforcement Learning from Human Feedback)",
-        chinese_name: "基于人类反馈的强化学习",
-        category: "模型对齐 / 训练技术",
-        simple_explain: "刚训练好的大模型只会接龙、容易说胡话；通过让人类评估员给它的回答打分，建立奖惩机制，像训宠物一样让它学会懂礼貌、讲真话、守安全。",
-        principle: "收集示范数据微调 -> 训练奖励模型（RM）-> 利用 PPO 强化学习算法优化语言模型策略以最大化奖励分。",
-        real_case: "ChatGPT 之所以能摆脱早期 GPT-3 冰冷古怪的接龙感、变成得体懂人话的助手，全靠 RLHF 这一关键技术。"
+        chinese_name: "思维链 / 链式思考推理",
+        category: "推理机制 // 深度智能跃迁",
+        analogy: "传统大模型做题像‘不假思索直接蒙答案的学生’，遇到 1+1 还能蒙对，遇到高难度奥数或复杂代码架构就会张冠李戴；而开启思维链的 AI 就像‘拿着草稿纸先打草稿的数学学霸’，在报出最终结果前，先把第一步求导、第二步换元、第三步假设检验一步步写在草稿纸上，推导完了才给出最终结论。",
+        core_pain: "【解决的行业致命痛点】：早期的语言模型是靠‘下一个 Token 的概率接龙’生成文字，这种直觉型快思考在面对需要严密逻辑、多步约束求解或数理逻辑推导的问题时极易全盘崩溃，甚至出现常识性倒错。",
+        how_it_works: "【底层硬核原理】：CoT 引导模型将一个复杂目标显式拆解为连贯自洽的中间推导步骤（Tokens）。每一个推导出来的步骤都会成为后续推理的上下文约束条件，模型通过自注意力机制实时自我审视、反思和纠错，从而将单次预测概率转化为严密的逻辑链条搜索。",
+        real_cases: [
+          "🎯【OpenAI o1 / o3-mini 的推理范式】：彻底颠覆了传统的直接对话界面，生成前会先展示几秒至十几秒的‘Thinking（思考过程）’，在国际数学奥林匹克（IMO）和竞赛编程中斩获前 1% 的顶尖成绩。",
+          "🎯【DeepSeek-R1 纯强化学习突破】：不依赖海量人类标注步骤，通过后训练强化学习自我探索出长达数千字的长思维链，自主掌握了反思、验证和回溯纠错策略。"
+        ],
+        insight: "CoT 标志着 AI 从‘凭语感快速接话的语言模型’真正进化成了‘具备严密推导能力的逻辑计算引擎’。"
       },
       {
         term: "AI Agent",
-        chinese_name: "人工智能智能体",
-        category: "应用形态 / 自主交互",
-        simple_explain: "不只是会‘动嘴聊天’的对话框，而是拥有‘眼睛和手脚’的数字员工：能自主拆解目标、搜索资料、运行代码、调用各种软件并自我纠错完成复杂任务。",
-        principle: "以大模型为核心大脑，外挂记忆模块（Memory）、规划模块（Planning）、工具调用能力（Tool Use）和执行器（Action），形成闭环。",
-        real_case: "Cursor / Devin（自主软件工程师）、具备系统级操作能力的电脑操作智能体（Computer Use）。"
+        chinese_name: "自主人工智能智能体",
+        category: "应用形态 // 生产力终极形态",
+        analogy: "普通的 ChatGPT 就像一个‘坐在轮椅上的博学军师’，你问什么他都能头头是道，但如果你让他‘帮我把公司财报整理出来发给财务部’，他却无能为力；而 AI Agent 则是‘拥有眼睛、耳朵、四肢和工具箱的全能数字员工’，他不仅有大模型的脑子，还能自己打开浏览器搜数据、打开 Excel 制表、自己测试代码、发现报错自己修，最后把成果送到你面前。",
+        core_pain: "【解决的行业致命痛点】：单纯的对话框模式无法融入真实复杂的生产工作流。现实工作都是多阶段、长流程且需要操作各种软件界面的，人类频繁在多个应用间复制粘贴极为繁琐低效。",
+        how_it_works: "【底层硬核原理】：以顶尖大模型为核心中枢（Brain），串联‘四大支柱’：感知系统（Perception）、短期与长程记忆（Memory）、复杂任务拆解与规划（Planning）以及外部工具与 API 调用协议（Tools / Function Calling），构筑起‘感知-规划-行动-环境反馈-反思纠错’的自驱动循环。",
+        real_cases: [
+          "🎯【Cursor & Devin 软件工程革命】：给 Agent 一个 GitHub Issue 需求，它能自己克隆代码、定位 BUG 所在的文件行数、编写修复代码、本地运行单元测试，测试通过后直接提 Pull Request。",
+          "🎯【Anthropic Computer Use（电脑操作智能体）】：AI 可以直接看懂电脑屏幕画面，自主移动鼠标、点击按钮、在输入框里打字，像真人一样在各种专业软件之间切换操作。"
+        ],
+        insight: "AI 的真正商业价值不在于生成诗歌，而在于 Agent 能够替人类承担高价值、长链路的真实生产力工作。"
       },
       {
         term: "RAG (Retrieval-Augmented Generation)",
         chinese_name: "检索增强生成",
-        category: "知识扩展 / 幻觉抑制",
-        simple_explain: "开卷考试机制。AI 回答前先去权威资料库或网上搜寻最新文档，再结合搜到的资料写答案，从根本上解决‘一本正经胡说八道’的问题。",
-        principle: "用户提问 -> 检索器在向量数据库中寻找最匹配的文档片段 -> 将片段与用户问题一并拼接进 Prompt -> 大模型参考背景知识生成有依有据的回答。",
-        real_case: "企业内部文档智能问答、结合实时新闻的 AI 联网搜索引擎（如 Perplexity）。"
+        category: "知识外挂 // 幻觉彻底消除",
+        analogy: "传统大模型回答问题像‘完全闭卷考试’，全凭训练时背下来的记忆答题，一旦考到今年刚出的新技术或者你公司的内部机密，它只能抓瞎甚至编造；而 RAG 就像‘开卷考试’，允许 AI 在提笔答题前，先去你给他的专属文件夹或全网权威资料里飞速翻阅相关段落，翻到了对照着原文一字一句作答。",
+        core_pain: "【解决的行业致命痛点】：大模型知识存在截止日期（无法得知最新事实），重新预训练成本动辄上千万美金；且公共模型完全不知道企业私有制度、财务数据与技术文档，直接问就会严重‘幻觉’胡说八道。",
+        how_it_works: "【底层硬核原理】：将海量私有文档预先切分成语义片段并转化为向量（Vector Embedding）存入向量数据库。用户提问时，语义检索器（Retriever）在毫秒内找出相似度最高的 Top-K 条文档片段，将它们作为‘参考背景材料’拼装进提示词交给大模型，大模型仅负责阅读理解与精准归纳输出。",
+        real_cases: [
+          "🎯【企业私有知识库 / 智能客服】：导入 500 页的医院诊疗手册或企业 HR 规章，员工任何提问都能秒回，且每一句回答后都标注文档来源页码，准确率可达 99% 以上。",
+          "🎯【AI 联网搜索引擎（如 Perplexity）】：搜一句话，后台同时调用数个搜索接口，抓取最新 10 篇新闻网页喂给大模型提炼核心答案并附带来源角标。"
+        ],
+        insight: "RAG 是目前企业低成本、高可靠落地大模型应用的最成熟、最不可替代的技术标准方案。"
       },
       {
-        term: "KV Cache",
-        chinese_name: "键值缓存",
-        category: "推理加速 / 显存管理",
-        simple_explain: "大模型写字时的‘记忆备忘录’。前面算过的单词中间结果缓存起来，每次蹦新字时不用重头再把整篇文章算一遍。",
-        principle: "在自回归生成中，历史 Token 的 Key 和 Value 向量是固定不变的。将它们缓存在显存中可以避免重复计算，变时间换空间。",
-        real_case: "长文本大模型高并发部署时，80% 以上的显存其实都被 KV Cache 占据，也是 vLLM 优化的核心对象。"
-      },
-      {
-        term: "LoRA (Low-Rank Adaptation)",
-        chinese_name: "低秩自适应微调",
-        category: "微调优化 / 轻量部署",
-        simple_explain: "不用花几十万改动整个大模型，而是在模型旁边‘贴上两张轻薄透明的功能贴纸’，用普通家用显卡就能定制专属行业模型。",
-        principle: "冻结预训练大模型的原本百亿权重矩阵，在侧支引入两个低秩小矩阵（A 和 B）来模拟权重的变化量（ΔW = A × B），训练参数量缩减 99% 以上。",
-        real_case: "AI 画画中给模型一键切换人物风格、开源大模型快速微调医学或法律专属版本。"
-      },
-      {
-        term: "Hallucination",
-        chinese_name: "大模型幻觉",
-        category: "核心挑战 / 可靠性",
-        simple_explain: "AI 一本正经地编造不存在的人名、不存在的论文和错误事实。因为 AI 的本质是概率接龙，并非真正理解宇宙真理。",
-        principle: "大语言模型预测下一个字是基于统计概率分布，在面对缺乏训练数据或复杂的长程推导时，概率最高的词组合在一起可能完全不符合现实世界事实。",
-        real_case: "向 AI 询问某虚构学者的生平，AI 却详尽地列出其出生年份、代表著作和获奖经历。"
-      },
-      {
-        term: "Temperature (采样温度)",
-        chinese_name: "采样温度参数",
-        category: "参数调优 / 行为控制",
-        simple_explain: "控制 AI 是‘严肃严谨’还是‘天马行空’的温度旋钮。温度低时说话保守不出错，温度高时脑洞大开创意多。",
-        principle: "在最终输出 Softmax 层调整概率分布平滑度的超参数。Temperature 接近 0 时确定性强；数值变大时随机性与创意变高。",
-        real_case: "写代码、提取合同信息通常设为 0.0~0.2（避免错误）；写诗、营销策划头脑风暴通常设为 0.7~0.9。"
+        term: "RLHF (Reinforcement Learning from Human Feedback)",
+        chinese_name: "基于人类反馈的强化学习",
+        category: "模型对齐 // 价值观与安全性",
+        analogy: "大模型在读完万亿网页后就像‘一个读遍了网上所有杂书的野孩子’，知道很多知识，但脾气暴躁、满口网络黑话甚至教人干坏事；RLHF 就像‘专业的家庭教师和训导员’，让考官每天给它的各种回答打分，回答得体、礼貌、准确就给糖吃（正奖励），胡说八道或涉嫌危险就打手心（负惩罚），直到把它规训成一个知书达理、严谨可信的文明助手。",
+        core_pain: "【解决的行业致命痛点】：预训练大模型目标只是‘接龙下一个概率最高的词’，这并不代表它懂得辨别善恶、尊重用户或遵循指令。未经对齐的模型在商业化落地时会带来极大的法律、安全与公关灾难。",
+        how_it_works: "【底层硬核原理】：第一步收集优质人类对话数据进行微调（SFT）；第二步让人类评审员对多个候选回答从优到劣排序，训练出一个能够自动打分的‘奖励模型（Reward Model）’；第三步利用 PPO 等强化学习算法，让语言模型不断微调自身策略，以在奖励模型那里获得尽可能高的分数。",
+        real_cases: [
+          "🎯【ChatGPT 的诞生之光】：2022 年 OpenAI GPT-3 已经具备很强能力却少有人问津，直到通过 RLHF 打造出 ChatGPT，才一举引爆全球 AI 工业革命。",
+          "🎯【Claude 的无害与恪守原则】：Anthropic 在 RLHF 基础上衍生出的 Constitutional AI（宪政AI），让模型即便面对恶意攻击性诱导也能得体拒绝并给出建设性引导。"
+        ],
+        insight: "对齐技术让 AI 从不受控的‘野生黑盒’变成了符合人类社会契约与商业规范的可靠生产力伙伴。"
       }
     ];
 
-    // 初始化深色模式（默认极简深色）
-    const savedTheme = localStorage.getItem('tech_daily_theme') || 'dark';
+    // 初始化主题：用户指定【默认浅色/白底模式打开】
+    const savedTheme = localStorage.getItem('tech_daily_theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
 
     document.getElementById('btnThemeToggle').addEventListener('click', () => {
@@ -1165,7 +1255,7 @@
     // 加载数据
     async function loadNewsData() {
       const container = document.getElementById('newsContainer');
-      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 50px 20px; color: var(--text-dim);">正在加载全中文科技要闻、AI新知与天梯榜...</div>';
+      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 50px 20px; color: var(--text-dim);">正在加载全中文科技要闻、AI深度新知与天梯榜...</div>';
       
       try {
         const response = await fetch('./news_data.json?t=' + Date.now());
@@ -1173,14 +1263,16 @@
         const data = await response.json();
         allNews = data.news || [];
         leaderboardData = data.leaderboard || null;
-        currentConcept = data.ai_concept || CONCEPT_POOL[0];
+        conceptPool = data.ai_concepts_pool || DEFAULT_CONCEPTS;
+        currentConcept = data.ai_concept || conceptPool[0];
         document.getElementById('bannerDate').innerText = `科技早报 · ${data.date || '今日'}`;
         document.getElementById('updateTimeText').innerText = `已同步 · ${data.update_time || '今日'}`;
       } catch (err) {
         console.warn("读取 news_data.json 失败，使用内置高质纯中文示范数据:", err);
         allNews = getFallbackData();
         leaderboardData = getFallbackLeaderboard();
-        currentConcept = CONCEPT_POOL[0];
+        conceptPool = DEFAULT_CONCEPTS;
+        currentConcept = conceptPool[0];
         document.getElementById('bannerDate').innerText = `科技早报 · 全中文专版`;
         document.getElementById('updateTimeText').innerText = `全中文保障`;
       }
@@ -1188,24 +1280,33 @@
       renderView();
     }
 
-    // 渲染每日 AI 新知板块
+    // 渲染深度 AI 新知展板
     function renderConcept() {
       if (!currentConcept) return;
       document.getElementById('conceptCategory').innerText = currentConcept.category || 'AI核心概念';
       document.getElementById('conceptTitle').innerText = `${currentConcept.term} · ${currentConcept.chinese_name || ''}`;
-      document.getElementById('conceptSimpleExplain').innerText = currentConcept.simple_explain || '';
-      document.getElementById('conceptPrinciple').innerText = currentConcept.principle || '';
-      document.getElementById('conceptRealCase').innerText = currentConcept.real_case || '';
+      document.getElementById('conceptAnalogy').innerText = currentConcept.analogy || currentConcept.simple_explain || '';
+      document.getElementById('conceptPain').innerText = currentConcept.core_pain || '';
+      document.getElementById('conceptWorks').innerText = currentConcept.how_it_works || currentConcept.principle || '';
+      
+      // 渲染案例列表
+      const casesContainer = document.getElementById('conceptCasesList');
+      const cases = currentConcept.real_cases || [currentConcept.real_case || ''];
+      casesContainer.innerHTML = cases.map(c => `<div class="case-item">${c}</div>`).join('');
+      
+      // 行业洞察
+      document.getElementById('conceptInsight').innerText = `📌 行业洞察：${currentConcept.insight || '当代大模型发展的核心基石技术之一。'}`;
     }
 
     // 随机切换下一个 AI 知识点
     document.getElementById('btnShuffleConcept').addEventListener('click', () => {
-      const currentIndex = CONCEPT_POOL.findIndex(c => c.term === currentConcept.term);
-      let nextIndex = Math.floor(Math.random() * CONCEPT_POOL.length);
+      if (!conceptPool || conceptPool.length === 0) conceptPool = DEFAULT_CONCEPTS;
+      const currentIndex = conceptPool.findIndex(c => c.term === currentConcept.term);
+      let nextIndex = Math.floor(Math.random() * conceptPool.length);
       if (nextIndex === currentIndex) {
-        nextIndex = (currentIndex + 1) % CONCEPT_POOL.length;
+        nextIndex = (currentIndex + 1) % conceptPool.length;
       }
-      currentConcept = CONCEPT_POOL[nextIndex];
+      currentConcept = conceptPool[nextIndex];
       renderConcept();
     });
 
@@ -1220,7 +1321,6 @@
         lbSection.style.display = 'flex';
         renderLeaderboard();
       } else if (currentCategory === 'concept_tab') {
-        // 单独突出显示 AI 新知
         newsContainer.style.display = 'none';
         conceptCard.style.display = 'block';
         lbSection.style.display = 'none';
@@ -1335,7 +1435,7 @@
               <p>${m.highlight || ''}</p>
             </div>
             <div class="org-cell">
-              <span style="font-size: 13px; font-weight: 600;">${m.org}</span>
+              <span style="font-size: 13px; font-weight: 700;">${m.org}</span>
               <div style="margin-top: 4px;">
                 <span class="badge-base ${badgeTypeClass}">${m.type}</span>
               </div>
@@ -1408,21 +1508,24 @@
 
     document.getElementById('btnRefresh').addEventListener('click', loadNewsData);
 
-    // 生成晨报纯文本 (含今日 AI 新知 + Top3 天梯榜 + 四大板块，无收藏)
+    // 生成晨报纯文本 (含深度 AI 新知 + 落地案例 + Top3 天梯榜 + 四大板块)
     function generateDigestPlainText() {
       const today = document.getElementById('bannerDate').innerText.replace('科技早报 · ', '');
       let lines = [
-        `🔥【每日科技早报 & AI新知】${today}`,
+        `🔥【每日科技早报 & AI深度新知】${today}`,
         `━━━━━━━━━━━━━━━━━━`,
       ];
 
-      // 1. 每日 AI 新知
+      // 1. 每日深度 AI 新知
       if (currentConcept) {
         lines.push(`💡【今日认识一个 AI 名词】`);
         lines.push(`▶ ${currentConcept.term}（${currentConcept.chinese_name}）`);
-        lines.push(`• 分类：${currentConcept.category}`);
-        lines.push(`• 通俗定义：${currentConcept.simple_explain}`);
-        lines.push(`• 实际案例：${currentConcept.real_case}\n`);
+        lines.push(`• 领域：${currentConcept.category}`);
+        lines.push(`• 秒懂比喻：${currentConcept.analogy || currentConcept.simple_explain}`);
+        if (currentConcept.real_cases && currentConcept.real_cases.length > 0) {
+          lines.push(`• 落地实战：${currentConcept.real_cases[0]}`);
+        }
+        lines.push('');
       }
 
       // 2. 模型天梯榜前三名

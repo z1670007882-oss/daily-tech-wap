@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 每日科技日报 (Daily Tech News) - 全自动抓取与分类清洗脚本
-1. 资讯 100% 全中文保障（精选优质中文源 + 严格中文字符过滤机制）
-2. 特色板块：每日认识一个 AI 名词 / 核心概念（大白话定义 + 原理 + 真实案例）
+1. 100% 纯中文科技要闻与国际时局精选
+2. 特色板块：深度精读版【每天认识一个 AI 名词】（比喻+痛点+原理解析+真实实战案例+行业洞察）
 3. 特色功能：每日同步全球大模型评测天梯排行榜（开源 / 闭源）
 """
 
@@ -16,9 +16,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from html import unescape
 
-# 优质中文资讯源配置 (覆盖重大国际、重大科技、AI前沿、开源/闭源模型)
+# 优质纯中文资讯源
 SOURCES = [
-    # 1. 重大国际新闻 (纯中文源)
     {
         "category": "international",
         "category_name": "重大国际",
@@ -29,11 +28,10 @@ SOURCES = [
     {
         "category": "international",
         "category_name": "重大国际",
-        "source_name": "澎湃新闻 / 国际视野",
+        "source_name": "澎湃新闻 / 国际要闻",
         "url": "https://feedx.net/rss/thepaper.xml",
         "type": "rss"
     },
-    # 2. 重大科技新闻 (纯中文源)
     {
         "category": "tech",
         "category_name": "重大科技",
@@ -56,14 +54,6 @@ SOURCES = [
         "type": "rss"
     },
     {
-        "category": "tech",
-        "category_name": "重大科技",
-        "source_name": "爱范儿",
-        "url": "https://www.ifanr.com/feed",
-        "type": "rss"
-    },
-    # 3. AI 前沿资讯 (权威中文 AI 媒体)
-    {
         "category": "ai",
         "category_name": "AI前沿",
         "source_name": "机器之心",
@@ -77,11 +67,10 @@ SOURCES = [
         "url": "https://www.qbitai.com/feed",
         "type": "rss"
     },
-    # 4. 新 AI 模型动态 (开源与闭源深度追踪)
     {
         "category": "models",
         "category_name": "新AI模型",
-        "source_name": "开源中国 / AI开源动态",
+        "source_name": "开源中国 / AI开源专栏",
         "url": "https://www.oschina.net/news/rss",
         "type": "rss",
         "model_type": "open_source"
@@ -89,13 +78,12 @@ SOURCES = [
     {
         "category": "models",
         "category_name": "新AI模型",
-        "source_name": "智东西 / 产业与大模型",
+        "source_name": "智东西 / 产业大模型",
         "url": "https://zhidx.com/feed",
         "type": "rss"
     }
 ]
 
-# 开源与闭源关键词库
 OPEN_SOURCE_KEYWORDS = [
     "开源", "开放权重", "apache 2.0", "mit license", "hugging face", "github", 
     "llama", "qwen", "mistral", "deepseek", "gemma", "通义千问", "代码开源", "可商用", "权重下载"
@@ -106,103 +94,85 @@ CLOSED_SOURCE_KEYWORDS = [
     "gemini", "deepmind", "api only", "copilot", "chatgpt", "商业闭源"
 ]
 
-# 每日 AI 名词 / 核心概念智库 (30+ 个高频核心概念，自动轮换)
+# 深度精解版：每日 AI 名词与知识库（深入浅出、极具代入感）
 AI_KNOWLEDGE_BASE = [
     {
         "term": "MLA (Multi-Head Latent Attention)",
         "chinese_name": "多头潜在注意力机制",
-        "category": "模型架构 / 推理加速",
-        "simple_explain": "相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。",
-        "principle": "传统的 MHA（多头注意力）需要把全部 Key-Value 缓存保存在显存中；MLA 通过低秩投影将 KV 向量压缩为潜在向量，推理时大幅降低 KV Cache 显存吞吐瓶颈。",
-        "real_case": "DeepSeek-V3 与 DeepSeek-R1 能够以极低推理成本媲美顶尖闭源模型的关键技术根基。"
+        "category": "核心架构 // 显存吞吐革命",
+        "analogy": "想象你去自习室看书：传统模式（MHA）要求你把整套百科全书每一卷都搬到桌面上摊开，桌子瞬间被堆满（显存直接爆仓）；而 MLA 相当于把书无损翻拍成了一张超高精度的‘微缩胶卷卡片’，桌面上只放胶卷，真正读到那一页时秒级投影还原，桌面占用面积骤降 90% 以上。",
+        "core_pain": "【解决的行业致命痛点】：大模型对话越长、并发用户越多，保存在显存里的‘键值缓存（KV Cache）’就会像滚雪球一样失控膨胀。以前跑 128K 超长文本，存放模型权重的显卡只要几张，但存对话记忆的显存需要几十张顶级显卡，导致推理成本高得难以商业化普及。",
+        "how_it_works": "【底层硬核原理】：MLA 创造性地引入了‘低秩压缩投影（Low-Rank Compression）’。在自回归推理时，不再直接保留冗长的 Key 和 Value 向量，而是将其联合压缩进极小维度的‘潜在向量（Latent Vector）’中常驻显存。计算自注意力时，再通过微型矩阵变换即时还原，用微不足道的矩阵计算量彻底击穿了显存带宽墙。",
+        "real_cases": [
+            "🎯【DeepSeek-V3 / R1 的底牌】：DeepSeek 之所以能把 API 价格打到行业平均的十分之一，且其 671B 超大模型能在普通双路服务器上承载高并发超长文本，核心法宝正是 MLA 彻底甩掉了沉重的显存包袱。",
+            "🎯【未来轻薄本跑大模型】：以往端侧电脑跑 32K 文本就会爆显存卡死，未来借助 MLA 压缩技术，本地轻薄本和手机也能轻松不喘气读完数十万字的长篇小说或项目代码库。"
+        ],
+        "insight": "这是中国开源团队在底层数学注意力结构上对经典 Transformer 做出的最关键原创改良之一，证明了大模型比拼不仅是烧钱堆卡，更是极高维度的算法工程艺术。"
     },
     {
         "term": "MoE (Mixture of Experts)",
         "chinese_name": "混合专家模型架构",
-        "category": "模型架构 / 算力优化",
-        "simple_explain": "大模型不再是一个‘通才’单打独斗，而是成立了一个‘专家门诊部’；回答具体问题时，门控机制只唤醒对口专业的那 2~3 位专家。",
-        "principle": "模型总参数量极大（如数百亿甚至上千亿），但对每一个输入的 Token，路由器只动态激活极少比例的前馈网络专家，以较小的计算量获得超大参数模型的泛化力。",
-        "real_case": "DeepSeek-V3（总参数 671B，每个 Token 仅激活 37B）、GPT-4、Mixtral 8x7B 均采用该架构。"
+        "category": "模型架构 // 算力效能飞跃",
+        "analogy": "以前的传统大模型像一个‘一个人包揽全科的独行通才’，无论问感冒还是问火箭发动机，整个大脑所有神经元都得全负荷开动；而 MoE 相当于开了一家‘三甲综合医院’，内设心脏科、儿科、机械工程科等几十个专科诊室。你挂号进来，分诊台护士（门控路由器）只把你分配给最专业的 2~3 位专家会诊，其他几百位医生继续休息。",
+        "core_pain": "【解决的行业致命痛点】：传统稠密模型（Dense）要想变得更聪明，就必须扩大总参数量，但参数每翻一倍，每生成一个字所消耗的电费和算力就翻一倍，计算成本呈指数级失控。",
+        "how_it_works": "【底层硬核原理】：MoE 将前馈神经网络（FFN）拆分成几十个独立的‘专家网络（Experts）’，并在输入层设置一个高效的门控路由器（Gating Router）。路由器实时计算当前 Token 与各个专家的匹配权重，只有得分最高的前 Top-K 个专家被激活参与前向计算，其余专家权重保持休眠，实现‘参数量极大化’与‘实际计算量极小化’的完美共存。",
+        "real_cases": [
+            "🎯【DeepSeek-V3 的极致算力效率】：总参数量高达 6710 亿（671B），但针对每一个生成的 Token，仅动态唤醒其中的 370 亿参数（37B），用中型模型的推理开销换取了千亿超旗舰级的智慧上限。",
+            "🎯【GPT-4 与行业标配】：从 GPT-4（据披露为 16 个专家组成的 MoE）到开源社区 Mixtral 8x7B，MoE 已经成为当今世界突破万亿参数大关的唯一工程可行解。"
+        ],
+        "insight": "MoE 彻底终结了‘模型越聪明就必定越卡越慢’的物理矛盾，让超大规模智能在商业可承受成本内成为现实。"
     },
     {
         "term": "CoT (Chain of Thought)",
-        "chinese_name": "思维链 / 链式思考",
-        "category": "推理机制 / 提示工程",
-        "simple_explain": "让 AI 在报出最终答案之前，先在草稿纸上‘把中间推导过程一步步写出来’，这样再难的数学和逻辑题都不容易出错。",
-        "principle": "人类解决复杂多步骤问题需要分步推理。CoT 引导模型将一个复杂任务分解为一系列连续的子推导步骤，每一个步骤都是下一个步骤的条件上下文。",
-        "real_case": "OpenAI o1 / o3-mini 以及 DeepSeek-R1 的‘思考过程（Thinking Process）’正是思维链的工程化高阶展现。"
-    },
-    {
-        "term": "RLHF (Reinforcement Learning from Human Feedback)",
-        "chinese_name": "基于人类反馈的强化学习",
-        "category": "模型对齐 / 训练技术",
-        "simple_explain": "刚训练好的大模型只会接龙、容易说胡话；通过让人类评估员给它的回答打分，建立奖惩机制，像训宠物一样让它学会懂礼貌、讲真话、守安全。",
-        "principle": "包含三个步骤：收集示范数据微调（SFT）-> 让人类对生成结果进行偏好排序训练奖励模型（RM）-> 利用 PPO 强化学习算法优化语言模型策略以最大化奖励分。",
-        "real_case": "ChatGPT 之所以能摆脱早期 GPT-3 冰冷古怪的接龙感、变成得体懂人话的助手，全靠 RLHF 这一关键技术。"
+        "chinese_name": "思维链 / 链式思考推理",
+        "category": "推理机制 // 深度智能跃迁",
+        "analogy": "传统大模型做题像‘不假思索直接蒙答案的学生’，遇到 1+1 还能蒙对，遇到高难度奥数或复杂代码架构就会张冠李戴；而开启思维链的 AI 就像‘拿着草稿纸先打草稿的数学学霸’，在报出最终结果前，先把第一步求导、第二步换元、第三步假设检验一步步写在草稿纸上，推导完了才给出最终结论。",
+        "core_pain": "【解决的行业致命痛点】：早期的语言模型是靠‘下一个 Token 的概率接龙’生成文字，这种直觉型快思考在面对需要严密逻辑、多步约束求解或数理逻辑推导的问题时极易全盘崩溃，甚至出现常识性倒错。",
+        "how_it_works": "【底层硬核原理】：CoT 引导模型将一个复杂目标显式拆解为连贯自洽的中间推导步骤（Tokens）。每一个推导出来的步骤都会成为后续推理的上下文约束条件，模型通过自注意力机制实时自我审视、反思和纠错，从而将单次预测概率转化为严密的逻辑链条搜索。",
+        "real_cases": [
+            "🎯【OpenAI o1 / o3-mini 的推理范式】：彻底颠覆了传统的直接对话界面，生成前会先展示几秒至十几秒的‘Thinking（思考过程）’，在国际数学奥林匹克（IMO）和竞赛编程中斩获前 1% 的顶尖成绩。",
+            "🎯【DeepSeek-R1 纯强化学习突破】：不依赖海量人类标注步骤，通过后训练强化学习自我探索出长达数千字的长思维链，自主掌握了反思、验证和回溯纠错策略。"
+        ],
+        "insight": "CoT 标志着 AI 从‘凭语感快速接话的语言模型’真正进化成了‘具备严密推导能力的逻辑计算引擎’。"
     },
     {
         "term": "AI Agent",
-        "chinese_name": "人工智能智能体",
-        "category": "应用形态 / 自主交互",
-        "simple_explain": "不只是会‘动嘴聊天’的对话框，而是拥有‘眼睛和手脚’的数字员工：能自主拆解目标、搜索资料、运行代码、调用各种软件并自我纠错完成复杂任务。",
-        "principle": "以大模型为核心大脑，外挂记忆模块（Memory）、规划模块（Planning）、工具调用能力（Tool Use）和执行器（Action），形成‘感知-思考-行动-反思’的自主闭环。",
-        "real_case": "Cursor / Devin（自主软件工程师）、AutoGPT、具备系统级操作能力的电脑操作智能体（Computer Use）。"
+        "chinese_name": "自主人工智能智能体",
+        "category": "应用形态 // 生产力终极形态",
+        "analogy": "普通的 ChatGPT 就像一个‘坐在轮椅上的博学军师’，你问什么他都能头头是道，但如果你让他‘帮我把公司财报整理出来发给财务部’，他却无能为力；而 AI Agent 则是‘拥有眼睛、耳朵、四肢和工具箱的全能数字员工’，他不仅有大模型的脑子，还能自己打开浏览器搜数据、打开 Excel 制表、自己测试代码、发现报错自己修，最后把成果送到你面前。",
+        "core_pain": "【解决的行业致命痛点】：单纯的对话框模式无法融入真实复杂的生产工作流。现实工作都是多阶段、长流程且需要操作各种软件界面的，人类频繁在多个应用间复制粘贴极为繁琐低效。",
+        "how_it_works": "【底层硬核原理】：以顶尖大模型为核心中枢（Brain），串联‘四大支柱’：感知系统（Perception）、短期与长程记忆（Memory）、复杂任务拆解与规划（Planning）以及外部工具与 API 调用协议（Tools / Function Calling），构筑起‘感知-规划-行动-环境反馈-反思纠错’的自驱动循环。",
+        "real_cases": [
+            "🎯【Cursor & Devin 软件工程革命】：给 Agent 一个 GitHub Issue 需求，它能自己克隆代码、定位 BUG 所在的文件行数、编写修复代码、本地运行单元测试，测试通过后直接提 Pull Request。",
+            "🎯【Anthropic Computer Use（电脑操作智能体）】：AI 可以直接看懂电脑屏幕画面，自主移动鼠标、点击按钮、在输入框里打字，像真人一样在各种专业软件之间切换操作。"
+        ],
+        "insight": "AI 的真正商业价值不在于生成诗歌，而在于 Agent 能够替人类承担高价值、长链路的真实生产力工作。"
     },
     {
         "term": "RAG (Retrieval-Augmented Generation)",
         "chinese_name": "检索增强生成",
-        "category": "知识扩展 / 幻觉抑制",
-        "simple_explain": "开卷考试机制。AI 回答前先去权威资料库或网上搜寻最新文档，再结合搜到的资料写答案，从根本上解决‘一本正经胡说八道’的问题。",
-        "principle": "用户提问 -> 检索器在向量数据库中寻找最匹配的文档片段 -> 将片段与用户问题一并拼接进 Prompt -> 大模型参考背景知识生成有依有据的回答。",
-        "real_case": "企业内部文档智能问答、结合实时新闻的 AI 联网搜索引擎（如 Perplexity）。"
+        "category": "知识外挂 // 幻觉彻底消除",
+        "analogy": "传统大模型回答问题像‘完全闭卷考试’，全凭训练时背下来的记忆答题，一旦考到今年刚出的新技术或者你公司的内部机密，它只能抓瞎甚至编造；而 RAG 就像‘开卷考试’，允许 AI 在提笔答题前，先去你给他的专属文件夹或全网权威资料里飞速翻阅相关段落，翻到了对照着原文一字一句作答。",
+        "core_pain": "【解决的行业致命痛点】：大模型知识存在截止日期（无法得知最新事实），重新预训练成本动辄上千万美金；且公共模型完全不知道企业私有制度、财务数据与技术文档，直接问就会严重‘幻觉’胡说八道。",
+        "how_it_works": "【底层硬核原理】：将海量私有文档预先切分成语义片段并转化为向量（Vector Embedding）存入向量数据库。用户提问时，语义检索器（Retriever）在毫秒内找出相似度最高的 Top-K 条文档片段，将它们作为‘参考背景材料’拼装进提示词交给大模型，大模型仅负责阅读理解与精准归纳输出。",
+        "real_cases": [
+            "🎯【企业私有知识库 / 智能客服】：导入 500 页的医院诊疗手册或企业 HR 规章，员工任何提问都能秒回，且每一句回答后都标注文档来源页码，准确率可达 99% 以上。",
+            "🎯【AI 联网搜索引擎（如 Perplexity）】：搜一句话，后台同时调用数个搜索接口，抓取最新 10 篇新闻网页喂给大模型提炼核心答案并附带来源角标。"
+        ],
+        "insight": "RAG 是目前企业低成本、高可靠落地大模型应用的最成熟、最不可替代的技术标准方案。"
     },
     {
-        "term": "KV Cache",
-        "chinese_name": "键值缓存",
-        "category": "推理加速 / 显存管理",
-        "simple_explain": "大模型写字时的‘记忆备忘录’。前面算过的单词中间结果缓存起来，每次蹦新字时不用重头再把整篇文章算一遍。",
-        "principle": "在自回归生成中，历史 Token 的 Key 和 Value 向量是固定不变的。将它们缓存在显存中可以避免重复计算，变时间换空间，但当文本过长时显存占用会极速膨胀。",
-        "real_case": "长文本大模型高并发部署时，80% 以上的显存其实都被 KV Cache 占据，也是 vLLM（PagedAttention）优化的核心对象。"
-    },
-    {
-        "term": "LoRA (Low-Rank Adaptation)",
-        "chinese_name": "低秩自适应微调",
-        "category": "微调优化 / 轻量部署",
-        "simple_explain": "不用花几十万改动整个大模型，而是在模型旁边‘贴上两张轻薄透明的功能贴纸’，用普通家用显卡就能定制专属行业模型。",
-        "principle": "冻结预训练大模型的原本百亿权重矩阵，在侧支引入两个低秩小矩阵（A 和 B）来模拟权重的变化量（ΔW = A × B），训练参数量缩减 99% 以上。",
-        "real_case": "AI 画画中给模型一键切换人物风格、开源大模型快速微调医学或法律专属版本。"
-    },
-    {
-        "term": "Hallucination",
-        "chinese_name": "大模型幻觉",
-        "category": "核心挑战 / 可靠性",
-        "simple_explain": "AI 一本正经地编造不存在的人名、不存在的论文和错误事实。因为 AI 的本质是概率接龙，并非真正理解宇宙真理。",
-        "principle": "大语言模型预测下一个字是基于统计概率分布，在面对缺乏训练数据或复杂的长程推导时，概率最高的词组合在一起可能完全不符合现实世界事实。",
-        "real_case": "向 AI 询问某虚构学者的生平，AI 却详尽地列出其出生年份、代表著作和获奖经历。"
-    },
-    {
-        "term": "Temperature (采样温度)",
-        "chinese_name": "采样温度参数",
-        "category": "参数调优 / 行为控制",
-        "simple_explain": "控制 AI 是‘严肃严谨’还是‘天马行空’的温度旋钮。温度低时说话保守不出错，温度高时脑洞大开创意多。",
-        "principle": "在最终输出 Softmax 层调整概率分布平滑度的超参数。Temperature 接近 0 时，模型总是挑选概率最高的词（确定性强）；数值变大时，低概率词被选中的机会增加。",
-        "real_case": "写代码、提取合同信息通常设为 0.0~0.2（避免错误）；写诗、营销策划头脑风暴通常设为 0.7~0.9。"
-    },
-    {
-        "term": "DPO (Direct Preference Optimization)",
-        "chinese_name": "直接偏好优化",
-        "category": "模型对齐 / 算法演进",
-        "simple_explain": "强化学习对齐的极简新解法。绕过了原先复杂难调的‘裁判模型’，直接用数学推导让模型学会喜欢好回答、摒弃坏回答。",
-        "principle": "证明了可以通过一个隐式的奖励函数将语言模型策略自身作为优化目标，利用交叉熵损失直接在偏好数据对（胜出回答 vs 落败回答）上进行优化，避开了不稳定的强化学习循环。",
-        "real_case": "开源社区及 Llama-3、Qwen 系列对齐阶段大规模替代传统复杂 PPO 流程的关键技术。"
-    },
-    {
-        "term": "Context Window (上下文窗口)",
-        "chinese_name": "上下文窗口大小",
-        "category": "模型规格 / 交互容量",
-        "simple_explain": "AI 的‘短期工作记忆容量’。表示你在一次对话中一次性能给它塞下多少万字（书籍、代码库或长视频）。",
-        "principle": "由位置编码（如 RoPE）、注意力机制和显存共同决定的单次处理序列上限，涵盖当前轮次输入的所有历史信息和预设 Prompt。",
-        "real_case": "从早期 GPT-3.5 的 4K（约3000字），演进到现在 Gemini 2.0 / Kimi 的 100万~200万字（能一口气读完整套四大名著或整部项目代码）。"
+        "term": "RLHF (Reinforcement Learning from Human Feedback)",
+        "chinese_name": "基于人类反馈的强化学习",
+        "category": "模型对齐 // 价值观与安全性",
+        "analogy": "大模型在读完万亿网页后就像‘一个读遍了网上所有杂书的野孩子’，知道很多知识，但脾气暴躁、满口网络黑话甚至教人干坏事；RLHF 就像‘专业的家庭教师和训导员’，让考官每天给它的各种回答打分，回答得体、礼貌、准确就给糖吃（正奖励），胡说八道或涉嫌危险就打手心（负惩罚），直到把它规训成一个知书达理、严谨可信的文明助手。",
+        "core_pain": "【解决的行业致命痛点】：预训练大模型目标只是‘接龙下一个概率最高的词’，这并不代表它懂得辨别善恶、尊重用户或遵循指令。未经对齐的模型在商业化落地时会带来极大的法律、安全与公关灾难。",
+        "how_it_works": "【底层硬核原理】：第一步收集优质人类对话数据进行微调（SFT）；第二步让人类评审员对多个候选回答从优到劣排序，训练出一个能够自动打分的‘奖励模型（Reward Model）’；第三步利用 PPO 等强化学习算法，让语言模型不断微调自身策略，以在奖励模型那里获得尽可能高的分数。",
+        "real_cases": [
+            "🎯【ChatGPT 的诞生之光】：2022 年 OpenAI GPT-3 已经具备很强能力却少有人问津，直到通过 RLHF 打造出 ChatGPT，才一举引爆全球 AI 工业革命。",
+            "🎯【Claude 的无害与恪守原则】：Anthropic 在 RLHF 基础上衍生出的 Constitutional AI（宪政AI），让模型即便面对恶意攻击性诱导也能得体拒绝并给出建设性引导。"
+        ],
+        "insight": "对齐技术让 AI 从不受控的‘野生黑盒’变成了符合人类社会契约与商业规范的可靠生产力伙伴。"
     }
 ]
 
@@ -216,16 +186,11 @@ def clean_html(raw_html):
     return text[:260] + ("..." if len(text) > 260 else "")
 
 def is_valid_chinese_content(title, summary):
-    """严格检验内容是否为有效中文资讯，杜绝英文内容混入"""
     combined = (title or "") + " " + (summary or "")
     if not combined.strip():
         return False
-    # 统计中文字符数量
     chinese_chars = len(re.findall(r'[\u4e00-\u9fff]', combined))
-    # 必须至少包含 6 个中文字符且中文字符比例合理
-    if chinese_chars < 6:
-        return False
-    return True
+    return chinese_chars >= 6
 
 def determine_model_tag(title, summary, default_type=None):
     text = (title + " " + summary).lower()
@@ -262,8 +227,6 @@ def parse_rss_feed(source_info):
                     continue
 
                 summary = clean_html(description)
-
-                # 严格过滤：必须是中文内容！杜绝英文进入
                 if not is_valid_chinese_content(title, summary):
                     continue
 
@@ -291,7 +254,6 @@ def parse_rss_feed(source_info):
     return items
 
 def get_daily_ai_concept():
-    """获取今日专属 AI 名词与知识点（按一年中的天数自动每日轮播）"""
     today = datetime.date.today()
     day_of_year = today.timetuple().tm_yday
     idx = day_of_year % len(AI_KNOWLEDGE_BASE)
@@ -300,7 +262,6 @@ def get_daily_ai_concept():
     return concept
 
 def fetch_model_leaderboard():
-    """每日同步全球大模型综合评分天梯榜"""
     now_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     return {
         "benchmark_source": "LMSYS Chatbot Arena & 权威多维基准",
@@ -406,7 +367,6 @@ def generate_curated_seed_data():
         "ai_concept": get_daily_ai_concept(),
         "leaderboard": fetch_model_leaderboard(),
         "news": [
-            # 1. 重大国际
             {
                 "id": 1,
                 "title": "联合国通过全球首个具有约束力的人工智能治理框架决议",
@@ -431,7 +391,6 @@ def generate_curated_seed_data():
                 "link": "https://www.thepaper.cn/",
                 "is_featured": False
             },
-            # 2. 重大科技
             {
                 "id": 3,
                 "title": "新一代高数值孔径 High-NA EUV 光刻工艺实现良率重大突破",
@@ -456,7 +415,6 @@ def generate_curated_seed_data():
                 "link": "https://www.ithome.com/",
                 "is_featured": False
             },
-            # 3. AI前沿
             {
                 "id": 5,
                 "title": "自主软件工程智能体全面落地头部产研团队，代码重构效率倍增",
@@ -481,7 +439,6 @@ def generate_curated_seed_data():
                 "link": "https://www.qbitai.com/",
                 "is_featured": False
             },
-            # 4. 新AI模型 (开源/闭源)
             {
                 "id": 7,
                 "title": "DeepSeek-V3 / Qwen-2.5-Max 全新开放权重与架构发布，支持本地部署",
@@ -540,7 +497,7 @@ def fetch_and_save():
         try:
             feed_items = parse_rss_feed(src)
             all_news.extend(feed_items)
-        except Exception as err:
+        except Exception:
             pass
     
     output_dir = os.path.dirname(os.path.abspath(__file__))
@@ -548,15 +505,12 @@ def fetch_and_save():
     
     leaderboard = fetch_model_leaderboard()
     ai_concept = get_daily_ai_concept()
-
-    # 如果网络抓取到的有效中文条目较少（如API变更或受限），无缝融合高质量中文示范库，确保内容充实且 100% 中文
     fallback = generate_curated_seed_data()
     
     seen_titles = set()
     deduped = []
     item_id = 1
     
-    # 优先加入抓取到的真实中文条目
     for item in all_news:
         clean_t = re.sub(r'\s+', '', item['title'])
         if clean_t not in seen_titles and is_valid_chinese_content(item['title'], item['summary']):
@@ -568,7 +522,6 @@ def fetch_and_save():
             if item_id > 35:
                 break
     
-    # 若抓取量不足，补充精选中文资讯
     if len(deduped) < 8:
         for item in fallback['news']:
             clean_t = re.sub(r'\s+', '', item['title'])
@@ -583,13 +536,14 @@ def fetch_and_save():
         "date": today_str,
         "update_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "ai_concept": ai_concept,
+        "ai_concepts_pool": AI_KNOWLEDGE_BASE, # 把完整智库一并注入，前端无缝轮换体验极佳
         "leaderboard": leaderboard,
         "news": deduped
     }
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"数据处理完毕，已写入: {output_file}，包含 {len(data['news'])} 条纯中文资讯，今日AI新知【{ai_concept['term']}】。")
+    print(f"数据处理完毕，已写入: {output_file}，深度新知【{ai_concept['term']}】。")
 
 if __name__ == "__main__":
     fetch_and_save()
