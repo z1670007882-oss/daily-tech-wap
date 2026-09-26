@@ -1,6 +1,6 @@
 {
   "date": "2026年09月26日",
-  "update_time": "2026-09-26 07:48",
+  "update_time": "2026-09-26 07:57",
   "ai_concept": {
     "term": "RLHF (Reinforcement Learning from Human Feedback)",
     "chinese_name": "基于人类反馈的强化学习",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Artificial Analysis & Chatbot Arena",
-    "sync_time": "2026-09-26 07:48",
+    "sync_time": "2026-09-26 07:57",
     "metrics_description": "综合盲测竞技分 (Arena Elo)、代码编写 (Coding) 与高阶数理推理 (MATH) 全中文天梯评测",
     "models": [
       {

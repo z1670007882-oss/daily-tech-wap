@@ -8,8 +8,13 @@
   <meta name="description" content="全中文每日精选重大国际新闻、科技重磅、AI前沿动态与全球大模型评分排行">
   <link rel="manifest" href="./manifest.json">
   <script>
+    // 强制清理历史 Service Worker 与强缓存，杜绝任何白屏/旧代码缓存
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js').catch(function(){});
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister();
+        }
+      });
     }
   </script>
   <style>
@@ -1183,7 +1188,7 @@
       <div class="banner-meta">
         <span class="badge-today" id="updateTimeBadge">
           <span class="vi-pulse-dot"></span>
-          <span id="updateTimeText">同步中...</span>
+          <span id="updateTimeText">已同步 · 最新</span>
         </span>
       </div>
     </section>
@@ -1205,18 +1210,18 @@
       <!-- 生活化比喻 -->
       <div class="concept-analogy-box">
         <span class="concept-analogy-label">【生活化比喻 · 秒懂本质】</span>
-        <span id="conceptAnalogy">加载中...</span>
+        <span id="conceptAnalogy">传统注意力机制（MHA）相当于把整套百科全书全部摊在桌面上（KV Cache显存爆仓）；而 MLA 相当于把书无损翻拍成高精度微缩胶卷卡片，桌面只放胶卷，读到时毫秒级投影还原，显存占用骤降 90% 以上。</span>
       </div>
 
       <!-- 痛点拆解与底层原理 -->
       <div class="concept-deep-grid">
         <div class="concept-info-card">
           <div class="concept-section-title">⚠️ 痛点拆解 · 为什么需要它？</div>
-          <div id="conceptPain" style="color: var(--text-muted);">正在加载行业痛点分析...</div>
+          <div id="conceptPain" style="color: var(--text-muted);">【行业致命痛点】：大模型上下文越长、并发用户越多，保存在显存里的 KV Cache 呈几何级数爆炸，导致超长文本推理成本高得难以商业化普及。</div>
         </div>
         <div class="concept-info-card">
           <div class="concept-section-title">⚙️ 底层原理 · 它是怎么做到的？</div>
-          <div id="conceptWorks" style="color: var(--text-muted);">正在加载技术原理解析...</div>
+          <div id="conceptWorks" style="color: var(--text-muted);">【底层硬核原理】：通过低秩潜变量投影压缩，把 Key 和 Value 联合压缩为一个低维潜变量向量，推理时在显存中仅缓存潜变量，大幅缩减显存带宽瓶颈。</div>
         </div>
       </div>
 
@@ -1230,7 +1235,7 @@
 
       <!-- 行业洞察 -->
       <div class="concept-insight-footer" id="conceptInsight">
-        📌 行业洞察加载中...
+        📌 行业洞察：MLA 是国产开源大模型（如 DeepSeek-V3/R1）与新一代架构在极限并发场景下降低推理成本的颠覆性核心创新。
       </div>
     </section>
 
@@ -1425,31 +1430,413 @@
     });
 
     // 加载数据
-    async function loadNewsData() {
-      const container = document.getElementById('newsContainer');
-      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 50px 20px; color: var(--text-dim);">正在加载全中文科技要闻、AI深度新知与天梯榜...</div>';
-      
-      try {
-        const response = await fetch('./news_data.json?t=' + Date.now());
-        if (!response.ok) throw new Error("加载失败");
-        const data = await response.json();
-        allNews = data.news || [];
-        leaderboardData = data.leaderboard || null;
-        conceptPool = data.ai_concepts_pool || DEFAULT_CONCEPTS;
-        currentConcept = data.ai_concept || conceptPool[0];
-        document.getElementById('bannerDate').innerText = `科技早报 · ${data.date || '今日'}`;
-        document.getElementById('updateTimeText').innerText = `已同步 · ${data.update_time || '今日'}`;
-      } catch (err) {
-        console.warn("读取 news_data.json 失败，使用内置高质纯中文示范数据:", err);
-        allNews = getFallbackData();
-        leaderboardData = getFallbackLeaderboard();
-        conceptPool = DEFAULT_CONCEPTS;
-        currentConcept = conceptPool[0];
-        document.getElementById('bannerDate').innerText = `科技早报 · 全中文专版`;
-        document.getElementById('updateTimeText').innerText = `全中文保障`;
+    // 内联全量权威数据：首屏 0ms 零请求瞬间秒开，即使离线或本地双击 file:// 打开也 100% 正常渲染
+    const EMBEDDED_INITIAL_DATA = {
+  "date": "2026年09月26日",
+  "update_time": "2026-09-26 07:48",
+  "ai_concept": {
+    "term": "RLHF (Reinforcement Learning from Human Feedback)",
+    "chinese_name": "基于人类反馈的强化学习",
+    "category": "模型对齐 // 价值观与安全性",
+    "analogy": "大模型在读完万亿网页后就像‘一个读遍了网上所有杂书的野孩子’，知道很多知识，但脾气暴躁、满口网络黑话甚至教人干坏事；RLHF 就像‘专业的家庭教师和训导员’，让考官每天给它的各种回答打分，回答得体、礼貌、准确就给糖吃（正奖励），胡说八道或涉嫌危险就打手心（负惩罚），直到把它规训成一个知书达理、严谨可信的文明助手。",
+    "core_pain": "【解决的行业致命痛点】：预训练大模型目标只是‘接龙下一个概率最高的词’，这并不代表它懂得辨别善恶、尊重用户或遵循指令。未经对齐的模型在商业化落地时会带来极大的法律、安全与公关灾难。",
+    "how_it_works": "【底层硬核原理】：第一步收集优质人类对话数据进行微调（SFT）；第二步让人类评审员对多个候选回答从优到劣排序，训练出一个能够自动打分的‘奖励模型（Reward Model）’；第三步利用 PPO 等强化学习算法，让语言模型不断微调自身策略，以在奖励模型那里获得尽可能高的分数。",
+    "real_cases": [
+      "🎯【ChatGPT 的诞生之光】：2022 年 OpenAI GPT-3 已经具备很强能力却少有人问津，直到通过 RLHF 打造出 ChatGPT，才一举引爆全球 AI 工业革命。",
+      "🎯【Claude 的无害与恪守原则】：Anthropic 在 RLHF 基础上衍生出的 Constitutional AI（宪政AI），让模型即便面对恶意攻击性诱导也能得体拒绝并给出建设性引导。"
+    ],
+    "insight": "对齐技术让 AI 从不受控的‘野生黑盒’变成了符合人类社会契约与商业规范的可靠生产力伙伴。",
+    "date": "2026年09月26日"
+  },
+  "ai_concepts_pool": [
+    {
+      "term": "MLA (Multi-Head Latent Attention)",
+      "chinese_name": "多头潜在注意力机制",
+      "category": "核心架构 // 显存吞吐革命",
+      "analogy": "想象你去自习室看书：传统模式（MHA）要求你把整套百科全书每一卷都搬到桌面上摊开，桌子瞬间被堆满（显存直接爆仓）；而 MLA 相当于把书无损翻拍成了一张超高精度的‘微缩胶卷卡片’，桌面上只放胶卷，真正读到那一页时秒级投影还原，桌面占用面积骤降 90% 以上。",
+      "core_pain": "【解决的行业致命痛点】：大模型对话越长、并发用户越多，保存在显存里的‘键值缓存（KV Cache）’就会像滚雪球一样失控膨胀。以前跑 128K 超长文本，存放模型权重的显卡只要几张，但存对话记忆的显存需要几十张顶级显卡，导致推理成本高得难以商业化普及。",
+      "how_it_works": "【底层硬核原理】：MLA 创造性地引入了‘低秩压缩投影（Low-Rank Compression）’。在自回归推理时，不再直接保留冗长的 Key 和 Value 向量，而是将其联合压缩进极小维度的‘潜在向量（Latent Vector）’中常驻显存。计算自注意力时，再通过微型矩阵变换即时还原，用微不足道的矩阵计算量彻底击穿了显存带宽墙。",
+      "real_cases": [
+        "🎯【DeepSeek-V3 / R1 的底牌】：DeepSeek 之所以能把 API 价格打到行业平均的十分之一，且其 671B 超大模型能在普通双路服务器上承载高并发超长文本，核心法宝正是 MLA 彻底甩掉了沉重的显存包袱。",
+        "🎯【未来轻薄本跑大模型】：以往端侧电脑跑 32K 文本就会爆显存卡死，未来借助 MLA 压缩技术，本地轻薄本和手机也能轻松不喘气读完数十万字的长篇小说或项目代码库。"
+      ],
+      "insight": "这是中国开源团队在底层数学注意力结构上对经典 Transformer 做出的最关键原创改良之一，证明了大模型比拼不仅是烧钱堆卡，更是极高维度的算法工程艺术。"
+    },
+    {
+      "term": "MoE (Mixture of Experts)",
+      "chinese_name": "混合专家模型架构",
+      "category": "模型架构 // 算力效能飞跃",
+      "analogy": "以前的传统大模型像一个‘一个人包揽全科的独行通才’，无论问感冒还是问火箭发动机，整个大脑所有神经元都得全负荷开动；而 MoE 相当于开了一家‘三甲综合医院’，内设心脏科、儿科、机械工程科等几十个专科诊室。你挂号进来，分诊台护士（门控路由器）只把你分配给最专业的 2~3 位专家会诊，其他几百位医生继续休息。",
+      "core_pain": "【解决的行业致命痛点】：传统稠密模型（Dense）要想变得更聪明，就必须扩大总参数量，但参数每翻一倍，每生成一个字所消耗的电费和算力就翻一倍，计算成本呈指数级失控。",
+      "how_it_works": "【底层硬核原理】：MoE 将前馈神经网络（FFN）拆分成几十个独立的‘专家网络（Experts）’，并在输入层设置一个高效的门控路由器（Gating Router）。路由器实时计算当前 Token 与各个专家的匹配权重，只有得分最高的前 Top-K 个专家被激活参与前向计算，其余专家权重保持休眠，实现‘参数量极大化’与‘实际计算量极小化’的完美共存。",
+      "real_cases": [
+        "🎯【DeepSeek-V3 的极致算力效率】：总参数量高达 6710 亿（671B），但针对每一个生成的 Token，仅动态唤醒其中的 370 亿参数（37B），用中型模型的推理开销换取了千亿超旗舰级的智慧上限。",
+        "🎯【GPT-4 与行业标配】：从 GPT-4（据披露为 16 个专家组成的 MoE）到开源社区 Mixtral 8x7B，MoE 已经成为当今世界突破万亿参数大关的唯一工程可行解。"
+      ],
+      "insight": "MoE 彻底终结了‘模型越聪明就必定越卡越慢’的物理矛盾，让超大规模智能在商业可承受成本内成为现实。"
+    },
+    {
+      "term": "CoT (Chain of Thought)",
+      "chinese_name": "思维链 / 链式思考推理",
+      "category": "推理机制 // 深度智能跃迁",
+      "analogy": "传统大模型做题像‘不假思索直接蒙答案的学生’，遇到 1+1 还能蒙对，遇到高难度奥数或复杂代码架构就会张冠李戴；而开启思维链的 AI 就像‘拿着草稿纸先打草稿的数学学霸’，在报出最终结果前，先把第一步求导、第二步换元、第三步假设检验一步步写在草稿纸上，推导完了才给出最终结论。",
+      "core_pain": "【解决的行业致命痛点】：早期的语言模型是靠‘下一个 Token 的概率接龙’生成文字，这种直觉型快思考在面对需要严密逻辑、多步约束求解或数理逻辑推导的问题时极易全盘崩溃，甚至出现常识性倒错。",
+      "how_it_works": "【底层硬核原理】：CoT 引导模型将一个复杂目标显式拆解为连贯自洽的中间推导步骤（Tokens）。每一个推导出来的步骤都会成为后续推理的上下文约束条件，模型通过自注意力机制实时自我审视、反思和纠错，从而将单次预测概率转化为严密的逻辑链条搜索。",
+      "real_cases": [
+        "🎯【OpenAI o1 / o3-mini 的推理范式】：彻底颠覆了传统的直接对话界面，生成前会先展示几秒至十几秒的‘Thinking（思考过程）’，在国际数学奥林匹克（IMO）和竞赛编程中斩获前 1% 的顶尖成绩。",
+        "🎯【DeepSeek-R1 纯强化学习突破】：不依赖海量人类标注步骤，通过后训练强化学习自我探索出长达数千字的长思维链，自主掌握了反思、验证和回溯纠错策略。"
+      ],
+      "insight": "CoT 标志着 AI 从‘凭语感快速接话的语言模型’真正进化成了‘具备严密推导能力的逻辑计算引擎’。"
+    },
+    {
+      "term": "AI Agent",
+      "chinese_name": "自主人工智能智能体",
+      "category": "应用形态 // 生产力终极形态",
+      "analogy": "普通的 ChatGPT 就像一个‘坐在轮椅上的博学军师’，你问什么他都能头头是道，但如果你让他‘帮我把公司财报整理出来发给财务部’，他却无能为力；而 AI Agent 则是‘拥有眼睛、耳朵、四肢和工具箱的全能数字员工’，他不仅有大模型的脑子，还能自己打开浏览器搜数据、打开 Excel 制表、自己测试代码、发现报错自己修，最后把成果送到你面前。",
+      "core_pain": "【解决的行业致命痛点】：单纯的对话框模式无法融入真实复杂的生产工作流。现实工作都是多阶段、长流程且需要操作各种软件界面的，人类频繁在多个应用间复制粘贴极为繁琐低效。",
+      "how_it_works": "【底层硬核原理】：以顶尖大模型为核心中枢（Brain），串联‘四大支柱’：感知系统（Perception）、短期与长程记忆（Memory）、复杂任务拆解与规划（Planning）以及外部工具与 API 调用协议（Tools / Function Calling），构筑起‘感知-规划-行动-环境反馈-反思纠错’的自驱动循环。",
+      "real_cases": [
+        "🎯【Cursor & Devin 软件工程革命】：给 Agent 一个 GitHub Issue 需求，它能自己克隆代码、定位 BUG 所在的文件行数、编写修复代码、本地运行单元测试，测试通过后直接提 Pull Request。",
+        "🎯【Anthropic Computer Use（电脑操作智能体）】：AI 可以直接看懂电脑屏幕画面，自主移动鼠标、点击按钮、在输入框里打字，像真人一样在各种专业软件之间切换操作。"
+      ],
+      "insight": "AI 的真正商业价值不在于生成诗歌，而在于 Agent 能够替人类承担高价值、长链路的真实生产力工作。"
+    },
+    {
+      "term": "RAG (Retrieval-Augmented Generation)",
+      "chinese_name": "检索增强生成",
+      "category": "知识外挂 // 幻觉彻底消除",
+      "analogy": "传统大模型回答问题像‘完全闭卷考试’，全凭训练时背下来的记忆答题，一旦考到今年刚出的新技术或者你公司的内部机密，它只能抓瞎甚至编造；而 RAG 就像‘开卷考试’，允许 AI 在提笔答题前，先去你给他的专属文件夹或全网权威资料里飞速翻阅相关段落，翻到了对照着原文一字一句作答。",
+      "core_pain": "【解决的行业致命痛点】：大模型知识存在截止日期（无法得知最新事实），重新预训练成本动辄上千万美金；且公共模型完全不知道企业私有制度、财务数据与技术文档，直接问就会严重‘幻觉’胡说八道。",
+      "how_it_works": "【底层硬核原理】：将海量私有文档预先切分成语义片段并转化为向量（Vector Embedding）存入向量数据库。用户提问时，语义检索器（Retriever）在毫秒内找出相似度最高的 Top-K 条文档片段，将它们作为‘参考背景材料’拼装进提示词交给大模型，大模型仅负责阅读理解与精准归纳输出。",
+      "real_cases": [
+        "🎯【企业私有知识库 / 智能客服】：导入 500 页的医院诊疗手册或企业 HR 规章，员工任何提问都能秒回，且每一句回答后都标注文档来源页码，准确率可达 99% 以上。",
+        "🎯【AI 联网搜索引擎（如 Perplexity）】：搜一句话，后台同时调用数个搜索接口，抓取最新 10 篇新闻网页喂给大模型提炼核心答案并附带来源角标。"
+      ],
+      "insight": "RAG 是目前企业低成本、高可靠落地大模型应用的最成熟、最不可替代的技术标准方案。"
+    },
+    {
+      "term": "RLHF (Reinforcement Learning from Human Feedback)",
+      "chinese_name": "基于人类反馈的强化学习",
+      "category": "模型对齐 // 价值观与安全性",
+      "analogy": "大模型在读完万亿网页后就像‘一个读遍了网上所有杂书的野孩子’，知道很多知识，但脾气暴躁、满口网络黑话甚至教人干坏事；RLHF 就像‘专业的家庭教师和训导员’，让考官每天给它的各种回答打分，回答得体、礼貌、准确就给糖吃（正奖励），胡说八道或涉嫌危险就打手心（负惩罚），直到把它规训成一个知书达理、严谨可信的文明助手。",
+      "core_pain": "【解决的行业致命痛点】：预训练大模型目标只是‘接龙下一个概率最高的词’，这并不代表它懂得辨别善恶、尊重用户或遵循指令。未经对齐的模型在商业化落地时会带来极大的法律、安全与公关灾难。",
+      "how_it_works": "【底层硬核原理】：第一步收集优质人类对话数据进行微调（SFT）；第二步让人类评审员对多个候选回答从优到劣排序，训练出一个能够自动打分的‘奖励模型（Reward Model）’；第三步利用 PPO 等强化学习算法，让语言模型不断微调自身策略，以在奖励模型那里获得尽可能高的分数。",
+      "real_cases": [
+        "🎯【ChatGPT 的诞生之光】：2022 年 OpenAI GPT-3 已经具备很强能力却少有人问津，直到通过 RLHF 打造出 ChatGPT，才一举引爆全球 AI 工业革命。",
+        "🎯【Claude 的无害与恪守原则】：Anthropic 在 RLHF 基础上衍生出的 Constitutional AI（宪政AI），让模型即便面对恶意攻击性诱导也能得体拒绝并给出建设性引导。"
+      ],
+      "insight": "对齐技术让 AI 从不受控的‘野生黑盒’变成了符合人类社会契约与商业规范的可靠生产力伙伴。"
+    }
+  ],
+  "leaderboard": {
+    "benchmark_source": "Artificial Analysis & Chatbot Arena",
+    "sync_time": "2026-09-26 07:48",
+    "metrics_description": "综合盲测竞技分 (Arena Elo)、代码编写 (Coding) 与高阶数理推理 (MATH) 全中文天梯评测",
+    "models": [
+      {
+        "rank": 1,
+        "name": "Claude Opus 5.5",
+        "org": "Anthropic",
+        "type": "闭源",
+        "elo_score": 1385,
+        "benchmarks": {
+          "coding": 96.5,
+          "math": 97.8,
+          "reasoning": 98.9
+        },
+        "trend": "up",
+        "trend_value": "NEW",
+        "highlight": "2026年9月最新登顶！Artificial Analysis 智力指数第一，自主代码与复杂工程绝对霸榜"
+      },
+      {
+        "rank": 2,
+        "name": "OpenAI o3-mini (High)",
+        "org": "OpenAI",
+        "type": "闭源",
+        "elo_score": 1365,
+        "benchmarks": {
+          "coding": 93.6,
+          "math": 97.4,
+          "reasoning": 98.2
+        },
+        "trend": "down",
+        "trend_value": "-1",
+        "highlight": "长链条数学证明与极限逻辑推理"
+      },
+      {
+        "rank": 3,
+        "name": "Claude 3.7 Sonnet (Hybrid)",
+        "org": "Anthropic",
+        "type": "闭源",
+        "elo_score": 1360,
+        "benchmarks": {
+          "coding": 94.2,
+          "math": 95.8,
+          "reasoning": 97.5
+        },
+        "trend": "same",
+        "trend_value": "0",
+        "highlight": "混合思考机制，软件工程与复杂自主智能体实测榜第一"
+      },
+      {
+        "rank": 4,
+        "name": "DeepSeek-R1 / V3",
+        "org": "深度求索 (DeepSeek)",
+        "type": "开源",
+        "elo_score": 1354,
+        "benchmarks": {
+          "coding": 92.0,
+          "math": 97.0,
+          "reasoning": 96.8
+        },
+        "trend": "up",
+        "trend_value": "+2",
+        "highlight": "开源MoE旗舰，完全开放权重，推理效能与性价比卓越"
+      },
+      {
+        "rank": 5,
+        "name": "Gemini 2.0 Pro",
+        "org": "Google DeepMind",
+        "type": "闭源",
+        "elo_score": 1348,
+        "benchmarks": {
+          "coding": 90.5,
+          "math": 94.8,
+          "reasoning": 95.1
+        },
+        "trend": "down",
+        "trend_value": "-1",
+        "highlight": "百万级原生多模态上下文，音视频多通道理解优势明显"
+      },
+      {
+        "rank": 6,
+        "name": "Qwen-2.5-Max (通义千问)",
+        "org": "阿里云 (Alibaba Cloud)",
+        "type": "开源",
+        "elo_score": 1340,
+        "benchmarks": {
+          "coding": 89.8,
+          "math": 93.6,
+          "reasoning": 94.0
+        },
+        "trend": "same",
+        "trend_value": "0",
+        "highlight": "中文与多语言全能开源基座，高长文本与指令遵循稳定可靠"
+      },
+      {
+        "rank": 7,
+        "name": "GPT-4o (Omni Latest)",
+        "org": "OpenAI",
+        "type": "闭源",
+        "elo_score": 1335,
+        "benchmarks": {
+          "coding": 89.1,
+          "math": 92.4,
+          "reasoning": 93.2
+        },
+        "trend": "down",
+        "trend_value": "-1",
+        "highlight": "超高吞吐低延迟，日常高频会话与多模态通用交互主力"
+      },
+      {
+        "rank": 8,
+        "name": "Llama-3.3-70B-Instruct",
+        "org": "Meta AI",
+        "type": "开源",
+        "elo_score": 1322,
+        "benchmarks": {
+          "coding": 87.8,
+          "math": 90.2,
+          "reasoning": 91.5
+        },
+        "trend": "same",
+        "trend_value": "0",
+        "highlight": "全球广泛采用的开放权重基准，微调与单卡部署生态繁荣"
+      },
+      {
+        "rank": 9,
+        "name": "GLM-4-Plus / Zero",
+        "org": "智谱 AI (Zhipu AI)",
+        "type": "开源",
+        "elo_score": 1318,
+        "benchmarks": {
+          "coding": 88.5,
+          "math": 91.2,
+          "reasoning": 92.0
+        },
+        "trend": "up",
+        "trend_value": "+1",
+        "highlight": "原生多语言与工具调用强化，国内全场景落地主流选型"
+      }
+    ]
+  },
+  "news": [
+    {
+      "id": 1,
+      "title": "联合国通过全球首个具有约束力的人工智能治理框架决议",
+      "summary": "联合国大会在纽约正式通过关于加强全球人工智能监管合作的决议，强调在维护网络空间主权与数据安全前提下，推动普惠、透明的国际AI监管框架。",
+      "source": "联合早报 / 国际要闻",
+      "category": "international",
+      "category_name": "重大国际",
+      "model_tag": null,
+      "pub_time": "08:30",
+      "link": "https://www.zaobao.com/",
+      "is_featured": true
+    },
+    {
+      "id": 2,
+      "title": "国际能源署：全球智算中心与清洁绿电协同发展规划提速",
+      "summary": "国际能源署发布年度展望，指出受新一代大模型集群算力需求推动，核能小型堆与大规模风光微电网已成为跨国科技巨头布局算力基建的战略优先项。",
+      "source": "澎湃新闻 / 国际观察",
+      "category": "international",
+      "category_name": "重大国际",
+      "model_tag": null,
+      "pub_time": "07:15",
+      "link": "https://www.thepaper.cn/",
+      "is_featured": false
+    },
+    {
+      "id": 3,
+      "title": "新一代高数值孔径 High-NA EUV 光刻工艺实现良率重大突破",
+      "summary": "全球半导体先进制程取得标志性进展，采用新一代高数值孔径光刻系统的关键节点突破量产良率标准，为未来2nm及更小尺度芯片奠定制造基础。",
+      "source": "36氪 / 科技深度",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "09:00",
+      "link": "https://36kr.com/",
+      "is_featured": true
+    },
+    {
+      "id": 4,
+      "title": "商业航天重型运载火箭顺利验证低温推进剂在轨转移关键技术",
+      "summary": "大型可复用星际运输飞船完成综合测试任务，成功验证了微重力真空环境下的低温推进剂加注转移，为建立月球科研站与远深空任务打通关键瓶颈。",
+      "source": "IT之家 / 航天科技",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "08:10",
+      "link": "https://www.ithome.com/",
+      "is_featured": false
+    },
+    {
+      "id": 5,
+      "title": "自主软件工程智能体全面落地头部产研团队，代码重构效率倍增",
+      "summary": "结合超长上下文与自主思考验证的 AI Agent 已能在百万行规模的大型复杂代码库中，全自动定位复杂缺陷、完成单元测试并通过持续集成验证闭环。",
+      "source": "机器之心 / 产业前沿",
+      "category": "ai",
+      "category_name": "AI前沿",
+      "model_tag": null,
+      "pub_time": "08:50",
+      "link": "https://www.jiqizhixin.com/",
+      "is_featured": true
+    },
+    {
+      "id": 6,
+      "title": "蛋白质动力学与小分子生成AI取得临床前关键验证，新药研发提速",
+      "summary": "顶尖生物医药团队公布最新全原子分子模拟大模型，通过几何深度学习与扩散机制结合，将别构调节药物候选分子的早期筛选命中率提升至行业新高。",
+      "source": "量子位 / 前沿科技",
+      "category": "ai",
+      "category_name": "AI前沿",
+      "model_tag": null,
+      "pub_time": "07:45",
+      "link": "https://www.qbitai.com/",
+      "is_featured": false
+    },
+    {
+      "id": 7,
+      "title": "DeepSeek-V3 / Qwen-2.5-Max 全新开放权重与架构发布，支持本地部署",
+      "summary": "团队正式开源新一代MoE大语言模型，采用多头潜在注意力（MLA）架构与极低显存推理优化，普通开发者在双路服务器即可完成微调与高并发本地部署。",
+      "source": "开源中国 / 模型速递",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "开源 (Open Source)",
+      "pub_time": "09:20",
+      "link": "https://www.oschina.net/",
+      "is_featured": true
+    },
+    {
+      "id": 8,
+      "title": "通义千问 Qwen-VL 全模态高通量视觉模型开源，多文档与长视频秒级解析",
+      "summary": "阿里云全面开源最新多模态视觉理解模型，具备高精度细粒度图表识别、工业检测与时间戳级长视频理解能力，支持主流框架开箱即用。",
+      "source": "量子位 / 开源热榜",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "开源 (Open Source)",
+      "pub_time": "08:40",
+      "link": "https://www.qbitai.com/",
+      "is_featured": false
+    },
+    {
+      "id": 9,
+      "title": "OpenAI o3-mini 高速推理模型向开发者全面开放专用 API",
+      "summary": "作为闭源推理模型序列的重要成员，o3-mini 专攻高阶数学竞赛、竞争性编程与复杂逻辑推理任务，在保持响应速度的同时推理成本下降达70%。",
+      "source": "智东西 / 商业前沿",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "闭源 (Closed Source)",
+      "pub_time": "09:30",
+      "link": "https://zhidx.com/",
+      "is_featured": true
+    },
+    {
+      "id": 10,
+      "title": "Anthropic 发布 Claude 3.7 Sonnet 混合思考模型，支持动态思考预算",
+      "summary": "全新闭源旗舰模型结合了即时响应与深层思维链思考，开发者可通过统一接口自由调节推理思考 Token 预算，在长代码工程架构中表现亮眼。",
+      "source": "机器之心 / 业界要闻",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "闭源 (Closed Source)",
+      "pub_time": "08:00",
+      "link": "https://www.jiqizhixin.com/",
+      "is_featured": false
+    }
+  ]
+};
+
+    function initDataFromEmbedded() {
+      allNews = EMBEDDED_INITIAL_DATA.news || [];
+      leaderboardData = EMBEDDED_INITIAL_DATA.leaderboard || null;
+      conceptPool = EMBEDDED_INITIAL_DATA.ai_concepts_pool || DEFAULT_CONCEPTS;
+      currentConcept = EMBEDDED_INITIAL_DATA.ai_concept || conceptPool[0];
+      if (document.getElementById('bannerDate')) {
+        document.getElementById('bannerDate').innerText = `科技早报 · ${EMBEDDED_INITIAL_DATA.date || '今日'}`;
+      }
+      if (document.getElementById('updateTimeText')) {
+        document.getElementById('updateTimeText').innerText = `已同步 · ${EMBEDDED_INITIAL_DATA.update_time || '最新'}`;
       }
       renderConcept();
       renderView();
+    }
+
+    async function loadNewsData() {
+      // 1. 先用内联数据立即渲染（0 毫秒首屏，彻底杜绝白屏与“加载中...”卡死）
+      initDataFromEmbedded();
+      
+      // 2. 异步探测网络是否有更新的 news_data.json
+      try {
+        const response = await fetch('./news_data.json?t=' + Date.now(), { cache: 'no-store' });
+        if (response.ok) {
+          const data = await response.json();
+          if (data && data.news && data.news.length > 0) {
+            allNews = data.news;
+            leaderboardData = data.leaderboard || leaderboardData;
+            conceptPool = data.ai_concepts_pool || conceptPool;
+            currentConcept = data.ai_concept || currentConcept;
+            if (document.getElementById('bannerDate')) {
+              document.getElementById('bannerDate').innerText = `科技早报 · ${data.date || '今日'}`;
+            }
+            if (document.getElementById('updateTimeText')) {
+              document.getElementById('updateTimeText').innerText = `已同步 · ${data.update_time || '最新'}`;
+            }
+            renderConcept();
+            renderView();
+          }
+        }
+      } catch (err) {
+        // 网络请求受阻（如本地 file:// 打开或网络微弱），内联数据已完成渲染，业务无感
+        console.log("使用本地即时内联数据运行。");
+      }
     }
 
     // 渲染深度 AI 新知展板
@@ -1784,7 +2171,11 @@
       };
     }
 
-    window.addEventListener('DOMContentLoaded', loadNewsData);
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', loadNewsData);
+    } else {
+      loadNewsData();
+    }
   </script>
 </body>
 </html>
