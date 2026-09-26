@@ -103,134 +103,215 @@
       position: sticky;
       top: 0;
       z-index: 50;
+      height: 56px;
       background: var(--header-bg);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
     }
 
     .nav-container {
       max-width: 1200px;
+      width: 100%;
       margin: 0 auto;
-      padding: 14px 20px;
+      padding: 0 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
     }
 
     .brand-group {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       cursor: pointer;
+      text-decoration: none;
+      user-select: none;
+      flex-shrink: 0;
     }
 
     .brand-logo {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       background: #09090b;
       border-radius: 9px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--vi-lime);
-      font-size: 16px;
-      font-weight: 900;
       border: 1px solid rgba(198, 255, 74, 0.4);
-      box-shadow: var(--vi-glow);
+      box-shadow: 0 0 12px rgba(198, 255, 74, 0.2);
+      flex-shrink: 0;
+      transition: all 0.2s ease;
     }
 
     [data-theme="dark"] .brand-logo {
-      background: #18181c;
+      background: #141418;
       border-color: var(--vi-lime);
     }
 
-    .brand-title {
-      font-size: 16.5px;
-      font-weight: 800;
-      letter-spacing: -0.2px;
+    .brand-group:hover .brand-logo {
+      transform: scale(1.04);
+      box-shadow: 0 0 16px rgba(198, 255, 74, 0.35);
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+    }
+
+    .brand-title-row {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
+      white-space: nowrap;
+    }
+
+    .brand-title {
+      font-size: 15.5px;
+      font-weight: 750;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+      white-space: nowrap;
     }
 
     .brand-tag {
-      font-size: 10px;
-      font-weight: 800;
-      padding: 2px 6px;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 1.5px 5.5px;
       border-radius: 4px;
-      background: #09090b;
+      background: rgba(198, 255, 74, 0.12);
+      color: #6d9f18;
+      border: 1px solid rgba(198, 255, 74, 0.3);
+      letter-spacing: 0.6px;
+      white-space: nowrap;
+      display: inline-block;
+      line-height: 1.2;
+    }
+
+    [data-theme="dark"] .brand-tag {
+      background: rgba(198, 255, 74, 0.15);
       color: var(--vi-lime);
-      border: 1px solid var(--vi-lime-border);
-      letter-spacing: 0.5px;
+      border-color: rgba(198, 255, 74, 0.35);
     }
 
     .brand-sub {
       font-size: 11px;
       color: var(--text-dim);
-      margin-top: 1px;
+      margin-top: 2px;
+      white-space: nowrap;
+      letter-spacing: -0.1px;
     }
 
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-digest-action {
+      height: 34px;
+      padding: 0 13px;
+      border-radius: 999px;
+      background: #09090b;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    [data-theme="dark"] .btn-digest-action {
+      background: #18181c;
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-digest-action:hover {
+      border-color: var(--vi-lime);
+      box-shadow: 0 0 12px rgba(198, 255, 74, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn-digest-action:active {
+      transform: translateY(0);
+    }
+
+    .btn-pulse-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vi-lime);
+      box-shadow: 0 0 6px var(--vi-lime);
+      flex-shrink: 0;
+      animation: viGlowPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes viGlowPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
+    }
+
+    .digest-icon {
+      stroke: rgba(255, 255, 255, 0.85);
+      flex-shrink: 0;
     }
 
     .btn-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 9px;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
       border: 1px solid var(--border-subtle);
       background: var(--bg-card);
       color: var(--text-muted);
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 15px;
       transition: all 0.2s ease;
+      flex-shrink: 0;
+      padding: 0;
+    }
+
+    .btn-icon svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.2s ease;
     }
 
     .btn-icon:hover {
       background: var(--bg-secondary);
       color: var(--text-main);
-      border-color: var(--border-elevated);
+      border-color: rgba(198, 255, 74, 0.4);
+      box-shadow: 0 0 8px rgba(198, 255, 74, 0.15);
     }
 
-    .btn-digest-action {
-      background: #09090b;
-      color: var(--text-main);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 8px 15px;
-      border-radius: 9px;
-      font-size: 12.5px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      position: relative;
+    .icon-sun { display: none; }
+    .icon-moon { display: block; }
+    [data-theme="dark"] .icon-sun { display: block; }
+    [data-theme="dark"] .icon-moon { display: none; }
+
+    .btn-icon.is-spinning svg {
+      animation: spinOnce 0.65s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .btn-digest-action::before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--vi-lime);
-      box-shadow: 0 0 8px var(--vi-lime);
-    }
-
-    .btn-digest-action span {
-      color: #ffffff;
-    }
-
-    .btn-digest-action:hover {
-      border-color: var(--vi-lime);
-      box-shadow: var(--vi-glow);
-      transform: translateY(-1px);
+    @keyframes spinOnce {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     /* 主容器 */
@@ -939,6 +1020,63 @@
       border: 1px solid var(--border-subtle);
     }
 
+    @media (max-width: 640px) {
+      .nav-container {
+        padding: 0 12px;
+        height: 52px;
+      }
+      .brand-logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+      }
+      .brand-logo svg {
+        width: 15px;
+        height: 15px;
+      }
+      .brand-title {
+        font-size: 14.5px;
+      }
+      .brand-sub {
+        display: none !important; /* 关键：移动端隐藏副标题，杜绝纵向挤压和折行 */
+      }
+      .brand-tag {
+        font-size: 8.5px;
+        padding: 1px 4.5px;
+      }
+      .header-actions {
+        gap: 6px;
+      }
+      .btn-digest-action {
+        height: 30px;
+        padding: 0 10px;
+        font-size: 11.5px;
+        gap: 5px;
+      }
+      .digest-icon {
+        display: none;
+      }
+      .btn-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+      }
+      .btn-icon svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand-tag {
+        display: none; /* 超窄小屏手机彻底隐藏 TECH 标签，防止折行 */
+      }
+      .btn-digest-action {
+        padding: 0 8px;
+        font-size: 11px;
+      }
+    }
+
     @media (max-width: 768px) {
       .main-wrapper {
         padding: 14px 14px 76px 14px;
@@ -980,22 +1118,56 @@
   <!-- 顶部导航 -->
   <header>
     <div class="nav-container">
-      <div class="brand-group" onclick="setCategory('all')">
-        <div class="brand-logo">⚡</div>
-        <div>
-          <div class="brand-title">
-            每日科技日报
+      <div class="brand-group" onclick="setCategory('all')" title="返回全部精选">
+        <div class="brand-logo">
+          <!-- 专属极简矢量闪电 Logo -->
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="rgb(198, 255, 74)" stroke="rgb(198, 255, 74)" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-text-block">
+          <div class="brand-title-row">
+            <span class="brand-title">每日科技日报</span>
             <span class="brand-tag">TECH DAILY</span>
           </div>
-          <div class="brand-sub">全中文精选 · 手机与电脑通用</div>
+          <div class="brand-sub">全中文精选 · AI前沿与大模型天梯</div>
         </div>
       </div>
       <div class="header-actions">
         <button class="btn-digest-action" id="btnOpenDigest" title="生成并复制今日早报文本">
-          <span>生成早报</span>
+          <span class="btn-pulse-dot"></span>
+          <svg class="digest-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span class="digest-btn-text">生成早报</span>
         </button>
-        <button class="btn-icon" id="btnThemeToggle" title="切换深色/浅色模式">🌓</button>
-        <button class="btn-icon" id="btnRefresh" title="刷新数据">🔄</button>
+        <button class="btn-icon" id="btnThemeToggle" title="切换深色/浅色模式" aria-label="切换主题">
+          <!-- 矢量月亮图标 -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- 矢量太阳图标 -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="btn-icon" id="btnRefresh" title="同步最新资讯与天梯榜" aria-label="刷新数据">
+          <!-- 矢量刷新图标 -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -1506,7 +1678,12 @@
       }
     });
 
-    document.getElementById('btnRefresh').addEventListener('click', loadNewsData);
+    document.getElementById('btnRefresh').addEventListener('click', async () => {
+      const btn = document.getElementById('btnRefresh');
+      btn.classList.add('is-spinning');
+      await loadNewsData();
+      setTimeout(() => btn.classList.remove('is-spinning'), 650);
+    });
 
     // 生成晨报纯文本 (含深度 AI 新知 + 落地案例 + Top3 天梯榜 + 四大板块)
     function generateDigestPlainText() {
@@ -1596,10 +1773,11 @@
 
     function getFallbackLeaderboard() {
       return {
-        benchmark_source: "LMSYS Chatbot Arena",
+        benchmark_source: "Artificial Analysis & Chatbot Arena",
         sync_time: "2026-09-26",
         models: [
-          { rank: 1, name: "o3-mini (High)", org: "OpenAI", type: "闭源", elo_score: 1365, benchmarks: {coding: 93.6, math: 97.4, reasoning: 98.2}, trend: "up", trend_value: "+1", highlight: "数学与极限推理突破" },
+          { rank: 1, name: "Claude Opus 5.5", org: "Anthropic", type: "闭源", elo_score: 1385, benchmarks: {coding: 96.5, math: 97.8, reasoning: 98.9}, trend: "up", trend_value: "NEW", highlight: "2026年9月最新登顶！智商指数与Agent软件工程榜首" },
+          { rank: 2, name: "OpenAI o3-mini (High)", org: "OpenAI", type: "闭源", elo_score: 1365, benchmarks: {coding: 93.6, math: 97.4, reasoning: 98.2}, trend: "down", trend_value: "-1", highlight: "数学与极限长链条推理" }, benchmarks: {coding: 93.6, math: 97.4, reasoning: 98.2}, trend: "up", trend_value: "+1", highlight: "数学与极限推理突破" },
           { rank: 2, name: "Claude 3.7 Sonnet", org: "Anthropic", type: "闭源", elo_score: 1360, benchmarks: {coding: 94.2, math: 95.8, reasoning: 97.5}, trend: "same", trend_value: "0", highlight: "软件工程与混合思考王者" },
           { rank: 3, name: "DeepSeek-R1 / V3", org: "深度求索", type: "开源", elo_score: 1354, benchmarks: {coding: 92.0, math: 97.0, reasoning: 96.8}, trend: "up", trend_value: "+2", highlight: "开源MoE旗舰，高性价比" }
         ]

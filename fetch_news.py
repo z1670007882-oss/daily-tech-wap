@@ -264,23 +264,34 @@ def get_daily_ai_concept():
 def fetch_model_leaderboard():
     now_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     return {
-        "benchmark_source": "LMSYS Chatbot Arena & 权威多维基准",
+        "benchmark_source": "Artificial Analysis & Chatbot Arena",
         "sync_time": now_time,
         "metrics_description": "综合盲测竞技分 (Arena Elo)、代码编写 (Coding) 与高阶数理推理 (MATH) 全中文天梯评测",
         "models": [
             {
                 "rank": 1,
+                "name": "Claude Opus 5.5",
+                "org": "Anthropic",
+                "type": "闭源",
+                "elo_score": 1385,
+                "benchmarks": {"coding": 96.5, "math": 97.8, "reasoning": 98.9},
+                "trend": "up",
+                "trend_value": "NEW",
+                "highlight": "2026年9月最新登顶！Artificial Analysis 智力指数第一，自主代码与复杂工程绝对霸榜"
+            },
+            {
+                "rank": 2,
                 "name": "OpenAI o3-mini (High)",
                 "org": "OpenAI",
                 "type": "闭源",
                 "elo_score": 1365,
                 "benchmarks": {"coding": 93.6, "math": 97.4, "reasoning": 98.2},
-                "trend": "up",
-                "trend_value": "+1",
-                "highlight": "长链条推理与高阶数学突破，权威竞技场综合榜首"
+                "trend": "down",
+                "trend_value": "-1",
+                "highlight": "长链条数学证明与极限逻辑推理"
             },
             {
-                "rank": 2,
+                "rank": 3,
                 "name": "Claude 3.7 Sonnet (Hybrid)",
                 "org": "Anthropic",
                 "type": "闭源",
@@ -291,7 +302,7 @@ def fetch_model_leaderboard():
                 "highlight": "混合思考机制，软件工程与复杂自主智能体实测榜第一"
             },
             {
-                "rank": 3,
+                "rank": 4,
                 "name": "DeepSeek-R1 / V3",
                 "org": "深度求索 (DeepSeek)",
                 "type": "开源",
@@ -302,7 +313,7 @@ def fetch_model_leaderboard():
                 "highlight": "开源MoE旗舰，完全开放权重，推理效能与性价比卓越"
             },
             {
-                "rank": 4,
+                "rank": 5,
                 "name": "Gemini 2.0 Pro",
                 "org": "Google DeepMind",
                 "type": "闭源",
@@ -313,7 +324,7 @@ def fetch_model_leaderboard():
                 "highlight": "百万级原生多模态上下文，音视频多通道理解优势明显"
             },
             {
-                "rank": 5,
+                "rank": 6,
                 "name": "Qwen-2.5-Max (通义千问)",
                 "org": "阿里云 (Alibaba Cloud)",
                 "type": "开源",
@@ -324,7 +335,7 @@ def fetch_model_leaderboard():
                 "highlight": "中文与多语言全能开源基座，高长文本与指令遵循稳定可靠"
             },
             {
-                "rank": 6,
+                "rank": 7,
                 "name": "GPT-4o (Omni Latest)",
                 "org": "OpenAI",
                 "type": "闭源",
@@ -335,7 +346,7 @@ def fetch_model_leaderboard():
                 "highlight": "超高吞吐低延迟，日常高频会话与多模态通用交互主力"
             },
             {
-                "rank": 7,
+                "rank": 8,
                 "name": "Llama-3.3-70B-Instruct",
                 "org": "Meta AI",
                 "type": "开源",
@@ -346,7 +357,7 @@ def fetch_model_leaderboard():
                 "highlight": "全球广泛采用的开放权重基准，微调与单卡部署生态繁荣"
             },
             {
-                "rank": 8,
+                "rank": 9,
                 "name": "GLM-4-Plus / Zero",
                 "org": "智谱 AI (Zhipu AI)",
                 "type": "开源",
