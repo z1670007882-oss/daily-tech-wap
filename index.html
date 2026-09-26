@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>每日科技日报 | Tech Daily WAP</title>
   <meta name="theme-color" content="#1e293b">
-  <meta name="description" content="每日精选重大国际新闻、重大科技新闻、AI前沿动态与全球大模型评分排行">
+  <meta name="description" content="全中文每日精选重大国际新闻、重大科技新闻、AI前沿动态、全球大模型评分排行与每日AI新知">
+  <link rel="manifest" href="./manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(function(){});
+    }
+  </script>
   <style>
     :root {
       --bg-primary: #f8fafc;
@@ -21,6 +27,7 @@
       --tag-ai: #d97706;
       --tag-open: #059669;
       --tag-closed: #dc2626;
+      --tag-concept: #0d9488;
       --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
       --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
       --radius: 14px;
@@ -160,12 +167,13 @@
       flex: 1;
     }
 
+    /* 顶部横幅 */
     .banner {
       background: linear-gradient(135deg, #1e3a8a, #4338ca);
       color: #ffffff;
       border-radius: var(--radius);
       padding: 20px 22px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -200,6 +208,128 @@
       backdrop-filter: blur(4px);
     }
 
+    /* 💡 每日 AI 新知模块 */
+    .concept-card {
+      background: linear-gradient(135deg, rgba(13, 148, 136, 0.08), rgba(37, 99, 235, 0.08));
+      border: 1px solid rgba(13, 148, 136, 0.25);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      position: relative;
+      box-shadow: var(--shadow);
+      transition: all 0.2s ease;
+    }
+
+    [data-theme="dark"] .concept-card {
+      background: linear-gradient(135deg, rgba(13, 148, 136, 0.15), rgba(37, 99, 235, 0.15));
+      border-color: rgba(13, 148, 136, 0.35);
+    }
+
+    .concept-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .concept-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-concept {
+      background: #ccfbf1;
+      color: #0f766e;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    [data-theme="dark"] .badge-concept {
+      background: #115e59;
+      color: #99f6e4;
+    }
+
+    .concept-category {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .btn-shuffle {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: 0.15s;
+    }
+    .btn-shuffle:hover {
+      background: var(--bg-secondary);
+      border-color: var(--brand);
+    }
+
+    .concept-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .concept-explain-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .concept-explain-label {
+      font-weight: 700;
+      color: #0d9488;
+      margin-right: 6px;
+    }
+
+    .concept-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .concept-detail-item {
+      background: rgba(255, 255, 255, 0.4);
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+    [data-theme="dark"] .concept-detail-item {
+      background: rgba(0, 0, 0, 0.2);
+      border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .detail-item-title {
+      font-weight: 700;
+      margin-bottom: 3px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* 检索与分类 Tab */
     .filter-section {
       margin-bottom: 20px;
       display: flex;
@@ -273,6 +403,7 @@
       box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
     }
 
+    /* 资讯列表网格 */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -400,6 +531,7 @@
       color: #f59e0b;
     }
 
+    /* 🏆 天梯排行榜视图 */
     .leaderboard-view {
       display: none;
       flex-direction: column;
@@ -553,6 +685,7 @@
     .bench-pill span:first-child { color: var(--text-muted); }
     .bench-pill span:last-child { font-weight: 700; }
 
+    /* 手机底栏 */
     .mobile-bottom-nav {
       display: none;
       position: fixed;
@@ -583,6 +716,7 @@
       font-weight: 700;
     }
 
+    /* 弹窗：今日早报排版与一键复制 */
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -651,6 +785,9 @@
       .news-grid {
         grid-template-columns: 1fr;
       }
+      .concept-details-grid {
+        grid-template-columns: 1fr;
+      }
       .banner {
         padding: 16px;
       }
@@ -699,20 +836,50 @@
   </header>
 
   <main class="main-wrapper">
+    <!-- 顶部横幅 -->
     <section class="banner">
       <div class="banner-text">
         <h2 id="bannerDate">科技早班车 · 全景速览</h2>
-        <p>汇聚重大国际、科技要闻、AI前沿与全球大模型评分排行</p>
+        <p>全中文精选 · 重大国际、科技要闻、AI前沿与全球大模型评分排行</p>
       </div>
       <div class="banner-meta">
         <span class="badge-today" id="updateTimeBadge">更新中...</span>
       </div>
     </section>
 
+    <!-- 💡 特色板块：每日认识一个 AI 名词 -->
+    <section class="concept-card" id="aiConceptCard">
+      <div class="concept-top">
+        <div class="concept-header-left">
+          <span class="badge-concept">💡 每日 AI 新知</span>
+          <span class="concept-category" id="conceptCategory">模型架构 / 推理加速</span>
+        </div>
+        <button class="btn-shuffle" id="btnShuffleConcept" title="随机换一个 AI 知识点">
+          <span>🔀 换一个看看</span>
+        </button>
+      </div>
+      <h3 class="concept-title" id="conceptTitle">MLA (Multi-Head Latent Attention) · 多头潜在注意力机制</h3>
+      <div class="concept-explain-box">
+        <span class="concept-explain-label">【通俗定义】</span>
+        <span id="conceptSimpleExplain">相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。</span>
+      </div>
+      <div class="concept-details-grid">
+        <div class="concept-detail-item">
+          <div class="detail-item-title">⚙️ 核心原理</div>
+          <div id="conceptPrinciple" style="color: var(--text-muted);">通过低秩投影将 Key-Value 向量压缩为紧凑潜在向量，推理时大幅降低显存吞吐瓶颈。</div>
+        </div>
+        <div class="concept-detail-item">
+          <div class="detail-item-title">🎯 实际应用</div>
+          <div id="conceptRealCase" style="color: var(--text-muted);">DeepSeek-V3 / R1 核心创新点，使单台双路服务器即可承载超大参数高并发推理。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 检索与分类 Tab -->
     <section class="filter-section">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="搜索资讯关键词、模型名称 (如: DeepSeek, OpenAI, 芯片, 星舰...)">
+        <input type="text" id="searchInput" class="search-input" placeholder="搜索资讯关键词、模型名称 (如: DeepSeek, 芯片, 星舰, 通义千问...)">
       </div>
       <div class="tabs-scroll">
         <button class="tab-item active" data-cat="all">🌟 全部要闻</button>
@@ -727,13 +894,15 @@
       </div>
     </section>
 
+    <!-- 资讯卡片流 -->
     <section class="news-grid" id="newsContainer">
     </section>
 
+    <!-- 🏆 模型天梯榜视图 -->
     <section class="leaderboard-view" id="leaderboardSection">
       <div class="leaderboard-header-card">
         <div class="leaderboard-title-group">
-          <h3>🏆 全球大模型每日评分排行 (Chatbot Arena & Benchmarks)</h3>
+          <h3>🏆 全球大模型每日评分排行 (Chatbot Arena & 权威基准)</h3>
           <p id="leaderboardSubDesc">每日自动同步，结合盲测对抗 Elo 分、代码编写与复杂数理推理</p>
         </div>
         <div class="leaderboard-filter-group">
@@ -773,14 +942,15 @@
     </div>
   </nav>
 
+  <!-- 弹窗：今日早报排版与一键复制 -->
   <div class="modal-overlay" id="digestModal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 style="font-size: 16px; font-weight: 700;">今日科技日报 · 晨报精选</h3>
+        <h3 style="font-size: 16px; font-weight: 700;">今日科技日报 · 晨报精选 (含每日AI新知)</h3>
         <button class="btn-icon" onclick="closeDigestModal()" style="border:none; background:none; font-size: 18px;">✕</button>
       </div>
       <div class="modal-body">
-        <p style="margin-bottom: 8px; font-size: 12px; color: var(--text-muted);">已结合当日重大要闻与大模型评分天梯榜 Top 3，可一键复制直接发送到微信群：</p>
+        <p style="margin-bottom: 8px; font-size: 12px; color: var(--text-muted);">已结合当日重大要闻、今日 AI 新知与大模型评分天梯榜 Top 3，可一键复制直接发送到微信群：</p>
         <div class="copy-preview-text" id="digestTextContent">正在排版生成中...</div>
       </div>
       <div class="modal-footer">
@@ -795,11 +965,97 @@
   <script>
     let allNews = [];
     let leaderboardData = null;
+    let currentConcept = null;
     let currentCategory = 'all';
     let currentSearch = '';
     let leaderboardFilter = 'all';
     let favorites = JSON.parse(localStorage.getItem('tech_daily_favs') || '[]');
 
+    // 内置 AI 名词知识库池（支持前端直接切换）
+    const CONCEPT_POOL = [
+      {
+        term: "MLA (Multi-Head Latent Attention)",
+        chinese_name: "多头潜在注意力机制",
+        category: "模型架构 / 推理加速",
+        simple_explain: "相当于把大模型的对话记忆做了一次‘无损极限压缩’，显存占用骤降近 90%，让廉价服务器也能承载超长对话。",
+        principle: "通过低秩投影将 Key-Value 向量压缩为潜在向量，推理时大幅降低显存吞吐瓶颈。",
+        real_case: "DeepSeek-V3 与 DeepSeek-R1 能够以极低推理成本媲美顶尖闭源模型的关键技术根基。"
+      },
+      {
+        term: "MoE (Mixture of Experts)",
+        chinese_name: "混合专家模型架构",
+        category: "模型架构 / 算力优化",
+        simple_explain: "大模型不再是一个‘通才’单打独斗，而是成立了一个‘专家门诊部’；回答具体问题时，只唤醒对口专业的那 2~3 位专家。",
+        principle: "模型总参数量极大（如数百亿甚至上千亿），但对每一个输入的 Token，只动态激活极少比例的前馈网络专家，以较小计算量获得超强泛化力。",
+        real_case: "DeepSeek-V3（总参数 671B，每个 Token 仅激活 37B）、GPT-4、Mixtral 8x7B 均采用该架构。"
+      },
+      {
+        term: "CoT (Chain of Thought)",
+        chinese_name: "思维链 / 链式思考",
+        category: "推理机制 / 提示工程",
+        simple_explain: "让 AI 在报出最终答案之前，先在草稿纸上‘把中间推导过程一步步写出来’，这样再难的数学和逻辑题都不容易出错。",
+        principle: "引导模型将复杂任务分解为一系列连续的子推导步骤，每一个步骤都是下一个步骤的条件上下文。",
+        real_case: "OpenAI o1 / o3-mini 以及 DeepSeek-R1 的深度思考过程（Thinking Process）正是思维链的工程化高阶展现。"
+      },
+      {
+        term: "RLHF (Reinforcement Learning from Human Feedback)",
+        chinese_name: "基于人类反馈的强化学习",
+        category: "模型对齐 / 训练技术",
+        simple_explain: "刚训练好的大模型只会接龙、容易说胡话；通过让人类评估员给它的回答打分，建立奖惩机制，像训宠物一样让它学会懂礼貌、讲真话、守安全。",
+        principle: "收集示范数据微调 -> 训练奖励模型（RM）-> 利用 PPO 强化学习算法优化语言模型策略以最大化奖励分。",
+        real_case: "ChatGPT 之所以能摆脱早期 GPT-3 冰冷古怪的接龙感、变成得体懂人话的助手，全靠 RLHF 这一关键技术。"
+      },
+      {
+        term: "AI Agent",
+        chinese_name: "人工智能智能体",
+        category: "应用形态 / 自主交互",
+        simple_explain: "不只是会‘动嘴聊天’的对话框，而是拥有‘眼睛和手脚’的数字员工：能自主拆解目标、搜索资料、运行代码、调用各种软件并自我纠错完成复杂任务。",
+        principle: "以大模型为核心大脑，外挂记忆模块（Memory）、规划模块（Planning）、工具调用能力（Tool Use）和执行器（Action），形成闭环。",
+        real_case: "Cursor / Devin（自主软件工程师）、具备系统级操作能力的电脑操作智能体（Computer Use）。"
+      },
+      {
+        term: "RAG (Retrieval-Augmented Generation)",
+        chinese_name: "检索增强生成",
+        category: "知识扩展 / 幻觉抑制",
+        simple_explain: "开卷考试机制。AI 回答前先去权威资料库或网上搜寻最新文档，再结合搜到的资料写答案，从根本上解决‘一本正经胡说八道’的问题。",
+        principle: "用户提问 -> 检索器在向量数据库中寻找最匹配的文档片段 -> 将片段与用户问题一并拼接进 Prompt -> 大模型参考背景知识生成有依有据的回答。",
+        real_case: "企业内部文档智能问答、结合实时新闻的 AI 联网搜索引擎（如 Perplexity）。"
+      },
+      {
+        term: "KV Cache",
+        chinese_name: "键值缓存",
+        category: "推理加速 / 显存管理",
+        simple_explain: "大模型写字时的‘记忆备忘录’。前面算过的单词中间结果缓存起来，每次蹦新字时不用重头再把整篇文章算一遍。",
+        principle: "在自回归生成中，历史 Token 的 Key 和 Value 向量是固定不变的。将它们缓存在显存中可以避免重复计算，变时间换空间。",
+        real_case: "长文本大模型高并发部署时，80% 以上的显存其实都被 KV Cache 占据，也是 vLLM 优化的核心对象。"
+      },
+      {
+        term: "LoRA (Low-Rank Adaptation)",
+        chinese_name: "低秩自适应微调",
+        category: "微调优化 / 轻量部署",
+        simple_explain: "不用花几十万改动整个大模型，而是在模型旁边‘贴上两张轻薄透明的功能贴纸’，用普通家用显卡就能定制专属行业模型。",
+        principle: "冻结预训练大模型的原本百亿权重矩阵，在侧支引入两个低秩小矩阵（A 和 B）来模拟权重的变化量（ΔW = A × B），训练参数量缩减 99% 以上。",
+        real_case: "AI 画画中给模型一键切换人物风格、开源大模型快速微调医学或法律专属版本。"
+      },
+      {
+        term: "Hallucination",
+        chinese_name: "大模型幻觉",
+        category: "核心挑战 / 可靠性",
+        simple_explain: "AI 一本正经地编造不存在的人名、不存在的论文和错误事实。因为 AI 的本质是概率接龙，并非真正理解宇宙真理。",
+        principle: "大语言模型预测下一个字是基于统计概率分布，在面对缺乏训练数据或复杂的长程推导时，概率最高的词组合在一起可能完全不符合现实世界事实。",
+        real_case: "向 AI 询问某虚构学者的生平，AI 却详尽地列出其出生年份、代表著作和获奖经历。"
+      },
+      {
+        term: "Context Window (上下文窗口)",
+        chinese_name: "上下文窗口大小",
+        category: "模型规格 / 交互容量",
+        simple_explain: "AI 的‘短期工作记忆容量’。表示你在一次对话中一次性能给它塞下多少万字（书籍、代码库或长视频）。",
+        principle: "由位置编码、注意力机制和显存共同决定的单次处理序列上限，涵盖当前轮次输入的所有历史信息和预设 Prompt。",
+        real_case: "从早期 GPT-3.5 的 4K（约3000字），演进到现在百万字级别（能一口气读完整套四大名著或整部代码库）。"
+      }
+    ];
+
+    // 初始化深色模式
     const savedTheme = localStorage.getItem('tech_daily_theme') || 
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -811,9 +1067,10 @@
       localStorage.setItem('tech_daily_theme', next);
     });
 
+    // 加载数据
     async function loadNewsData() {
       const container = document.getElementById('newsContainer');
-      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">正在加载最新科技资讯与天梯榜...</div>';
+      container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">正在加载最新中文科技资讯、AI新知与天梯榜...</div>';
       
       try {
         const response = await fetch('./news_data.json?t=' + Date.now());
@@ -821,28 +1078,55 @@
         const data = await response.json();
         allNews = data.news || [];
         leaderboardData = data.leaderboard || null;
+        currentConcept = data.ai_concept || CONCEPT_POOL[0];
         document.getElementById('bannerDate').innerText = `科技早报 · ${data.date || '今日'}`;
         document.getElementById('updateTimeBadge').innerText = `已同步 · ${data.update_time || '今日'}`;
       } catch (err) {
-        console.warn("读取本地 news_data.json 失败，使用内置兜底数据:", err);
+        console.warn("读取 news_data.json 失败，使用内置高质数据:", err);
         allNews = getFallbackData();
         leaderboardData = getFallbackLeaderboard();
-        document.getElementById('bannerDate').innerText = `科技早报 · 离线示范`;
-        document.getElementById('updateTimeBadge').innerText = `离线模式`;
+        currentConcept = CONCEPT_POOL[0];
+        document.getElementById('bannerDate').innerText = `科技早报 · 离线全中文版`;
+        document.getElementById('updateTimeBadge').innerText = `全中文保障`;
       }
+      renderConcept();
       renderView();
     }
+
+    // 渲染每日 AI 新知
+    function renderConcept() {
+      if (!currentConcept) return;
+      document.getElementById('conceptCategory').innerText = currentConcept.category || 'AI核心概念';
+      document.getElementById('conceptTitle').innerText = `${currentConcept.term} · ${currentConcept.chinese_name || ''}`;
+      document.getElementById('conceptSimpleExplain').innerText = currentConcept.simple_explain || '';
+      document.getElementById('conceptPrinciple').innerText = currentConcept.principle || '';
+      document.getElementById('conceptRealCase').innerText = currentConcept.real_case || '';
+    }
+
+    // 随机切换下一个 AI 知识点
+    document.getElementById('btnShuffleConcept').addEventListener('click', () => {
+      const currentIndex = CONCEPT_POOL.findIndex(c => c.term === currentConcept.term);
+      let nextIndex = Math.floor(Math.random() * CONCEPT_POOL.length);
+      if (nextIndex === currentIndex) {
+        nextIndex = (currentIndex + 1) % CONCEPT_POOL.length;
+      }
+      currentConcept = CONCEPT_POOL[nextIndex];
+      renderConcept();
+    });
 
     function renderView() {
       const newsContainer = document.getElementById('newsContainer');
       const lbSection = document.getElementById('leaderboardSection');
+      const conceptCard = document.getElementById('aiConceptCard');
 
       if (currentCategory === 'leaderboard') {
         newsContainer.style.display = 'none';
+        conceptCard.style.display = 'none';
         lbSection.style.display = 'flex';
         renderLeaderboard();
       } else {
         newsContainer.style.display = 'grid';
+        conceptCard.style.display = 'block';
         lbSection.style.display = 'none';
         renderNews();
       }
@@ -875,7 +1159,7 @@
         container.innerHTML = `
           <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
             <div style="font-size: 32px; margin-bottom: 10px;">🔍</div>
-            <p>未找到符合条件的资讯或暂无收藏</p>
+            <p>未找到符合条件的纯中文资讯或暂无收藏</p>
           </div>`;
         return;
       }
@@ -1043,16 +1327,26 @@
 
     document.getElementById('btnRefresh').addEventListener('click', loadNewsData);
 
+    // 生成晨报纯文本 (含今日 AI 新知 + Top3 天梯榜 + 四大板块)
     function generateDigestPlainText() {
       const today = document.getElementById('bannerDate').innerText.replace('科技早报 · ', '');
       let lines = [
-        `🔥【每日科技早报 & 模型天梯榜】${today}`,
+        `🔥【每日科技早报 & AI新知】${today}`,
         `━━━━━━━━━━━━━━━━━━`,
-        `💡 智能精选 · 重大国际/科技/AI模型速览\n`
       ];
 
+      // 1. 每日 AI 新知
+      if (currentConcept) {
+        lines.push(`💡【今日认识一个 AI 名词】`);
+        lines.push(`▶ ${currentConcept.term}（${currentConcept.chinese_name}）`);
+        lines.push(`• 标签：${currentConcept.category}`);
+        lines.push(`• 白话定义：${currentConcept.simple_explain}`);
+        lines.push(`• 实战案例：${currentConcept.real_case}\n`);
+      }
+
+      // 2. 模型天梯榜前三名
       if (leaderboardData && leaderboardData.models && leaderboardData.models.length >= 3) {
-        lines.push(`【🏆 今日全球大模型竞技场 Top 3】`);
+        lines.push(`🏆【全球大模型竞技场 Top 3】`);
         leaderboardData.models.slice(0, 3).forEach(m => {
           lines.push(`No.${m.rank} ${m.name} (${m.type}) - Elo: ${m.elo_score}`);
           lines.push(`   亮点: ${m.highlight}`);
@@ -1060,11 +1354,12 @@
         lines.push('');
       }
 
+      // 3. 四大新闻板块 (全中文)
       const categories = [
-        { key: 'international', title: '【重大国际】' },
-        { key: 'tech', title: '【科技重磅】' },
-        { key: 'ai', title: '【AI前沿】' },
-        { key: 'models', title: '【最新AI模型 (开源/闭源)】' }
+        { key: 'international', title: '🌍【重大国际】' },
+        { key: 'tech', title: '⚡【重大科技】' },
+        { key: 'ai', title: '🧠【AI前沿】' },
+        { key: 'models', title: '🤖【最新AI模型 (开源/闭源)】' }
       ];
 
       categories.forEach(cat => {
@@ -1081,7 +1376,7 @@
       });
 
       lines.push(`━━━━━━━━━━━━━━━━━━`);
-      lines.push(`📱 手机&电脑在线版：直接打开每日科技日报 WAP 畅读`);
+      lines.push(`📱 手机&电脑专属网址：https://z1670007882-oss.github.io/daily-tech-wap/`);
       return lines.join('\n');
     }
 
@@ -1107,18 +1402,18 @@
 
     function getFallbackData() {
       return [
-        { id: 1, category: "international", category_name: "重大国际", title: "联合国通过首个全球AI治理标准框架决议", summary: "确立兼顾技术创新与数据安全的跨国协同体系。", source: "联合国要闻", pub_time: "08:30", link: "#" },
-        { id: 2, category: "tech", category_name: "重大科技", title: "下一代High-NA EUV光刻系统实现量产工艺新突破", summary: "2nm以下制程能耗与良率表现大幅提升。", source: "半导体前线", pub_time: "09:00", link: "#" },
-        { id: 3, category: "ai", category_name: "AI前沿", title: "AI Agent自主代码重构效率提升400%", summary: "软件工程智能体实现Issue排查与测试自动化闭环。", source: "MIT科技评论", pub_time: "08:50", link: "#" },
-        { id: 4, category: "models", category_name: "新AI模型", model_tag: "开源 (Open Source)", title: "DeepSeek-V3 / Qwen-2.5-Max 全新权重与架构开放", summary: "多头潜在注意力架构，支持双路服务器本地微调与推理，商业友好许可。", source: "Hugging Face", pub_time: "09:20", link: "#" },
-        { id: 5, category: "models", category_name: "新AI模型", model_tag: "闭源 (Closed Source)", title: "OpenAI o3-mini 高速推理模型正式开放开发者接口", summary: "主打复杂代码与数理推理，成本较上一代下降70%。", source: "OpenAI官方", pub_time: "09:30", link: "#" }
+        { id: 1, category: "international", category_name: "重大国际", title: "联合国通过首个全球AI治理标准框架决议", summary: "确立兼顾技术创新与数据安全的跨国协同体系。", source: "联合早报", pub_time: "08:30", link: "#" },
+        { id: 2, category: "tech", category_name: "重大科技", title: "下一代High-NA EUV光刻系统实现量产工艺新突破", summary: "2nm以下制程能耗与良率表现大幅提升。", source: "36氪", pub_time: "09:00", link: "#" },
+        { id: 3, category: "ai", category_name: "AI前沿", title: "AI Agent自主代码重构效率提升400%", summary: "软件工程智能体实现Issue排查与测试自动化闭环。", source: "机器之心", pub_time: "08:50", link: "#" },
+        { id: 4, category: "models", category_name: "新AI模型", model_tag: "开源 (Open Source)", title: "DeepSeek-V3 / Qwen-2.5-Max 全新权重与架构开放", summary: "多头潜在注意力架构，支持双路服务器本地微调与推理，商业友好许可。", source: "开源中国", pub_time: "09:20", link: "#" },
+        { id: 5, category: "models", category_name: "新AI模型", model_tag: "闭源 (Closed Source)", title: "OpenAI o3-mini 高速推理模型正式开放开发者接口", summary: "主打复杂代码与数理推理，成本较上一代下降70%。", source: "智东西", pub_time: "09:30", link: "#" }
       ];
     }
 
     function getFallbackLeaderboard() {
       return {
         benchmark_source: "LMSYS Chatbot Arena",
-        sync_time: "2026-09-24",
+        sync_time: "2026-09-26",
         models: [
           { rank: 1, name: "o3-mini (High)", org: "OpenAI", type: "闭源", elo_score: 1365, benchmarks: {coding: 93.6, math: 97.4, reasoning: 98.2}, trend: "up", trend_value: "+1", highlight: "数学与极限推理突破" },
           { rank: 2, name: "Claude 3.7 Sonnet", org: "Anthropic", type: "闭源", elo_score: 1360, benchmarks: {coding: 94.2, math: 95.8, reasoning: 97.5}, trend: "same", trend_value: "0", highlight: "软件工程与混合思考王者" },
