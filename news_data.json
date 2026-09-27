@@ -1,6 +1,6 @@
 {
   "date": "2026年09月27日",
-  "update_time": "2026-09-27 16:02",
+  "update_time": "2026-09-27 22:42",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-09-27 16:02",
+    "sync_time": "2026-09-27 22:42",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,30 @@
       "is_featured": false
     },
     {
+      "title": "科乐美《寂静岭：Townfall》发售：Steam 国区 310 元起，玩家口碑褒贬不一",
+      "link": "https://www.ithome.com/1/007/616.htm",
+      "summary": "IT之家 9 月 28 日消息，科乐美旗下《Silent Hill：Townfall（寂静岭：Townfall）》现已正式发售，以 PC 版为例，本作在 Steam 国区标准版 310 元，豪华版 380 元，豪华版除了游戏本体外，还包括“西蒙的装束：替换装束”、数字画册和原声带。IT之家附游戏商品页（https://store.steampowered.com/app/1636440/SILENT_HILL_Townfall/）。不过本作目前并未获得所有玩家认可。数据显示，这款衍生作品在 Steam 上的同时在线...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 27 Sep 2026 22:39:14 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "小米米家智能意式半自动咖啡机 Pro 首销，首发国补价 3395.84 元",
+      "link": "https://www.ithome.com/1/007/615.htm",
+      "summary": "IT之家 9 月 28 日消息，小米米家智能意式半自动咖啡机 Pro 今日正式开售，官方指导价 4999 元，预售前台价 4439 元，叠加国补后 3395.84 元。京东米家小米智能意式半自动咖啡机 Pro 冷热双萃 双泵双加热 半自动研磨豆一体奶泡机 APP 互联 CME0013395.83 元直达链接IT之家从商品页面获悉，这款咖啡机由宁波坤林科技有限公司制造，额定功率 2200W。该机定位专业级意式半自动产品，集成磨豆、萃取、打奶功能。落粉支持精准称重，实时显示精度 0.1g，无需额外配秤，并配备等离子防飞...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 27 Sep 2026 20:59:06 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
       "title": "iQOO Pad Ultra 平板官宣搭载 9020mAh 蓝海电池，8.8 英寸机身轻至 298g",
       "link": "https://www.ithome.com/1/007/612.htm",
       "summary": "IT之家 9 月 27 日消息，iQOO Pad Ultra 平板 9 月 27 日官宣搭载 9020mAh 蓝海大电池，8.8 英寸机身轻至 298g，机身厚度仅 5.74mm。IT之家注意到，iQOO Pad Ultra 小平板已官宣将于 9 月 29 日 19:00 发布，新机提供星铠银 / 末影黑双色、内置风扇，采用全金属机身，将首批搭载高通第六代骁龙 8 超级至尊版处理器，配备对称式超线性双扬声器、双 X 轴线性马达。iQOO Pad Ultra 搭载 8.8 英寸 165Hz OLED 极竞屏，四等边 ...",
@@ -511,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 15:47:01 GMT",
-      "id": 23,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -523,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 15:02:07 GMT",
-      "id": 24,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -535,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 14:40:22 GMT",
-      "id": 25,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -547,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 14:23:39 GMT",
-      "id": 26,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -559,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 13:57:22 GMT",
-      "id": 27,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -571,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 13:45:26 GMT",
-      "id": 28,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -583,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 13:31:30 GMT",
-      "id": 29,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -595,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 13:09:29 GMT",
-      "id": 30,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -607,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 13:05:41 GMT",
-      "id": 31,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -619,30 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 27 Sep 2026 12:58:21 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "消息称长安汽车成立 AD 协同发展部，阿维塔与深蓝开启实质整合",
-      "link": "https://www.ithome.com/1/007/598.htm",
-      "summary": "IT之家 9 月 27 日消息，据第一财经今日报道，长安汽车旗下的深蓝和阿维塔两大品牌整合已开始进入实质性推进环节，具体措施为，长安汽车通知成立 AD（阿维塔和深蓝首字母）协同发展部，定义为一级部门。在此一级部门之下，成立规划与合作部、市场产品部、人力共享中心、财务共享中心、综合部等多个二级部门，承接深蓝汽车、阿维塔委托的对应业务。长安汽车方面还建议，阿维塔成立造型设计、产品开发、平台技术等多个共享或协同中心，承接深蓝委托的相关业务；而深蓝汽车则是撤销多个业务单元及下设组织。据IT之家此前报道，长安汽车集团全球战略...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 27 Sep 2026 12:53:36 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "2026 WSBK 意大利克雷莫纳站第二回合：张雪机车德比斯排名第五",
-      "link": "https://www.ithome.com/1/007/597.htm",
-      "summary": "IT之家 9 月 27 日消息，2026 世界超级摩托车锦标赛 WSBK 意大利克雷莫纳站 WorldSSP 第二回合正赛刚刚结束，来自张雪机车的 53 号瓦伦丁 · 德比斯排名第五，主场作战的 64 号卡里卡苏洛最终排名第八。IT之家注：WSBK 意大利克雷莫纳站是本赛季第十站，赛道全长 3.768 公里，共 13 个弯道，为当前 WSBK 赛历中最短赛道。值得一提的是，张雪机车创始人张雪兑现此前公开承诺，包机带领约 200 人团队飞赴意大利，现场观看 WSBK 世界超级摩托车锦标赛意大利克雷莫纳站比赛。不过，有...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 27 Sep 2026 12:38:49 GMT",
       "id": 34,
       "is_featured": false
     },
