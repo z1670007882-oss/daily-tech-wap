@@ -1,6 +1,6 @@
 {
   "date": "2026年09月30日",
-  "update_time": "2026-09-30 17:15",
+  "update_time": "2026-09-30 23:19",
   "ai_concept": {
     "term": "AI Agent",
     "chinese_name": "自主人工智能智能体",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-09-30 17:15",
+    "sync_time": "2026-09-30 23:19",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,54 @@
       "is_featured": false
     },
     {
+      "title": "微软夏尔马回应称 XBOX 不会出售，将竭尽所能推动游戏业务重回增长",
+      "link": "https://www.ithome.com/1/008/955.htm",
+      "summary": "IT之家 10 月 1 日消息，游戏媒体 kotaku 昨日（9 月 30 日）发布博文，报道称针对“微软考虑出售 Xbox 游戏业务”的传闻，微软 XBOX 首席执行官阿莎 · 夏尔马（Asha Sharma）予以明确否认，强调“ XBOX 不会出售”，并强调团队将与微软长期合作、推动业务重回增长轨道。IT之家援引博文报道，该传闻可以追溯到 2026 年 6 月，科技媒体 The Information 报道称，微软内部曾讨论过重组 XBOX 为全资子公司、甚至未来可能分拆或出售的选项。随后 Xbox 部门经历大...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Wed, 30 Sep 2026 23:16:27 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "苹果新智能家居设备设置流程曝光，新增“Photo Face”步骤",
+      "link": "https://www.ithome.com/1/008/954.htm",
+      "summary": "IT之家 10 月 1 日消息，消息源 @itspdfu 昨日（9 月 30 日）发布博文，爆料称在苹果即将推出（此前爆料为 10 月 13 日）的智能家居设备中，苹果计划在设置过程中，添加创建“照片面孔”（Photo Face）关键步骤。IT之家附上相关截图如下：该步骤基于 iCloud Photos，用于设备快速显示用户面部图像，提升交互体验。用户设置时，iPhone 会先发送几张全分辨率的“冷启动”照片，确保面孔能立即显示；随后设备再从 iCloud 下载其余照片。此次披露暗示苹果正在推进更深度的跨设备个性化...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Wed, 30 Sep 2026 23:05:51 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "谷歌最前沿 AI 模型：Gemini 4 Argon 登场，长周期代码工程 DeepSWE 测试超 Claude Opus 5.5",
+      "link": "https://www.ithome.com/1/008/953.htm",
+      "summary": "IT之家 10 月 1 日消息，谷歌昨日（9 月 30 日）发布 Gemini 4 Argon，称其为公司迄今最先进的 AI 模型，但目前并未面向公众全面开放。定位方面，Gemini 4 Argon 是谷歌当前“最先进”模型，重点是长流程软件工程、企业知识工作和网络安全防御。官方称其在真实世界软件工程测试创纪录，网络安全基准并列第一，并在金融、法律等专业任务基准领先。模型特性方面，Gemini 4 Argon 单次输出上限达到约 100 万 tokens，高于此前的 64,000 tokens，适合处理大型代码库、...",
+      "source": "IT之家",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "闭源 (Closed Source)",
+      "pub_time": "Wed, 30 Sep 2026 22:57:36 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "美光科技 2026 财年年报归母净利润 849.69 亿美元，同比增长 895.07%",
+      "link": "https://www.ithome.com/1/008/952.htm",
+      "summary": "IT之家 10 月 1 日消息，美光科技今日发布 2026 财年（2025年9月5日～2026年9月3日）年报及第四财季（2026年5月29日～2026年9月3日）报告： 2026 财年年报 营业总收入：1331.88 亿美元（IT之家注：现汇率约合 8947.38 亿元人民币），同比增长 256.33% 毛利润：1075.04 亿美元（现汇率约合 7221.97 亿元人民币），同比增长 622.81% 毛利率：80.7%，同比增长 40.9 个百分点 归母净利润：849.69 亿美元（现汇率约合 5708.1 亿...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Wed, 30 Sep 2026 20:07:32 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
       "title": "乐扩公布 B650 扩展卡 PB65MX4，支持模块化按需拓展",
       "link": "https://www.ithome.com/1/008/950.htm",
       "summary": "IT之家 10 月 1 日消息，乐扩 (Lekuo) 昨日公布了基于 AMD B650 芯片组 \"PROM 21\" 的新款 PCIe AIC 扩展卡 PB65MX4。这一型号采用模块化设计，支持用户按需拓展 I/O。PB65MX4 正面提供 2 个 M.2 2230 / 2242 / 2260 / 2280 插槽，支持 PCIe Gen3 ×2。这两个插槽既可直接安装 M.2 SSD，也兼容 M.2 转 10GbE RJ-45 / 10GbE SFP+ / 多口 SATA / OCuLink 等功能模块，允许不同模...",
@@ -511,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 16:15:09 GMT",
-      "id": 23,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -523,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 16:01:31 GMT",
-      "id": 24,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -535,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 15:52:42 GMT",
-      "id": 25,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -547,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 15:46:55 GMT",
-      "id": 26,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -559,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 15:29:35 GMT",
-      "id": 27,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -571,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 15:29:30 GMT",
-      "id": 28,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -583,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 15:21:22 GMT",
-      "id": 29,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -595,54 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 30 Sep 2026 15:11:23 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "砺算 LX 7G100 显卡获推 Windows 驱动程序 30.0.2260.773，含 34 修复、33 优化",
-      "link": "https://www.ithome.com/1/008/937.htm",
-      "summary": "IT之家 9 月 30 日消息，砺算 (LiSuan) 本月 28 日为其消费级显卡 LX 7G100 推送了 Pilot Release v30.0.2260.773 和 WHQL Release v29.0.2260.697 两版 Windows 操作系统驱动程序。IT之家注意到，WHQL Release v29.0.2260.697 的发行说明并未提及具体改进；Pilot Release v30.0.2260.773 则明确包含 34 项修复和 33 项优化，解决了《英雄联盟：云顶之弈》等多款游戏不能进入的问...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 30 Sep 2026 15:06:15 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "OpenAI Dot 虚拟机配置曝光：AMD 霄龙 9V74 处理器 + 9.73GB 内存，Geekbench 7 多核 9435 分",
-      "link": "https://www.ithome.com/1/008/936.htm",
-      "summary": "IT之家 9 月 30 日消息，OpenAI 今日凌晨在 DevDay 活动上发布了 Dot 智能体，而每个 Dot 运行在独立的云端虚拟机中。Dot 虚拟机现已出现在 Geekbench 基准测试平台中，显示其搭载了 AMD EPYC 9V74 服务器处理器，每个 Dot 虚拟机实例分配 9 个核心，单核得分 1667，多核得分 9435。另外，该实例配备 9.73GB 内存和 32GB 存储空间。该处理器基于 Zen 4 架构，基础频率约 2.6GHz，加速频率可达 3.7GHz。虚拟机运行 Ubuntu 24...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 30 Sep 2026 15:03:39 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "GEEKOM 推出 GeekBook M14 笔记本，可选酷睿 Ultra 5 125U / 锐龙 5 220 处理器",
-      "link": "https://www.ithome.com/1/008/935.htm",
-      "summary": "IT之家 9 月 30 日消息，GEEKOM（积核）现已在美国市场推出 GeekBook M14 笔记本，新品可选英特尔或 AMD 处理器，最高可选配 16GB 内存和 72Wh 电池。据介绍，这款笔记本可选择英特尔酷睿 Ultra 5 125U 或 AMD 锐龙 5 220 处理器，内存为 16GB，硬盘可选 256GB/512GB SSD。同时，该笔记本配备 72Wh 电池，续航最长可达 17 小时，随机附赠 100W USB-C PD 充电器。配备双风扇双热管散热系统，性能释放 35W。配备 40Gbps U...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 30 Sep 2026 14:56:11 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "TrendForce 预测：DRAM 内存、NAND 闪存合约价 2026Q4 还将上涨 15~20%",
-      "link": "https://www.ithome.com/1/008/934.htm",
-      "summary": "IT之家 9 月 30 日消息，TrendForce（集邦）今日发布存储器市场 2026Q4 走势预测：一般 DRAM 合约价将环比上涨 10~15%，计入 HBM 后的整体 DRAM 合约价上涨 15~20%；NAND 闪存整体合约价也将环比上涨 15~20%。从整体上来看，DRAM 上游原厂将持续把先进制程产能投入高性能服务器产品，整体维持供应不足格局，但合约价涨势放缓；NAND 市场则呈现 AI 加速、消费性需求低但仍连带涨价的双轨走势。▲ 图源：TrendForce机构认为，PC DRAM 在 2027 年...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 30 Sep 2026 14:51:17 GMT",
       "id": 34,
       "is_featured": false
     },
