@@ -1,6 +1,6 @@
 {
   "date": "2026年10月01日",
-  "update_time": "2026-10-01 17:44",
+  "update_time": "2026-10-01 23:34",
   "ai_concept": {
     "term": "RAG (Retrieval-Augmented Generation)",
     "chinese_name": "检索增强生成",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-01 17:44",
+    "sync_time": "2026-10-01 23:34",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,90 @@
       "is_featured": false
     },
     {
+      "title": "OpenAI 上线“虚拟试穿”功能：ChatGPT 能帮你试衣，还能找“明星同款”",
+      "link": "https://www.ithome.com/1/009/197.htm",
+      "summary": "IT之家 10 月 2 日消息，当地时间 1 日，OpenAI 再次扩展 ChatGPT 的购物能力。公司宣布在全球推出两项新功能，一项是让用户虚拟试穿服装和配饰，另一项是新增收藏功能，方便用户先把看中的商品存起来，之后再查看。据IT之家了解，新功能基于不久前推出的 ChatGPT Images 2.5 模型。按照 OpenAI 的说法，这一模型生成的画面光线更自然、纹理更丰富，执行编辑指令也更稳定，同时还能缩短生成图片所需时间。ChatGPT 用户可以上传自拍照或全身照，查看某件服装或配饰穿在自己身上的效果，Ch...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 23:18:01 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "马斯克：为推进 Optimus 机器人量产，特斯拉 AI5 芯片内存用量砍半",
+      "link": "https://www.ithome.com/1/009/196.htm",
+      "summary": "IT之家 10 月 2 日消息，全球首富埃隆 · 马斯克今天（10 月 2 日）在 X 平台发布推文，宣布为了调配充足的内存满足 Optimus 机器人量产，计划削减特斯拉 AI5 和 AI6 芯片的内存用量。本次调整可以追溯到美光科技的预测，在其最新财报电话会议上，美光科技首席财务官指出人形机器人将成为内存需求新引擎：每台设备需超 200GB DRAM 及数 TB NAND 闪存。即便人工智能泡沫破裂，内存价格亦难回落。网友 @DirtyTesLa 转发该推测，指出马斯克此前认为机器人数量将会超过人类，如果按照 ...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 23:16:54 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "流式转录 AI 新标杆：微软 MAI-Transcribe-2-Streaming 登场，2.5% 词错误率、0.13 秒延迟夺冠",
+      "link": "https://www.ithome.com/1/009/183.htm",
+      "summary": "IT之家 10 月 2 日消息，微软昨日（10 月 1 日）发布公告，宣布推出其首个实时流式语音转写模型 MAI‑Transcribe‑2‑Streaming，可在讲话进行时持续输出文字，覆盖 60 种语言，并支持自动语言检测。费用方面，MAI‑Transcribe‑2‑Streaming 模型目前处于优惠阶段，价格为每小时 0.54 美元（IT之家注：现汇率约合 3.6 元人民币），约合每 1,000 分钟 9 美元（现汇率约合 60.5 元人民币），开发者可以通过 Microsoft Foundry、MAI P...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 23:04:38 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "因违反敏感信息访问和共享规定，OpenAI 与三名研究人员终止合作",
+      "link": "https://www.ithome.com/1/009/182.htm",
+      "summary": "IT之家 10 月 2 日消息，当地时间 1 日，根据《华尔街日报》报道，OpenAI 宣布与三名研究人员终止合作，原因是三人违反了敏感信息访问和共享规定。OpenAI 发言人在声明中说：“我们已与三名违反公司敏感信息访问和处理规定的人员解除关系。调查确认，这些人员绕过公司既定流程，不当处理敏感信息，不仅违反了公司规定，也破坏了我们工作所必需的信任。”三人名叫贾斯敏 · 王、托梅克 · 科尔巴克和米基塔 · 巴莱斯尼。遭解雇的托梅克 · 科尔巴克是 OpenAI 安全团队成员。他曾称，在 Redwood Resea...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 23:04:22 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
+      "title": "古尔曼：苹果最快本月发布触控 OLED 屏 MacBook Pro，配 M5 Pro / Max 芯片",
+      "link": "https://www.ithome.com/1/009/178.htm",
+      "summary": "IT之家 10 月 2 日消息，在 Power On 播客节目中，彭博社的马克 · 古尔曼认为，苹果公司最快会在本月（2026 年 10 月）发布配备 OLED 触控屏幕的 MacBook Pro，预估会推出 14 英寸和 16 英寸两种规格。系统方面，古尔曼透露称苹果公司内部正使用 macOS 27.2 Beta 系统测试该机型，而 macOS 27.2 正式版有望 10 月底发布，苹果公司可能借此同步推出触控屏 MacBook Pro。外观方面，IT之家援引博文介绍，古尔曼认为除了改用 OLED 面板、支持触控...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 22:49:48 GMT",
+      "id": 27,
+      "is_featured": false
+    },
+    {
+      "title": "皇牌空战系列正统续作《皇牌空战 8：希孚之翼》登陆 Steam：国区 298 元起，支持简体中文",
+      "link": "https://www.ithome.com/1/009/176.htm",
+      "summary": "IT之家 10 月 2 日消息，皇牌空战系列时隔七年推出的正统续作《皇牌空战 8：希孚之翼》（ACE COMBAT 8: WINGS OF THEVE）现已正式登陆 Steam 平台，由万代南梦宫 Aces 开发，万代南梦宫娱乐发行，国区标准版定价 298 元，数字豪华版定价 398 元。IT之家附游戏商品页（https://store.steampowered.com/app/2288340/8__ACE_COMBAT_8_WINGS_OF_THEVE/）。截至发稿，本作已经收获 4505 条玩家评价，好评率达 ...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 22:12:04 GMT",
+      "id": 28,
+      "is_featured": false
+    },
+    {
+      "title": "亚马逊推出 2026 款 Kindle 系列电子阅读器：齐平式正面屏幕、首用反向堆叠显示结构",
+      "link": "https://www.ithome.com/1/009/177.htm",
+      "summary": "IT之家 10 月 2 日消息，亚马逊昨日（10 月 1 日）发布博文，宣布更新其 Kindle 产品线，首次在其电子阅读器系列中采用反向堆叠显示结构，并为 Kindle、Kindle Paperwhite 和 Kindle Colorsoft 全系加入无缝色彩显示。根据官方公告内容，本次更新覆盖 2026 款 Kindle、Kindle Paperwhite 以及 Kindle Colorsoft 三款产品，并推出周边配件产品。这些新产品均采用齐平式正面屏幕，屏幕取消凸起边框，并覆盖边缘到边缘的彩色显示区域。官方...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 01 Oct 2026 22:39:26 GMT",
+      "id": 29,
+      "is_featured": false
+    },
+    {
       "title": "长安汽车 9 月交付 22.89 万辆，海外 96200 辆同比增长 73.8%",
       "link": "https://www.ithome.com/1/009/170.htm",
       "summary": "IT之家 10 月 1 日消息，长安汽车 9 月交付 22.89 万辆新车，其中海外交付 96200 辆同比增长 73.8%。IT之家从官方获悉，长安汽车 9 月交付新能源汽车 113200 辆，同比增长 13.9%。细分来看，长安汽车 9 月交付新车 50300 辆，长安启源 9 月交付 46507 辆，长安启源累计销量突破 100 万辆。另外，深蓝汽车 9 月销量达 30185 辆。阿维塔 9 月交付 8183 辆。长安凯程 9 月交付 19000 辆，海外交付同比增长 38%。",
@@ -511,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 01 Oct 2026 15:47:33 GMT",
-      "id": 23,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -523,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 01 Oct 2026 15:35:42 GMT",
-      "id": 24,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -535,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 01 Oct 2026 15:05:16 GMT",
-      "id": 25,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -547,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 01 Oct 2026 15:16:31 GMT",
-      "id": 26,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -559,90 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 01 Oct 2026 15:01:19 GMT",
-      "id": 27,
-      "is_featured": false
-    },
-    {
-      "title": "奇安信盘古石取证宣布适配 Android 17：支持微信已删除多媒体碎片重组",
-      "link": "https://www.ithome.com/1/009/165.htm",
-      "summary": "IT之家 10 月 1 日消息，奇安信旗下盘古石取证团队昨日宣布，盘古石手机取证 R8.8.0 版本完成多项升级，围绕提取、解析、安全管控三大方向进行更新。提取能力方面，该版本完成 Android 17 系统提权适配，并新增适配三星、小米系列设备的 Android 16 提权提取。IT之家注：提权指利用系统机制获取更高操作权限。智能截屏辅证功能同步升级，截屏识别后的文字可保留原始页面排版样式。除此之外，新版本还提升了华为鸿蒙设备 IMEI 提取稳定性；OPPO Wi-Fi 提取新增对私密空间数据的支持；设备连接后可...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:59:04 GMT",
-      "id": 28,
-      "is_featured": false
-    },
-    {
-      "title": "任天堂《宝可梦传说 Z-A》Switch 2 卡带 + 超次元爆涌 DLC 版 10 月 29 日发售",
-      "link": "https://www.ithome.com/1/009/164.htm",
-      "summary": "IT之家 10 月 1 日消息，任天堂宣布将于 10 月 29 日推出新的《宝可梦传说 Z-A》Nintendo Switch 2 版实体扩充包，将“超次元爆涌”（Mega Dimension）DLC 一并收录其中。不含 DLC 的《宝可梦传说 Z-A》Nintendo Switch 2 版已于 2025 年 10 月 16 日发售，数字版和实体版港区定价均为 359~409 港币（IT之家注：现汇率约合 307.3 ~ 350.1 元人民币）。据介绍，Nintendo Switch 2 版针对性能、分辨率和帧率进...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:42:54 GMT",
-      "id": 29,
-      "is_featured": false
-    },
-    {
-      "title": "余承东宣布华为移动影像升级，华为睿影 XMAGE 正式发布",
-      "link": "https://www.ithome.com/1/009/163.htm",
-      "summary": "IT之家 10 月 1 日消息，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东今日宣布，华为移动影像迎来全新升级 —— 正式发布华为睿影 XMAGE。余承东表示：睿观万象，聚光成影，“睿”，既是技术创新赋予影像的智慧，也是我们对影像背后的人、生活和情感更深的理解。我们希望从全栈自研影像技术品牌，成长为走向世界的影像文化品牌，定义智能影像时代的影像力量！据IT之家今日早些时候报道，在华为 Mate 90 系列及全场景新品发布会中，华为 Mate 90 Pro Max 典藏版“睿影 Z10 模块化相机”...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:39:18 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "华为 nova16 Pro 与 FIT 5 泡泡玛特 Hirono 小野联名款开售：12+256GB 昆仑玻璃款手机 3899 元，手表 1199 元",
-      "link": "https://www.ithome.com/1/009/162.htm",
-      "summary": "IT之家 10 月 1 日消息，华为 nova16 Pro 及华为手表 FIT 5 泡泡玛特 Hirono 小野联名款已于今日 12:08 正式开售。华为 nova16 Pro 于今年 6 月发布，搭载麒麟 9010S 芯片与 HarmonyOS 6.1 操作系统，配备 6.84 英寸 OLED 屏幕，支持 1-120Hz LTPO 自适应刷新率，峰值亮度达 6000nits。影像方面，该机后置 2 亿像素 RYYB 主摄、5000 万像素潜望长焦及 5000 万像素超广角微距镜头，前置为 5000 万像素人像镜头...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:30:20 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "惠普战 99 锐龙版 AI 移动工作站发布：AMD R9-9955HX3D + RTX PRO 2000，21999 元",
-      "link": "https://www.ithome.com/1/009/161.htm",
-      "summary": "IT之家 10 月 1 日消息，惠普战 99 锐龙版 AI 高性能移动工作站今日正式发布，10 月 12 日晚开售，IT之家汇总定价如下：R9 9955HX + RTX PRO 500 + 32GB 内存 + 1TB 硬盘： 14599 元R9 8945HX + RTX PRO 500 + 32GB 内存 + 1TB 硬盘：14999 元R9 9955HX + RTX PRO 2000 + 32GB 内存 + 1TB 硬盘： 16999 元R9 8945HX + RTX PRO 2000 + 32GB 内存 + 1...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:24:18 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "华为 Mate XT 2 三折叠手机获 HarmonyOS 7.0.0.109 SP8 升级，通信共享升级支持多人互助共享",
-      "link": "https://www.ithome.com/1/009/160.htm",
-      "summary": "IT之家 10 月 1 日消息，在今天的华为 Mate 90 系列及全场景新品发布会结束后，Mate XT 2 非凡大师三折叠手机迎来了一次系统更新。更新日志显示，新版本锁屏新增 3D 空间壁纸、通信共享支持多人互助通信共享等功能。IT之家附完整更新日志如下：亮点推荐新增 3D 空间壁纸功能，通过照片中的元素与景深时钟、透视时钟巧妙结合，打造空间感锁屏壁纸，为您提供丰富的壁纸视觉效果和玩法（设置 > 桌面和个性化 > 壁纸 > 3D 空间壁纸）多设备协同通信共享功能再升级，手机与搭载 HarmonyOS 7 的手机...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:23:44 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "致敬《终结者 2》：Figure 让 F.02 人形机器人亲自跳入熔炉，采纳施瓦辛格本人提议",
-      "link": "https://www.ithome.com/1/009/159.htm",
-      "summary": "IT之家 10 月 1 日消息，美国初创企业 Figure 今日发布视频，为寿终正寝的 F.02 机器人举行一场“火化仪式”。随着 Figure F.03 机队不断壮大，F.02 已经日显颓势。该公司认为继续维护老一代机器人已经没有意义，但直接报废并不是最优选择，因为这些机器人内含大量专用硬件和知识产权结晶。Figure 甚至表示，直接进行拆解工作需要大量时间，甚至可能拖慢 F.04 的研发进度。Figure 表示，让机器人自己跳入熔炉这个想法正是源自 T-800 扮演者阿诺德 · 施瓦辛格本人。此前 Figure...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 01 Oct 2026 14:03:36 GMT",
       "id": 34,
       "is_featured": false
     },
