@@ -1,6 +1,6 @@
 {
   "date": "2026年10月02日",
-  "update_time": "2026-10-02 17:03",
+  "update_time": "2026-10-02 23:25",
   "ai_concept": {
     "term": "RLHF (Reinforcement Learning from Human Feedback)",
     "chinese_name": "基于人类反馈的强化学习",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-02 17:03",
+    "sync_time": "2026-10-02 23:25",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,66 @@
       "is_featured": false
     },
     {
+      "title": "苹果回应少数美国运营商 AT&T 版 iPhone 18 Pro Max 出现 SOS 通信故障",
+      "link": "https://www.ithome.com/1/009/378.htm",
+      "summary": "IT之家 10 月 3 日消息，科技媒体 9to5Mac 昨日（10 月 2 日）发布博文，报道称美国电信运营商 AT&T 和苹果公司分别发布声明，表示少量美版 iPhone 18 Pro Max 存在蜂窝网络问题。IT之家曾于 9 月援引市场调查机构 TechInsights 公布的拆解报告，美国版苹果 iPhone 18 Pro Max 采用高通骁龙 X80 调制解调器，成为 iPhone 18 产品线中唯一采用该通信方案的机型。不过部分使用美版 iPhone 18 Pro Max 的用户反馈，该机型存在蜂窝网...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Fri, 02 Oct 2026 23:20:42 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "亚马逊云科技 CEO 加尔曼强势回应数据中心反对声浪：后果或影响数代人",
+      "link": "https://www.ithome.com/1/009/377.htm",
+      "summary": "IT之家 10 月 3 日消息，据《商业内幕》今天（3 日）凌晨报道，亚马逊云科技 CEO 马特 · 加尔曼警告，美国各地针对数据中心建设的反对声浪不断扩大，可能让美国在全球 AI 竞争中失去优势。加尔曼发表了一篇 3000 多词的博文称，如果美国大范围叫停数据中心建设，影响可能延续数代人。“数据中心建设刻不容缓，因为看到 AI 能够推动经济发展、增强国家安全的并不只有美国。谁能在 AI 领域领先，谁就能影响 AI 的发展方向，并在短期和长期获得最大收益。我们今天作出的选择将决定最终结果，如果美国因此分心或动摇，就...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Fri, 02 Oct 2026 23:17:50 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "Anthropic 拟斥资 1 亿美元培训万名工程师，破解企业 AI 落地“人才荒”",
+      "link": "https://www.ithome.com/1/009/376.htm",
+      "summary": "IT之家 10 月 3 日消息，Anthropic 计划投入 1 亿美元（IT之家注：现汇率约合 6.71 亿元人民币）培训 1 万名工程师，帮助企业把 AI 项目从构想真正推进到业务应用。当地时间 2 日，Anthropic 宣布推出 Claude Frontier Academy（Claude 前沿学院）培训项目，瞄准企业 AI 落地过程中一个主要瓶颈：真正懂得如何把 AI 开发出来，并将其部署到企业实际业务中的人才仍然不足。首批参加培训的工程师来自埃森哲、贝恩、凯捷、德勤、麦肯锡、摩根士丹利、诺和诺德和澳大利...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Fri, 02 Oct 2026 23:03:54 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "下载体验了 Muse 后，我清仓了 Airbnb，加仓了 Meta",
+      "link": "https://www.ithome.com/1/009/375.htm",
+      "summary": "IT之家 10 月 3 日消息，9 月 29 日作客财经播客《The Synopsis》时，资深独立股票分析师 Mostly Borrowed Ideas（下文简称 MBI）表示：在下载体验了 Muse 后，我清仓了 Airbnb，加仓了 Meta。IT之家注：MBI 是独立分析师 Abdullah Al Rezwan 的笔名，他运营投资研究网站和 Substack 专栏 MBI Deep Dives，以跨行业的上市公司深度研究、投资日志和公开持仓讨论而知名。在近期的访谈节目中，MBI 深入讨论 Meta 的 Mu...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Fri, 02 Oct 2026 23:03:19 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
+      "title": "微软发布 Win11 Beta 和 Experimental 频道多版本预览版，支持 Unicode 17.0 文本、优化设置主页性能",
+      "link": "https://www.ithome.com/1/009/374.htm",
+      "summary": "IT之家 10 月 3 日消息，微软昨天（10 月 2 日）发布博文，邀请 Beta 和 Experimental 频道的 Windows Insider 项目成员，测试适用于 Windows 11 的多个预览版更新，本次推送版本如下：Beta 通道：Build 26220.9587（26H2）、Build 28020.3142（26H1）Experimental 通道：Build 26340.9596（26H2）、Build 28120.3151（26H1）、Build 29680.1000（未来平台）IT之家注...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Fri, 02 Oct 2026 17:05:18 GMT",
+      "id": 27,
+      "is_featured": false
+    },
+    {
       "title": "继 AMD 后，高通、英特尔、英伟达硬件本月将全面支持微软高级着色器交付",
       "link": "https://www.ithome.com/1/009/373.htm",
       "summary": "IT之家 10 月 3 日消息，Microsoft（微软）当地时间 1 日通过 DirectX 开发者博客宣布，高级着色器交付 (ASD) 将在本月扩展到高通、英特尔、英伟达硬件上。由于 AMD 的 \"RDNA\" 家族已率先支持 ASD，这意味着该特性即将实现对四大 GPU 制造商平台的全覆盖。更多用户将可享受到直接下载云端预编译着色器带来的好处：缩短加载时间、消除着色器卡顿。高通已通过今年 9 月 22 日上线的 2026.08.3 显卡驱动为骁龙 X2 的核显提供了 ASD 支持。英特尔、英伟达的支持将在本月晚...",
@@ -511,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 16:16:55 GMT",
-      "id": 23,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -523,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 15:36:05 GMT",
-      "id": 24,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -535,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 15:30:57 GMT",
-      "id": 25,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -547,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 15:15:53 GMT",
-      "id": 26,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -559,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 15:00:48 GMT",
-      "id": 27,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -571,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 14:56:16 GMT",
-      "id": 28,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -583,66 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Fri, 02 Oct 2026 14:36:33 GMT",
-      "id": 29,
-      "is_featured": false
-    },
-    {
-      "title": "乘联分会：9 月 1-27 日乘用车零售 125.8 万辆同比下降 29%，新能源渗透率 65.7%",
-      "link": "https://www.ithome.com/1/009/366.htm",
-      "summary": "IT之家 10 月 2 日消息，乘联分会今日公布数据，9 月 1-27 日，全国乘用车市场零售 125.8 万辆，同比去年 9 月同期下降 29%，较上月同期增长 1%，今年以来累计零售 1,297.3 万辆，同比下降 22%。9 月 1-27 日，全国乘用车厂商批发 147.4 万辆，同比去年 9 月同期下降 30%，较上月同期下降 12%，今年以来累计批发 1,865.7 万辆，同比下降 7%。新能源：9 月 1-27 日，全国乘用车新能源市场零售 82.7 万辆，同比去年 9 月同期下降 20%，较上月同期增...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Fri, 02 Oct 2026 14:09:40 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "Meta 预热雷朋 Display 眼镜 2026 年下半年大型更新：改进导航功能、支持控制通知推送、Hologram 虚拟化身...",
-      "link": "https://www.ithome.com/1/009/365.htm",
-      "summary": "IT之家 10 月 2 日消息，Meta 现已公布雷朋 Display 眼镜 2026 年下半年大型更新详情，主要改进导航体验、通知功能、视频通话功能等。在导航方面，Meta 进一步改善了步行时的语音功能。此前系统会直接播报街道名称，例如“在第三街左转”，而在更新后，眼镜会更多结合用户眼前的实际环境进行描述，例如提示“在前方黄色房子处左转”，让语音导航更加自然。同时官方还为导航新增“骑行”和“公共交通”两种模式。在通知功能方面，用户现在能够自由控制眼镜显示的通知，并选择需要关闭的通知类型，从而进一步减少无关信息对使...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Fri, 02 Oct 2026 14:01:00 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "焕新极氪 007GT 色彩上新：推出“河谷绿”车色、“墨绿”内饰",
-      "link": "https://www.ithome.com/1/009/364.htm",
-      "summary": "IT之家 10 月 2 日消息，极氪汽车今日宣布，焕新极氪 007GT 色彩上新，带来全新外饰色河谷绿、全新内饰色墨绿。2026 年 10 月 1 日-10 月 31 日，下定焕新极氪 007GT 可享更多限时权益。IT之家注意到，焕新极氪 007/007GT 于今年 4 月正式上市，定价 20.39 万元起，限时 19.39 万元起。系列车型标配 19 英寸轮毂，其中焕新极氪 007 前脸新增动感通风口造型，并提供碳纤维套件选装服务，强化运动属性。两款车型搭载算力更强的 NVIDIA DRIVE Thor-U 智...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Fri, 02 Oct 2026 13:43:44 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "Meta 旗下 AI 智能体 Muse 将登陆智能眼镜平台，可代用户完成各种任务",
-      "link": "https://www.ithome.com/1/009/363.htm",
-      "summary": "IT之家 10 月 2 日消息，Meta 宣布旗下 AI 智能体 Muse 将于近期登陆智能眼镜，用户无需拿出手机，只需通过语音下达指令，Muse 就能在后台代用户完成一系列任务。Meta 表示，Muse 基于 Muse Spark AI 模型运行，其核心运行环境是一台部署在云端的私有持久化 Linux 虚拟机，配备独立的网页浏览器、文件系统和终端。即使用户关闭应用，这些组件仍会持续运行。为了完成用户交代的任务，Muse 可以自行决定编写并运行代码，也可以将工作分配给多个子智能体，还能创建定时任务。此外，Muse ...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Fri, 02 Oct 2026 13:38:14 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "B 站 App 上架鸿蒙手表端应用市场：用户可在华为 WATCH 系列手表上自由看视频、刷弹幕",
-      "link": "https://www.ithome.com/1/009/362.htm",
-      "summary": "IT之家 10 月 2 日消息，B 站 App 宣布上架鸿蒙手表端应用市场，用户在华为 WATCH 系列手表上就能看视频、刷弹幕、听播客。官方表示，用户只需前往应用市场，即可下载安装哔哩哔哩手表端，相应 App 提供收藏、倍速、循环播放、下载缓存等各种特性，适合早高峰地铁、夜跑、做饭、洗碗、排队、等人等各种场景，精彩内容抬腕即达。",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Fri, 02 Oct 2026 13:18:14 GMT",
       "id": 34,
       "is_featured": false
     },
