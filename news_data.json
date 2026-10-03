@@ -1,6 +1,6 @@
 {
   "date": "2026年10月03日",
-  "update_time": "2026-10-03 18:53",
+  "update_time": "2026-10-03 22:33",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-03 18:53",
+    "sync_time": "2026-10-03 22:33",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
