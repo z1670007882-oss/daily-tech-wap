@@ -1,6 +1,6 @@
 {
   "date": "2026年10月03日",
-  "update_time": "2026-10-03 15:25",
+  "update_time": "2026-10-03 18:53",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-03 15:25",
+    "sync_time": "2026-10-03 18:53",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,30 @@
       "is_featured": false
     },
     {
+      "title": "华为 Mate 90 Pro Max 性能解禁：搭载麒麟 9050 Pro，部分游戏能效优于第五代骁龙 8 至尊版机型",
+      "link": "https://www.ithome.com/1/009/580.htm",
+      "summary": "IT之家 10 月 4 日消息，在 10 月 1 日的华为 Mate 90 系列及全场景新品发布会上，华为年度旗舰 Mate 90 系列手机正式发布。其中，Mate 90 Pro Max / RS 非凡大师搭载的是首款逻辑折叠 τ 芯片 —— 麒麟 9050 Pro。根据华为官方介绍，麒麟 9050 Pro 是麒麟性能新巅峰，通过软硬芯云垂直整合，整机性能提升 31%。这枚芯片 CPU 还支持 9 核 16 线程超线程技术，多核性能提升 23%、GPU 渲染性能提升 40%、NPU 性能提升 140%。极客湾发布了...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 03 Oct 2026 16:20:02 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "明日出行请注意，交通运输部提示 33 个高速公路路段易发拥堵",
+      "link": "https://www.ithome.com/1/009/579.htm",
+      "summary": "IT之家 10 月 3 日消息，据交通运输部动态研判，10 月 4 日，全国高速公路有 33 个路段易发拥堵，主要集中在江苏、四川、广东、湖南、浙江等省份。如计划途经这些路段，请合理安排出行时间和路线。序号省份城市路线编号路线名称起点桩号止点桩号方向1江苏南京市G25长深高速K2152K2094下行2江苏无锡市G2京沪高速K1091K1121上行3江苏无锡市S48沪宜高速K134K171上行4江苏常州市G4221沪武高速K196K166下行5江苏南通市G15沈海高速K1180K1219上行6江苏淮安市G1516盐洛...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 03 Oct 2026 15:27:44 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
       "title": "泰坦军团“P2511G+”24.5 英寸显示器发售：1080P 215Hz 超频，509 元",
       "link": "https://www.ithome.com/1/009/578.htm",
       "summary": "IT之家 10 月 3 日消息，泰坦军团旗下“P2511G+”24.5 英寸显示器现已在京东发售，该机主打 1080P 215Hz 超频，定价为 509 元，部分地区国补后低至 483.55 元。京东泰坦军团 P2511G+ 显示器 509 元直达链接该机配备一块 1920x1080 分辨率 215Hz 超频（原生 200Hz）Fast IPS 面板，显示器亮度 400 尼特，GtG 响应速度 1ms，显示器支持 8-Bit 色彩，覆盖 99% sRGB 色域。该机支架支持俯仰，显示器本体支持 VESA 100x1...",
@@ -511,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 15:18:00 GMT",
-      "id": 23,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -523,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 02:55:08 GMT",
-      "id": 24,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -535,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:51:51 GMT",
-      "id": 25,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -547,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:47:46 GMT",
-      "id": 26,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -559,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:45:50 GMT",
-      "id": 27,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -571,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:28:33 GMT",
-      "id": 28,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -583,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:20:28 GMT",
-      "id": 29,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -595,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:18:03 GMT",
-      "id": 30,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -607,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:05:25 GMT",
-      "id": 31,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -619,30 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 03 Oct 2026 14:00:25 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "超八成 16 岁以下青少年绕过监管，澳大利亚拟强化社媒禁令",
-      "link": "https://www.ithome.com/1/009/569.htm",
-      "summary": "IT之家 10 月 3 日消息，据央视新闻今日报道，去年 12 月，澳大利亚正式实施全球首个针对 16 岁以下未成年人的社交媒体禁令。然而，有研究显示，这一禁令在澳大利亚实际执行效果并不明显。近期，澳大利亚政府推出新法案，继续强化社交媒体管控和青少年社交媒体禁令。今年 9 月，澳大利亚议会通过了《网络安全法案》修订案，继续强化社交媒体最低年龄限制的执法。修订案扩大了澳大利亚电子安全局和电子安全专员的执法权限，并提高了违反社交媒体最低年龄限制的罚款额度。新规加大惩戒力度，倒逼受管控社交媒体平台履行法定义务，阻止 16...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 03 Oct 2026 13:50:39 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "经典永不过时：智感旋转功能在 Mate 90 系列手机回归，华为智慧感知能力再补关键一环",
-      "link": "https://www.ithome.com/1/009/568.htm",
-      "summary": "IT之家 10 月 3 日消息，在 2019 年，华为发布了 Mate 30 系列手机，并率先带来智感旋转功能。该功能支持识别人脸方向，智能切换横屏、竖屏。例如：竖持手机斜躺，手机屏幕不会旋转，横持手机则会旋转。华为智感旋转功能一经发布，便一直预装在华为旗舰手机中，包括经典的 P40 系列、Mate 40 系列、P50 Pro（麒麟版）等。然而该功能在 Mate 50 之后便遗憾退场，一直未回归。令人惊喜的是，在 10 月 1 日发布的华为 Mate 90 系列旗舰手机上，智感旋转功能终于回归。已经购买到 Mate...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 03 Oct 2026 13:44:37 GMT",
       "id": 34,
       "is_featured": false
     },
