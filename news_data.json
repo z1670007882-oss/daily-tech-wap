@@ -1,6 +1,6 @@
 {
   "date": "2026年10月04日",
-  "update_time": "2026-10-04 16:10",
+  "update_time": "2026-10-04 22:37",
   "ai_concept": {
     "term": "MoE (Mixture of Experts)",
     "chinese_name": "混合专家模型架构",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-04 16:10",
+    "sync_time": "2026-10-04 22:37",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
