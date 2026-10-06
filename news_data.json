@@ -1,6 +1,6 @@
 {
   "date": "2026年10月06日",
-  "update_time": "2026-10-06 17:37",
+  "update_time": "2026-10-06 23:27",
   "ai_concept": {
     "term": "AI Agent",
     "chinese_name": "自主人工智能智能体",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-06 17:37",
+    "sync_time": "2026-10-06 23:27",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -239,6 +239,114 @@
   },
   "news": [
     {
+      "title": "消息称 SpaceX 计划募资 400 亿美元，用于采购英伟达 AI 芯片",
+      "link": "https://www.ithome.com/1/010/134.htm",
+      "summary": "IT之家 10 月 7 日消息，据《金融时报》报道，埃隆 · 马斯克（Elon Musk）旗下的 SpaceX 正计划募资 400 亿美元（IT之家注：现汇率约合 2,685.79 亿元人民币）。本轮融资由阿波罗全球管理（Apollo Global Management）牵头，资金将用于采购英伟达芯片。这家同时涉足人工智能与火箭业务的企业正在加大投入，押注该芯片厂商的先进技术。据知情人士透露，该公司计划通过银行贷款筹集约 100 亿美元（现汇率约合 671.45 亿元人民币），再发行 300 亿美元（现汇率约合 2...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 06 Oct 2026 23:24:50 GMT",
+      "id": 1,
+      "is_featured": true
+    },
+    {
+      "title": "LibreOffice：短期内默认版本不内置 AI 功能，用户可通过扩展自行接入本地模型",
+      "link": "https://www.ithome.com/1/010/132.htm",
+      "summary": "IT之家 10 月 7 日消息，如果你正在寻找一款不使用人工智能的文档编辑软件，LibreOffice 或许正是适合你的选择。开发这款开源文档编辑软件 LibreOffice 的非营利机构文档基金会（The Document Foundation），于本周在一篇博客文章中表示，该机构并非一味排斥人工智能，但在可预见的未来，“不会”在自家软件当中加入人工智能功能。这篇博客发布的几周之前，也就是八月下旬，LibreOffice 刚刚推出了最新版本。当时这家非营利组织就已经重申，这套软件“不包含任何生成式人工智能功能”。...",
+      "source": "IT之家",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "开源 (Open Source)",
+      "pub_time": "Tue, 06 Oct 2026 23:19:20 GMT",
+      "id": 2,
+      "is_featured": false
+    },
+    {
+      "title": "库克交棒后首次：苹果新任 CEO 特努斯将主持 2026 财年第 4 财季财报会议",
+      "link": "https://www.ithome.com/1/010/131.htm",
+      "summary": "IT之家 10 月 7 日消息，科技媒体 AppleInsider 昨日（10 月 6 日）发布博文，报道称苹果公司确认将于美国东部时间 11 月 2 日公布苹果公司 2026 财年（2025 年 9 月 28 日至 2026 年 9 月 26 日）第 4 财季（2026 年 6 月 28 日至 9 月 26 日）财报。苹果公司还计划在美国东部时间 11 月 2 日下午 5 点（IT之家注：北京时间 11 月 3 日早上 6 点）举行例行电话会议。在本次电话会议上，苹果现任首席执行官约翰 · 特努斯（John Te...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 06 Oct 2026 23:14:00 GMT",
+      "id": 3,
+      "is_featured": true
+    },
+    {
+      "title": "微软 Microsoft 365 遇冷：荷兰税务部门拟在 2028 年前寻找开源协作方案",
+      "link": "https://www.ithome.com/1/010/130.htm",
+      "summary": "IT之家 10 月 7 日消息，科技媒体 NeoWin 昨日（10 月 6 日）发布博文，报道称荷兰税务海关总署计划将邮件和日历从 Microsoft 365 云端迁至本地服务器，并在 2027~2028 年评估欧洲开源存储与协作方案。荷兰国务秘书 Eelco Eerenberg 在致荷兰众议院的信件中披露了这一安排，调整范围涉及税务和海关总署、海关部门以及福利服务部门。在存储和协作领域，IT之家援引博文介绍，荷兰政府计划寻找欧洲开源替代方案，并将于 2027~2028 年展开相关评估。该委员会认为，Microso...",
+      "source": "IT之家",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "开源 (Open Source)",
+      "pub_time": "Tue, 06 Oct 2026 23:01:20 GMT",
+      "id": 4,
+      "is_featured": false
+    },
+    {
+      "title": "消息称苹果发力智能家居：将与 LG 联合开发智能门铃、门锁以及恒温器",
+      "link": "https://www.ithome.com/1/010/129.htm",
+      "summary": "IT之家 10 月 7 日消息，据彭博社马克 · 古尔曼报道，苹果公司即将发力智能家居设备赛道，其中将包含门铃、恒温器以及其他配件，这批产品是通过与 LG 电子开展一次不同寻常的合作所开发的。知情人士透露，这批产品将归入一套设备生态体系，可以适配苹果全新的智能家居中枢，同时也能够搭配升级后的 HomePod mini 以及新款电视机顶盒使用。苹果计划在 10 月 13 日正式发布这批全新设备。因该合作项目尚未对外公开，相关消息人士要求匿名。据他们介绍，和 LG 电子联合开发的产品清单还包括智能插锁、室内安防摄像头、...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 06 Oct 2026 22:59:12 GMT",
+      "id": 5,
+      "is_featured": true
+    },
+    {
+      "title": "iFixit 拆解苹果 Apple Watch Series 12：电池更易拆，屏幕仍是维修难点",
+      "link": "https://www.ithome.com/1/010/128.htm",
+      "summary": "IT之家 10 月 7 日消息，国外维修团队 iFixit 昨日（10 月 6 日）发布视频，拆解苹果 Apple Watch Series 12 与 Apple Watch Ultra 4 两款智能手表，最终打出 4/10 可维修得分。报告显示，两款手表的屏幕均采用胶合固定，内部维修通常需要先拆下屏幕，IT之家附上拆解视频如下：Apple Watch Ultra 4 配备 2.444 Wh 电池，高于 Ultra 3 的 2.313 Wh。更换电池仍需拆卸屏幕，机身底部的 4 颗螺丝只能打开后盖传感器组件，并接触...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 06 Oct 2026 22:53:22 GMT",
+      "id": 6,
+      "is_featured": false
+    },
+    {
+      "title": "已挖出十几万漏洞，Anthropic 向更多安全团队开放其最强 Claude 模型",
+      "link": "https://www.ithome.com/1/010/127.htm",
+      "summary": "IT之家 10 月 7 日消息，据路透社报道，Anthropic 正在扩大一项计划，允许经过审核的网络安全专业人员在更少安全防护的情况下测试其最强大的人工智能模型，此前该公司的“玻璃翼计划（Project Glasswing）”今年已帮助发现了超过 10 万个软件漏洞。据IT之家了解，玻璃翼计划旨在保障全球关键软件的安全。该计划的合作方在 4 月至 7 月期间，至少找到了 129000 个已经核实的漏洞。而 Anthropic 自身开展的开源扫描工作，在 4 月到 10 月之间又额外发现了 5500 个漏洞。到目前...",
+      "source": "IT之家",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "开源 (Open Source)",
+      "pub_time": "Tue, 06 Oct 2026 22:50:13 GMT",
+      "id": 7,
+      "is_featured": true
+    },
+    {
+      "title": "谷歌推出 EmbeddingGemma 2：支持多模态、7.4 亿参数量化手机端运行只需 191MB 内存",
+      "link": "https://www.ithome.com/1/010/125.htm",
+      "summary": "IT之家 10 月 7 日消息，去年谷歌推出了 EmbeddingGemma，为开发者提供轻量高质量的文本嵌入方案，下载量已超 2000 万次，广泛应用于端侧搜索工具和隐私优先检索增强生成（ RAG ）管线。如今谷歌正式推出 EmbeddingGemma 2，将能力从文本扩展到代码、图像、视频、音频，可将这些内容统一映射到同一个嵌入空间。IT之家援引博文介绍，该模型基于 Gemma 4 架构开发，采用商业友好的 Apache 2.0 许可发布，总参数为 7.4 亿，非常适合端侧推理。EmbeddingGemma 2...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 06 Oct 2026 22:41:19 GMT",
+      "id": 8,
+      "is_featured": false
+    },
+    {
+      "title": "小米米家智能晾衣机 3 Max 今日开售：首创柔烘除菌专区，首发国补价 2699 元",
+      "link": "https://www.ithome.com/1/010/126.htm",
+      "summary": "IT之家 10 月 7 日消息，米家智能晾衣机 3 Max 今日 20:00 正式开售，首发国补价 2698.75 元。京东米家【重磅新品】电动晾衣架 3 Max 柔烘除菌超薄隐形阳台智能升降晾衣机 2698.75 元直达链接该机是米家首款柔烘除菌晾衣机，首创米家半封闭式柔烘专区。衣物平铺在晾晒网上后，启动干衣或除菌功能时，晾杆组件自动上升贴近风口，形成半封闭柔烘专区，通过热风循环锁温实现更快干衣与除菌。据介绍，柔烘专区支持标准烘、智能烘、柔护风三种模式。标准烘以均匀热风快速干衣，智能烘通过湿度感应自动调节风温，柔...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 06 Oct 2026 20:59:09 GMT",
+      "id": 9,
+      "is_featured": true
+    },
+    {
       "title": "德国交通部长：希望特斯拉 FSD（监督版）辅助驾驶系统能在欧盟获批",
       "link": "https://www.ithome.com/1/010/124.htm",
       "summary": "IT之家 10 月 6 日消息，据外媒 Golem 今天报道，德国联邦交通部长施特芬 · 比尔格表示，他希望特斯拉 FSD（监督版）辅助驾驶系统能在欧盟范围内获批，他认为欧盟能够统一审批类似系统具有积极意义。比尔格表示，特斯拉 FSD（监督版）的审批工作涉及很多有待解决的技术问题，同时还要划分好责任认定等。对他而言，推动创新落地是最重要的目的。这位交通部长还表示，FSD 监督版有望提升德国道路交通安全。他希望这套系统能够尽快在欧洲投入使用。IT之家注意到，特斯拉曾在今年 4 月明确表示，FSD（监督版）将于未来几个...",
@@ -247,8 +355,8 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 06 Oct 2026 15:06:34 GMT",
-      "id": 1,
-      "is_featured": true
+      "id": 10,
+      "is_featured": false
     },
     {
       "title": "《明日方舟：终末地》游戏将支持英伟达 RTX Spark 笔记本，「丹青渡」版本上线",
@@ -259,7 +367,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 06 Oct 2026 14:49:57 GMT",
-      "id": 2,
+      "id": 11,
       "is_featured": false
     },
     {
@@ -271,114 +379,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 06 Oct 2026 13:03:37 GMT",
-      "id": 3,
-      "is_featured": true
-    },
-    {
-      "title": "AMD 股价创历史新高！CEO 苏姿丰称 AI 芯片需求非常旺盛，将持续大幅扩产",
-      "link": "https://www.ithome.com/1/010/114.htm",
-      "summary": "IT之家 10 月 6 日消息，AMD 盘初涨近 3%，报 649.88 美元（IT之家注：现汇率约合 4,364 元人民币），创历史新高，市值达 1.06 万亿美元（现汇率约合 7.12 万亿元人民币）。开盘后 AMD 股价有所回落，目前涨超 2%，报 646.48 美元（现汇率约合 4,335 元人民币）。AMD CEO 苏姿丰今日在受访时表示，2026 年整体运算市场需求极为强劲，AMD 虽已同步扩充产能，但当前需求依然远高于供给。面对供不应求的现况，AMD 正全力拉升供货，预计 2027 年将大幅扩增产能。...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 14:30:54 GMT",
-      "id": 4,
-      "is_featured": false
-    },
-    {
-      "title": "特斯拉在印度市场交付超一年，仅注册不到 1000 辆汽车",
-      "link": "https://www.ithome.com/1/010/111.htm",
-      "summary": "IT之家 10 月 6 日消息，据 electrek 报道，根据印度电动汽车刊物 ElecTree 汇总的注册数据，特斯拉自 2025 年 9 月在印度开始交付以来，仅注册了 993 辆汽车。上述数据覆盖了 2025 年 9 月至 2026 年 9 月共 13 个自然月；若严格按前 12 个自然月计算，特斯拉交付第一年的新车总注册量仅为 699 辆。鉴于特斯拉官方并不按国家单独披露销售明细，注册量已是最接近真实销量的数据参考。2025 年 7 月，特斯拉正式进军印度市场，旗下 Model Y 起售价约 70,000...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 14:20:44 GMT",
-      "id": 5,
-      "is_featured": true
-    },
-    {
-      "title": "日本半导体光刻设备制造商 Gigaphoton 推出 hTGM 新型氖气回收系统，号称回收率达 50%",
-      "link": "https://www.ithome.com/1/010/110.htm",
-      "summary": "IT之家 10 月 6 日消息，据科技媒体 Tom's Hardware 今天报道，日本半导体光刻设备制造商 Gigaphoton 现已推出新型氖气回收系统 hTGM，用于氟化氩（ArF）准分子激光器。据报道，这套系统可实现 50% 氖气回收率，未来调整系统配置后，有望进一步提升回收效率。该技术有望弥补俄乌冲突后的芯片供应链缺口。2022 年前，乌克兰供应了全球半导体大约 50% 的氖气，后续被迫停止出口。同时，全球约 70% 的氖气产量用于半导体制造，其中很大一部分应用于先进的深紫外（IT之家注：DUV）光刻工艺...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 14:18:26 GMT",
-      "id": 6,
-      "is_featured": false
-    },
-    {
-      "title": "距 6 万亿美元仅一步之遥！英伟达市值达 5.8 万亿美元，创历史新高",
-      "link": "https://www.ithome.com/1/010/109.htm",
-      "summary": "IT之家 10 月 6 日消息，当地时间上午 9 点 30 分，纳斯达克市场开盘。开盘钟声敲响后的二十分钟左右，英伟达（NVDA）市值达到 5.82 万亿美元（IT之家注：现汇率约合 39.08 万亿元人民币），创下历史新高，同时距 6 万亿美元（现汇率约合 40.29 万亿元人民币）仅有一步之遥。今日开盘时，英伟达股价为 242.10 美元（现汇率约合 1,626 元人民币），最高 243.37 美元（现汇率约合 1,634 元人民币），最低 240.76 美元（现汇率约合 1,617 元人民币）。同时，英伟达股...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 13:58:56 GMT",
-      "id": 7,
-      "is_featured": true
-    },
-    {
-      "title": "宣称“欧美最强开源模型”：Mistral AI 发布 Mistral Large 4 公开预览版，月底开放权重",
-      "link": "https://www.ithome.com/1/010/108.htm",
-      "summary": "IT之家 10 月 6 日消息，当地时间 10 月 6 日，法国公司 Mistral AI 正式推出 Mistral Large 4 模型的公开预览版（Public Preview），简称 ML4，代号 le Chonk。即日起，用户可以在 Mistral Studio 上体验预览版 API，模型权重将于本月底正式开放下载。目前，官方正联合顶尖网络安全机构、受信任的合作伙伴及政府监管部门，在真实业务环境中对模型展开红队测试（Red-Teaming）。相关合作方将获得该模型的专项测试访问权限；该测试版本适当放宽了内容...",
-      "source": "IT之家",
-      "category": "models",
-      "category_name": "新AI模型",
-      "model_tag": "开源 (Open Source)",
-      "pub_time": "Tue, 06 Oct 2026 13:56:21 GMT",
-      "id": 8,
-      "is_featured": false
-    },
-    {
-      "title": "杨利伟：中国空间站将成全球开放实验平台，下半年迎来首批外籍航天员",
-      "link": "https://www.ithome.com/1/010/107.htm",
-      "summary": "IT之家 10 月 6 日消息，据央视新闻报道，当地时间 5 日，在 77 届国际宇航大会（IAC 2026）上，中国首飞航天员、航天英雄、现任中国载人航天工程副总设计师杨利伟表示，中国空间站将成为一个面向全球科学家开放的实验平台。杨利伟透露，中国空间站后续可在科学研究、航天员培训、提供飞行机会，以及科普教育等方面，开展深化合作。IT之家从原报道获悉，中国空间站将在今年下半年，迎来首批外籍航天员。杨利伟介绍道：“这两名巴基斯坦的预备航天员，在整个训练过程当中，表现非常优异，正在和中国航天员进行配合训练。按照计划，一...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 13:48:19 GMT",
-      "id": 9,
-      "is_featured": true
-    },
-    {
-      "title": "红魔 12 Pro+ 手机新品开启预约，10 月 15 日发布",
-      "link": "https://www.ithome.com/1/010/105.htm",
-      "summary": "IT之家 10 月 6 日消息，红魔 12 Pro+ 手机新品今日在京东开启新品预约，价格暂未公布，新机将于 10 月 15 日 14:30 正式发布。京东红魔 12 Pro+ 游戏旗舰手机待公布立即预约IT之家了解到，红魔 12 Pro+ 手机将搭载高通第六代骁龙 8 超级至尊版芯片。该机号称“迄今为止手感最好的红魔旗舰”，主打“更轻、更薄、更窄、更圆润”。预热图显示，新机相比前代厚度更薄、重量更轻，同时屏幕黑边、边框圆角都有优化，屏幕黑边由前代的 1.25mm 减小到了 0.96mm。红魔游戏手机产品总经理姜超...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 13:34:27 GMT",
-      "id": 10,
-      "is_featured": false
-    },
-    {
-      "title": "取代四大电视网“轮播模式”，亚马逊 Prime Video 拿下艾美奖全球独家直播权",
-      "link": "https://www.ithome.com/1/010/104.htm",
-      "summary": "IT之家 10 月 6 日消息，当地时间 10 月 6 日，亚马逊 Prime Video 与美国电视艺术与科学学院（Television Academy）联合宣布达成一项为期六年的合作协议，Prime Video 将获得艾美奖（Emmy Awards）的全球独家直播权。IT之家注：艾美奖始办于 1949 年，与奥斯卡金像奖、格莱美奖、托尼奖并称美国演艺界四大奖（EGOT）。自 2027 年起，用户可在 Prime Video 上免费观看艾美奖颁奖典礼直播 —— 这也标志着该典礼首次拥有一个专属的直播平台。官方表示...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 13:32:59 GMT",
-      "id": 11,
-      "is_featured": false
-    },
-    {
-      "title": "任天堂推出两款免费 Switch 游戏《你好，碧姬公主！》《你好，路易吉！》，面向儿童用户",
-      "link": "https://www.ithome.com/1/010/103.htm",
-      "summary": "IT之家 10 月 6 日消息，任天堂现已在 eShop 平台推出两款 Switch 游戏《你好，碧姬公主！》（Hello, Peach!）《你好，路易吉！》（Hello, Luigi!），面向儿童用户。IT之家了解到，这两款作品属于“My Mario”系列产品。游戏内容正如标题所示，玩家可以使用 Switch 游戏机的触控屏，与碧姬公主或路易吉进行活动。同时，任天堂已在此前推出过《你好，马力欧！》和《你好，耀西！》游戏，如今“My Mario”系列作品已经有 4 款。此外，本次新上架的两款游戏无需网络连接即可游玩...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 06 Oct 2026 13:24:11 GMT",
       "id": 12,
       "is_featured": false
     },
