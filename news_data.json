@@ -1,6 +1,6 @@
 {
   "date": "2026年10月13日",
-  "update_time": "2026-10-13 15:25",
+  "update_time": "2026-10-13 20:54",
   "ai_concept": {
     "term": "RAG (Retrieval-Augmented Generation)",
     "chinese_name": "检索增强生成",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-13 15:25",
+    "sync_time": "2026-10-13 20:54",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,54 @@
       "is_featured": false
     },
     {
+      "title": "苹果 Apple Watch 睡眠呼吸暂停功能正式上线，先一步读懂你的呼吸",
+      "link": "https://www.ithome.com/1/012/602.htm",
+      "summary": "IT之家 10 月 13 日消息，10 月 14 日凌晨 1 点，苹果通过 OTA 向用户推送新系统。升级 iOS 与 watchOS 之后，Apple Watch 用户即可开通睡眠呼吸暂停功能。这项功能此前已通过国家药品监督管理局批准，以“睡眠呼吸暂停迹象提示”应用的二类医疗器械身份进入国内，成为 Apple Watch 上又一个受医疗监管的健康功能。睡眠呼吸暂停功能目前支持 Apple Watch Series 9、Ultra 2 和 SE 3 及后续表款，面向年满 18 岁、此前未被诊断过睡眠呼吸暂停的成年用...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 13 Oct 2026 17:01:14 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "不能打电话、发短信：华为官网显示手机与手机间通信共享只支持共享网络能力（含 eSIM）",
+      "link": "https://www.ithome.com/1/012/600.htm",
+      "summary": "IT之家 10 月 13 日消息，华为在 Mate 90 系列手机上首发了多设备互助通信共享功能。只需要碰一碰，就能把几台华为设备的网络资源整合起来，按需分配。IT之家从华为官网了解到，手机与平板间通信共享支持共享手机双卡通话、短信、网络能力（含 eSIM），支持手机双卡网络切换时，平板网络跟随切换。但手机与手机间通信共享只支持共享手机网络能力（含 eSIM）。另外，共享端手机和接收端手机需同时为 HarmonyOS 7 及以上版本，且单台设备最多可同时为 3 台设备提供网络，或是同时连接 3 台设备的网络。网络共...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 13 Oct 2026 15:58:59 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "苹果今日举办欢迎回家发布会，盘中股价再创历史新高",
+      "link": "https://www.ithome.com/1/012/599.htm",
+      "summary": "IT之家 10 月 13 日消息，苹果于北京时间 10 月 13 日晚 9 点召开了一次主题为“欢迎回家”的新品发布会，正式推出旗下首款智能家庭中枢 HomeView，以及 HomePod mini 2 等新品。当晚美股盘初，苹果股价再度创下历史新高，总市值达 5.06 万亿美元（IT之家注：现汇率约合 33.93 万亿元人民币）。据外媒 MacObserver 报道，苹果正计划在 2027 年（明年）推出一项全新的家庭安全监控服务，作为其进一步拓展智能家居业务的一部分。与此同时，苹果正在研发一款注重隐私保护的家庭...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 13 Oct 2026 15:55:55 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "红魔 12 Pro+ 手机官宣搭载行业首款 185Hz 全面屏，行业首发 185Hz 高刷显示控制芯片",
+      "link": "https://www.ithome.com/1/012/598.htm",
+      "summary": "IT之家 10 月 13 日消息，红魔游戏手机官方今日继续预热 12 系列新机。据介绍，红魔 12 Pro+ 将采用红魔第九代屏下技术，打造无孔全面屏，宣称“通透度更高、刷新率更高、边框更窄”。根据红魔游戏手机官方介绍，红魔 12 Pro+ 搭载了行业首款 185Hz 全面屏 —— 行业首发 185Hz 高刷显示控制芯片 + 采用行业首款屏下 X11 发光材料。另外，红魔 12 Pro+ 手机的屏幕边框缩窄至 0.96mm。IT之家从红魔游戏手机官方了解到，红魔 12 Pro+ 支持 35+ 款热门游戏原生 185...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 13 Oct 2026 15:27:21 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
       "title": "长安凯程 V919 荣耀版 8 方上市：限时 8.89 万元起，标配宁德时代电芯 CLTC 续航 355km",
       "link": "https://www.ithome.com/1/012/597.htm",
       "summary": "IT之家 10 月 13 日消息，长安凯程 V919 荣耀版 8 方今日正式上市，共推出货运智慧型和客车智慧型两款配置，官方指导价分别为 9.59 万元和 9.79 万元，限时权益价分别为 8.89 万元和 9.09 万元。新车定位“多装多赚宽 8 方”，面向城配物流市场，主打装载效率、运营安全和长期可靠性。空间方面，V919 荣耀版 8 方货箱容积为 8.15 立方米，货箱宽 1740 毫米，轮包间距 1320 毫米，货箱长度 3380 毫米，尾门开启宽度 1450 毫米。V919 荣耀版 8 方整车长宽高分别为...",
@@ -511,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 15:18:36 GMT",
-      "id": 23,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -523,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 15:18:10 GMT",
-      "id": 24,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -535,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 15:17:45 GMT",
-      "id": 25,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -547,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 15:08:49 GMT",
-      "id": 26,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -559,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 15:04:11 GMT",
-      "id": 27,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -571,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 15:02:30 GMT",
-      "id": 28,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -583,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 14:56:38 GMT",
-      "id": 29,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -595,54 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 14:56:21 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "苹果智能家庭中枢 HomeView 细节：壁挂版不含支架得另买，可选 USB-C / 交流电 / PoE 版",
-      "link": "https://www.ithome.com/1/012/586.htm",
-      "summary": "IT之家 10 月 13 日消息，苹果首款智能家庭中枢 HomeView 现已正式发布，除了配备扬声器底座的版本外，苹果还推出了一款壁挂版本，定价均为 299 美元（IT之家注：现汇率约合 2,005 元人民币）。不过需要注意的是，壁挂版并不附带支架，用户需要另行购买。目前，苹果官网已经上架施耐德制造的三款安装支架，IT之家附具体详情如下：Power Mount USB-C 壁挂式连接器：59.95 美元（现汇率约合 402 元人民币）Power Mount AC：79.95 美元（现汇率约合 536.1 元人民币...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 13 Oct 2026 14:52:06 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "派拉蒙收购华纳兄弟探索后 Discovery+ 宣布涨价，无广告套餐 11.99 美元起",
-      "link": "https://www.ithome.com/1/012/585.htm",
-      "summary": "IT之家 10 月 13 日消息，派拉蒙已完成对华纳兄弟探索公司（Warner Bros. Discovery）收购，合并后的公司命名为 Skydance，旗下包括 Discovery+、HBO Max 和 Paramount+ 等流媒体服务。今日，Discovery+ 宣布上调订阅价格，带广告的套餐将从 5.99 美元每月涨至 6.99 美元，无广告套餐月费则从 9.99 美元（现汇率约合 67 元人民币）涨至 11.99 美元（IT之家注：现汇率约合 80.4 元人民币）。此次调价对新用户立即生效，现有用户将从...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 13 Oct 2026 14:40:12 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "自动驾驶公司 Applied Intuition 获得投资邀约，估值达 300 亿美元",
-      "link": "https://www.ithome.com/1/012/584.htm",
-      "summary": "IT之家 10 月 13 日消息，据 The Information 今天报道，自动驾驶初创公司 Applied Intuition 已收到多份投资邀约，估值最少 300 亿美元（IT之家注：现汇率约合 2,011.75 亿元人民币），相比 6 月估值翻了一番。据报道，Applied Intuition 由前 Y Combinator 首席运营官 Qasar Younis 和前谷歌产品经理 Peter Ludwig 联合创立，该公司专注于自动驾驶软件而非车辆制造。2024 年底，该公司年度经常性收入达 4 亿美元（...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 13 Oct 2026 14:35:07 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "“中国刻蚀机之父”尹志尧：AI 有可能会出现泡沫，这点大家需要多加留意",
-      "link": "https://www.ithome.com/1/012/583.htm",
-      "summary": "IT之家 10 月 13 日消息，第 26 届中国国际工业博览会昨日于上海开幕。在当日下午举行的集成电路高峰论坛上，中微公司董事长兼总经理尹志尧在分析行业趋势时，谈及了 AI 话题。▲ 图源：中微公司官微 | 中微公司董事长兼总经理尹志尧博士发表演讲他表示，现在 AI 话题非常火热，几乎所有会议都在谈 AI，但自己要提出一个警示：AI 有可能会出现泡沫，这点大家需要多加留意。尹志尧称，回看 1984—2026 年全球半导体行业 CAPEX 的年度增减曲线，波动十分剧烈，行业资本开支一年增幅可以达到 100%，也可以...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 13 Oct 2026 14:32:18 GMT",
       "id": 34,
       "is_featured": false
     },
