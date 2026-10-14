@@ -1,6 +1,6 @@
 {
   "date": "2026年10月14日",
-  "update_time": "2026-10-14 16:11",
+  "update_time": "2026-10-14 22:51",
   "ai_concept": {
     "term": "RLHF (Reinforcement Learning from Human Feedback)",
     "chinese_name": "基于人类反馈的强化学习",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-14 16:11",
+    "sync_time": "2026-10-14 22:51",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,18 @@
       "is_featured": false
     },
     {
+      "title": "苹果市值里程碑：收盘首次超 5 万亿美元",
+      "link": "https://www.ithome.com/1/013/142.htm",
+      "summary": "IT之家 10 月 15 日消息，苹果公司昨日（10 月 14 日）收盘市值首次站上 5 万亿美元（IT之家注：现汇率约合 33.53 万亿元人民币），成为继英伟达后全球第二家达成该里程碑的公司。IT之家此前报道，苹果公司于 2026 年 7 月 28 日的盘中交易中，股价曾一度涨至 342.89 美元（现汇率约合 2,299 元人民币），市值突破 5 万亿美元（最高达到约 5.036 万亿美元），这是其历史上首次在“盘中”触及 5 万亿美元（现汇率约合 33.53 万亿元人民币）市值。不过在当天收盘时，股价回落至...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Wed, 14 Oct 2026 22:44:05 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
       "title": "小米 17 Pro / Max 立减千元：京东手机 11.11 开启，MIX Flip2 折叠屏 5999 → 2719 元新低",
       "link": "https://www.ithome.com/1/013/123.htm",
       "summary": "小米 17 系列京东 11.11 狂促零点开启，至高享 12 期分期免息，折后均为好价。京东 11.11 红包至高 26888 元无门槛可用，每天可抽一次：点此抽取。小米 17 Pro Max至高立减 1050 元，国补额外立减 500 元，16+512G 仅需 5749 元，以旧换新至高补贴再减 1100 元：京东小米 17 Pro Max 妙享背屏 16+512G 国补后 5749 元直达链接小米 17 Pro12+256G 版本立减 1000 元，16+512G 版本立减 800 元，国补额外立减 500 元...",
@@ -511,7 +523,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 14:48:15 GMT",
-      "id": 23,
+      "id": 24,
       "is_featured": false
     },
     {
@@ -523,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 13 Oct 2026 10:07:22 GMT",
-      "id": 24,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -535,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:28:34 GMT",
-      "id": 25,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -547,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:23:53 GMT",
-      "id": 26,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -559,7 +571,7 @@
       "category_name": "新AI模型",
       "model_tag": "闭源 (Closed Source)",
       "pub_time": "Wed, 14 Oct 2026 15:13:57 GMT",
-      "id": 27,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -571,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:20:19 GMT",
-      "id": 28,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -583,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:14:06 GMT",
-      "id": 29,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -595,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:12:08 GMT",
-      "id": 30,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -607,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:11:55 GMT",
-      "id": 31,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -619,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:06:01 GMT",
-      "id": 32,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -631,18 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 14 Oct 2026 15:05:32 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "大疆 Osmo Pocket 4 手持云台相机更新固件，新增鸿蒙 Harmony OS 无感传片",
-      "link": "https://www.ithome.com/1/013/125.htm",
-      "summary": "IT之家 10 月 14 日消息，大疆 Osmo Pocket 4 手持云台相机现已获得 V01.04.1216 固件更新，主要新增鸿蒙 Harmony OS 无感传片等功能。IT之家附本次更新详情如下：新增 HarmonyOS 无感传片功能。新拍摄的照片和视频可在相机关机后自动传输至移动设备相册；新拍摄的照片支持即时传输至移动设备相册。为获得更稳定的使用体验，推荐使用 HarmonyOS 7.0 及以上版本的移动设备与相机配对，并确保相机电量高于 15%。自定义按键的单击、双击功能新增开启智能跟随选项。D-Log...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 14 Oct 2026 14:52:43 GMT",
       "id": 34,
       "is_featured": false
     },
