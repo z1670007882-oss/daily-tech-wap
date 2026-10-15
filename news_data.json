@@ -1,6 +1,6 @@
 {
   "date": "2026年10月15日",
-  "update_time": "2026-10-15 19:44",
+  "update_time": "2026-10-15 22:47",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-15 19:44",
+    "sync_time": "2026-10-15 22:47",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,30 @@
       "is_featured": false
     },
     {
+      "title": "经典 JRPG《永恒传说》高清复刻版登陆 Steam，国区售价 138 元起",
+      "link": "https://www.ithome.com/1/013/697.htm",
+      "summary": "IT之家 10 月 16 日消息，万代南梦宫经典日系 JRPG《Tales of Eternia Remastered》（《永恒传说》高清复刻版）正式登陆 Steam 平台，由 TOSE CO., LTD. 开发，万代南梦宫娱乐发行，这也是该作首次推出官方简体中文版本。IT之家附游戏商品页（https://store.steampowered.com/app/3470960/Tales_of_Eternia_Remastered/）。本次《永恒传说》高清复刻版在 Steam 国区提供两个版本购买：标准版售价 138...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 15 Oct 2026 22:12:28 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "对抗超级细菌新武器：谷歌 Antigravity 用 AI 加速抗菌肽发现",
+      "link": "https://www.ithome.com/1/013/684.htm",
+      "summary": "IT之家 10 月 16 日消息，当前抗生素耐药性问题不断加剧，全球迫切需要新型抗生素，但新药研发往往缓慢且过程繁琐。谷歌推出的 Google Antigravity 智能开发平台，能够有效简化这一流程。Google Antigravity 提供了智能科学工作台，支持生物学家快速发现、结构评估和筛选潜在靶点，将原本需要跨多个数据库的分散搜索整合到单次会话中。该平台还借助 ProtNLM 模型，帮助研究人员扫描 UniProt 数据库中数百万未表征的蛋白质，该模型可直接从氨基酸序列预测生物功能。研究人员已经通过 Go...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 15 Oct 2026 22:43:28 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
       "title": "消息称苹果已发出 10 月 28 日邀请函，首款触屏 MacBook、iPad mini 8、M6 Mac 即将到来",
       "link": "https://www.ithome.com/1/013/687.htm",
       "summary": "IT之家 10 月 16 日消息，苹果在 10 月的第二波新品有望 10 月 28 日到来，彭博社记者 Mark Gurman 于 10 月 15 日爆料称，苹果正邀请部分媒体参加 10 月 28 日在美国洛杉矶举办的产品发布会，预计推出触摸屏 MacBook、iPad mini 新品、M6 Mac。在活动方式方面，Gurman 曾爆料称本次活动不会采用传统苹果发布会的现场直播形式，主要面向内容创作者，会设置产品体验环节，形式类似苹果于 10 月 13 日在纽约举办的活动。IT之家获悉，产品方面，Gurman 预估...",
@@ -511,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 16:50:20 GMT",
-      "id": 23,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -523,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 16:33:51 GMT",
-      "id": 24,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -535,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 16:28:34 GMT",
-      "id": 25,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -547,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 16:02:39 GMT",
-      "id": 26,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -559,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:55:08 GMT",
-      "id": 27,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -571,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:45:15 GMT",
-      "id": 28,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -583,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:38:57 GMT",
-      "id": 29,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -595,7 +619,7 @@
       "category_name": "新AI模型",
       "model_tag": "开源/开放权重",
       "pub_time": "Thu, 15 Oct 2026 15:19:12 GMT",
-      "id": 30,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -607,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:16:51 GMT",
-      "id": 31,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -619,30 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:08:56 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "Epic 喜加二：《烂奶酪》《Agent A - 伪装游戏》游戏免费领取",
-      "link": "https://www.ithome.com/1/013/675.htm",
-      "summary": "IT之家 10 月 15 日消息，Epic 本周送出的游戏是《烂奶酪》和《Agent A - 伪装游戏》，下周送出的游戏是《Sker Ritual》以及《Home - A Unique Horror Adventure》。领取链接：《烂奶酪》，《Agent A - 伪装游戏》IT之家附《Bad Cheese》游戏简介： 这是一款心理恐怖游戏，灵感源自二十世纪 20 年代那些充满诡异魅力的动画片。你将化身为一只小老鼠，当母亲不在家的时候，与不太称职的父亲共同度过周末。请表现出你最听话的一面，让父亲心情愉快。本作由 S...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 15 Oct 2026 15:00:33 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "消息称三星 Galaxy S27 Ultra 手机屏幕边框略微收窄，约 1.28mm",
-      "link": "https://www.ithome.com/1/013/674.htm",
-      "summary": "IT之家 10 月 15 日消息，X 平台博主 Ice Universe 今日发文称，三星 Galaxy S27 Ultra 手机的屏幕边框约为 1.28mm，后摄模组厚度约 4.69mm。作为对比，Galaxy S26 Ultra 的屏幕边框宽度约为 1.68mm。而国产品牌的旗舰手机已经开始突破 1mm 门槛，例如小米 18 Pro Max 和 OPPO Find X10 Pro Max 分别宣称采用 0.99 mm 和 1mm 的屏幕边框。因此，我们可以更多关注 Galaxy S27 Ultra 是否会采用全...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 15 Oct 2026 15:00:11 GMT",
       "id": 34,
       "is_featured": false
     },
