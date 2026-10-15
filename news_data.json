@@ -1,6 +1,6 @@
 {
   "date": "2026年10月15日",
-  "update_time": "2026-10-15 15:59",
+  "update_time": "2026-10-15 19:44",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-15 15:59",
+    "sync_time": "2026-10-15 19:44",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,54 @@
       "is_featured": false
     },
     {
+      "title": "消息称苹果已发出 10 月 28 日邀请函，首款触屏 MacBook、iPad mini 8、M6 Mac 即将到来",
+      "link": "https://www.ithome.com/1/013/687.htm",
+      "summary": "IT之家 10 月 16 日消息，苹果在 10 月的第二波新品有望 10 月 28 日到来，彭博社记者 Mark Gurman 于 10 月 15 日爆料称，苹果正邀请部分媒体参加 10 月 28 日在美国洛杉矶举办的产品发布会，预计推出触摸屏 MacBook、iPad mini 新品、M6 Mac。在活动方式方面，Gurman 曾爆料称本次活动不会采用传统苹果发布会的现场直播形式，主要面向内容创作者，会设置产品体验环节，形式类似苹果于 10 月 13 日在纽约举办的活动。IT之家获悉，产品方面，Gurman 预估...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 15 Oct 2026 16:50:20 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "华为余承东就“三部门联合调查刹车踏板支架断裂问题”表态：正义可能会迟到，但永远不会缺席！",
+      "link": "https://www.ithome.com/1/013/686.htm",
+      "summary": "IT之家 10 月 16 日消息，据多位博主分享的截图，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东转发了尊界汽车声明，表态称：正义可能会迟到，但永远不会缺席！据IT之家昨晚报道，针对网络反映的“尊界 V800 汽车刹车踏板支架断裂问题”，工业和信息化部、中央网信办、市场监管总局高度重视，在前期调查工作基础上，成立联合调查组开展核查，并依法依规处理。有关情况将及时公布。随后，尊界汽车官方微博发布声明，宣布将积极响应、完全服从并将全力配合联合调查组的工作。10 月 15 日，工信部等三部门发布了联合...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 15 Oct 2026 16:33:51 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "动视看好《GTA 6》提振市场，让更多玩家回归游戏、带动《使命召唤：现代战争 4》销量表现",
+      "link": "https://www.ithome.com/1/013/685.htm",
+      "summary": "IT之家 10 月 16 日消息，动视认为，《GTA 6》的推出有望带动《使命召唤》系列的表现，而非挤压其市场空间。动视首席营销官泰勒 · 巴尔（Tyler Bahl）表示，《GTA 6》和《使命召唤》将是 2026 年规模最大的两款游戏之一，前者带来的玩家回流和游戏行业关注度提升，有望为《现代战争 4》创造更多机会。巴尔当地时间 10 月 15 日在接受 The Game Business 采访时，被问及《GTA 6》与《塞尔达传说：时之笛》重制版于 11 月同期推出，是否会挤压市场，分散玩家对《使命召唤》的关注...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 15 Oct 2026 16:28:34 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "苹果营销主管谈 OpenAI 硬件：我们没感到有威胁，相比追逐 AGI 更重视用户隐私与日常使用体验",
+      "link": "https://www.ithome.com/1/013/683.htm",
+      "summary": "IT之家 10 月 16 日消息，除了苹果 CEO 约翰・特努斯（John Ternus）之外，《时代》今日还采访到了苹果全球营销高级副总裁格雷格・乔斯维亚克（Greg Joswiak）。当谈及 OpenAI 的硬件计划时，他表示，苹果并不担心 OpenAI 进军硬件领域带来的竞争。“我们并未感受到威胁。我们能够实现这样的软硬件整合，这意味着我们可以创造比其他任何人都更好的体验。”乔斯维亚克还谈到了苹果对人工智能产品的定位。他表示，苹果并不是专门为那些执着于追求超级智能的 AI 爱好者开发产品。“我们欢迎他们使用我...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 15 Oct 2026 16:02:39 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
       "title": "特努斯谈早期折叠屏手机：感觉“有点廉价、质量也不怎么样”，苹果早在 2011 年就开始探索相关技术",
       "link": "https://www.ithome.com/1/013/682.htm",
       "summary": "IT之家 10 月 15 日消息，苹果 CEO 约翰・特努斯（John Ternus）今日在接受《时代》杂志专访时，谈到了他对于早期折叠屏手机的感受，称其中一些产品给人的感觉“有点廉价、质量也不怎么样”（“kind of cheap and crappy”）。相关采访刊登于《时代》杂志 2026 年度最佳发明专题，苹果首款折叠屏手机 iPhone Duo 也入选该榜单。众所周知，三星于 2019 年推出首款折叠屏手机，而全球首款量产的三折叠屏手机华为 Mate XT 非凡大师于 2024 年发布，苹果直到今年才推出...",
@@ -511,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:55:08 GMT",
-      "id": 23,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -523,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:45:15 GMT",
-      "id": 24,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -535,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:38:57 GMT",
-      "id": 25,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -547,7 +595,7 @@
       "category_name": "新AI模型",
       "model_tag": "开源/开放权重",
       "pub_time": "Thu, 15 Oct 2026 15:19:12 GMT",
-      "id": 26,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -559,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:16:51 GMT",
-      "id": 27,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -571,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:08:56 GMT",
-      "id": 28,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -583,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:00:33 GMT",
-      "id": 29,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -595,54 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 15 Oct 2026 15:00:11 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "继《现代战争》《黑色行动》后：动视确认《使命召唤》将推出全新子系列，游戏开发工作已启动",
-      "link": "https://www.ithome.com/1/013/673.htm",
-      "summary": "IT之家 10 月 15 日消息，动视确认《使命召唤》系列将推出全新子系列，相关开发工作已经启动。据 The Game Business 当地时间 10 月 15 日发布的专访，动视首席营销官泰勒・巴尔（Tyler Bahl）透露，公司已为这一全新子系列奠定开发基础，但目前尚未公布游戏名称、具体玩法及发售时间。他同时强调，公司目前仍将重点放在即将推出的《使命召唤：现代战争 4》上，希望通过这款作品回应玩家此前提出的意见。据 The Game Business 报道，近年来，《使命召唤》系列主要围绕《现代战争》和《黑...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 15 Oct 2026 14:54:28 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "夸克网盘 11.11 终发车： SVIP 低至 8 元 / 月，支持每月 100 次离线下载",
-      "link": "https://www.ithome.com/1/013/672.htm",
-      "summary": "夸克 SVIP 年卡官方定价 300 元，日常大促价 158 元 / 年、25 元 / 月。今日 11.11 大促双年卡 + 月卡仅需 218 元（共 25 个月），加赠 keep 会员双月卡。折合 8.7 元 / 月（算上 keep 会员则 8 元 / 月），104 元 / 年：天猫夸克网盘 SVIP 超级会员 2 年卡 赠月卡 +keep 双月卡折后 217 元直达链接年卡今日折后 120 元，加赠 14 天，折合 9.6 元 / 月、115 元 / 年：天猫夸克网盘 SVIP 超级会员年卡 加赠 14 天折后...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 15 Oct 2026 14:48:15 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "腾讯魔方《异人之下》手游定档 12 月：登陆 iOS、安卓、鸿蒙，PC 手机数据互通",
-      "link": "https://www.ithome.com/1/013/671.htm",
-      "summary": "IT之家 10 月 15 日消息，腾讯魔方工作室群研发的 3D 格斗竞技游戏《异人之下》正式官宣定档 12 月，官方同步开启终局测试招募。本轮终局测试为限量计费删档测试，将于 11 月 4 日正式开启，测试招募今日正式开放，问卷截止时间为 10 月 27 日 16 时。截至目前，游戏全平台预约量已突破 3000 万。平台互通规则方面，本次终局测试支持 PC 端与移动端（IT之家注：含 iOS、安卓、鸿蒙）游玩，双端数据互通，QQ 与微信玩家可匹配对战，但两个平台账号数据并不互通。据官方公告，每位入选玩家仅开通单平台...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 15 Oct 2026 14:47:29 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "Anthropic 抛弃 Git，选择自研版本控制系统 Scion",
-      "link": "https://www.ithome.com/1/013/670.htm",
-      "summary": "IT之家 10 月 15 日消息，美国人工智能公司 Anthropic 近日宣布弃用 Git，转为采用自研的版本控制系统 Scion，将大部分源代码管理操作转移至服务器，减少智能体和自动化任务需要下载的数据。Anthropic 表示，公司 5 月平均每天合并 2500 次代码变更；到了 9 月，这一数字已经超过 3 万次，Git 已经无法满足需求，为此公司选择自研 Scion 系统。Anthropic 宣称，Scion 的 CPU 和内存消耗仅为 Git 的两百分之一。切换系统后，CI 和研究任务代码检出操作仅需几...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 15 Oct 2026 14:42:13 GMT",
       "id": 34,
       "is_featured": false
     },
