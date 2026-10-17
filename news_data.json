@@ -1,6 +1,6 @@
 {
   "date": "2026年10月17日",
-  "update_time": "2026-10-17 14:40",
+  "update_time": "2026-10-17 18:03",
   "ai_concept": {
     "term": "CoT (Chain of Thought)",
     "chinese_name": "思维链 / 链式思考推理",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-17 14:40",
+    "sync_time": "2026-10-17 18:03",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,30 @@
       "is_featured": false
     },
     {
+      "title": "12.88 万元起，广汽埃安 Ray7 预售 2 小时订单达 6817 单",
+      "link": "https://www.ithome.com/1/014/410.htm",
+      "summary": "IT之家 10 月 17 日消息，广汽埃安刚刚宣布 Ray7 预售开启仅 2 小时，订单达 6817 单。该车于今晚开启预售，共 5 款车型，价格为 12.88 万元起。车身尺寸方面，长宽高为 4960×1900×1455mm，轴距达 2920mm，提供仲夏紫、闪电黄、月辉银、风暴红、熔岩灰、云舒白、热带蓝车色。座舱配备高通骁龙 8295P 座舱芯片 +24GB LPDDR4 运存 +128GB UFS 闪存，15.6 英寸 2.5K 高清中控屏 + 车手互联全覆盖。此外，该车搭载华为 DriveONE 多合一电驱...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 17 Oct 2026 15:01:05 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "网易《逆水寒：新世界》首个大型资料片【苗疆蛊事】官宣，首次采用双线更新框架",
+      "link": "https://www.ithome.com/1/014/409.htm",
+      "summary": "IT之家 10 月 17 日消息，网易逆水寒官宣，10 月 30 日，《逆水寒：新世界》首个大型资料片【苗疆蛊事】正式开启，将首次采用双线更新的框架。根据官方介绍，苗寨会在月色渐显时展示出另一幅面孔。而当血月升起，刚刚流连的山水，也有了让人忍不住追问的秘密。循着蛊影深入，在【祈梦月见岭】与阿初一同直面姬玄霜；月相轮转，下一次又会遇见怎样的挑战？无更暗市里，异闻百相真假难辨，就连熟悉的菠萝农场，也被一群夜晚的不速之客找上了门……《逆水寒：新世界》首个大型资料片【苗疆蛊事】将带来全新地图【月见岭】、大理正传终章剧情、月...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 17 Oct 2026 14:43:51 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
       "title": "英伟达否认 RTX 5090 停产传闻，承认供应链产能受限",
       "link": "https://www.ithome.com/1/014/407.htm",
       "summary": "IT之家 10 月 17 日消息，英伟达个人计算业务高级副总裁 Jeff Fisher 昨日在台北出席 RTX Spark 相关活动时回应了 RTX 5090 停产相关传闻，明确表示相关消息不属实。他强调，这款显卡仍是英伟达非常重要的核心产品，后续将继续供货。但他也同时承认，当前供应链产能确实受到限制，英伟达正努力推动产品进入市场。此前，消息人士 MEGAsizeGPU (@Zed__Wang) 10 月 10 日爆料称，英伟达将不再向 GeForce RTX 50 系列游戏显卡分配 GB202，并将原本用于该卡的...",
@@ -511,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 14:33:46 GMT",
-      "id": 23,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -523,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 14:29:23 GMT",
-      "id": 24,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -535,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 14:20:45 GMT",
-      "id": 25,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -547,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 13:56:46 GMT",
-      "id": 26,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -559,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 13:32:15 GMT",
-      "id": 27,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -571,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 13:15:27 GMT",
-      "id": 28,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -583,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 13:06:00 GMT",
-      "id": 29,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -595,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 12:47:29 GMT",
-      "id": 30,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -607,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 12:36:50 GMT",
-      "id": 31,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -619,30 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 17 Oct 2026 12:35:26 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "比亚迪第三代秦 PLUS 官图公布，已完成申报",
-      "link": "https://www.ithome.com/1/014/392.htm",
-      "summary": "IT之家 10 月 17 日消息，比亚迪王朝网销售事业部总经理路天昨日分享了第三代秦 PLUS 官图，宣称“尺寸更大，空间更大，想象更大”。IT之家注意到，工信部昨晚发布第 412 批《道路机动车辆生产企业及产品公告》新产品公示，比亚迪秦 PLUS EV 完成申报，预计 10 月下旬上市。比亚迪秦 PLUS EV 为纯电动轿车，由比亚迪汽车工业有限公司申报，车身外形尺寸为长 4840 mm、宽 1900 mm、高 1498 mm，轴距达到 2800 mm。动力方面，该车搭载永磁同步驱动电机，型号为 TZ164XYD...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 17 Oct 2026 12:31:42 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "阿维塔 T09 实车曝光，定位“50 万级科技新旗舰”",
-      "link": "https://www.ithome.com/1/014/391.htm",
-      "summary": "IT之家 10 月 17 日消息，阿维塔 T09 实车今日在社交平台曝光，该车于 9 月 8 日发布的第 411 批《道路机动车辆生产企业及产品公告》中完成申报，官方宣称该车是“50 万级科技新旗舰”。IT之家从申报信息获悉，阿维塔 T09 为插电式混合动力运动型乘用车，提供两种动力版本，长宽高分别为 5285/2025/1810 或 1820mm，轴距 3150mm，前轮距 1726mm，后轮距 1740mm，额定载客 6 人，支持选装前格栅、轮辋、车顶玻璃、前保险杠、前底护板、黑色扰流板、后保险杠、后底护板、无...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 17 Oct 2026 12:08:50 GMT",
       "id": 34,
       "is_featured": false
     },
