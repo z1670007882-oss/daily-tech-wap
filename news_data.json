@@ -1,6 +1,6 @@
 {
   "date": "2026年10月17日",
-  "update_time": "2026-10-17 18:03",
+  "update_time": "2026-10-17 21:52",
   "ai_concept": {
     "term": "CoT (Chain of Thought)",
     "chinese_name": "思维链 / 链式思考推理",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-17 18:03",
+    "sync_time": "2026-10-17 21:52",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
