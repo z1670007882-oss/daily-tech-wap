@@ -1,6 +1,6 @@
 {
   "date": "2026年10月18日",
-  "update_time": "2026-10-18 15:06",
+  "update_time": "2026-10-18 18:22",
   "ai_concept": {
     "term": "AI Agent",
     "chinese_name": "自主人工智能智能体",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-18 15:06",
+    "sync_time": "2026-10-18 18:22",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,54 @@
       "is_featured": false
     },
     {
+      "title": "首发即国补：荣耀 Earbuds 耳夹式耳机 499 → 378 元，全天候舒适佩戴",
+      "link": "https://www.ithome.com/1/014/619.htm",
+      "summary": "荣耀新一代 Earbuds 耳夹式耳机将于今日开售，定价 499 元，首发到手价 449 元。评价返 10 元 E 卡（折合仅需 439 元），学生可再享 30 元教育优惠。部分地区支持政府补贴（例如广东），实付低至 382 元，评价后折合 372 元：京东荣耀 Earbuds 耳夹式耳机抢先购首发 449 元直达链接京东 11.11 红包至高 26888 元无门槛可用，每天可抽一次：点此抽取。这款耳机主打全天候舒适佩戴，耳挂采用食品级亲肤硅胶，搭配天鹅颈曲线设计；单只耳机重 5.6 克，C 桥最窄处 3.2mm；...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 18 Oct 2026 15:47:03 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "两部门：鼓励利用电影院空闲时段开展重大体育赛事直播",
+      "link": "https://www.ithome.com/1/014/616.htm",
+      "summary": "IT之家 10 月 18 日消息，据央视财经今日报道，近日，国家电影局、体育总局联合印发《关于开展“跟着电影去运动”行动推动电影与体育双向赋能的通知》。在促进消费联动方面，支持电影院、体育场馆、体育赛事举办方、互联网平台企业、商业银行、支付结算机构等联合开展“电影 + 体育”促消费活动，推出观影与赛事票根联动、消费满减等优惠举措；鼓励结合电影场景，打造徒步、骑行、自驾等特色户外运动线路；支持电影、体育衍生产品联名合作；支持打造电影、运动市集，双向融入体育、电影元素。在影院场景拓展方面，鼓励在电影院设置体育主题影厅，...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 18 Oct 2026 15:25:31 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "索尼新专利曝光：AI 可在 GPU 渲染完成前预测下一帧画面，减少游戏卡顿",
+      "link": "https://www.ithome.com/1/014/615.htm",
+      "summary": "IT之家 10 月 18 日消息，据科技媒体 TechSpot 今天报道，索尼最近申请一项专利，描绘以下场景：让 AI 在 GPU 完成渲染前预测下一帧画面，减少游戏画面卡顿，同时避免帧生成技术带来的额外延迟。IT之家从原报道获悉，这项技术能够解决帧生成的缺点，让显示画面不再等待两帧画面完成渲染，才能生成插入其中的中间帧。而是直接利用已经生成的画面预测下一帧，无需等待两帧画面就能插值，帮助游戏维持更稳定的帧输出节奏。同时，索尼使用了联合训练的编解码器，将渲染完成的画面转换为嵌入表示，对图像进行紧凑的数值化表达，让解...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 18 Oct 2026 15:16:16 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "1499 → 1146.8 元：华为 FreeClip 2 典藏版耳夹耳机京东国补新低",
+      "link": "https://www.ithome.com/1/014/614.htm",
+      "summary": "华为 FreeClip 2 典藏版耳夹耳机今年 6 月 15 日正式开售，价格为 1499 元。今日京东可叠加 1200-100 元惊喜红包，大部分地区还可叠加政府补贴，实付 1146.8 元即可入手：领京东超级惊喜红包：点此领券（进入会场后大概率自动领）京东华为 FreeClip 2 典藏版耳夹耳机国补后 1146.8 元直达链接京东 11.11 红包至高 26888 元无门槛可用，每天可抽一次：点此抽取。典藏版与普通版主要区别为：配有独立 AI 实体按键（华为设备可唤醒小艺，苹果安卓可唤醒豆包 *）。充电舱为鎏...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 18 Oct 2026 15:07:49 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
       "title": "古尔曼：苹果明知 iPhone Duo 折叠屏手机供应不足，却坚持周五启动预售",
       "link": "https://www.ithome.com/1/014/613.htm",
       "summary": "IT之家 10 月 18 日消息，彭博社记者马克 · 古尔曼在最新一期《Power On》通讯中透露，苹果明知 iPhone Duo 折叠屏手机面临严重的供应短缺，却仍然决定本周五开启预购，而不是等到备货更加充足时再启动预购。古尔曼表示：我就直说了：苹果这次犯了一个重大错误。他们明明知道供应严重受限，却坚持按计划推出 iPhone Duo。比起满足市场需求，苹果更希望在第一财季初期让这款设备上市。这将让许多希望首批购买的用户感到失望。IT之家注意到，古尔曼还透露，苹果最初仅计划在美国和中国推出 iPhone Duo...",
@@ -511,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 15:01:01 GMT",
-      "id": 23,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -523,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:51:53 GMT",
-      "id": 24,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -535,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:44:29 GMT",
-      "id": 25,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -547,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:40:53 GMT",
-      "id": 26,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -559,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:38:58 GMT",
-      "id": 27,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -571,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:33:39 GMT",
-      "id": 28,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -583,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:32:41 GMT",
-      "id": 29,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -595,54 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 18 Oct 2026 14:18:38 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "类魂 FPS 游戏《末世神枪》试玩 DEMO 上架 Steam，游戏 12 月 8 日发售",
-      "link": "https://www.ithome.com/1/014/600.htm",
-      "summary": "IT之家 10 月 18 日消息，由曾操刀《半条命 2》《辐射 4》《耻辱》《德军总部：新秩序》等游戏的传奇美术总监维克多 · 安东诺夫打造的类魂 FPS 游戏《末世神枪（Guns of Eschaton）》将于 2026 年 12 月 8 日发售，登陆 PlayStation 5、XBOX Series S|X、以及 PC 平台。目前，本作已登陆 Steam 平台，并提供了试玩 DEMO 供下载，IT之家附游戏商品页（https://store.steampowered.com/app/3734220/_/）。据...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 18 Oct 2026 14:16:11 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "安全公司趋势科技：警惕山寨苹果 iPhone Duo 预购网站，暗藏黑客钓鱼攻击风险",
-      "link": "https://www.ithome.com/1/014/599.htm",
-      "summary": "IT之家 10 月 18 日消息，安全公司趋势科技发文，透露随着苹果 iPhone Duo 预购火热，目前市面上出现多个山寨苹果网站，这些网站打着所谓“限量抢先购”话术吸引消费者点击，以此进行钓鱼攻击。IT之家参考通报获悉，相应网站会先识别访客使用的系统版本，如果发现用户设备系统存在已知安全漏洞，就可能进一步利用漏洞发动攻击。这意味着即使用户只是点击进入网站，没有输入任何信息、下载运行任何脚本，也有可能导致用户设备遭到黑客控制。对此，该公司建议用户通过苹果官网或可信赖的销售渠道购买产品，同时及时更新手机操作系统和 ...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 18 Oct 2026 14:05:49 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "价值 250 万雷亚尔英伟达 RTX 5090 显卡货物在巴西圣保罗机场不翼而飞",
-      "link": "https://www.ithome.com/1/014/598.htm",
-      "summary": "IT之家 10 月 18 日消息，据巴西时报今日报道，总部位于巴西巴拉那州马林加市的分销商 Oderço 爆料，一批成本价约 250 万雷亚尔（IT之家注：约 330 万元人民币）的英伟达 GeForce RTX 5090 显卡运抵圣保罗瓜鲁柳斯国际机场后失踪。该公司表示，航站楼内收到了装载索泰产品的两个货物托盘，但之后这批货物就找不到了。公司总裁奥德尔索・马托斯介绍，这家分销商正在追查事件详情，目前还没有收到任何能够定位这批货物下落的信息。马托斯称，公司从 2008 年开始从事进口业务，在超过 38 年的经营历史...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 18 Oct 2026 13:49:42 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "大众在美召回 ID.4 后，部分车主已收到充电限制 80% 更新",
-      "link": "https://www.ithome.com/1/014/597.htm",
-      "summary": "IT之家 10 月 18 日消息，美国国家公路交通安全管理局 (NHTSA) 近日公示：大众汽车在美国宣布召回 22,524 辆 2023~2026 年款的 ID.4 车型。召回原因为高压电池可能发生故障，并导致车辆起火。据外媒 Inside EVs 今天报道，部分美国车主已经开始在 myVW 应用程序收到通知，全文如下：为了您的安全，大众建议您将车辆的电池充电目标限制在 80%，直到相关维修方案推出并完成召回。如果您在 2026 年 10 月 21 日前不拒绝上述建议，大众将在 2026 年 10 月 27 日前...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 18 Oct 2026 13:46:00 GMT",
       "id": 34,
       "is_featured": false
     },
