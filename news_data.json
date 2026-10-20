@@ -1,6 +1,6 @@
 {
   "date": "2026年10月20日",
-  "update_time": "2026-10-20 16:02",
+  "update_time": "2026-10-20 22:50",
   "ai_concept": {
     "term": "RLHF (Reinforcement Learning from Human Feedback)",
     "chinese_name": "基于人类反馈的强化学习",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-20 16:02",
+    "sync_time": "2026-10-20 22:50",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,42 @@
       "is_featured": false
     },
     {
+      "title": "SpaceX 2026 财年第三财季归母净利润 44.04 亿美元，同比扭亏为盈",
+      "link": "https://www.ithome.com/1/015/617.htm",
+      "summary": "IT之家 10 月 21 日消息，SpaceX 今日发布 2026 财年（2026 年 1 月～2026 年 12 月）第三财季（2026 年 7 月～2026 年 9 月）报告：营业总收入：145.75 亿美元（IT之家注：现汇率约合 975.6 亿元人民币），同比增长 161%，环比增长 86.52%毛利润：90.97 亿美元（现汇率约合 608.92 亿元人民币），同比增长 216.86%毛利率：62.42%，同比增长 10.93 个百分点归母净利润：44.04 亿美元（现汇率约合 294.79 亿元人民币）...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 20 Oct 2026 22:37:22 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "超微电脑 2027 财年第一财季预计营收185 亿美元~195 亿美元",
+      "link": "https://www.ithome.com/1/015/619.htm",
+      "summary": "IT之家 10 月 21 日消息，超微电脑今日发布 2027 财年（2026年 7月 1日～2027年 6月 30日）第一财季（2026年 7月 1日～2026年 9月 30日）业绩预告报告： 营业总收入：185 亿美元~195 亿美元（IT之家注：现汇率约合 1238.33 亿元~1305.26 亿元人民币） 毛利率：12%~12.5% AI 解读 本次 2027财年第一财季 业绩预告大幅超出市场预期，营收和毛利率均显著高于此前指引。公司主营业务超微电脑（Super Micro Computer）是全球领先的应用...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 20 Oct 2026 20:47:02 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "Netflix 2026 财年第三财季归母净利润 36.64 亿美元，同比增长 43.86%",
+      "link": "https://www.ithome.com/1/015/618.htm",
+      "summary": "IT之家 10 月 21 日消息，Netflix今日发布 2026 财年（2026 年 1 月～2026 年 12 月）第三财季（2026 年 7 月～2026 年 9 月）报告： 营业总收入：128.74 亿美元（IT之家注：现汇率约合 861.75 亿元人民币），同比增长 11.8%，环比增长 2.5% 毛利润：67.95 亿美元（现汇率约合 454.84 亿元人民币），同比增长 27.11% 毛利率：52.78%，同比增长 6.33 个百分点 归母净利润：36.64 亿美元（现汇率约合 245.25 亿元人民...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 20 Oct 2026 20:06:20 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
       "title": "1 亿目标近在咫尺：曝华为鸿蒙 HarmonyOS 系统装机量突破 9500 万台",
       "link": "https://www.ithome.com/1/015/614.htm",
       "summary": "IT之家 10 月 20 日消息，奇妙工具箱今日数据显示，华为鸿蒙 HarmonyOS 操作系统装机量突破 9,500 万台，目前约 95,288,247 台。据IT之家此前报道，在今年 3 月的直播中，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东透露，鸿蒙系统用户规模正经历急剧增长，预计将在今年冬季前突破 1 亿大关。另外，在 10 月 1 日的华为 Mate 90 系列及全场景新品发布会上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东宣布，鸿蒙 HarmonyOS 6 | H...",
@@ -511,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:57:50 GMT",
-      "id": 23,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -523,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:52:46 GMT",
-      "id": 24,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -535,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:34:31 GMT",
-      "id": 25,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -547,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:27:50 GMT",
-      "id": 26,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -559,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:27:49 GMT",
-      "id": 27,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -571,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:21:44 GMT",
-      "id": 28,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -583,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:18:13 GMT",
-      "id": 29,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -595,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 15:11:28 GMT",
-      "id": 30,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -607,42 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 20 Oct 2026 14:56:13 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "Adobe Lightroom 移动版新增“睁眼”AI 修图，一键修复闭眼照片",
-      "link": "https://www.ithome.com/1/015/601.htm",
-      "summary": "IT之家 10 月 20 日消息，Adobe 公司昨日宣布，Lightroom 移动版修图软件已经支持“睁眼”AI 修图功能，用户只需要点一下，就能修复照片中闭着的眼睛。IT之家了解到，Adobe 此前已经在 Photoshop Elements 中提供类似功能，不过它只是从同一人物的另一张照片中提取眼睛进行替换，因此修复效果有时并不理想。相比之下，Lightroom 移动版的“睁眼”功能使用生成式 AI，替换后的眼睛可以与照片的光线、人物姿势匹配。系统还会选择 Lightroom 照片库同一个人的其他照片做参考，...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 20 Oct 2026 14:54:13 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "微软为 Windows Server 2025 引入快速计算机恢复功能，可通过 Windows Update 查找修复方案",
-      "link": "https://www.ithome.com/1/015/600.htm",
-      "summary": "IT之家 10 月 20 日消息，微软确认，安装 2026 年 10 月安全更新后，Windows Server 2025 正式支持快速计算机恢复（Quick machine recovery，QMR）功能。根据微软上周发布的更新说明，该功能可帮助服务器在遭遇严重启动故障时，通过 Windows 恢复环境（WinRE）从 Windows Update 查找并应用相应修复方案。快速计算机恢复主要面向因系统配置变更、驱动程序或更新问题等原因而无法正常启动的设备。启用该功能后，服务器可进入 WinRE 并联网搜索适用的修...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 20 Oct 2026 14:49:04 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "苹果：今年晚些时候将在美国组装 Mac mini",
-      "link": "https://www.ithome.com/1/015/599.htm",
-      "summary": "IT之家 10 月 20 日消息，苹果公司今日发布新闻稿，宣布与多家美国公司建立新合作关系，为 iPhone 18 Pro 和 iPhone Duo 等产品提供关键组件。苹果确认，公司将于今年晚些时候开始，在美国得克萨斯州休斯敦先进制造中心（AMC）组装 Mac mini。IT之家注意到，苹果运营主管 Sabih Khan 曾在今年表示，美国组装的 Mac mini 将主要供应美国市场，海外市场订单仍将继续由亚洲工厂生产。",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 20 Oct 2026 14:44:41 GMT",
       "id": 34,
       "is_featured": false
     },
