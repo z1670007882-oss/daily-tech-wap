@@ -1,6 +1,6 @@
 {
   "date": "2026年10月21日",
-  "update_time": "2026-10-21 16:19",
+  "update_time": "2026-10-21 22:54",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-21 16:19",
+    "sync_time": "2026-10-21 22:54",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,30 @@
       "is_featured": false
     },
     {
+      "title": "24 小时为你在线打工：Anthropic 推出 Claude Duet AI 智能体，迎战 Meta 和 OpenAI",
+      "link": "https://www.ithome.com/1/016/169.htm",
+      "summary": "IT之家 10 月 22 日消息，Anthropic 昨日（10 月 21 日）宣布以研究预览版形式，推出全新应用 Claude Duet，定位为可主动工作的 AI 智能体（agent），加入由 Meta 的 Muse、以及 OpenAI 的 Dots 领衔的“全天候主动型 AI 助理”大战。技能方面，该应用会每天整理跨应用的重要事项、主动提醒需要处理的问题，并在用户离开后继续在后台完成被委托的任务。IT之家附上演示视频如下：Claude Duet 基于 Claude Opus 5.5 构建，提供 iOS、Andr...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Wed, 21 Oct 2026 22:44:18 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "IBM 2026 财年半年报归母净利润 55.71 亿美元，同比增长 11.58%",
+      "link": "https://www.ithome.com/1/016/165.htm",
+      "summary": "IT之家 10 月 22 日消息，IBM今日发布 2026 财年（2026 年 1 月～2026 年 12 月）半年报（2026 年 1 月～2026 年 9 月）及第三财季（2026 年 7 月～2026 年 9 月）报告： 2026 财年半年报 营业总收入：501.82 亿美元（IT之家注：现汇率约合 3357.84 亿元人民币），同比增长 4.88% 毛利润：285.71 亿美元（现汇率约合 1911.78 亿元人民币），同比增长 4.39% 毛利率：56.9%，同比下降 0.3 个百分点 归母净利润：55....",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Wed, 21 Oct 2026 20:25:07 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
       "title": "安卓阵营首款阔直板手机酷派 COOL X Wide 售价公布：999~1399 元，搭载联发科曦力 G99 芯片 + 720p 屏幕",
       "link": "https://www.ithome.com/1/016/160.htm",
       "summary": "IT之家 10 月 22 日消息，安卓阵营首款阔直板手机，也是酷派首款阔直板手机 Cool X Wide 在京东开启预约，将于 11 月 8 日正式发售。价格方面，8GB+128GB 版本 999 元，8GB+256GB 版本 1199 元，12GB+256GB 版本 1399 元。这款新机搭载 6.38 英寸 16:10 屏幕，仅 720x1158 分辨率，还支持 90Hz 刷新率；有鎏白、岩黑、嫣红三种配色可选，机身尺寸为 150.3×94.5×8.95mm，后置 5000 万像素摄像头。这款手机采用联发科曦力...",
@@ -511,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 16:14:46 GMT",
-      "id": 23,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -523,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 16:03:25 GMT",
-      "id": 24,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -535,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:53:23 GMT",
-      "id": 25,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -547,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:30:05 GMT",
-      "id": 26,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -559,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:25:18 GMT",
-      "id": 27,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -571,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:24:03 GMT",
-      "id": 28,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -583,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:14:23 GMT",
-      "id": 29,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -595,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:10:22 GMT",
-      "id": 30,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -607,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:10:07 GMT",
-      "id": 31,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -619,30 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Wed, 21 Oct 2026 15:03:53 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "《使命召唤：现代战争 4》主机版性能模式要求 120Hz+VRR 显示器，不支持则锁 60 帧",
-      "link": "https://www.ithome.com/1/016/142.htm",
-      "summary": "IT之家 10 月 21 日消息，使命召唤官方今天在 X 平台表示，《使命召唤：现代战争 4》主机版需使用刷新率至少 120Hz 且支持 VRR 的显示器，才能在战役模式和 DMZ 模式中启用性能模式，以 120Hz 高帧率运行。官方表示，如果 PS5、XBOX Series X|S 玩家的显示器不支持 VRR，且没有高刷的话，那么游戏在性能模式下最高帧率限制为 60Hz。该消息公布后引发玩家强烈不满。部分用户表示，他们的显示器已经是 120Hz 或更高刷新率，却因为不支持 VRR（IT之家注：可变刷新率）而无法开...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 21 Oct 2026 14:49:12 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "宁德时代回应“投资者对明年行业需求担忧”：2027 年行业需求依旧可期，没有市场预期的那么悲观",
-      "link": "https://www.ithome.com/1/016/140.htm",
-      "summary": "IT之家 10 月 21 日消息，据证券时报今日报道，近期部分投资者对明年新能源行业需求有些担心。对此，宁德时代回应称，从公司角度看，2027 年行业需求依旧可以期待。国内乘用车方面，尽管今年乘用车整体销量有所下降，但可以看到电动化率在快速提升，并且单车带电量有较快提升，所以国内新能源乘用车动力电池的增速依然实现了正增长。国内新能源商用车的电动化率也在快速提升；欧洲的电动化趋势具有连续性，不断有竞争力的新车型推出；其他市场的电动化潜力可能被市场低估。储能方面，无论是国内还是海外都保持着不错的增速，特别是海外部分市场...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Wed, 21 Oct 2026 14:43:24 GMT",
       "id": 34,
       "is_featured": false
     },
