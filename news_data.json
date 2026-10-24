@@ -1,6 +1,6 @@
 {
   "date": "2026年10月24日",
-  "update_time": "2026-10-24 15:04",
+  "update_time": "2026-10-24 18:27",
   "ai_concept": {
     "term": "AI Agent",
     "chinese_name": "自主人工智能智能体",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-24 15:04",
+    "sync_time": "2026-10-24 18:27",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,42 @@
       "is_featured": false
     },
     {
+      "title": "iQOO Neo12 新机配置曝光：6.83 英寸 2K+185Hz 直屏，第五代骁龙 8 至尊版芯片",
+      "link": "https://www.ithome.com/1/017/523.htm",
+      "summary": "IT之家 10 月 24 日消息，博主 @数码闲聊站 今日曝光 iQOO Neo12 新机配置，该机将于本月发布并上市。据介绍，该机搭载 6.83 英寸 2K+185Hz LTPS 直屏，采用维信诺 pTSF 发光材料，搭载骁龙 8E5 处理器（第五代骁龙 8 至尊版），配备 Q3 电竞芯片 + 主动散热风扇。此外，该机还搭载 9000mAh 电池，支持 100W 有线充，提供双 1511 对称双扬、50Mp IMX921 大底影像。IT之家注意到，iQOO 手机官方已经公开了 Neo12 的三色官图，包含「争锋」...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 24 Oct 2026 15:26:44 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "刘慈欣监制《三体·大史》年内开机，导演杨磊称演员都已“众神归位”",
+      "link": "https://www.ithome.com/1/017/522.htm",
+      "summary": "IT之家 10 月 24 日消息，2026 年是《三体》小说发表 20 周年，在 2026 年三体日活动现场，导演杨磊确认《三体 · 大史》已定档 2026 年第四季度开机，目前处于开机前的最后冲刺阶段，演员已全部“众神归位”。本片将延续剧版《三体》第一部核心班底，刘慈欣继续担任监制，杨磊执导，陆贝珂出任视觉导演；演员方面，于和伟饰史强，张鲁一饰汪淼，林永健特别出演。这一阵容在 2026 年 6 月腾讯视频大剧片单官宣时已经公布。《三体 · 大史》的定位是《三体》首部真人衍生剧，全剧 12 集，时间线落在第一部“古...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 24 Oct 2026 15:16:59 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "戴尔推出 UltraSharp“焕新版”4K 显示器：32 英寸 5199 元，27 英寸 3999 元",
+      "link": "https://www.ithome.com/1/017/521.htm",
+      "summary": "IT之家 10 月 24 日消息，戴尔京东自营店新上了两款 UltraSharp“焕新版”显示器，但本质上是一次渠道型号的调整。其中，32 英寸的 U3226QER 定价 5199 元，IT之家此前已有报道；27 英寸的 U2726QER 到手价 3999 元。Chiphell 论坛上有用户挖掘发现，两款型号分别对应此前的 U3225QE 和 U2725QE，新旧型号被列为衍生关系，共用相同的面板与光学测试数据，功耗指标也完全一致。两者最直观的区别在边框颜色：U3226QER 和 U2726QER 改为银色支架与银...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 24 Oct 2026 15:07:38 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
       "title": "JBL CLIPS 琉璃扣耳夹耳机新增“碧玺红色特别版”，1346 元",
       "link": "https://www.ithome.com/1/017/520.htm",
       "summary": "IT之家 10 月 24 日消息，JBL 现已为旗下 JBL CLIPS 琉璃扣耳夹耳机新增“碧玺红色特别版”，首发价 1346 元，部分地区国补后低至 949 元。京东 JBL CLIPS 琉璃扣“碧玺红色特别版”1346 元点此访问这款耳机的充电盒、本体均采用半透明设计；搭载 11mm 动圈单元，定制驱动单元加载镀钛双层振膜；支持 SonicArc 定向投送技术，可减少漏音现象，保护用户隐私。这款耳机支持 IP54 级防尘防水；单体重量 6.5g，采用 C 形桥设计，外部为柔性 TPU 材质，适配多种耳形；内置...",
@@ -511,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 15:04:17 GMT",
-      "id": 23,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -523,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 14:53:44 GMT",
-      "id": 24,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -535,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 14:41:49 GMT",
-      "id": 25,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -547,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 14:39:18 GMT",
-      "id": 26,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -559,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 14:28:50 GMT",
-      "id": 27,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -571,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 14:27:14 GMT",
-      "id": 28,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -583,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 14:19:00 GMT",
-      "id": 29,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -595,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 13:54:41 GMT",
-      "id": 30,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -607,42 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 24 Oct 2026 13:44:33 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "罗技 Pebble Up 鼠标上市：平卧 + 35° 斜卧双形态，到手价 251.1 元",
-      "link": "https://www.ithome.com/1/017/507.htm",
-      "summary": "IT之家 10 月 24 日消息，Logitech（罗技）此前推出的双形态鼠标 Pebble Up 现已上市。其支持便于携带的平卧和提供 35° 人体工学倾角的斜卧双形态，到手价 251.1 元。IT之家了解到，Pebble Up 三维 105.8 × 59.6 × 30 (mm)，质量 79g，传感器分辨率可达 4,000 cpi，按键采用轻音点击设计，支持 2.4GHz、三设备蓝牙连接，内置 90 天续航的 290mAh 可充电锂聚合物电池。京东罗技 Pebble Up 双形态鼠标 251.1 元直达链接京东 ...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 24 Oct 2026 13:22:37 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "比亚迪在香港成立智慧交通子公司，计划引进云巴等方案",
-      "link": "https://www.ithome.com/1/017/506.htm",
-      "summary": "IT之家 10 月 24 日消息，比亚迪股份 10 月 23 日宣布在香港成立比亚迪智慧交通（香港）有限公司，落户大埔白石角科学园，由任林出任董事、李亮亮担任总经理。新公司的直接目标，是响应香港推动智慧绿色集体运输系统的方向，计划将比亚迪自主研发的“云巴”（SkyShuttle）等轨道交通方案引进香港。比亚迪云巴的定位是低运量、高架、无人驾驶的立体轨道交通系统，设计上针对的恰好是香港的几处“难处”。据比亚迪介绍，云巴采用纯电驱动、胶轮行走和减振降噪设计，车体较轻、转弯半径小，爬坡能力达到每 100 米爬升 12 米...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 24 Oct 2026 13:22:00 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "消息称部分手机产品线或平板线迎来停更，成本兜不住",
-      "link": "https://www.ithome.com/1/017/505.htm",
-      "summary": "IT之家 10 月 24 日消息，据博主 @数码闲聊站 今日爆料，接下来会有几个大家熟悉的手机产品线或平板线迎来停更，原因是成本兜不住，越发新机越亏。IT之家注意到，今年以来已经多部分手机厂商或品牌宣布停更。今年 2 月 27 日，魅族发布战略转型公告，宣布暂停国内手机新产品自研硬件项目，并在积极接洽第三方硬件合作伙伴，同时原有业务不受任何影响。OPPO 在 7 月 16 日官宣了子品牌全球产品策略：realme 新品将聚焦海外市场，在中国市场暂停产品更新；一加则将在保持印度市场产品更新不变的情况下，主力发展中国市...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 24 Oct 2026 13:16:59 GMT",
       "id": 34,
       "is_featured": false
     },
