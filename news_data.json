@@ -1,6 +1,6 @@
 {
   "date": "2026年10月24日",
-  "update_time": "2026-10-24 18:27",
+  "update_time": "2026-10-24 22:07",
   "ai_concept": {
     "term": "AI Agent",
     "chinese_name": "自主人工智能智能体",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-24 18:27",
+    "sync_time": "2026-10-24 22:07",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
