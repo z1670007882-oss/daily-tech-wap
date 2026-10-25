@@ -1,6 +1,6 @@
 {
   "date": "2026年10月25日",
-  "update_time": "2026-10-25 15:16",
+  "update_time": "2026-10-25 18:37",
   "ai_concept": {
     "term": "RAG (Retrieval-Augmented Generation)",
     "chinese_name": "检索增强生成",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-25 15:16",
+    "sync_time": "2026-10-25 18:37",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,18 @@
       "is_featured": false
     },
     {
+      "title": "国内首部 AI 院线长片《三星堆：未来往事》，票房过百万",
+      "link": "https://www.ithome.com/1/017/719.htm",
+      "summary": "IT之家 10 月 25 日消息，猫眼专业版数据显示，《三星堆：未来往事》电影票房已达到 116.2 万。据IT之家了解，《三星堆：未来往事》是国内首部获得国家电影局公映许可证的 AI 全流程院线长片，上映于 10 月 23 日。本片片长 100 分钟，所有角色均为原创数字形象，不含对真实演员的数字复制。同时，本片故事设定在未来人类将一切决策交给算法而引发全球危机，破解困局的线索指向三星堆七个古老刻符，形成“答案在过去，危机在未来”的叙事结构。这部影片的制作方式决定了它“首部”标签的实质含义。全片依托博纳自研的“博...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 25 Oct 2026 15:36:55 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
       "title": "古尔曼：苹果正测试配备 OLED 屏幕的 iMac 和 MacBook Air",
       "link": "https://www.ithome.com/1/017/717.htm",
       "summary": "IT之家 10 月 25 日消息，彭博社记者马克 · 古尔曼今天在最新一期《Power On》通讯中提到，苹果正在测试新款 iMac 和 MacBook Pro，这两款原型机均配备 OLED 屏幕，表明苹果计划将 OLED 技术引入公司旗下偏大众化的电脑产品，但具体推出时间暂时还没有准信。古尔曼透露，苹果将在未来几天内推出升级版 iMac，但不会搭载 OLED 面板；新款 MacBook Air 预计将在 2027 年初亮相，同样也没有采用 OLED。IT之家注意到，这几年曾有多个传闻称，iMac 和 MacBoo...",
@@ -511,7 +523,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 15:05:09 GMT",
-      "id": 23,
+      "id": 24,
       "is_featured": false
     },
     {
@@ -523,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:53:30 GMT",
-      "id": 24,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -535,7 +547,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:52:18 GMT",
-      "id": 25,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -547,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:52:02 GMT",
-      "id": 26,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -559,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:46:51 GMT",
-      "id": 27,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -571,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:43:06 GMT",
-      "id": 28,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -583,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:37:55 GMT",
-      "id": 29,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -595,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:33:12 GMT",
-      "id": 30,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -607,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:27:57 GMT",
-      "id": 31,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -619,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:23:17 GMT",
-      "id": 32,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -631,18 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 25 Oct 2026 14:19:43 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "雷蛇幻影战狼 V4 系列手柄发售：电容摇杆，竞技版 799 元、专业版 1599 元",
-      "link": "https://www.ithome.com/1/017/705.htm",
-      "summary": "IT之家 10 月 25 日消息，Razer（雷蛇）现已启动 Wolverine 幻影战狼 V4 系列手柄控制器的国行销售：Tournament Edition 竞技版为 799 元、Pro 专业版为 1,599 元。▲ 幻影战狼 V4 专业版两款幻影战狼 V4 手柄均配备高分辨率电容式拇指控制杆、可调式长 / 短双模扳机，提供 4 个鼠标点击式背面按键、2 个抓握式宏肩键、浮动式八向 D-Pad，在电脑端支持 8kHz 轮询率。竞技版的幻影战狼 V4 仅支持有线连接；专业版型号支持三模连接，同时背面按键可拆卸，面...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 25 Oct 2026 14:19:19 GMT",
       "id": 34,
       "is_featured": false
     },
