@@ -1,6 +1,6 @@
 {
   "date": "2026年10月27日",
-  "update_time": "2026-10-27 17:02",
+  "update_time": "2026-10-27 23:21",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-27 17:02",
+    "sync_time": "2026-10-27 23:21",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,114 @@
       "is_featured": false
     },
     {
+      "title": "贵约 16%：苹果 14 英寸 OLED 触控屏 MacBook Pro 起售价曝光",
+      "link": "https://www.ithome.com/1/018/713.htm",
+      "summary": "IT之家 10 月 28 日消息，彭博社昨日（10 月 27 日）发布博文，报道称在 14 英寸 OLED 触控屏 MacBook Pro 起售价上，相比较现款 M5 Pro 机型高出 400 美元（IT之家注：现汇率约合 2,674 元人民币），苹果公司可能会定价 2,899 美元（现汇率约合 19,376 元人民币），贵出 16.01%。IT之家注：苹果 M5 Pro 芯片的 14 英寸 MacBook Pro 国行起售价为人民币 17,999 元，对应 24GB 统一内存、1TB 固态硬盘的基础配置，教育优惠...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 23:16:09 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "纯电需求不及预期，通用调转方向发力混动车型",
+      "link": "https://www.ithome.com/1/018/712.htm",
+      "summary": "IT之家 10 月 28 日消息，通用汽车计划向兰辛德尔塔镇总装工厂投入资金，用于未来生产混动汽车，这是这家美国车企为迎合不断变化的消费者偏好、夺回市场份额采取的最新举措。该公司于当地时间周二表示，计划在未来数年内向整个兰辛地区投入超过 20 亿美元（IT之家注：现汇率约合 133.68 亿元人民币），其中包含 12.5 亿美元（现汇率约合 83.55 亿元人民币），用于对这座总装工厂进行改造，为“新车生产”做好准备。通用汽车称，正在和美国能源部协商调整此前获批的本土制造转型补贴，将这笔资金调配至兰辛工厂的混动车型...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 23:14:45 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "谷歌推出最强世界模型 Genie 4：一句话创造可交互虚拟世界，首次实现音视频同步生成",
+      "link": "https://www.ithome.com/1/018/711.htm",
+      "summary": "IT之家 10 月 28 日消息，谷歌 DeepMind 于周二推出了最新的世界模型 Genie 4，目前处于研究预览阶段。这款最新模型能够生成迄今为止拟真度最高、可交互的虚拟世界，用户可以在模拟运行的过程中输入提示词来修改场景。该模型还能生成和虚拟世界同步的实时音频，涵盖音乐、环境音以及可交互对话。IT之家注意到，就在 Genie 4 发布的数月之前，AI 视频初创公司 Runway 推出了自家第二款世界模型 GWM Worlds 2，这是一款可交互运行的模型，能够对用户输入做出动态响应，同时支持音频生成。与此同...",
+      "source": "IT之家",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "闭源 (Closed Source)",
+      "pub_time": "Tue, 27 Oct 2026 23:04:49 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "国产凶猛创历史：2026Q3 中国车在欧洲季度销量首超日本",
+      "link": "https://www.ithome.com/1/018/710.htm",
+      "summary": "IT之家 10 月 28 日消息，彭博社于 10 月 26 日发布博文，援引市场研究机构 Dataforce 的数据，指出在 2026 年第 3 季度（7~9 月），中国品牌汽车在欧洲的注册量首次超过日本品牌，占欧洲总销量的 12.7%，而包括丰田在内的日本车企份额为 11.9%。该机构指出中国汽车在欧洲市场快速崛起，5 年前市场份额还不到 1%，去年已经快速攀升到约 6%，今年更是窜火箭式上涨，今年 9 月更达到创纪录的 14.5%，较 8 月提高近 3 个百分点。IT之家附上相关图表如下：该机构认为驱动本轮增长...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 22:45:55 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
+      "title": "别学编程了！Anthropic CEO 直言：代码工作快速消失，人类应该学弹钢琴",
+      "link": "https://www.ithome.com/1/018/708.htm",
+      "summary": "如果说，当今世界有人能看清人类未来十年的走向，Dario Amodei 绝对是其中之一。他曾接受了一场非常深入的访谈。在这场对话中，他坦诚分享了自己对未来的预测 ——「AI 海啸正向我们扑来，近在咫尺。但整个社会却假装那只是海市蜃楼。」未来十年，什么行业会被彻底颠覆？25 岁的年轻人今天应该学什么专业？编程是不是真的穷途末路？普通人如何在这场大洗牌中保住饭碗？「纯写代码」的工作，即将第一个消亡访谈中，主持人问了一个所有人都无比焦虑的问题：如果我今天 25 岁，想在未来十年实现财富上的成功，我应该去学什么？编程还有用...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 22:30:30 GMT",
+      "id": 27,
+      "is_featured": false
+    },
+    {
+      "title": "恩智浦 2026 财年第三财季归母净利润 8.84 亿美元，同比增长 40%",
+      "link": "https://www.ithome.com/1/018/707.htm",
+      "summary": "IT之家 10 月 28 日消息，恩智浦今日发布 2026 财年（2025 年 9 月 29 日～2026 年 9 月 26 日）第三财季（2026 年 6 月 29 日～2026 年 9 月 27 日）报告：营业总收入：37.86 亿美元（IT之家注：现汇率约合 253.05 亿元人民币），同比增长 19%，环比增长 8%毛利润：21.89 亿美元（现汇率约合 146.31 亿元人民币），同比增长 22%，环比增长 9%毛利率：57.8%，同比增长 1.5 个百分点，环比增长 0.5 个百分点归母净利润：8.84...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 20:26:54 GMT",
+      "id": 28,
+      "is_featured": false
+    },
+    {
+      "title": "希捷 2027 财年第一财季归母净利润 17.61 亿美元，同比增长 220.77%",
+      "link": "https://www.ithome.com/1/018/706.htm",
+      "summary": "IT之家 10 月 28 日消息，希捷今日发布 2027 财年（2026 年 7 月 4 日～2027 年 7 月 2 日）第一财季（2026 年 7 月 3 日～2026 年 10 月 2 日）报告：营业总收入：42.33 亿美元（IT之家注：现汇率约合 282.92 亿元人民币），同比增长 61.01%毛利润：24.27 亿美元（现汇率约合 162.21 亿元人民币），同比增长 134.04%毛利率：57.3%，同比增长 17.9 个百分点归母净利润：17.61 亿美元（现汇率约合 117.7 亿元人民币），同...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 20:16:17 GMT",
+      "id": 29,
+      "is_featured": false
+    },
+    {
+      "title": "罗技 2027 财年上半年归母净利润 4.16 亿美元，同比增长 31.28%",
+      "link": "https://www.ithome.com/1/018/705.htm",
+      "summary": "IT之家 10 月 28 日消息，罗技今日发布 2027 财年（2026 年 4 月 1 日～2027 年 3 月 31 日）上半年（2026 年 4 月 1 日～2026 年 9 月 30 日）及第二财季（2026 年 7 月 1 日～2026 年 9 月 30 日）报告：2027 财年上半年营业总收入：24.46 亿美元（IT之家注：现汇率约合 163.49 亿元人民币），同比增长 5%毛利润：11.55 亿美元（现汇率约合 77.2 亿元人民币），同比增长 16.26%毛利率：47.2%归母净利润：4.16 ...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 20:12:21 GMT",
+      "id": 30,
+      "is_featured": false
+    },
+    {
+      "title": "Visa 2026 财年归母净利润 235.04 亿美元，同比增长 17%",
+      "link": "https://www.ithome.com/1/018/704.htm",
+      "summary": "IT之家 10 月 28 日消息，Visa 今日发布 2026 财年（2025 年 10 月 1 日～2026 年 9 月 30 日）及第四财季（2026 年 7 月 1 日～2026 年 9 月 30 日）报告：2026 财年营业总收入：459.03 亿美元（IT之家注：现汇率约合 3068.04 亿元人民币），同比增长 15%营业利润：281.1 亿美元（现汇率约合 1878.8 亿元人民币），同比增长 17.15%营业利润率：61.24%，同比增长 1.25 个百分点归母净利润：235.04 亿美元（现汇率约...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 27 Oct 2026 20:09:15 GMT",
+      "id": 31,
+      "is_featured": false
+    },
+    {
       "title": "京东 1 号会员店 10 月 28 日起调整会员权益：尊享卡返 2% 赠金，每月权益需消费解锁",
       "link": "https://www.ithome.com/1/018/698.htm",
       "summary": "IT之家 10 月 27 日消息，京东旗下 1 号会员店宣布将于 10 月 28 日起调整会员权益体系。根据官方公告，此次调整的核心变化是购物返利从“满 200 元返券”改为按订单金额比例返还“赠金”，尊享卡会员返 2%、普通卡会员返 1%，每月赠金上限分别为 500 元和 200 元。1 元赠金可抵扣 1 元人民币，特殊商品不参与返金也不支持赠金抵扣。新老用户按续费渠道和时效分流。10 月 28 日前已开通、且未在 1 号会员店 App 内续费的老用户，会籍期内继续享受原满 200 返券权益；会籍过期 30 天内...",
@@ -511,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 27 Oct 2026 15:39:03 GMT",
-      "id": 23,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -523,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 27 Oct 2026 15:33:42 GMT",
-      "id": 24,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -535,114 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 27 Oct 2026 15:27:53 GMT",
-      "id": 25,
-      "is_featured": false
-    },
-    {
-      "title": "1099 元雷蛇隐蛛迷你版 65% 磁轴键盘发布，三色键帽混搭设计",
-      "link": "https://www.ithome.com/1/018/695.htm",
-      "summary": "IT之家 10 月 27 日消息，雷蛇今日宣布推出 Razer Reclusa Mini 65% 雷蛇隐蛛迷你版 65% 电竞磁轴键盘，售价 1099 元。京东雷蛇（Razer）隐蛛迷你版 65%【雷蛇磁轴】 有线无线蓝牙三模 RT0.1 热插拔客制化 68 键小键盘 打瓦 CS1099 元直达链接该键盘采用 68 键 65% 紧凑布局，在保留常用按键的同时大幅节省桌面空间，兼顾桌面整洁度与移动使用需求。核心配置上，该键盘搭载雷蛇霍尔效应磁轴，触发点位精准稳定可控，触发行程支持 0.1-4.0mm 自由自定义，按键...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 15:25:47 GMT",
-      "id": 26,
-      "is_featured": false
-    },
-    {
-      "title": "古尔曼爆料苹果 OLED MacBook Pro：边框收窄、转轴重新设计，触摸屏幕时不会晃动",
-      "link": "https://www.ithome.com/1/018/692.htm",
-      "summary": "IT之家 10 月 27 日消息，彭博社记者马克 · 古尔曼今日在 X 平台发文称，苹果明天发布的 OLED 触控 MacBook Pro 将带来几项改进：机身厚度略微降低、屏幕边框进一步收窄、机身重量明显减轻。古尔曼还提到，这款 OLED MacBook Pro 将配备重新设计的转轴，更加稳定，因此用户使用触摸屏幕时，屏幕不会晃动。据IT之家此前援引古尔曼消息，这款 MacBook Pro 将首次采用 Tandem OLED 面板，并且是苹果首款支持触控屏的 MacBook。预计采用 M5 Pro 或 M5 Ma...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 15:13:29 GMT",
-      "id": 27,
-      "is_featured": false
-    },
-    {
-      "title": "《三角洲行动》协助警方破获游戏史最大 DMA 外挂案，涉案金额超 2000 万",
-      "link": "https://www.ithome.com/1/018/691.htm",
-      "summary": "IT之家 10 月 27 日消息，《三角洲行动》官方今日宣布，在《三角洲行动》安全团队协助下，广东警方成功侦破“Foah”特大 DMA 外挂案，累计抓获犯罪嫌疑人 16 名，涉案金额超过 2000 万元。核心外挂作者、销售总代理均被抓获，多个分代理发卡平台、外挂陪玩工作室已被捣毁。目前，案件正在审查起诉。IT之家从官方公告获悉，2025 年下半年，一款名为“Foah”外挂线索出现在《三角洲行动》安全团队的视野内，团队迅速行动部署线上打击、处罚作弊账号，并收集资料和信息，积极配合警方推进侦办，追溯源头线索。同年 10...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 15:10:26 GMT",
-      "id": 28,
-      "is_featured": false
-    },
-    {
-      "title": "富士推出 instax mini Evo 2 拍立得相机：1600 万像素 CMOS、升级 4.5 寸触控屏",
-      "link": "https://www.ithome.com/1/018/690.htm",
-      "summary": "IT之家 10 月 27 日消息，富士今日宣布推出 instax mini Evo 2 拍立得相机。新机采用数字成像，采用 1600 万像素 CMOS，预计 11 月底上市，定价 289 美元（IT之家注：现汇率约合 1,932 元人民币）。据介绍，instax mini Evo 2 背面配备 4.5 英寸触控屏，分辨率为 123 万像素。用户可以在这块屏幕上预览拍摄的照片，再决定是否打印，还能够选择 20 种滤镜、裁切照片。同时，这款相机搭载 1/2.77 英寸 1600 万像素 CMOS 传感器，搭配 21mm...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 15:01:24 GMT",
-      "id": 29,
-      "is_featured": false
-    },
-    {
-      "title": "消息称某厂 S 小迭代测试 6.85 英寸 2K+144Hz 屏，预计 vivo 旗下",
-      "link": "https://www.ithome.com/1/018/689.htm",
-      "summary": "IT之家 10 月 27 日消息，据博主 @数码闲聊站 今日爆料，某厂 S 小迭代测试中，大屏全能路线，工程机搭载 6.85 英寸 2K+144Hz 四等边直屏。结合该博主此前的爆料习惯，预计该机为 vivo 旗下。IT之家注意到，目前 vivo 旗下有多款 6.85 英寸的旗舰机型，包括最新发布的 vivo X500 Pro Max、iQOO 16 等。其中，vivo X500 Pro Max 全球首发京东方 Q11 2K 蔡司大师色彩屏，iQOO 16 搭载 6.85 英寸 2K 三星珠峰屏。目前，尚不清楚本次...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 14:51:52 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "任天堂明日举办新一期 Indie World 独立游戏直面会，时长约 15 分钟",
-      "link": "https://www.ithome.com/1/018/687.htm",
-      "summary": "IT之家 10 月 27 日消息，任天堂将于太平洋时间 10 月 28 日 7:00（北京时间 22:00），举办新一期 Indie World 独立游戏直面会，重点介绍登陆 Switch 和 Switch 2 平台的新游戏。据美任介绍，本次直面会时长约 15 分钟，但日本任天堂官网显示为 25 分钟左右。任天堂将在会上公布即将登陆 Switch 和 Switch 2 的全新独立游戏。不过本次直面会公布的游戏还没有消息，IT之家将持续关注。",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 14:44:06 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "消息称上汽奥迪暂未停产四环标油车，对售出车型终身兜底",
-      "link": "https://www.ithome.com/1/018/685.htm",
-      "summary": "IT之家 10 月 27 日消息，10 月 26 日，奥迪中国宣布已分别与合作伙伴签署战略协议，四环标和字母标正式“分家”，引发外界关注。据蓝鲸新闻今日报道，知情人士透露，上汽奥迪旗下仍有 Q6、A7L、A5L Sportback 三款四环标油车在售，且均暂未停产。但新的四环品牌产品，未来上汽奥迪将不再销售。至于售后，该知情人士透露，上汽奥迪将对售出的四环车型终身兜底，但后续消费者也可根据自己的意愿去一汽奥迪修。另有知情人士向记者透露，上汽奥迪的 A5L Sportback 后续移交一汽奥迪销售已差不多定下来，但预...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 14:32:54 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "艺卓推出全新 DuraVision 系列显示器，专为触控笔输入优化",
-      "link": "https://www.ithome.com/1/018/684.htm",
-      "summary": "IT之家 10 月 27 日消息，艺卓今日宣布推出全新 DuraVision 系列触控显示器，分别为 21.5 英寸的 FDF2182WT-AS、18.5 英寸的 FDF1983WT-AS 和 15.6 英寸的 FDF1683WT-AS。IT之家了解到，这三款显示器专为触控笔输入优化，用户可直接在屏幕上书写、批注、签名和绘图，将传统纸笔写字体验带入数字化环境。机内附赠的主动式触控笔支持 4096 级压感，可带来自然书写体验，并具备悬停功能，可在触控笔接触屏幕前显示光标位置。同时，该系列显示器最多支持 10 点触控，...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 27 Oct 2026 14:29:50 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "Anthropic 确认其内部系统遭访问：客户对话、模型权重未受影响",
-      "link": "https://www.ithome.com/1/018/683.htm",
-      "summary": "IT之家 10 月 27 日消息，据《华盛顿邮报》当地时间 10 月 26 日报道，网络安全初创公司 Cathedral 称，其研究人员利用 AI 智能体在不到 12 小时内通过第三方商业软件的漏洞，找到进入 Anthropic 内部系统的路径。Anthropic 随后确认，部分销售、人力资源和 IT 系统遭到访问，但客户与 Claude 的对话、模型回复、源代码及模型权重均未受到影响。Cathedral 由美国政府效率部（DOGE）前成员创办。根据该公司一份尚未正式发布的报告草稿，研究人员在 Anthropic ...",
-      "source": "IT之家",
-      "category": "models",
-      "category_name": "新AI模型",
-      "model_tag": "闭源 (Closed Source)",
-      "pub_time": "Tue, 27 Oct 2026 14:25:46 GMT",
       "id": 34,
       "is_featured": false
     },
