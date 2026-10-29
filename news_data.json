@@ -1,6 +1,6 @@
 {
   "date": "2026年10月29日",
-  "update_time": "2026-10-29 17:47",
+  "update_time": "2026-10-29 23:43",
   "ai_concept": {
     "term": "CoT (Chain of Thought)",
     "chinese_name": "思维链 / 链式思考推理",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-10-29 17:47",
+    "sync_time": "2026-10-29 23:43",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,114 @@
       "is_featured": false
     },
     {
+      "title": "奔驰全新纯电 E 级明年问世，CEO 康林松称几乎全部采用中国本土采购零部件",
+      "link": "https://www.ithome.com/1/019/807.htm",
+      "summary": "IT之家 10 月 30 日消息，当地时间 29 日，据外媒 motor1 报道，奔驰 CEO 康林松在 2026 年第三季度财报电话会议上透露，纯电 E 级是一款从零开始研发的豪华轿车。新车与燃油版共用 E 级名称，采用独立的纯电平台，并计划在多个方面提升产品表现。据IT之家了解，新车在大约三年前启动研发，基本没有沿用现成的设计方案。目前，纯电 E 级原型车正进行最后阶段的测试，以解决量产前可能存在的问题。▲ motor1 绘制的新车假想图纯电 E 级预计将与明年改款的燃油 E 级采用高度相似的外观设计。奔驰也借...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 23:31:47 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "智元发布具身模型 GO-3 Preview：能做煎饼果子、在便利店上岗，登顶三大榜单",
+      "link": "https://www.ithome.com/1/019/806.htm",
+      "summary": "IT之家 10 月 30 日消息，10 月 29 日，智元正式推出预训练 / 后训练 / 部署后实现全链路规模化学习的具身模型 —— GO-3 Preview。该模型采用具身原生的 WRAM（World Reasoning Action Model）架构，将任务推理、未来预测与动作生成连接起来，让机器人理解指令、预测未来，并生成可执行的动作。该模型已于近日登顶 RoboDojo、RoboTwin、RoboColiseum 三大行业权威评测榜单，将于 2026 年底全面开源。IT之家附官方介绍如下：基于 WRAM 架...",
+      "source": "IT之家",
+      "category": "models",
+      "category_name": "新AI模型",
+      "model_tag": "开源 (Open Source)",
+      "pub_time": "Thu, 29 Oct 2026 23:22:24 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "口袋里的体育直播控制台：苹果 iPhone Duo 等支持四路同屏看球",
+      "link": "https://www.ithome.com/1/019/805.htm",
+      "summary": "IT之家 10 月 30 日消息，科技媒体 9to5Mac 昨日（10 月 29 日）发布博文，报道称在 iOS 27.2 正式版更新中，苹果升级 Apple TV 应用，带来“多画面”（Multiview）功能，iPhone 用户现在可同时观看最多 4 路体育赛事直播。该功能此前仅支持 Apple TV、iPad 和 Vision Pro 设备。用户在 Apple TV 播放器中开始观看体育赛事后，底部会出现新的“多画面”按钮，点击即可选择多路直播。该功能适用于 Apple TV 订阅内的所有体育内容，包括一级方...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 23:20:37 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "Instagram 重启长视频业务，试图以最高 50 万美元吸引 YouTube 创作者",
+      "link": "https://www.ithome.com/1/019/804.htm",
+      "summary": "IT之家 10 月 30 日消息，据《商业内幕》今天凌晨报道，Instagram 想要 YouTube 的长视频创作者，为此不惜砸下重金。为了吸引更多创作者在 Instagram 发布长视频，平台开始向部分创作者开出高额报酬。据多名知情人士透露，Instagram 希望借此推动长视频内容的发展。不同创作者拿到的报价差距不小。部分创作者只要在 Instagram 新推出的“Features”产品中发布长视频，就能获得 5 万美元（IT之家注：现汇率约合 33.4 万元人民币）报酬；另一些人的合作金额达到六位数，最高甚...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 23:09:49 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
+      "title": "旧版“爆米花时间”应用成隐形后门，至少影响 25 万 ~35 万台苹果 Mac",
+      "link": "https://www.ithome.com/1/019/803.htm",
+      "summary": "IT之家 10 月 30 日消息，安全公司 Eye Research 于 10 月 22 日发布博文，指出曾以“爆米花时间”（Popcorn Time）名义分发的非官方流媒体应用 Time4Popcorn，在 Mac 上遗留了一个高风险的自动更新组件。即使用户多年未打开该应用，这个组件仍会在每次开机时运行，并主动连接开发者早已弃用的服务器地址检查更新。该更新检查程序几乎无条件信任其下载的内容，并拥有修改 Mac 系统的完全权限。由于原开发者已停止维护，相关网站域名逐渐失效；若有人接管这些域名，理论上便可向仍在运行的...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 23:07:04 GMT",
+      "id": 27,
+      "is_featured": false
+    },
+    {
+      "title": "苹果 HomePod mini 2 智能音箱发售：五种配色可选，1099 元",
+      "link": "https://www.ithome.com/1/019/802.htm",
+      "summary": "IT之家 10 月 30 日消息，苹果 HomePod mini 2 智能音箱今日正式发售，提供粉色、绿色、蓝色、白色和午夜色五种外观选项，售价 1,099 元。HomePod mini 2 搭载 S10 芯片，用户可以仅使用单只扬声器，也可组建立体声组合或配置多房间音频，还可用作 Mac 的默认扬声器。官方表示，HomePod mini 2 可用于操控联网家居，用户只需下达语音指令，便可进行一系列智能家居操作，包括为家门上锁、在外出时关闭车库、在就寝前拉下百叶窗或关闭灯光。用户还可以使用家庭 App 自动化操作智...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 23:06:47 GMT",
+      "id": 28,
+      "is_featured": false
+    },
+    {
+      "title": "Mac 触控时代开启，苹果称 macOS 触控优化“才刚刚开始”",
+      "link": "https://www.ithome.com/1/019/801.htm",
+      "summary": "IT之家 10 月 30 日消息，科技媒体 9to5Mac 昨日（10 月 29 日）发布博文，报道称在洛杉矶举办的特别活动媒体群访环节中，苹果公司高管回应表示针对 macOS 系统的触控优化“才刚刚开始”。当前的触控体验并非最终形态，苹果预计会根据早期用户反馈和实际使用场景，继续推进界面、手势与交互层面的改进。IT之家援引博文介绍，彭博社记者 Chris Welch 认为，苹果在引入触控能力时采取了较为谨慎的策略，并预计明年发布的 macOS 28 将带来一系列触控相关改进。从早期上手反馈看，外界对新款触控 Ma...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 22:57:40 GMT",
+      "id": 29,
+      "is_featured": false
+    },
+    {
+      "title": "索尼发布 RIALTO 65 摄影机扩展系统，CineAltaV 2 迈入 65mm 大画幅时代",
+      "link": "https://www.ithome.com/1/019/800.htm",
+      "summary": "IT之家 10 月 30 日消息，10 月 29 日晚，索尼正式发布专为旗舰级数字电影摄影机 CineAltaV 2（海外名称：VENICE 2）打造的 RIALTO 65 摄影机扩展系统，将于 2027 年上半年正式上市。RIALTO 65 搭载 65mm 画幅影像传感器（1.5:1 画幅比），将 CineAltaV 2 系统扩展至 65mm 画幅规格。▲ RIALTO 65 摄影机扩展系统RIALTO 65 搭载的影像传感器宽约 53.75mm、高约 35.83mm，对角线长度约 64.60mm，是目前市售电影...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 22:53:50 GMT",
+      "id": 30,
+      "is_featured": false
+    },
+    {
+      "title": "苹果高管回应“iPad mini 8 屏幕刷新率为何依然为 60Hz”",
+      "link": "https://www.ithome.com/1/019/799.htm",
+      "summary": "IT之家 10 月 30 日消息，科技媒体 9to5Mac 昨日（10 月 29 日）发布博文，报道称在接受 YouTube 频道 Christopher Lawley 采访时，苹果硬件工程副总裁戴夫 · 帕库拉（Dave Pakula）讨论了苹果 iPad mini 8 的设计、屏幕等内容。新款 iPad mini 虽然配备了 OLED 显示屏，但并不支持 ProMotion 技术，刷新率仅为 60Hz。ProMotion 支持可以让 iPad mini 的刷新率根据显示的内容自动从 10Hz 调整到 120Hz...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Thu, 29 Oct 2026 22:49:27 GMT",
+      "id": 31,
+      "is_featured": false
+    },
+    {
       "title": "59.9 万元梅赛德斯 AMG GLC 53 4MATIC+ 车型上市，3.0T 六缸回归",
       "link": "https://www.ithome.com/1/019/798.htm",
       "summary": "IT之家 10 月 30 日消息，10 月 29 日，梅赛德斯 AMG GLC 53 4MATIC+ 在浙江国际赛车场正式上市，官方指导价 59.90 万元，仅此一款配置。其核心变化是用 3.0T 直列六缸 +48V 轻混系统接替了 GLC 43 上的 2.0T 四缸动力，六缸重回 GLC 性能序列。新车搭载了 M256 Evo 3.0T 直列六缸涡轮增压发动机，AMG 对其进行了专属升级，包括重新设计缸盖、优化进排气道、换用升级进气凸轮轴，并将涡轮增压压力提升至 1.5bar。发动机本体输出 330kW，峰值扭矩...",
@@ -511,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 29 Oct 2026 16:10:45 GMT",
-      "id": 23,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -523,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 29 Oct 2026 15:59:53 GMT",
-      "id": 24,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -535,114 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Thu, 29 Oct 2026 15:45:29 GMT",
-      "id": 25,
-      "is_featured": false
-    },
-    {
-      "title": "NearLink E2.0：华为 Pura 90 Plus 手机上市即支持星闪音频功能",
-      "link": "https://www.ithome.com/1/019/795.htm",
-      "summary": "IT之家 10 月 29 日消息，在昨日的华为双十一焕新季全场景新品发布会上，华为 Pura 90 Plus 手机正式发布，首发搭载麒麟 9025 芯片，焕新优惠价 5199 元起。IT之家从华为官方了解到，Pura 90 Plus 手机采用 NearLink E2.0 技术方案，上市即支持星闪音频功能。根据华为官方描述，星闪音频物理层传输速率可达 16Mbps，带宽能力超传统技术，充足的通道容量能够承载 48kHz/24bit Hi-Fi 音频无损传输。目前支持星闪音频的耳机包括 FreeClip 2 典藏版、F...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:28:31 GMT",
-      "id": 26,
-      "is_featured": false
-    },
-    {
-      "title": "盖洛普研究：美国员工的工作投入度降至历史新低，远程办公者降幅最大",
-      "link": "https://www.ithome.com/1/019/794.htm",
-      "summary": "IT之家 10 月 29 日消息，据科技媒体 TechRadar 今天报道，盖洛普（Gallup）最新研究报告显示，美国员工的工作投入度降至历史新低。远程办公和混合办公的人更加缺乏工作热情，而对 AI 缺乏明确认知也正在影响员工的工作满意度。该机构指出，2026 年第三季度，美国员工的工作投入度为 29%，降至 2011 年以来最低水平。作为对比，2020 年美国工作投入度指标为 36%，2024 年降至 31%。IT之家注意到，与上一季度相比，全远程办公员工的工作投入度下降了 5 个百分点，混合办公员工下降了 2...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:28:29 GMT",
-      "id": 27,
-      "is_featured": false
-    },
-    {
-      "title": "《魔兽世界：无限》添加原生手柄支持，暴雪迈出多设备畅玩第一步",
-      "link": "https://www.ithome.com/1/019/793.htm",
-      "summary": "IT之家 10 月 29 日消息，据游戏媒体 VGC 今天报道，《魔兽世界：无限》游戏将在 11 月 4 日推出。新版本以 2004 年原版游戏世界观和玩法为基础，加入全新故事线。IT之家从原报道获悉，《魔兽世界：无限》将带来原生手柄支持。考虑到《魔兽世界》系列游戏一直高度依赖键鼠，这种改变实在是不同寻常。《魔兽世界》执行制作人兼副总裁 Holly Longdale 对此表示，加入手柄支持是暴雪迈出的第一步，目的是让玩家在更多设备畅玩游戏。她对此解释称：“我们已经听到 Project Helix 等相关消息，未来不...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:17:49 GMT",
-      "id": 28,
-      "is_featured": false
-    },
-    {
-      "title": "马斯克对字母 X 情有独钟，旗下特斯拉与 SpaceX 合并后或选用闲置美股代码 X",
-      "link": "https://www.ithome.com/1/019/792.htm",
-      "summary": "IT之家 10 月 29 日消息，据彭博社报道，埃隆 · 马斯克对字母 X 情有独钟。特斯拉最早的车型之一就是 Model X；太空探索技术公司（Space Exploration Technologies Corp.）简称 SpaceX；2022 年收购推特之后，他直接把这个社交平台更名为了 X。他甚至给自己的儿子取名 X Æ A-Xii，还常在网上叫他“小 X”。如今，这位全球首富正在探索将旗下两家上市公司合并，而市场恰好出现了一个机会：美股代码 X 目前处于闲置状态，这个代码去年随着美国钢铁公司被收购而空了出...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:12:05 GMT",
-      "id": 29,
-      "is_featured": false
-    },
-    {
-      "title": "星闪 SLE 1.0 芯片累计发货量 7000 万，华为 2023 年实现首批商用终端产品落地",
-      "link": "https://www.ithome.com/1/019/791.htm",
-      "summary": "IT之家 10 月 29 日消息，《星闪 SLE3.0 技术标准演进蓝皮书》已在国际星闪联盟官网正式上线。据蓝皮书介绍，星闪 SLE 1.0 标准于 2022 年 11 月正式发布，SLE 1.0 芯片累计发货量 7000 万。模组：润和、汉枫、爱联、为思润华、亿佰特、问沧智能等模组厂商已发布超过 40 款基于星闪 SLE 1.0 的模组产品，可支持白色家电、小家电、照明、电工 IoT、传感器、运动健康、户外出行、家庭安防、照明、工业互联网等应用场景。终端产品：2023 年 9 月份华为发布首批支持星闪技术的商用终...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:09:47 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "2499 → 682 元：添可 20000Pa 平躺 Stretch Max 洗地机 11.11 新低",
-      "link": "https://www.ithome.com/1/019/736.htm",
-      "summary": "添可平躺 0 缠毛 Stretch Max 洗地机上市售价 2499 元，支持防缠抓毛齿，180° 躺平洗地，40 分钟长续航。今日天猫旗舰店多重优惠后实付 1298 元，叠加淘金币抵扣后实付仅需 1122.03 元。下单前咨询客服“返现”再返 440 元，折合仅需 682.03 元闭眼囤好价哦。共需 2 步点击下方卡片领券后 → 点击宝贝右上角“…”→ 点击弹出页面右下角“淘金币”点击此宝贝。淘金币页面进入宝贝后，点击以旧换新 → 更换旧品 → 小家电 → 数据线（不回收）叠加淘金币 + 以旧换新 + 国补后，实...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 11:49:03 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "Epic 喜加一：《抱歉我们打烊了》游戏免费领取",
-      "link": "https://www.ithome.com/1/019/789.htm",
-      "summary": "IT之家 10 月 29 日消息，Epic 本周送出的游戏是《Sorry We're Closed - 抱歉我们打烊了》，下周送出的游戏是《Idle Champions of the Forgotten Realms》，《浮游世界》。领取链接：《抱歉我们打烊了》需要注意的是，这款游戏 Epic 已经在去年 12 月送过，已经领过的小伙伴们可以不用点开链接了。同时本作去年免费送的时候，因为带有 LGBT 元素遭到部分玩家吐槽。Epic 官方对此回应称：“大家不喜欢不领也没事的。”《抱歉我们打烊了》游戏简介： 本作是一...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:00:20 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "iFi 推出 UP Travel Max 蓝牙收发 DAC，支持 aptX Lossless、LDAC 等格式",
-      "link": "https://www.ithome.com/1/019/790.htm",
-      "summary": "IT之家 10 月 29 日消息，英国音频器材品牌 iFi audio（悦尔法）当地时间今日宣布推出 UP Travel Max 蓝牙收发 DAC。这一产品设计灵感源于可折叠车钥匙，配备可弹出 3.5mm 插口，整体大小则与闪存盘相仿，拥有 10hr 续航。UP Travel Max 配备高通蓝牙芯片和 Cirrus Logic 32-bit DAC，符合蓝牙 5.4 规范，具备 aptX Lossless、LDAC、aptX Adaptive 等音频编解码器，支持 Auracast，还搭载 JVCKENWOOD ...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 15:05:28 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "FS 社旗下 Switch 2 独占游戏《黄昏血族》跳票，2027 年发售",
-      "link": "https://www.ithome.com/1/019/788.htm",
-      "summary": "IT之家 10 月 29 日消息，FromSoftware 工作室今天宣布，他们为 Switch 2 打造的独占游戏《黄昏血族》（The Duskbloods）将延期至 2027 年发售。FromSoftware 对此表示：“《黄昏血族》开发工作已进入最后调整阶段，但我们仍决定将发售时间推迟至 2027 年。对于一直热切期待本作的玩家，我们深表歉意，同时感谢大家的耐心等待。”“网络测试期间，我们发现玩家对游戏的核心设计表现出浓厚兴趣，包括战斗、策略深度以及玩家的自由发挥空间。为了进一步完善，我们决定推迟发售，以便有...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Thu, 29 Oct 2026 14:58:53 GMT",
       "id": 34,
       "is_featured": false
     },
