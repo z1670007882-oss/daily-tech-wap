@@ -1,6 +1,6 @@
 {
   "date": "2026年11月01日",
-  "update_time": "2026-11-01 17:25",
+  "update_time": "2026-11-01 23:14",
   "ai_concept": {
     "term": "RLHF (Reinforcement Learning from Human Feedback)",
     "chinese_name": "基于人类反馈的强化学习",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-11-01 17:25",
+    "sync_time": "2026-11-01 23:14",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,54 @@
       "is_featured": false
     },
     {
+      "title": "比亚迪前三季度研发比净利润高 140 亿元：何志奇称不是不会算账，是在算一本更长的账",
+      "link": "https://www.ithome.com/1/020/845.htm",
+      "summary": "IT之家 11 月 2 日消息，比亚迪股份有限公司执行副总裁何志奇昨晚发文表示，比亚迪（今年）前三季度研发费用 363 亿元，归母净利润 223 亿元 —— 研发比净利润高了整整 140 亿元。累计研发投入已经超过 2800 亿元。何志奇表示，研发大于利润，不是不会算账，是在算一本更长的账。新能源行业还在高速奔跑，真正的护城河从来不是短期利润，是握在自己手里的核心技术。今天投进去的每一分钱，未来都会变成更靠谱的产品、更好的用户体验、更硬的行业底气。刀片电池、易三方、云辇，天神之眼等每一项技术都是这样。刀片电池的热销...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 01 Nov 2026 23:01:11 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "OpenAI 即将启动大规模公关宣传，考虑将数据中心重新包装为“AI 算力园区”",
+      "link": "https://www.ithome.com/1/020/844.htm",
+      "summary": "IT之家 11 月 2 日消息，据外媒 Axios 昨天报道，OpenAI 正准备在周二美国中期选举结束后，发起大规模公关宣传活动。OpenAI 首席全球事务官克里斯 · 莱汉（Chris Lehane）对此表示，此次中期选举将成为 2028 年总统大选的“预告片”。未来，人工智能将成为大选的核心议题。IT之家注意到，OpenAI 准备在未来加强与公众沟通 AI 相关话题。莱汉提到，他们计划制定 AI 发展速度限制；并寻找方法，让人们认识到 AI 如何赋能日常生活；推动美国参与制定全球标准；以及将数据中心重新包装为...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 01 Nov 2026 22:58:19 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "古尔曼：苹果明年上半年将推出配备 OLED 屏幕的 iPad Air、搭载均热板的 iPad Pro",
+      "link": "https://www.ithome.com/1/020/843.htm",
+      "summary": "IT之家 11 月 2 日消息，彭博社记者马克 · 古尔曼（Mark Gurman）发文透露，继上周发布新款 iPad mini 之后，苹果接下来将在 2027 年将重心转向一系列其他平板产品的更新。IT之家获悉，古尔曼称根据他获得的消息，这些产品线更新预计都将在上半年登场：一款升级款入门级平板（考虑到此前涨价导致其售价远高于竞品，这次迭代显得尤为迫切）一款为了与 iPad mini 对齐而采用 OLED 屏幕的全新 iPad Air以及性能更强的 iPad Pro，很可能会加入均热板（Vapor Chamber）...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 01 Nov 2026 22:48:48 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "古尔曼：苹果首款触屏 MacBook Pro 设计过于保守",
+      "link": "https://www.ithome.com/1/020/842.htm",
+      "summary": "IT之家 11 月 2 日消息，苹果公司上周终于推出了品牌首款触控屏 MacBook Pro。然而对于一款具有里程碑意义的产品来说，这款笔记本设计却出人意料地保守，没有带来真正突破的创新。据IT之家了解，触屏 MacBook Pro 采用了更轻薄的机身、OLED 屏幕，配备 M5 Pro 或 M5 Max 芯片，整体使用体验十分熟悉。人们不禁怀疑，苹果是否为这款触屏 Mac 带来足够多的创新，以及它的价格能否配得上外界期待。彭博社记者马克 · 古尔曼表示，苹果此次为 Mac 加入触控功能，主要是围绕用户熟悉的操作方...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 01 Nov 2026 22:43:24 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
       "title": "米哈游生活模拟游戏《星布谷地》官宣 2027 年登陆任天堂 Switch 2",
       "link": "https://www.ithome.com/1/020/841.htm",
       "summary": "IT之家 11 月 1 日消息，米哈游生活模拟游戏《星布谷地》今日官宣，将于 2027 年登陆 Switch2 平台。IT之家注意到，《星布谷地》已经确认推出 PC / iOS / Android 版，将于 12 月 4 日开启全球公测。这款游戏以星际田园为主题，玩家在游戏中将可以赶海、钓鱼、种田等，期待理想生活自然发生，拥有自定义系统，可随心装点天空、海岸与每一片土地，三五好友可相聚在星空街市，使善意、共鸣、友谊在星空下交汇。目前，官方公布的游戏角色有云果、伊佐奇、绵朵莉、幻雪等，它们的造型都类似小动物，各自拥有...",
@@ -511,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 15:37:33 GMT",
-      "id": 23,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -523,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 15:01:27 GMT",
-      "id": 24,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -535,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 14:47:24 GMT",
-      "id": 25,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -547,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 14:19:52 GMT",
-      "id": 26,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -559,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 14:01:22 GMT",
-      "id": 27,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -571,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 13:53:18 GMT",
-      "id": 28,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -583,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 13:45:05 GMT",
-      "id": 29,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -595,54 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 01 Nov 2026 10:01:04 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "长鑫科技：2026 年 LPDDR 系列产品实现 781.91 亿元收入，占营业收入比例 52.02%",
-      "link": "https://www.ithome.com/1/020/832.htm",
-      "summary": "IT之家 11 月 1 日消息，长鑫科技公布 2026 年三季报业绩交流会记录，介绍了公司前三季度收入结构的变化情况。公告显示，该公司产品主要分为 DDR 系列以及 LPDDR 系列，2026 年上半年，DDR 系列产品实现 694.72 亿元收入，占营业收入比例为 46.22%；LPDDR 系列产品实现 781.91 亿元收入，占营业收入比例为 52.02%。相较于 2026 年上半年，2026 年前三季度 DDR 系列产品在营业收入中的占比持续上升，主要是因为公司 DDR5 产品自 2024 年底量产后，销量持...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 01 Nov 2026 13:19:50 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "上市价 4399 → 2893 元：vivo X300 手机 12GB+256GB 国补直降",
-      "link": "https://www.ithome.com/1/020/831.htm",
-      "summary": "【京东活动可能随时变更，需以实付款为准】vivo X300 手机开售于 2025 年 10 月 17 日，搭载联发科天玑 9500 处理器，12GB+256GB 定价 4399 元。京东 11.11 大促期间，按下方步骤下单，叠加 PLUS 立减 + 15% 国补后仅需 2893.01 元：领 1200 元直播间券：点此查看。领 800-80 元 PLUS 专享券（需 2 积分 10 点、20 点抢）：点此查看。京东 vivo X300 手机 12GB+256GB 国补后 2893.01 元直达链接京东 11.11...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 01 Nov 2026 13:03:34 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "比亚迪各品牌销量公布：方程豹 43872 辆，腾势 15152 辆",
-      "link": "https://www.ithome.com/1/020/830.htm",
-      "summary": "IT之家 11 月 1 日消息，比亚迪今日公布数据，10 月份销售 490168 辆，海外乘用车及皮卡销售近 17 万辆。2026 年 1-10 月累计销售 3621744 辆，新能源汽车累计销售超 1870 万辆。IT之家附各品牌销量如下：比亚迪汽车王朝 | 海洋 423843 辆方程豹 43872 辆腾势 15152 辆仰望 258 辆根据比亚迪此前发布的 2026 年 10 月产销快报：10 月新能源汽车销量约 49.02 万辆，同比增长 10.97%。其中，纯电动汽车 10 月销量约 30.57 万辆，同比...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 01 Nov 2026 12:56:55 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "阿维塔官宣 10 月交付 7,056 辆，全系车型推送 AVATR.OS 6.1.0 系统",
-      "link": "https://www.ithome.com/1/020/828.htm",
-      "summary": "IT之家 11 月 1 日消息，阿维塔官方今日宣布，10 月交付新车 7,056 辆。另外，在 10 月，阿维塔 07L Max 纯电版上市、阿维塔 T09 迎来巴黎全球首秀。同时 AVATR.OS 6.1.0 系统面向全系车型开启推送。参考IT之家此前报道，消息称长安汽车旗下的深蓝和阿维塔两大品牌整合已进入实质性推进环节。具体措施为，长安汽车通知成立 AD（阿维塔和深蓝首字母）协同发展部，定义为一级部门。在此一级部门下，成立规划与合作部、市场产品部、人力共享中心、财务共享中心、综合部等多个二级部门，承接深蓝汽车、...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 01 Nov 2026 12:45:20 GMT",
       "id": 34,
       "is_featured": false
     },
