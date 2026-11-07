@@ -1,6 +1,6 @@
 {
   "date": "2026年11月07日",
-  "update_time": "2026-11-07 17:11",
+  "update_time": "2026-11-07 23:15",
   "ai_concept": {
     "term": "RLHF (Reinforcement Learning from Human Feedback)",
     "chinese_name": "基于人类反馈的强化学习",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-11-07 17:11",
+    "sync_time": "2026-11-07 23:15",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,90 @@
       "is_featured": false
     },
     {
+      "title": "千公里仅 3.43 毫秒，空芯光纤未来有望替代实芯光纤",
+      "link": "https://www.ithome.com/1/023/837.htm",
+      "summary": "IT之家 11 月 8 日消息，据央视新闻报道，近日，我国完成全球首个千公里空芯光纤双向实时传输验证。这意味着我国在新一代通信网关键技术领域取得新的突破。技术人员告诉记者，这次试验在 1007.48 公里的光纤线路上，首次实现了双向各 64Tb 每秒的信号同步传输，相当于支持每秒 160 部 4K 电影的上传和下载（每部按 50GB 计算），千公里信号单程传输只需 3.43 毫秒，创造了空芯光纤实时传输距离的新纪录。据了解，这种技术比当前性能最好的实芯光纤传输容量提升一倍，传输距离提升 60%。和同类空芯光纤传输试...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 23:14:24 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "谷歌高管哈里森辞去 SpaceX 董事会职务，任职已超十年",
+      "link": "https://www.ithome.com/1/023/836.htm",
+      "summary": "IT之家 11 月 8 日消息，SpaceX 当地时间周五披露，谷歌高管唐纳德 · 哈里森（Donald Harrison）已辞去该公司董事会职务，其在该职位任职已超过十年。哈里森于 11 月 4 日通知 SpaceX 自己的辞职决定，并立即生效。由埃隆 · 马斯克（Elon Musk）领导的 SpaceX 表示，哈里森辞职并非因为他与公司在运营、政策或实践相关事务上存在任何分歧。哈里森是谷歌的资深高管，目前担任全球合作与企业发展总裁。伦敦证券交易所集团（LSEG）的数据显示，谷歌母公司 Alphabet 是 Sp...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 23:07:49 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "Adobe 向初创企业抛出橄榄枝：免费使用 Firefly 和 Acrobat 等软件，最长 1 年",
+      "link": "https://www.ithome.com/1/023/835.htm",
+      "summary": "IT之家 11 月 8 日消息，Adobe 公司最近针对初创企业推出 Adobe for Startups 计划，入选企业可免费使用 Firefly Pro Plus、Acrobat Studio（包含 Adobe Express Premium）以及 Semrush 等软件，期限为 12 个月。据介绍，Adobe for Startups 计划面向成立时间不超过 5 年，且融资总额低于 1,500 万美元（IT之家注：现汇率约合 1 亿元人民币）的企业。在免费使用的软件中，Firefly Pro Plus 是一款...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 23:02:43 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "全球最大、发展最快：我国可再生能源技术占据全球主导地位",
+      "link": "https://www.ithome.com/1/023/834.htm",
+      "summary": "IT之家 11 月 8 日消息，据央视新闻报道，11 月 7 日，中国企业改革与发展研究会发布了《全球能源转型报告（2026）》，数据显示，我国已构建起全球最大、发展最快的可再生能源体系。报告指出，目前，化石能源活动仍是全球碳排放的最大来源。2025 年，全球与能源相关的二氧化碳排放总量同比增长 0.4%，达 384 亿吨，是 2021 年以来最低增幅。其中，中国碳排放量下降 0.5%，美国碳排放量增长 2.4%，成为全球碳排放增长的最大来源。中国企业改革与发展研究会会长彭华岗介绍，今年上半年，中国煤电发电量占比降...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 22:56:24 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
+      "title": "马斯克：特斯拉将增加 Cybertruck 生产班次，以在明年产线拆除前清订单",
+      "link": "https://www.ithome.com/1/023/833.htm",
+      "summary": "IT之家 11 月 8 日消息，特斯拉 CEO 埃隆 · 马斯克（Elon Musk）当地时间周六表示，为了在明年拆除生产线、转而扩大 Cybercab 产能之前完成现有 Cybertruck 订单，特斯拉将为 Cybertruck 增加一个额外生产班次。马斯克在社交平台 X 上发文称：“目前 Cybertruck 的积压订单量远超特斯拉在明年 6 月至 7 月左右拆除生产线、为 Cybercab 扩产之前所能完成的数量。”他补充说：“我们将增加一个额外班次，尽可能确保按时完成所有订单。”IT之家注意到，就在马斯克...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 22:56:15 GMT",
+      "id": 27,
+      "is_featured": false
+    },
+    {
+      "title": "B 社陶德回应《上古卷轴 6：哨兵》是否独占 XBOX：现在评论还为时过早",
+      "link": "https://www.ithome.com/1/023/832.htm",
+      "summary": "IT之家 11 月 8 日消息，贝塞斯达（Bethesda）最近终于公布了《上古卷轴 6：哨兵》游戏，至少公布了副标题。但玩家们如今仍然好奇：这款游戏是否会成为微软 XBOX 独占？最近几年，XBOX 的独占游戏政策发生了猛烈变革，先是菲尔 · 斯宾塞将 XBOX 的独占属性几乎消除，《极限竞速：地平线》和《光环》等游戏相继登陆 PlayStation 平台；阿莎 · 夏尔马上位后重新强调了独占策略，让《战争机器：事变日》成为主机端 XBOX 独占。因此，《上古卷轴 6：哨兵城》最终是否会登陆 PlayStatio...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 22:51:09 GMT",
+      "id": 28,
+      "is_featured": false
+    },
+    {
+      "title": "欧洲多地爆发抗议，民众走上街头要求暂停数据中心建设",
+      "link": "https://www.ithome.com/1/023/831.htm",
+      "summary": "IT之家 11 月 8 日消息，据彭博社报道，当地时间周六，欧洲多地继续爆发反对数据中心建设的抗议活动。民众走上街头，表达对数据中心扩张可能带来的社会和环境影响的担忧。据爱尔兰国家广播电视台（RTÉ）报道，约有 2000 人在都柏林举行游行。芬兰广播公司 Yle 报道称，约有 1300 人聚集在赫尔辛基，芬兰多个规模较小的城镇也举行了示威活动。由当地民主运动组织和气候抗议团体组成的联盟“停止肮脏数据中心”（Stop Dirty Data Centres）表示，此次行动旨在“阻止人工智能数据中心不受约束地扩张，防止我...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sat, 07 Nov 2026 22:46:04 GMT",
+      "id": 29,
+      "is_featured": false
+    },
+    {
       "title": "安卓阵营首款阔直板手机酷派 COOL X Wide 今日开售：999~1399 元，搭载联发科曦力 G99 芯片 + 720p 屏幕",
       "link": "https://www.ithome.com/1/023/829.htm",
       "summary": "IT之家 11 月 8 日消息，安卓阵营首款阔直板手机，也是酷派首款阔直板手机 Cool X Wide 今日正式开售。其中，8GB+128GB 版本 999 元，8GB+256GB 版本 1199 元，12GB+256GB 版本 1399 元。这款新机搭载 6.38 英寸 16:10 屏幕，仅 720x1158 分辨率，还支持 90Hz 刷新率；有鎏白、岩黑、嫣红三种配色可选，机身尺寸为 150.3×94.5×8.95mm，后置 5000 万像素摄像头。这款手机采用联发科曦力 G99 处理器，搭配 LPDDR4X ...",
@@ -511,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 07 Nov 2026 16:00:12 GMT",
-      "id": 23,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -523,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 07 Nov 2026 15:40:44 GMT",
-      "id": 24,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -535,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 07 Nov 2026 15:19:41 GMT",
-      "id": 25,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -547,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 07 Nov 2026 15:11:45 GMT",
-      "id": 26,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -559,90 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sat, 07 Nov 2026 15:00:08 GMT",
-      "id": 27,
-      "is_featured": false
-    },
-    {
-      "title": "Claude Max 订阅套餐使用额度被指“虚标”，Anthropic 辩词未获法官采纳",
-      "link": "https://www.ithome.com/1/023/824.htm",
-      "summary": "IT之家 11 月 7 日消息，美国联邦治安法官谢文辉（Alex Tse）裁定，Anthropic 必须继续应对 Claude Max 套餐使用额度涉嫌误导消费者的主要指控。据 Courthouse News 报道，谢文辉周五驳回了案件中的其他几项诉求。Anthropic 宣传称，月费 100 美元（IT之家注：现汇率约合 668.6 元人民币）和 200 美元（现汇率约合 1,337 元人民币）的 Max 套餐，使用额度分别是 Pro 套餐的 5 倍和 20 倍。但今年 6 月提起诉讼的消费者指控，如果按整周计算...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:57:42 GMT",
-      "id": 28,
-      "is_featured": false
-    },
-    {
-      "title": "GitHub 推出新 Git 存储架构：内部测试单个代码仓库支持 5000 个智能体同时协作，每秒处理 7200 次推送",
-      "link": "https://www.ithome.com/1/023/823.htm",
-      "summary": "IT之家 11 月 7 日消息，当地时间 11 月 5 日，GitHub 发布博文，称上周在 GitHub Universe 大会上，正式公布了全新的 Git 存储架构，代号“Rubicon”。官方表示，该架构不仅具备每秒处理数千次写入的能力，还能实现读取按需水平扩展。经内部压力测试验证，新架构能够在保持极低读取延迟的同时，支持单个代码仓库容纳 5000 个智能体（Agent）并发协作，并承受每秒高达 7200 次的代码推送。IT之家获悉，该架构目前已经开启小范围定向内测（limited private previ...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:57:23 GMT",
-      "id": 29,
-      "is_featured": false
-    },
-    {
-      "title": "马斯克再次表白中国，称赞中国汽车工业水平高",
-      "link": "https://www.ithome.com/1/023/822.htm",
-      "summary": "IT之家 11 月 7 日消息，据 RT今日俄罗斯报道，当地时间 11 月 6 日，特斯拉 CEO 埃隆 · 马斯克接受投资者罗恩 · 巴伦采访时表示，他热爱中国，并高度评价中国汽车工业的竞争力。“中国令人惊叹。顺便说一句，我爱中国。去那里旅行令人深受鼓舞，”马斯克在采访中说。他同时指出，在上海生产的特斯拉 Model Y 是中国最畅销的电动汽车，但强调实现这一成绩“并不容易”。马斯克特别补充道：“中国汽车公司非常厉害。”据IT之家此前报道，今年 9 月，马斯克接受了央视财经专访。当谈及 AI，他表示中国的 AI ...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:51:45 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "-30~10℃ 温控 + 可囤 140 斤肉：美的 100 升低霜小冰柜 388 元新低",
-      "link": "https://www.ithome.com/1/023/821.htm",
-      "summary": "美的 BD / BC-100KMF (E) 低霜小冰柜 100 升日常售价 769 元，今日京东 11.11 直降至 488 元。晒单返 20 元 E 卡，折合仅需 468 元，支持 3 年零部件质保 +10 年压缩机质保。PLUS 会员 8 日 0 点 10 点 14 点 20 点 可 2 积分抢 800-80 元：点此兑券。券后仅需 408 元，返卡后低至 388 元闭眼囤好价：京东美的 家用小型冰柜租房优选 2-3 人 100 升券后 488 元领 9.5 折券此款去年有不少小伙伴下单，反馈还是很不错的。但也...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:39:57 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "比亚迪仰望鼎曜超豪华行政旗舰轿车官图发布：对开车门带雨伞、四座布局后排设香槟杯座",
-      "link": "https://www.ithome.com/1/023/820.htm",
-      "summary": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。IT之家注意到，仰望汽车官方刚刚发布了仰望鼎曜的官图，展示了新车更多设计细节。画面显示，新车采用对开门设计，车门处暗藏有雨伞；车内为经典四座行政布局，扶手台处还设有香槟杯座。IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:33:26 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "个性化推荐机制被欧盟初步判定违反《数字服务法》，TikTok 否认相关指控称调查结果失实",
-      "link": "https://www.ithome.com/1/023/818.htm",
-      "summary": "IT之家 11 月 7 日消息，据美联社报道，欧盟初步调查结果显示，TikTok 违反了其《数字服务法》，称其算法向用户不间断推荐个性化视频流，其中包含欧盟认为可能损害心理健康与身材形象的内容。欧盟委员会于当地时间周五表示，TikTok 必须更改其“为你推荐”（For You）信息流的算法设计，让用户在拒绝接收特定内容时拥有更多自主控制权。监管机构表示，该平台未能评估其推荐机制如何诱使用户陷入危害身心健康的“兔子洞效应”（rabbit holes）。即便某些视频容易诱发负面心理反应（例如有关节食减肥或心理困境的内容...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:23:27 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "东方底蕴 + 前沿科技：比亚迪超豪华行政旗舰轿车“仰望鼎曜”全球首秀",
-      "link": "https://www.ithome.com/1/023/817.htm",
-      "summary": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。据IT之家此前报道，预热信息显示，仰望鼎曜将采用对开门设计，并拥有近 90° 的宽大开合角度，为上下车带来更开阔的空间，也让进出座舱的姿态更加舒展。新车前脸采用点阵宝石格栅，宝石自上而下渐变排布，随着光线和角度的变化，折射出璀璨的火彩。IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sat, 07 Nov 2026 14:20:42 GMT",
       "id": 34,
       "is_featured": false
     },
