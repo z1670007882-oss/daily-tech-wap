@@ -1,6 +1,6 @@
 {
   "date": "2026年11月08日",
-  "update_time": "2026-11-08 17:24",
+  "update_time": "2026-11-08 23:17",
   "ai_concept": {
     "term": "MLA (Multi-Head Latent Attention)",
     "chinese_name": "多头潜在注意力机制",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-11-08 17:24",
+    "sync_time": "2026-11-08 23:17",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,54 @@
       "is_featured": false
     },
     {
+      "title": "OPPO Reno17 系列手机外观首秀：宋雨琦代言，11 月 16 日发布",
+      "link": "https://www.ithome.com/1/024/024.htm",
+      "summary": "IT之家 11 月 9 日消息，今日，OPPO Reno17 系列宣传页面在微博等平台正式上线，新机外观也首次亮相。页面显示，该系列机型将于 11 月 16 日 19:00 正式发布。从图上可以看到，新机由宋雨琦代言，提供奇遇喵、冰月白、可可棕、初雪白四款配色。其中，奇遇喵预计是系列主打配色，后盖采用小猫图案并呈现 3D 立体效果。目前新机的规格已经曝光：OPPO Reno17 标准版：6.57 英寸显示屏 + 骁龙 7 Gen 4 处理器 +50MP 潜望长焦；OPPO Reno17 Pro 版：6.32 英寸显...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 08 Nov 2026 23:08:08 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "我国长十二火箭成功发射卫星互联网低轨 29 组卫星",
+      "link": "https://www.ithome.com/1/024/023.htm",
+      "summary": "IT之家 11 月 9 日消息，11 月 9 日 4 时 24 分，长征十二号运载火箭在海南商业航天发射场点火起飞，随后成功将卫星互联网低轨 29 组卫星送入预定轨道，发射任务取得圆满成功。IT之家查询获悉，卫星互联网低轨 29 组卫星由中国航天科技集团有限公司五院抓总研制。长十二火箭由中国航天科技集团有限公司所属商业火箭公司抓总研制、八院承担研制，是新一代低温液体推进剂运载火箭，也是我国首款 4 米级箭径、单芯级运载火箭。长十二火箭全长约 62 米，700 公里太阳同步轨道运载能力不低于 6 吨，可根据任务选配 ...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 08 Nov 2026 23:07:16 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "腾讯元器停止服务，明年 1 月起不再受理数据导出申请",
+      "link": "https://www.ithome.com/1/024/022.htm",
+      "summary": "IT之家 11 月 9 日消息，腾讯元器平台今日正式停止服务，应用访问、数据读写、API 调用、控制台使用等所有面向公众的服务，不支持用户访问。通过元器平台发布到其他渠道（包括公众号、服务号、微信客服等）的智能体不支持响应用户对话。从上个月 29 日起，腾讯元器已停止创建新的智能体、API Key 分发功能。用户目前可以通过数据导出控制台，提出导出任务申请。2027 年 01 月 09 日后不再受理数据导出申请，除法律法规规定须留存的日志等记录外，官方将删除全部用户数据，请您在此前完成备份。如您曾通过旧版元器入口在...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 08 Nov 2026 23:04:49 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "《塞尔达传说：时之笛》重制版英国首发销量超《旷野之息》，登顶该国 2026 年实体游戏销量榜",
+      "link": "https://www.ithome.com/1/024/021.htm",
+      "summary": "IT之家 11 月 9 日消息，据《The Gaming Business》联合创始人克里斯托弗 · 德林今日透露，任天堂新作《塞尔达传说：时之笛》重制版英国首周销量相比《塞尔达传说：旷野之息》高出 35%，同时也是 2026 年英国销量最高的实体游戏。据介绍，《塞尔达传说：时之笛》发售首周的销量比《旷野之息》高出 35%，且销量约为《王国之泪》同期的一半。不过需要注意的是，《时之笛》重制版的情况与《旷野之息》《王国之泪》有所不同。其中，《旷野之息》是 Switch 1 的首发护航大作，也是 Wii U 的最后一款...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 08 Nov 2026 22:47:21 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
       "title": "古尔曼称苹果 Siri AI 团队或迎大调整，工程副总裁罗克韦尔考虑明年走人",
       "link": "https://www.ithome.com/1/024/014.htm",
       "summary": "IT之家 11 月 8 日消息，彭博社记者马克 · 古尔曼在今晚更新的《Power On》时事通讯中爆料，曾主导 Vision Pro 头显开发、同时负责新版 Siri AI 项目的迈克 · 罗克韦尔，仍在认真考虑离开现有岗位。古尔曼披露，罗克韦尔或将于明年卸任 Siri 工程副总裁，甚至彻底离开苹果。新版 Siri 跳票了两年才得以上市，考虑到罗克韦尔在其中发挥的作用，他的离开将给苹果造成重大损失。IT之家获悉，如果罗克韦尔最终离职，或在苹果内部转任其他岗位，更多工作预计将交给两名高管：去年从谷歌加入苹果、负责加...",
@@ -511,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 15:47:05 GMT",
-      "id": 23,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -523,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 15:36:53 GMT",
-      "id": 24,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -535,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 15:24:09 GMT",
-      "id": 25,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -547,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 15:00:24 GMT",
-      "id": 26,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -559,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 14:47:23 GMT",
-      "id": 27,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -571,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 14:31:54 GMT",
-      "id": 28,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -583,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 14:28:03 GMT",
-      "id": 29,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -595,54 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 08 Nov 2026 14:27:11 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "李书福称吉利完全认同换电模式，“车电不同寿”的矛盾还没集中爆发",
-      "link": "https://www.ithome.com/1/024/005.htm",
-      "summary": "IT之家 11 月 8 日消息，据观察者网报道，11 月 5 日，蔚来创始人、董事长兼 CEO 李斌与吉利控股集团董事长李书福，在 2026 世界互联网大会乌镇咖荟 · 汽车夜话进行对话。这是双方在 9 月 28 日蔚来与吉利达成充换电战略合作后的首次公开对话。李书福表示，吉利完全认同换电模式，新能源车电池是会衰减损坏的，但一台车的使用周期不止七八九年，这个矛盾必须找到解决方案，“直接换一块全新电池包，太贵；拆解翻新修复电池，成本同样很高。所以换电，就是解决这个问题。”据IT之家此前报道，9 月 28 日，蔚来与吉...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 08 Nov 2026 14:01:34 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "保时捷多款车型车机性能升级：新一代通讯管理系统算力达前代 5 倍",
-      "link": "https://www.ithome.com/1/024/004.htm",
-      "summary": "IT之家 11 月 8 日消息，保时捷宣布，911、Taycan、Panamera 和卡宴都将迎来一次大幅“性能”升级。不过，此次提升的不是发动机动力，而是车机算力。保时捷本周发布了新一代保时捷通讯管理系统（PCM），算力最高可达上一代的 5 倍。得益于全新硬件架构，车机启动和应用加载速度更快，同时运行多个应用时也更加流畅。除了提升响应速度，新系统还增加了多项功能。保时捷把最早搭载于纯电卡宴的数字交互系统引入 911、Taycan、Panamera，以及燃油版、混动版卡宴。新界面提供五种主题、可自定义的桌面组件，还...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 08 Nov 2026 13:50:33 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "雷柏推出 VT2 RT V2 系列鼠标：类机械 / 光微动、电磁按键三种触感，499 元起",
-      "link": "https://www.ithome.com/1/024/003.htm",
-      "summary": "IT之家 11 月 8 日消息，雷柏现已推出 VT2 RT V2 系列鼠标，将于 11 月 10 日 20:00 开售，售价 499 元起：VT2 RT V2：售价 499 元VT2 RT 大师版 V2 ：售价 599 元该系列鼠标搭载雷柏自研 VTCS 可变触发控制系统，支持类机械微动、类光微动、电磁按键三种触感，可调 10 档触发行程、10 档 RT 行程、3 种点击触感、10 档点击反馈、10 种点击音效、10 档点击音量，左右按键可独立调节。该系列鼠标搭载 NORDIC 54LM20 主控 + 原相 395...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 08 Nov 2026 13:48:27 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量",
-      "link": "https://www.ithome.com/1/024/002.htm",
-      "summary": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示技术和 Holographic Display 全息显示技术。按照奔驰设想，后挡风玻璃可以显示各种警告标志和交通信息，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。奔驰为此考虑了两种 LED 技术。Mini LED 适合后挡风玻璃等面积较大的显示区域，分辨率...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 08 Nov 2026 13:28:29 GMT",
       "id": 34,
       "is_featured": false
     },
