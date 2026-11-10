@@ -1,6 +1,6 @@
 {
   "date": "2026年11月10日",
-  "update_time": "2026-11-10 15:56",
+  "update_time": "2026-11-10 21:37",
   "ai_concept": {
     "term": "CoT (Chain of Thought)",
     "chinese_name": "思维链 / 链式思考推理",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-11-10 15:56",
+    "sync_time": "2026-11-10 21:37",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,30 @@
       "is_featured": false
     },
     {
+      "title": "嵌入式 x86 算力天花板：AMD 霄龙嵌入式 9006 系列 SP7 处理器发布，吞吐量飙升 1.8 倍",
+      "link": "https://www.ithome.com/1/025/195.htm",
+      "summary": "IT之家 11 月 11 日消息，AMD 今天（11 月 11 日）发布霄龙（EPYC）嵌入式 9006 系列 SP7 处理器，基于 Zen 6 架构，最高可达 256 核 512 线程，率先在嵌入式平台落地 PCIe Gen6、CXL3.1，搭配 16 通道 DDR5/MRDIMM 内存、7 年产品生命周期。不同于 9 月发布的 AMD 霄龙 9006 系列服务器 CPU（面向智能体 AI、云计算、企业应用等），本次发布的嵌入式 9006 系列 SP7 处理器主要面向半导体 ATE 测试设备、企业存储、高端网络防...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 10 Nov 2026 17:05:05 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "《足球经理 27》今日发售：国区售价 268 元，首发加入 PC Game Pass",
+      "link": "https://www.ithome.com/1/025/194.htm",
+      "summary": "IT之家 11 月 11 日消息，由 Sports Interactive 开发、SEGA 发行的足球策略模拟游戏《足球经理 27》（Football Manager 27，简称《FM27》）已正式在 Steam 平台正式发售，国区定价 268 元，不锁国区。IT之家附游戏商品页（https://store.steampowered.com/app/4530370/足球经理 27/?l=schinese&cc=cn）。据介绍，本作国区标准版定价 268 元，预购期间曾提供 10% 首发折扣（折后 241.2 元），...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Tue, 10 Nov 2026 16:14:15 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
       "title": "奥迪上汽战略合作 CEO 舒睿泽：未来三年将推出三款新车",
       "link": "https://www.ithome.com/1/025/192.htm",
       "summary": "IT之家 11 月 10 日消息，据第一财经今天（10 日）晚间报道，奥迪 · 上汽战略合作 CEO 舒睿泽（Fred Schulze）透露，未来三年将推出三款新车，规划已进入执行阶段。此外，奥迪在 L3 级自动驾驶领域也有明确的发展目标。对于是否出口到欧洲市场，舒睿泽称，AUDI 品牌车型专为中国消费者打造，全力聚焦中国市场是未来几年的核心任务。据IT之家此前报道，今年 10 月，奥迪中国宣布分别与合作伙伴签署战略协议，旨在强化奥迪四环品牌与 AUDI (奥迪字母标) 品牌之间的差异化定位及各自的战略侧重，并进一...",
@@ -511,7 +535,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 15:34:55 GMT",
-      "id": 23,
+      "id": 25,
       "is_featured": false
     },
     {
@@ -523,7 +547,7 @@
       "category_name": "新AI模型",
       "model_tag": "开源 (Open Source)",
       "pub_time": "Tue, 10 Nov 2026 15:25:52 GMT",
-      "id": 24,
+      "id": 26,
       "is_featured": false
     },
     {
@@ -535,7 +559,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 15:17:21 GMT",
-      "id": 25,
+      "id": 27,
       "is_featured": false
     },
     {
@@ -547,7 +571,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 15:05:04 GMT",
-      "id": 26,
+      "id": 28,
       "is_featured": false
     },
     {
@@ -559,7 +583,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 14:56:46 GMT",
-      "id": 27,
+      "id": 29,
       "is_featured": false
     },
     {
@@ -571,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 14:50:50 GMT",
-      "id": 28,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -583,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 14:41:43 GMT",
-      "id": 29,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -595,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 14:31:23 GMT",
-      "id": 30,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -607,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 14:37:30 GMT",
-      "id": 31,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -619,30 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Tue, 10 Nov 2026 14:35:38 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "消息称苹果计划明年上半年为 iPad Air 换用 OLED 面板，预计仍为 60Hz 刷新率",
-      "link": "https://www.ithome.com/1/025/179.htm",
-      "summary": "IT之家 11 月 10 日消息，据外媒 DigiTimes 报道，苹果计划于 2027 年（明年）上半年为 iPad Air 换用 OLED 面板。据报道，新款 iPad Air 预计将采用与 OLED iPad mini 相同的单层 OLED 发光结构，以及低温多晶硅（LTPS）背板技术。相比之下，现款 iPad Pro 使用双层 OLED 发光结构，以提升屏幕亮度，采用低温多晶氧化物（LTPO）背板技术。此外，OLED 版 iPad Air 预计仍将采用 60Hz 刷新率，不会支持 ProMotion 技术，...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 10 Nov 2026 14:30:34 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "国漫《浪浪山小妖怪》获第 39 届中国电影金鸡奖最佳动画片奖",
-      "link": "https://www.ithome.com/1/025/178.htm",
-      "summary": "IT之家 11 月 10 日消息，国产动画电影《浪浪山小妖怪》今日宣布，本片获第 39 届中国电影金鸡奖“最佳动画片”奖。电影《浪浪山小妖怪》在去年暑期档电影中成功破圈。该片票房已突破 17.19 亿元，成为中国影史二维动画电影票房冠军。截至IT之家发文，该影片的豆瓣评分为 8.5 分。IT之家小伙伴记得用最会买购买电影票，享受折扣价的同时还可以获得返利，预计每张票可以节省 5~15 元！延伸阅读第 39 届中国电影金鸡奖颁奖典礼于 2026 年 11 月 10 日在福建省厦门市举行，2026 年中国金鸡百花电影节...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Tue, 10 Nov 2026 14:28:20 GMT",
       "id": 34,
       "is_featured": false
     },
