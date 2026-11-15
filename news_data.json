@@ -1,6 +1,6 @@
 {
   "date": "2026年11月15日",
-  "update_time": "2026-11-15 18:13",
+  "update_time": "2026-11-15 23:39",
   "ai_concept": {
     "term": "MoE (Mixture of Experts)",
     "chinese_name": "混合专家模型架构",
@@ -97,7 +97,7 @@
   ],
   "leaderboard": {
     "benchmark_source": "Arena.ai (Chatbot Arena) & Artificial Analysis",
-    "sync_time": "2026-11-15 18:13",
+    "sync_time": "2026-11-15 23:39",
     "metrics_description": "2026年9月最新真实大模型综合智力指数与竞技场综合评测（涵盖 GPT-6 Astra、Claude Opus 5.5 等新一代旗舰）",
     "models": [
       {
@@ -503,6 +503,90 @@
       "is_featured": false
     },
     {
+      "title": "R 星联手 Twitch、Kick 送出《GTA 6》兑换码：每天需观看直播 3 小时抽奖，包含 100 美元终极版",
+      "link": "https://www.ithome.com/1/027/468.htm",
+      "summary": "IT之家 11 月 16 日消息，Rockstar Games 为即将发售的《侠盗猎车手 6》（GTA 6）安排了两个平台的游戏兑换码赠送活动，奖品适用于 PS5 和 Xbox Series X|S。Kick 的“Sunset Reward”活动将持续至 12 月 7 日，共提供 1 万份游戏终极版兑换码。用户登录账号后，每天观看平台任意直播累计达到 180 分钟，即可获得一次开箱（抽奖）机会。此次 Kick 活动提供的是《GTA 6》终极版兑换码，该版本标价 100 美元（IT之家注：现汇率约合 669 元人民币...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 23:16:45 GMT",
+      "id": 23,
+      "is_featured": false
+    },
+    {
+      "title": "成渝中线高铁成都站主体结构完工，至重庆 50 分钟可达",
+      "link": "https://www.ithome.com/1/027/467.htm",
+      "summary": "IT之家 11 月 16 日消息，据国铁集团官方消息，11 月 15 日 10 时许，随着最后一块屋面钢结构网架精准吊装至指定位置完成安装，成渝中线高铁成都站主体结构完工，正式转入装饰装修与设备安装阶段。成都站是在建成渝中线高铁的始发终到站。该站始建于 1950 年 6 月，于 1952 年 7 月 1 日正式开通运营，是新中国第一条自主建设的铁路 —— 成渝铁路的始发终到站。为服务成渝中线高铁建设、完善市域铁路公交化网络布局，车站在老站原址启动系统性扩能改造。车站站场规模将由 6 台 12 线扩容至 10 台 1...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 23:07:45 GMT",
+      "id": 24,
+      "is_featured": false
+    },
+    {
+      "title": "古尔曼曝光苹果智能眼镜原型机：主打 Siri 语音交互，预计 WWDC2027 发布",
+      "link": "https://www.ithome.com/1/027/466.htm",
+      "summary": "IT之家 11 月 16 日消息，据彭博社记者马克 · 古尔曼昨日透露，苹果计划在 2027 年 6 月的 WWDC 发布公司首款智能眼镜，并在当年年底开始出货。IT之家从原报道获悉，这款智能眼镜原型机的内部代号为“N50”，其镜框据称略小于 Meta 第二代 Ray-Ban。部分测试机采用椭圆形摄像头开孔，直接集成在镜框中，没有向外凸起。眼镜正面设有一颗指示灯，用于显示设备正在使用或充电，苹果还在尝试加入更多隐私保护功能。同时，苹果将重点打磨这款眼镜的材质、传感器和音质，该产品支持音乐播放、通话及 FaceTim...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 23:04:30 GMT",
+      "id": 25,
+      "is_featured": false
+    },
+    {
+      "title": "投资 19 亿美元：三星被曝将在美国为马斯克 SpaceX 生产卫星芯片，目标 2030 年投产",
+      "link": "https://www.ithome.com/1/027/465.htm",
+      "summary": "IT之家 11 月 16 日消息，三星电子正将其位于得克萨斯州奥斯汀的芯片工厂拓展至航天供应链。据韩国《首尔经济日报》11 月 15 日报道，三星计划在奥斯汀工厂为 SpaceX 的星链卫星生产 STM32V8 微控制器（MCU），为此将投资 19 亿美元（IT之家注：现汇率约合 127.1 亿元人民币）扩产，目标在 2030 年投入运行。STM32V8 是意法半导体于 2025 年 11 月发布的微控制器，采用 18 纳米 FD-SOI（全耗尽型绝缘体上硅）工艺，集成 Arm Cortex-M85 内核，主频最高...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 23:01:15 GMT",
+      "id": 26,
+      "is_featured": false
+    },
+    {
+      "title": "美国全国航班停飞影响持续多日，预计当地时间 11 月 16 日全面恢复",
+      "link": "https://www.ithome.com/1/027/464.htm",
+      "summary": "IT之家 11 月 16 日消息，据央视新闻今日报道，美国航空运输业在经历联邦航空管理局（FAA）全国航班停飞事件后，预计将于当地时间 11 月 16 日全面恢复正常。美国交通部长肖恩 · 达菲（Sean Duffy）11 月 15 日表示，虽然航空运输已逐步恢复，但由于停飞期间大量飞机和机组人员偏离原定执勤位置，航空公司仍需要时间重新调配资源，航班取消和延误预计还将持续一段时间。当地时间 11 月 13 日，美国联邦航空管理局因空中交通管制通信系统出现故障，发布全国航班停飞令，持续近 5 小时。FAA 于当天 2...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 22:51:48 GMT",
+      "id": 27,
+      "is_featured": false
+    },
+    {
+      "title": "微软 XBOX 明确 Project Helix 定位：首先是能运行 PC 游戏的主机",
+      "link": "https://www.ithome.com/1/027/463.htm",
+      "summary": "IT之家 11 月 16 日消息，微软 XBOX 下一代业务副总裁杰森 · 罗纳德昨日表示，他们的次世代主机 Project Helix 不仅能运行 XBOX 游戏，也可以运行 PC 游戏。该主机将利用神经渲染技术，以更高效、更创新的方式实现全新画面保真度。罗纳德表示：“在我们看来，Project Helix 的设计目标是打造终极游戏设备，消除过去游戏体验的各种限制。我可以访问自己的整个游戏库，随时畅玩四代 Xbox 主机上的所有游戏，并且能够立即继承此前的游戏进度。我们也希望打破主机游戏和 PC 游戏的界限。”他...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 22:47:09 GMT",
+      "id": 28,
+      "is_featured": false
+    },
+    {
+      "title": "ULA 成立 20 年来首次发射任务完全失败：火神火箭升空 10 分钟后出现异常，亚马逊 40 颗卫星损失",
+      "link": "https://www.ithome.com/1/027/462.htm",
+      "summary": "IT之家 11 月 16 日消息，美国联合发射联盟公司（ULA）的火神（Vulcan）运载火箭于当地时间 11 月 15 日从佛州卡纳维拉尔角太空军基地升空，执行亚马逊低轨卫星星座 Amazon Leo 的首次发射任务。不过，火箭升空约 10 分钟后出现异常，未能将搭载的 40 颗卫星送入预定轨道。这是 ULA 自 2006 年成立以来首次发射任务完全失败，终结了该公司近 20 年的全胜纪录。北京时间 11 月 16 日凌晨，火神火箭从卡纳维拉尔角太空军基地 SLC-41 发射升空，执行代号为 LV-01 的任务。...",
+      "source": "IT之家",
+      "category": "tech",
+      "category_name": "重大科技",
+      "model_tag": null,
+      "pub_time": "Sun, 15 Nov 2026 22:43:45 GMT",
+      "id": 29,
+      "is_featured": false
+    },
+    {
       "title": "零刻 ME Pro 358H 四盘位 NAS 开售，32GB + 1TB 起价 11499 元",
       "link": "https://www.ithome.com/1/027/461.htm",
       "summary": "IT之家 11 月 16 日消息，零刻 (Beelink) 现已启动 ME Pro 358H 四盘位 NAS 的销售。其基于英特尔酷睿 Ultra X7 处理器 358H，包含 32GB LPDDR5X-9600 内存、1TB PCIe Gen4 TLC M.2 SSD。ME Pro 358H 四盘位分为日常款和联名款：前者含 Windows 11 操作系统，售价 11,499 元；联名款含飞牛 fnOS 操作系统（商业版）、腾讯 Marvis，售价 11,699 元。零刻 ME Pro 358H 四盘位提供 4 ...",
@@ -511,7 +595,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 15 Nov 2026 16:14:44 GMT",
-      "id": 23,
+      "id": 30,
       "is_featured": false
     },
     {
@@ -523,7 +607,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 15 Nov 2026 15:56:43 GMT",
-      "id": 24,
+      "id": 31,
       "is_featured": false
     },
     {
@@ -535,7 +619,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 15 Nov 2026 15:06:17 GMT",
-      "id": 25,
+      "id": 32,
       "is_featured": false
     },
     {
@@ -547,7 +631,7 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 15 Nov 2026 14:37:13 GMT",
-      "id": 26,
+      "id": 33,
       "is_featured": false
     },
     {
@@ -559,90 +643,6 @@
       "category_name": "重大科技",
       "model_tag": null,
       "pub_time": "Sun, 15 Nov 2026 14:16:51 GMT",
-      "id": 27,
-      "is_featured": false
-    },
-    {
-      "title": "鸿蒙智行尚界 Z7T 星野套装实车图曝光，新增行李架、跨界套件、黑色尾翼等",
-      "link": "https://www.ithome.com/1/027/454.htm",
-      "summary": "IT之家 11 月 15 日消息，汽车博主 @未来的学习笔记 昨日分享了鸿蒙智行尚界 Z7T 星野套装实车图。尚界 Z7T 星野套装最明显的变化属车尾部分。从画面可以看到，该版本车型新增了银色行李架、银色后视镜外壳、全车跨界套件以及黑色尾翼。参考IT之家此前报道，尚界 Z7T 是一款猎装车型，于今年 4 月上市，售价 22.98 万元起。尚界 Z7 全系标配华为乾崑智驾 ADS 4.1、华为巨鲸 800V 高压电池平台、华为乾崑 896 线双光路图像级激光雷达、华为鸿蒙座舱、华为途灵平台；全系标配鸿蒙 ALPS 健...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 15 Nov 2026 13:53:46 GMT",
-      "id": 28,
-      "is_featured": false
-    },
-    {
-      "title": "韩国税务师考试头名 AI 作弊曝光后，政府全面调查今年国家资格考试",
-      "link": "https://www.ithome.com/1/027/453.htm",
-      "summary": "IT之家 11 月 15 日消息，据韩联社今日报道，由于税务师考试第一名考生存在利用人工智能进行作弊的行为被曝光，韩国政府决定对今年所有国家资格考试进行全面调查，以打击此类作弊行为。报道称，劳动部和相关机构决定对在第 63 届税务师考试中发现有 AI 作弊行为的第一名考生 A 进行取消考试成绩的处理，并限制其五年内不得参加该考试，以尽快落实后续措施。政府还计划年内出台一系列综合措施来防止国家资格考试中的作弊行为，比如引入红外线探测器等设备。此外，他们还将积极配合警方等调查机构的调查，并推进相关指控程序。报道提到，考...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 15 Nov 2026 13:42:51 GMT",
-      "id": 29,
-      "is_featured": false
-    },
-    {
-      "title": "RGB 基础上引入第四基色 X，TCL 华星展出三款全球首款 10.95 英寸 OLED 平板屏幕",
-      "link": "https://www.ithome.com/1/027/452.htm",
-      "summary": "IT之家 11 月 15 日消息，在本周举行的 TCL 华星全球显示生态大会 DTC 2026 上，TCL 华星以 RGBX 四基色显示架构为主题，展出三款全球首款 10.95 英寸 OLED 平板屏幕 —— 四基色双模色域、四基色双模低功耗、四基色双模低蓝害。官方表示，三款展品同源同平台，在传统 RGB 三基色基础上引入第四基色 X，通过 X 的不同选择（深红光／蓝磷光／浅蓝光 EL 材料），分别实现色域、能效、护眼三个维度的突破。▲ RGBX 四基色像素架构示意图（RGB vs RGBX，三种 X 对比）IT之...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 15 Nov 2026 13:39:45 GMT",
-      "id": 30,
-      "is_featured": false
-    },
-    {
-      "title": "研究警告：地球冰冻圈退化正突破安全环境极限，海平面上升与极端灾害风险加剧",
-      "link": "https://www.ithome.com/1/027/451.htm",
-      "summary": "IT之家 11 月 15 日消息，据福布斯报道，一项最新研究指出，地球上的冰冻区域正在全面退化，冰盖、山地冰川、海冰、积雪和永久冻土等关键组成部分，均面临日益严峻的环境风险。研究人员警告，这些区域的变化正在超出安全环境极限，并给地球及其生态系统带来越来越大的长期威胁。这项研究由斯德哥尔摩大学斯德哥尔摩韧性中心的研究人员牵头完成。研究指出，这些冰冻景观统称为“冰冻圈”（Cryosphere），在调节地球能量、水循环、碳循环和甲烷循环，以及储存碳方面发挥着不可替代的作用。随着冰冻圈持续退化，全球气温上升、海平面上涨和生...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 15 Nov 2026 13:20:40 GMT",
-      "id": 31,
-      "is_featured": false
-    },
-    {
-      "title": "开源盘古模型 openPangu-2.1-Pro 上线华为云，围绕 Agent 开发、AI 编码、推理优化方向能力升级",
-      "link": "https://www.ithome.com/1/027/450.htm",
-      "summary": "IT之家 11 月 15 日消息，华为云今日宣布，华为云 MaaS 模型即服务平台正式上线开源盘古模型 openPangu-2.1-Pro。该模型围绕 Agent 开发、AI 编码和推理优化三大方向进行能力升级，在深度研究、鸿蒙系统操控、鸿蒙 App 开发、昇腾算子生成及推理链路优化等场景实现增强。在 Agent 能力方面，openPangu-2.1-Pro 基于 10 万余条专项数据优化 Skills 触发、工具选择与调用能力，提升复杂任务规划和执行效果，在深度研究及鸿蒙系统操控等场景实现能力增强。在代码能力方面...",
-      "source": "IT之家",
-      "category": "models",
-      "category_name": "新AI模型",
-      "model_tag": "开源 (Open Source)",
-      "pub_time": "Sun, 15 Nov 2026 13:16:54 GMT",
-      "id": 32,
-      "is_featured": false
-    },
-    {
-      "title": "上汽大通 27 款大拿 V1L 上市：标配宁德时代电池，11.68 万起",
-      "link": "https://www.ithome.com/1/027/449.htm",
-      "summary": "IT之家 11 月 15 日消息，11 月 13 日，上汽大通 27 款大拿 V1L 正式上市，售价 11.68 万元起，官方称全系标配宁德时代天行商用电池。IT之家从官方公布信息获悉，27 款大拿 V1L 共带来 7 项升级，官方将其概括为“加配不加价”。车身采用方圆之融的前脸设计，本次为焕新前脸。该车定位纯电动轻客，面向国内城配物流与营运客运市场。在装载能力上，官方称其拥有同级领先的“大 9 方”装载空间，最大空间利用率 98%，轮包间距 1.25m，额定载重 1.27t，地板高度 520mm。前排 3 人座为...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 15 Nov 2026 13:13:43 GMT",
-      "id": 33,
-      "is_featured": false
-    },
-    {
-      "title": "比亚迪何志奇：匈牙利工厂马上进入大批量生产，兵马未动、粮草得先行",
-      "link": "https://www.ithome.com/1/027/448.htm",
-      "summary": "IT之家 11 月 15 日消息，比亚迪股份有限公司执行副总裁何志奇发文，称匈牙利工厂马上进入大批量生产，兵马未动，粮草得先行。早上意大利空心面，中午斯洛文尼亚披萨，晚上克罗地亚 seafood，一天跑了三个国家，三个港口，好想煮碗方便面，里面加个鸡蛋。欧洲的基础设施比不得国内，经常几十年不变，堵港，罢工，货柜积压司空见惯，扩个堆场都得一年半载。我们的匈牙利工厂马上进入大批量生产，兵马未动，粮草得先行。据IT之家此前报道，2023 年，比亚迪宣布将在匈牙利赛格德市建设一个新能源汽车整车生产基地，这将是比亚迪乘用车的...",
-      "source": "IT之家",
-      "category": "tech",
-      "category_name": "重大科技",
-      "model_tag": null,
-      "pub_time": "Sun, 15 Nov 2026 13:07:04 GMT",
       "id": 34,
       "is_featured": false
     },
